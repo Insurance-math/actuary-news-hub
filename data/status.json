@@ -1,7 +1,7 @@
 {
  "last_run": {
-  "started_at": "2026-11-04T12:58:04.223447+00:00",
-  "finished_at": "2026-11-04T12:58:05.136497+00:00",
+  "started_at": "2026-11-04T12:59:25.146918+00:00",
+  "finished_at": "2026-11-04T12:59:27.286309+00:00",
   "candidates": 246,
   "added": 0,
   "failed": [
@@ -11,8 +11,8 @@
  "sources": {
   "보험매일": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:58:04.223447+00:00",
-   "last_success_at": "2026-11-04T12:58:04.223447+00:00",
+   "last_run_at": "2026-11-04T12:59:25.146918+00:00",
+   "last_success_at": "2026-11-04T12:59:25.146918+00:00",
    "consecutive_failures": 0,
    "entries": 50,
    "kept": 42,
@@ -39,8 +39,8 @@
   },
   "보험저널": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:58:04.223447+00:00",
-   "last_success_at": "2026-11-04T12:58:04.223447+00:00",
+   "last_run_at": "2026-11-04T12:59:25.146918+00:00",
+   "last_success_at": "2026-11-04T12:59:25.146918+00:00",
    "consecutive_failures": 0,
    "entries": 50,
    "kept": 32,
@@ -69,8 +69,8 @@
   },
   "한국보험신문": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:58:04.223447+00:00",
-   "last_success_at": "2026-11-04T12:58:04.223447+00:00",
+   "last_run_at": "2026-11-04T12:59:25.146918+00:00",
+   "last_success_at": "2026-11-04T12:59:25.146918+00:00",
    "consecutive_failures": 0,
    "entries": 50,
    "kept": 20,
@@ -99,15 +99,15 @@
   },
   "주요 경제지·보험": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:58:04.223447+00:00",
-   "last_success_at": "2026-11-04T12:58:04.223447+00:00",
+   "last_run_at": "2026-11-04T12:59:25.146918+00:00",
+   "last_success_at": "2026-11-04T12:59:25.146918+00:00",
    "consecutive_failures": 0,
    "entries": 100,
-   "kept": 92,
+   "kept": 91,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 8
+    "irrelevant": 9
    },
    "filtered": [
     "\"세금은 내는데 건보료는 제외\"…분리과세소득에 건보료 부과 검토",
@@ -115,6 +115,7 @@
     "AIG, 3분기 GAAP 희석 EPS 1.60달러..전년비 72%↑",
     "삼성화재, 간·폐·신장병에도 치료비 지급",
     "예보료율 소폭 낮췄지만 여전한 불만에…개별 금융사 의견 듣는다 - 머니투데이",
+    "지난해 1인당 월평균 진료비 22.9만원…전남 최고·세종 최저 - 머니투데이",
     "유나이티드 파이어 그룹, 3분기 희석 EPS 1.34달러..전년비 10% 감소",
     "[기고] 아파트단지 교통사고는 가해자 형사처벌 면제?",
     "일산병원, 만성폐쇄성폐질환 적정성 '11회 연속 1등급'"
@@ -127,15 +128,15 @@
   },
   "주요 경제지·금융시장": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:58:04.223447+00:00",
-   "last_success_at": "2026-11-04T12:58:04.223447+00:00",
+   "last_run_at": "2026-11-04T12:59:25.146918+00:00",
+   "last_success_at": "2026-11-04T12:59:25.146918+00:00",
    "consecutive_failures": 0,
    "entries": 100,
-   "kept": 43,
+   "kept": 44,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 57
+    "irrelevant": 56
    },
    "filtered": [
     "\"반도체만 보고 있을 때 아니다\"…내년 투자판 흔들 'ABC'",
@@ -157,8 +158,8 @@
   },
   "사회변화·보험": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:58:04.223447+00:00",
-   "last_success_at": "2026-11-04T12:58:04.223447+00:00",
+   "last_run_at": "2026-11-04T12:59:25.146918+00:00",
+   "last_success_at": "2026-11-04T12:59:25.146918+00:00",
    "consecutive_failures": 0,
    "entries": 39,
    "kept": 37,
@@ -179,9 +180,9 @@
   },
   "금융위원회 RSS": {
    "ok": false,
-   "last_run_at": "2026-11-04T12:58:04.223447+00:00",
+   "last_run_at": "2026-11-04T12:59:25.146918+00:00",
    "last_success_at": null,
-   "consecutive_failures": 12,
+   "consecutive_failures": 13,
    "entries": 0,
    "kept": 0,
    "skipped": {},
@@ -194,16 +195,16 @@
   },
   "금융위원회 검색": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:58:04.223447+00:00",
-   "last_success_at": "2026-11-04T12:58:04.223447+00:00",
+   "last_run_at": "2026-11-04T12:59:25.146918+00:00",
+   "last_success_at": "2026-11-04T12:59:25.146918+00:00",
    "consecutive_failures": 0,
-   "entries": 100,
+   "entries": 38,
    "kept": 3,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 40,
-    "junk_title": 57
+    "irrelevant": 12,
+    "junk_title": 23
    },
    "filtered": [
     "[노이즈 제목] 알림마당",
@@ -218,22 +219,22 @@
     "예금자보호법 조문별 제·개정이유서 금 융 위 원 회"
    ],
    "oldest": "2021-03-12T07:35:41+00:00",
-   "newest": "2026-11-04T11:15:57+00:00",
-   "at_limit": true,
+   "newest": "2026-11-04T10:25:05+00:00",
+   "at_limit": false,
    "gap_risk": false,
    "error": null
   },
   "금융감독원 검색": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:58:04.223447+00:00",
-   "last_success_at": "2026-11-04T12:58:04.223447+00:00",
+   "last_run_at": "2026-11-04T12:59:25.146918+00:00",
+   "last_success_at": "2026-11-04T12:59:25.146918+00:00",
    "consecutive_failures": 0,
-   "entries": 16,
+   "entries": 15,
    "kept": 1,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 15
+    "irrelevant": 14
    },
    "filtered": [
     "DART - 전자공시시스템 - 전자공시시스템",
