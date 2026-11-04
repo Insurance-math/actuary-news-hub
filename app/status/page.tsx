@@ -15,6 +15,7 @@ export default function StatusPage() {
   return <main className="shell">
     <SiteHeader current="/status/" />
     {run && <div className="notice"><div><b>마지막 수집 {fmt(run.started_at)}</b><p>후보 {run.candidates}건 · 신규 저장 {run.added}건 · 실패 피드 {run.failed.length}개{run.failed.length ? ` (${run.failed.join(', ')})` : ''}</p></div></div>}
+    {!status && !failure && <div className="articles"><div className="empty">수집 상태를 불러오는 중입니다…</div></div>}
     {failure && <div className="error"><AlertCircle size={17} /> {failure}</div>}
     {status && <section className="articles"><div className="tableWrap"><table className="statusTable">
       <thead><tr><th>소스</th><th>상태</th><th>피드 항목</th><th>저장 후보</th><th>받은 기사 범위(발행)</th><th>마지막 성공</th><th>비고</th></tr></thead>

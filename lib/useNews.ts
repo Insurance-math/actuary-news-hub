@@ -23,5 +23,9 @@ export function useNews(extra: string[] | 'all' = []) {
     });
   }, [wanted, byMonth]);
   const all = useMemo(() => Object.values(byMonth).flat(), [byMonth]);
-  return { index, all, failure, loading: !index && !failure, loadedMonths: Object.keys(byMonth) };
+  // loading: 최초 표시에 필요한 최근 2개월이 모두 끝날 때까지(성공/실패 무관). 이전에는 index만 오면 끝난 것으로 보여 '기사 없음'이 깜빡였다.
+  const baseMonths = index?.months.slice(0, 2).map(x => x.month) ?? [];
+  const loading = !failure && (!index || baseMonths.some(m => !(m in byMonth)));
+  const loadingMore = !loading && wanted.some(m => !(m in byMonth)); // 검색·달력 이동으로 과거 월을 추가로 읽는 중
+  return { index, all, failure, loading, loadingMore };
 }

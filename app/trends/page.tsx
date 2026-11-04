@@ -27,6 +27,7 @@ export default function TrendsPage() {
   return <main className="shell">
     <SiteHeader current="/trends/" />
     <div className="notice"><div><b>키워드 주별 언급 수 (최근 {WEEKS}주)</b><p>기사 제목에 키워드가 들어간 건수를 발행일(KST) 기준 월~일 주 단위로 셉니다. 키워드는 config/keywords.json에서 바꾸며, 수집을 실행하면 과거분까지 다시 집계됩니다. 이번 주는 진행 중이라 값이 작을 수 있고, 데이터는 수집을 시작한 주부터 있습니다.</p></div></div>
+    {!trends && !failure && <div className="articles"><div className="empty">추이 데이터를 불러오는 중입니다…</div></div>}
     {failure && <div className="error"><AlertCircle size={17} /> {failure}</div>}
     {trends && <section className="articles chartBox">
       <div className="legend">{trends.keywords.map((k, i) => <label key={k} className={off.includes(k) ? 'off' : ''}>

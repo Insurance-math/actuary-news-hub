@@ -27,7 +27,7 @@ export default function Home() {
   const [calMonth, setCalMonth] = useState(todayKst().slice(0, 7));
   const { saved, ready, update, toggleBookmark, markRead } = useSaved();
   // 달력 월의 KST 날짜는 UTC 월 샤드 경계에 걸칠 수 있어 앞뒤 월도 함께 불러온다
-  const { index, all, failure, loading } = useNews(search.trim() ? 'all' : [shiftMonth(calMonth, -1), calMonth, shiftMonth(calMonth, 1)]);
+  const { index, all, failure, loading, loadingMore } = useNews(search.trim() ? 'all' : [shiftMonth(calMonth, -1), calMonth, shiftMonth(calMonth, 1)]);
   const baseline = saved.lastConfirmed;
 
   const base = useMemo(() => {
@@ -63,9 +63,9 @@ export default function Home() {
     <DateBar filter={dateFilter} onChange={f => { setDateFilter(f); setPage(1); }} counts={dayCounts} month={calMonth} onMonth={setCalMonth} />
     {tab === '새 뉴스' && <div className="notice"><div><b>마지막 확인 완료 이후 수집된 기사</b><p>{baseline ? `마지막 확인 완료: ${fmt(baseline)}` : '처음 접속했습니다. 보관 중인 뉴스를 모두 새 뉴스로 표시합니다.'} · 수집시각 기준(표시 시각은 발행시각)</p></div><button className="confirm" disabled={!ready} onClick={markDone}><Check size={15} /> 새 뉴스 확인 완료</button></div>}
     {tab === '감독당국 보도자료' && <div className="notice"><div><b>금융위원회 · 금융감독원 관련 자료</b><p>금융위는 공식 RSS와 검색으로 발견한 자료를 함께 보여주며, 금융감독원은 직접 수집이 아니라 검색으로 발견한 자료입니다. 누락될 수 있습니다.</p></div></div>}
-    <div className="listHead"><h3>{tab} <small>{rows.length.toLocaleString()}건</small></h3><span>{index?.updated_at ? `마지막 수집 ${fmt(index.updated_at)}` : '수집 이력 없음'}</span></div>
+    <div className="listHead"><h3>{tab} <small>{rows.length.toLocaleString()}건</small></h3><span>{loadingMore ? '과거 기사 불러오는 중…' : index?.updated_at ? `마지막 수집 ${fmt(index.updated_at)}` : '수집 이력 없음'}</span></div>
     {failure && <div className="error"><AlertCircle size={17} /> {failure}</div>}
-    <section className="articles">{loading ? <div className="empty">뉴스를 불러오는 중입니다…</div> : pageRows.length === 0
+    <section className="articles">{!ready || (loading && tab !== '북마크') ? <div className="empty">뉴스를 불러오는 중입니다…</div> : pageRows.length === 0
       ? <div className="empty"><Newspaper size={27} /><b>표시할 기사가 없습니다.</b><p>새 뉴스 확인 여부, 검색어, 수집 실행 결과를 확인하세요.</p></div>
       : pageRows.map((a, i) => { const d = kstDate(a.published_at); const head = sort === 'latest' && (i === 0 || d !== kstDate(pageRows[i - 1].published_at));
         return <Fragment key={a.id}>{head && <div className="dayhead">{dayHeading(d)}<small>· {perDay[d]}건</small></div>}
