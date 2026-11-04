@@ -4,11 +4,12 @@ import { Article, isGoogleDiscovery, isSafeUrl } from '../lib/news';
 import { isNewArticle } from '../lib/newsFilter';
 import { fmt } from '../lib/format';
 
-type Props = { a: Article; baseline: string | null; bookmarked: boolean; read: boolean; onBookmark: (a: Article) => void; onRead: (id: string) => void };
+type Props = { a: Article; baseline: string | null; bookmarked: boolean; read: boolean; rank?: number; onBookmark: (a: Article) => void; onRead: (id: string) => void };
 
-export default function ArticleCard({ a, baseline, bookmarked, read, onBookmark, onRead }: Props) {
+export default function ArticleCard({ a, baseline, bookmarked, read, rank, onBookmark, onRead }: Props) {
   return <article className="article"><div className="articleMain">
     <div className="meta">
+      {rank !== undefined && <span className="rank">{rank}</span>}
       <span className={a.source_type === 'press' ? 'pill official' : 'pill'}>{a.category}</span>
       {a.source_type === 'press' && <span className="officialText">{a.feed_name.includes('RSS') ? '공식 RSS' : '검색으로 발견'}</span>}
       <span>{a.source}</span><span className="dot">·</span><time dateTime={a.published_at}>{fmt(a.published_at)}</time>
