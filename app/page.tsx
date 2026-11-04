@@ -20,6 +20,7 @@ export default function Home() {
   const [tab, setTab] = useState<Tab>('새 뉴스');
   const [category, setCategory] = useState<string>('전체');
   const [search, setSearch] = useState('');
+  const [unreadOnly, setUnreadOnly] = useState(false);
   const [sort, setSort] = useState<'latest' | 'important'>('latest');
   const [page, setPage] = useState(1);
   const [dateFilter, setDateFilter] = useState<DateFilter>(null);
@@ -34,10 +35,11 @@ export default function Home() {
     if (tab === '새 뉴스') r = r.filter(a => isNewArticle(a, baseline));
     if (tab === '감독당국 보도자료') r = r.filter(a => a.source_type === 'press');
     if (category !== '전체') r = r.filter(a => a.category === category); // '미분류'는 7개 탭에 안 나오고 '전체'에서만
+    if (unreadOnly) r = r.filter(a => !saved.readIds.includes(a.id));
     const q = search.trim().toLowerCase();
     if (q) r = r.filter(a => [a.title, a.source, a.category, ...a.tags].join(' ').toLowerCase().includes(q));
     return [...r].sort((a, b) => sort === 'important' ? b.score - a.score || b.published_at.localeCompare(a.published_at) : b.published_at.localeCompare(a.published_at));
-  }, [tab, all, category, search, sort, baseline, saved.bookmarks]);
+  }, [tab, all, category, search, sort, baseline, saved.bookmarks, unreadOnly, saved.readIds]);
   const dayCounts = useMemo(() => countByDate(base), [base]); // 달력 표시용(날짜 필터 제외)
   const rows = useMemo(() => dateFilter ? base.filter(a => { const d = kstDate(a.published_at); return d >= dateFilter.from && d <= dateFilter.to; }) : base, [base, dateFilter]);
   const perDay = useMemo(() => countByDate(rows), [rows]);
@@ -56,6 +58,7 @@ export default function Home() {
     <div className="toolbar">
       <div className="search"><Search size={16} /><input aria-label="뉴스 검색" placeholder="기사 제목·언론사 검색" value={search} onChange={e => { setSearch(e.target.value); setPage(1); }} /></div>
       <label className="sort"><SlidersHorizontal size={15} /><select value={sort} onChange={e => { setSort(e.target.value as 'latest' | 'important'); setPage(1); }}><option value="latest">최신순</option><option value="important">중요도순</option></select></label>
+      <label className="sort unread" title="제목을 클릭해 연 기사는 읽음으로 기록됩니다(최근 1,500건까지)"><input type="checkbox" checked={unreadOnly} onChange={e => { setUnreadOnly(e.target.checked); setPage(1); }} /> 안 읽은 것만</label>
     </div>
     <DateBar filter={dateFilter} onChange={f => { setDateFilter(f); setPage(1); }} counts={dayCounts} month={calMonth} onMonth={setCalMonth} />
     {tab === '새 뉴스' && <div className="notice"><div><b>마지막 확인 완료 이후 수집된 기사</b><p>{baseline ? `마지막 확인 완료: ${fmt(baseline)}` : '처음 접속했습니다. 보관 중인 뉴스를 모두 새 뉴스로 표시합니다.'} · 수집시각 기준(표시 시각은 발행시각)</p></div><button className="confirm" disabled={!ready} onClick={markDone}><Check size={15} /> 새 뉴스 확인 완료</button></div>}
