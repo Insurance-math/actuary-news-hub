@@ -25,6 +25,7 @@ export function isGoogleDiscovery(a: Article) { return /(^|\.)news\.google\.com\
 export type SourceStatus = {
   ok: boolean; last_run_at: string; last_success_at: string | null; consecutive_failures: number;
   entries: number; kept: number; skipped: Record<string, number>; error: string | null;
+  filtered?: string[]; oldest?: string | null; newest?: string | null; at_limit?: boolean; gap_risk?: boolean;
 };
 export type Status = {
   last_run: { started_at: string; finished_at: string; candidates: number; added: number; failed: string[] };
