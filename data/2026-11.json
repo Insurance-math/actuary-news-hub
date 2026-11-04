@@ -1255,22 +1255,6 @@
   "sub_categories": []
  },
  {
-  "id": "26409973eb731c6b",
-  "title": "보험모집질서 위반신고",
-  "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBoUjJHSHRXeFJFOUtaTVdIeHF1T2VEbDk4dFBITVdoRDZDems0Zmt3LTlGdjQtZHh1LXM4aVFBLVRaY1p5cG92b01MdUtfV3UtTXdaX2F3MDBzNXprQ3hYNnpia3RvR1Q0ZWZid3lpa0U3bWJ2dk1pbDFR?oc=5",
-  "source": "금융감독원",
-  "source_type": "press",
-  "published_at": "2026-11-03T10:28:59+00:00",
-  "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
-  "tags": [
-   "모집질서"
-  ],
-  "score": 3,
-  "feed_name": "금융감독원 검색",
-  "sub_categories": []
- },
- {
   "id": "d3a00cea3f32a8ba",
   "title": "보험사 건강보험 설계도 맞춤형…'추천 플랜' 세분화",
   "url": "http://www.fins.co.kr/news/articleView.html?idxno=110399",
@@ -2015,7 +1999,7 @@
   "source_type": "media",
   "published_at": "2026-11-03T03:44:00+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "AI"
   ],
@@ -2455,6 +2439,23 @@
   ]
  },
  {
+  "id": "d120b248672600cb",
+  "title": "한투운용, 글로벌메모리반도체TOP3채권혼합액티브 ETF 상장",
+  "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yNjViNFR1eXdDZ2xBcWdpVXo0aUZPVUMwQncxNHVjN2hacDEzajRsbFJLSWtUajczMGhpaGprVWZpTmJienhpcGdjU1JWUGF2RFdLbktyLWNNMFdwOFExbNIBYEFVX3lxTE5yNjViNFR1eXdDZ2xBcWdpVXo0aUZPVUMwQncxNHVjN2hacDEzajRsbFJLSWtUajczMGhpaGprVWZpTmJienhpcGdjU1JWUGF2RFdLbktyLWNNMFdwOFExbA?oc=5",
+  "source": "연합뉴스",
+  "source_type": "media",
+  "published_at": "2026-11-02T23:53:35+00:00",
+  "collected_at": "2026-11-04T13:04:31.556545+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [
+   "채권",
+   "ETF"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·금융시장"
+ },
+ {
   "id": "bf4ff508d990f11b",
   "title": "中 증시 방어 총력전…자사주 매입 지원금리 1%로 낮추고 상설화 - 머니투데이",
   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rQlJFbzhvcl9DNjN2LWR2LXVMUHdhenhaeHRQYWZDZlhXOENLZWxDNXdKUXhsMVFmQ19oaW1PZW95MnFIUDROdUctd0c5MlRyWWxEb0JYazFhUDdRQlVhdG5VazhWeXFP0gFuQVVfeXFMUC1ubUhra2Jwem9jc05TdWVFSDV2NEU1aUtVdV9fN3ZRZjZKcXo2X3g3RURRdTNHVi1MZnRUdTV1YVM3OTF1WmJIYk05N2xaVkgwQmpIMDhWY1NpNFk3amtTRzluaDRlSDdueWFoUXc?oc=5",
@@ -2666,16 +2667,14 @@
   "source_type": "media",
   "published_at": "2026-11-02T12:05:01+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "AI",
    "투자"
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": [
-   "금융시장·자산운용"
-  ]
+  "sub_categories": []
  },
  {
   "id": "6f6a6a53c563acf2",
@@ -3037,7 +3036,7 @@
   "source_type": "media",
   "published_at": "2026-11-02T05:34:49+00:00",
   "collected_at": "2026-11-04T11:56:37.110629+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "AI"
   ],
@@ -3428,16 +3427,14 @@
   "source_type": "media",
   "published_at": "2026-11-02T02:14:34+00:00",
   "collected_at": "2026-11-04T11:56:37.110629+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "AI",
    "주가"
   ],
   "score": 2,
   "feed_name": "주요 경제지·보험",
-  "sub_categories": [
-   "금융시장·자산운용"
-  ]
+  "sub_categories": []
  },
  {
   "id": "6cdeed346e8557b9",
@@ -3955,7 +3952,7 @@
   "source_type": "media",
   "published_at": "2026-11-01T22:44:00+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "AI"
   ],
@@ -4003,16 +4000,14 @@
   "source_type": "media",
   "published_at": "2026-11-01T22:15:12+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "AI",
    "투자"
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": [
-   "금융시장·자산운용"
-  ]
+  "sub_categories": []
  },
  {
   "id": "174f7679114b2165",
@@ -4022,7 +4017,7 @@
   "source_type": "media",
   "published_at": "2026-11-01T22:15:12+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "AI"
   ],
@@ -4076,7 +4071,7 @@
   "source_type": "media",
   "published_at": "2026-11-01T20:53:31+00:00",
   "collected_at": "2026-11-04T11:23:55.196125+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "의료비"
   ],
@@ -4111,16 +4106,14 @@
   "source_type": "media",
   "published_at": "2026-11-01T17:28:15+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "AI",
    "투자"
   ],
   "score": 2,
   "feed_name": "보험매일",
-  "sub_categories": [
-   "금융시장·자산운용"
-  ]
+  "sub_categories": []
  },
  {
   "id": "07065f56587abf86",
@@ -4130,16 +4123,14 @@
   "source_type": "media",
   "published_at": "2026-11-01T16:28:03+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "AI",
    "투자"
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": [
-   "금융시장·자산운용"
-  ]
+  "sub_categories": []
  },
  {
   "id": "88e5239a283d09e6",
@@ -4149,16 +4140,14 @@
   "source_type": "media",
   "published_at": "2026-11-01T16:28:03+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "AI",
    "투자"
   ],
   "score": 2,
   "feed_name": "주요 경제지·보험",
-  "sub_categories": [
-   "금융시장·자산운용"
-  ]
+  "sub_categories": []
  },
  {
   "id": "21e62b00cbfd1fbb",

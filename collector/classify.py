@@ -45,6 +45,7 @@ class Classifier:
             self.rules[cat] = items
         m = lambda ks: [Matcher(k) for k in ks]
         self.exclude, self.unless = m(cfg['exclude']['keywords']), m(cfg['exclude']['unless'])
+        self.combos = [(m(x['any']), m(x['with'])) for x in cfg['exclude'].get('combos', [])]
         self.low = m(cfg['low_importance']['keywords'])
         self.low_max = cfg['low_importance']['max_score']
         self.important = m(cfg['important'])
@@ -71,7 +72,8 @@ class Classifier:
                 hits.append((-w, pos, mt.keyword))
         tags = list(dict.fromkeys(k for _, _, k in sorted(hits)))[:5]
 
-        if self._any(self.exclude, text, sq) and not self._any(self.unless, text, sq):
+        excluded = self._any(self.exclude, text, sq) or any(self._any(a, text, sq) and self._any(w, text, sq) for a, w in self.combos)
+        if excluded and not self._any(self.unless, text, sq):
             return {'category': UNCATEGORIZED, 'sub_categories': [], 'tags': tags, 'score': 2, 'relevant': relevant}
 
         hint = self.hints.get(feed_name or '')

@@ -27,6 +27,12 @@ npm run dev                                # http://localhost:3000/actuary-news-
 - **새 뉴스**는 `collected_at`(수집시각) > 마지막 "확인 완료" 시각 기준입니다(늦게 수집된 과거 발행 기사 누락 방지). 화면 표시 시각은 발행시각.
 - 북마크·읽음·확인 시각은 브라우저 localStorage에만 저장되며 기기 간 동기화되지 않습니다.
 
+## 분류 규칙 관리
+- 규칙: `config/categories.json`(키워드 가중치·제외·피드 단서), 출처명: `config/source_aliases.json`, 노이즈 제목: `config/title_filters.json`.
+- 규칙을 바꾼 뒤 `python collector/collect.py --reclassify` 로 저장된 기사에 반영(네트워크 불필요).
+- 정확도: `python collector/eval_classify.py`(정답 샘플 `tests/classify_samples.json`). 새 샘플은 `python collector/make_samples.py --n 100`으로 뽑으면 같은 사건을 다룬 비슷한 제목이 하나로 묶인다.
+- 분류 튜닝은 2주 운영 후 실제 데이터로 새 라벨 100건을 만들어 다시 검증한다. 지금 수치는 일부 샘플로 튜닝한 값이라 실제보다 높을 수 있다.
+
 ## 용량 추적
 `data/index.json`의 `months[].bytes`로 월별 크기를 확인합니다. 현재 약 170KB/월 수준이며, 5년 누적 목표는 약 80MB로 가정합니다. 클라이언트는 최근 2개월만 먼저 읽고 검색 시 과거 월을 불러옵니다.
 

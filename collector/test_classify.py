@@ -22,6 +22,14 @@ assert r['category'] == '생명보험' and '금융시장·자산운용' in r['su
 assert c('고용보험 가입 예술인 22%')['category'] == UNCATEGORIZED
 assert c('희귀·중증난치질환자 건강보험 본인부담률 인하')['category'] == UNCATEGORIZED
 assert c('보험사 건강보험 설계도 맞춤형 추천 플랜')['category'] != UNCATEGORIZED
+# 월가·풋옵션·헤지와 함께 나오는 비유적 '보험'은 미분류, 보험사 주어가 있으면 유지, '보험' 없는 월가 기사는 영향 없음
+assert c('"AI 거품 꺼질라"…월가, 주가 폭락 대비 풋옵션 등 \'보험\' 찾는다')['category'] == UNCATEGORIZED
+assert c('보험사 금리 헤지 전략 강화…자산운용 변화')['category'] != UNCATEGORIZED
+assert c('월가, 12월 금리 인상 확률 85%')['category'] == '금융시장·자산운용'
+# 국민건강보험 일반 문구는 미분류, 보험사가 주어이면 유지
+assert c('건강보험으로 보장되는 의료비가 증가하고 있습니다.')['category'] == UNCATEGORIZED
+assert c('건강보험부터 AI 관리까지…중앙아시아 4개국 한국서 연수')['category'] == UNCATEGORIZED
+assert c('보험사, 건강보험으로 보장 안 되는 비급여 담보 확대')['category'] != UNCATEGORIZED
 # 피드 단서는 키워드가 전혀 없을 때만
 assert c('오늘의 시장 전망', '주요 경제지·금융시장')['category'] == '금융시장·자산운용'
 assert c('삼성화재 신상품', '주요 경제지·금융시장')['category'] == '손해보험'
@@ -38,3 +46,9 @@ assert allr['accuracy'] >= 0.80, allr['accuracy']
 assert val['accuracy'] >= 0.70, val['accuracy']
 assert val2['accuracy'] >= 0.65, val2['accuracy']  # 새 검증 샘플(튜닝에 쓰지 않음)
 print(f"classify tests passed (전체 {allr['accuracy']:.0%}, 검증 {val['accuracy']:.0%}/{val2['accuracy']:.0%}, 예측 미분류 {allr['pred_uncat']:.0%})")
+
+# 샘플 뽑기: 같은 사건의 비슷한 제목은 한 건만
+from make_samples import pick
+arts = [{'title': t, 'feed_name': 'x'} for t in ['월가, AI 거품 폭락 대비 풋옵션으로 보험 든다', '월가 AI 거품 폭락에 대비해 풋옵션 보험 든다', '한화손보 배타적사용권 획득 소식입니다']]
+assert len(pick(arts, [], 3, 1)) == 2
+assert len(pick(arts, ['월가, AI 거품 폭락 대비 풋옵션으로 보험 든다'], 3, 1)) == 1  # 기존 샘플과 비슷한 건 제외
