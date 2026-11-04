@@ -13,6 +13,7 @@ from urllib.parse import parse_qsl, quote, urlencode, urlsplit, urlunsplit
 
 import feedparser
 import requests
+from classify import classify
 from normalize import SourceAliases, dedupe_key, is_google, normalize_shards, prefer, strip_org_suffix
 from trends import write_trends
 
@@ -39,34 +40,8 @@ SOURCES = [
     ('금융감독원 검색', google('site:fss.or.kr (보험 OR 보험사 OR 지급여력 OR 실손 OR K-ICS)'), 'press', '금융감독원'),
 ]
 
-RULES = [
-    ('제도·회계·건전성', ['ifrs17', 'ifrs 17', 'k-ics', 'kics', '지급여력', '감독규정', '보험업법', '보험회계', '금융위원회', '금융감독원', '보험부채', '계약서비스마진', '책임준비금', '건전성']),
-    ('생명보험', ['생명보험', '생보사', '종신보험', '변액보험', '연금보험', '삼성생명', '한화생명', '교보생명', '신한라이프']),
-    ('손해보험', ['손해보험', '손보사', '자동차보험', '실손', '화재보험', '삼성화재', '현대해상', 'db손해보험', '메리츠화재']),
-    ('금융시장·자산운용', ['국고채', '기준금리', '시장금리', '금리인하', '금리인상', '채권', '환율', '부동산', '자산운용', '듀레이션', 'alm', '한국은행']),
-    ('보험경영·판매', ['보험판매', '판매수수료', '보험설계사', '보험대리점', '신계약', '해약률', '경영전략', 'csm', '보험료', '상품개발']),
-    ('위험관리·재보험', ['재보험', '코리안리', '자연재해', '대재해', '위험관리', '스트레스 테스트', '손해율', '사이버보험']),
-    ('사회·인구·기술 변화', ['고령화', '저출산', '출산율', '인구감소', '기대수명', '의료비', '헬스케어', 'ai', '인공지능', '기후변화', '기후위기', '요양', '치매', '비급여']),
-]
-KEYWORDS = ['보험', '생보', '손보', '계리', '연금', '실손', '재보험', 'ifrs', 'k-ics', '금리', '채권', '국고채', '환율', '고령', '저출산', '출산율', '기후', '인공지능', '의료비', '요양', '금융감독', '금융위원', '지급여력', '인구', 'csm']
-IMPORTANT = ['k-ics', 'ifrs17', '지급여력', '보험부채', 'csm', '금리', '보험업법', '손해율', '인구', '고령', '실손보험', '재보험']
 PRESS_RE = re.compile('보험|실손|K-ICS|지급여력|계리|보험금|보험료|CSM', re.I)
 TRACKING = re.compile(r'^(utm_.*|fbclid|gclid|oc|ref|from|cid|ocid|mc_.*)$', re.I)
-
-
-UNCATEGORIZED = '미분류'  # 7개 카테고리 탭에는 노출하지 않고 '전체'에서만 보인다
-
-
-def classify(title: str):
-    s = title.casefold()
-    matches = [(c, [w for w in ws if w.casefold() in s]) for c, ws in RULES]
-    matches.sort(key=lambda x: len(x[1]), reverse=True)
-    cat, hits = matches[0]
-    if not hits:
-        cat = UNCATEGORIZED
-    score = min(5, 2 + min(2, len(hits)) + int(any(w.casefold() in s for w in IMPORTANT)))
-    tags = list(dict.fromkeys(w for _, ws in matches for w in ws))[:5]
-    return cat, tags, score, any(w.casefold() in s for w in KEYWORDS)
 
 
 def clean(text: str) -> str:
@@ -129,15 +104,15 @@ def collect_source(row, now_iso, aliases=None, unmapped=None):
             if not known and unmapped is not None:
                 unmapped.add(source)
         title = strip_org_suffix(title)
-        cat, tags, score, relevant = classify(title)
-        if not relevant or (kind == 'press' and not PRESS_RE.search(title)):
+        c = classify(title, name)
+        if not c['relevant'] or (kind == 'press' and not PRESS_RE.search(title)):
             skipped['irrelevant'] += 1
             if len(filtered) < FILTER_SAMPLES:
                 filtered.append(title)
             continue
         out.append({'id': article_id(link), 'title': title, 'url': link, 'source': source, 'source_type': kind,
-                    'published_at': published, 'collected_at': now_iso, 'category': cat, 'tags': tags,
-                    'score': score, 'feed_name': name})
+                    'published_at': published, 'collected_at': now_iso, 'category': c['category'],
+                    'sub_categories': c['sub_categories'], 'tags': c['tags'], 'score': c['score'], 'feed_name': name})
     stats = {'feed_size': len(feed.entries), 'skipped': skipped, 'filtered': filtered,
              'oldest': min(dates) if dates else None, 'newest': max(dates) if dates else None}
     return out, stats
@@ -183,6 +158,34 @@ def save(rows, data_dir: Path, aliases=None):
     index = {'updated_at': datetime.now(timezone.utc).isoformat(), 'months': info}
     (data_dir / 'index.json').write_text(json.dumps(index, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     return added
+
+
+def reclassify(data_dir: Path) -> None:
+    """저장된 모든 기사를 현재 config/categories.json 규칙으로 다시 분류. id·수집시각·발행시각 등은 건드리지 않는다."""
+    total = changed = 0
+    counts: dict[str, int] = {}
+    for path in sorted(data_dir.glob('????-??.json')):
+        rows = load_shard(path)
+        dirty = False
+        for a in rows:
+            c = classify(a['title'], a.get('feed_name'))
+            new = {'category': c['category'], 'sub_categories': c['sub_categories'], 'tags': c['tags'], 'score': c['score']}
+            if any(a.get(k) != v for k, v in new.items()):
+                a.update(new); dirty = True; changed += 1
+            total += 1
+            counts[a['category']] = counts.get(a['category'], 0) + 1
+        if dirty:
+            path.write_text(json.dumps(rows, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    idx_path = data_dir / 'index.json'
+    if idx_path.exists():  # 마지막 수집 시각(updated_at)은 유지하고 파일 크기만 갱신
+        idx = json.loads(idx_path.read_text(encoding='utf-8'))
+        for m in idx.get('months', []):
+            f = data_dir / f"{m['month']}.json"
+            m['bytes'], m['count'] = f.stat().st_size, len(load_shard(f))
+        idx_path.write_text(json.dumps(idx, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    logging.info('재분류: 전체 %d건 중 %d건 변경', total, changed)
+    for k, v in sorted(counts.items(), key=lambda x: -x[1]):
+        logging.info('  %s: %d건 (%.1f%%)', k, v, v / total * 100 if total else 0)
 
 
 def safe_error(e: Exception) -> str:
@@ -233,7 +236,11 @@ def main():
     ap.add_argument('--data-dir', default='data')
     ap.add_argument('--config-dir', default='config')
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--reclassify', action='store_true', help='네트워크 없이 저장된 기사를 현재 분류 규칙으로 재분류')
     args = ap.parse_args()
+    if args.reclassify:
+        reclassify(Path(args.data_dir))
+        return 0
     now_iso = datetime.now(timezone.utc).isoformat()
     aliases = SourceAliases.load(Path(args.config_dir) / 'source_aliases.json')
     aliases.canonical |= {r[3] for r in SOURCES if r[3]}  # 직접 RSS 피드의 고정 출처명은 이미 표준 이름

@@ -6,7 +6,7 @@ export const UNCATEGORIZED = '미분류';
 
 export type Article = {
   id: string; title: string; url: string; source: string; source_type: 'media' | 'press';
-  published_at: string; collected_at: string; category: string; tags: string[]; score: number; feed_name: string;
+  published_at: string; collected_at: string; category: string; sub_categories?: string[]; tags: string[]; score: number; feed_name: string;
 };
 export type DataIndex = { updated_at: string | null; months: { month: string; count: number; bytes: number }[] };
 

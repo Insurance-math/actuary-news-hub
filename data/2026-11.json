@@ -7,10 +7,14 @@
   "source_type": "media",
   "published_at": "2026-11-04T10:31:04+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "한국보험신문"
+  "category": "제도·회계·건전성",
+  "tags": [
+   "계리가정",
+   "금감원"
+  ],
+  "score": 4,
+  "feed_name": "한국보험신문",
+  "sub_categories": []
  },
  {
   "id": "d5107d3049671e69",
@@ -20,10 +24,11 @@
   "source_type": "media",
   "published_at": "2026-11-04T09:20:07+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
+  "category": "금융시장·자산운용",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "e477338c13eac032",
@@ -33,13 +38,15 @@
   "source_type": "media",
   "published_at": "2026-11-04T08:59:27+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "미분류",
   "tags": [
-   "보험료",
-   "재보험"
+   "재보험",
+   "간병",
+   "보험료"
   ],
-  "score": 4,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "64e92d1d0e0666e3",
@@ -49,12 +56,14 @@
   "source_type": "media",
   "published_at": "2026-11-04T08:35:38+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "위험관리·재보험",
+  "category": "미분류",
   "tags": [
-   "재보험"
+   "재보험",
+   "간병"
   ],
-  "score": 4,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "17d5ab184a6d4a17",
@@ -64,12 +73,14 @@
   "source_type": "media",
   "published_at": "2026-11-04T08:35:38+00:00",
   "collected_at": "2026-11-04T11:56:37.110629+00:00",
-  "category": "위험관리·재보험",
+  "category": "미분류",
   "tags": [
-   "재보험"
+   "재보험",
+   "간병"
   ],
-  "score": 4,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "2d5566bb8d454840",
@@ -84,7 +95,8 @@
    "채권"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "101eedd221bed73e",
@@ -96,12 +108,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "손해보험",
   "tags": [
-   "손해보험",
-   "db손해보험",
-   "ai"
+   "DB손해보험",
+   "AI"
   ],
-  "score": 4,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "8264e6b96a863dd9",
@@ -114,7 +128,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "사회변화·보험"
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "00cec4e2f2484337",
@@ -124,10 +139,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T08:04:00+00:00",
   "collected_at": "2026-11-04T11:56:37.110629+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "위험관리·재보험",
+  "tags": [
+   "보험사기"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "021f01d06fe5806f",
@@ -139,10 +157,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "제도·회계·건전성",
   "tags": [
-   "보험부채"
+   "보험부채",
+   "GA"
   ],
   "score": 4,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "d09a76e8860db2c6",
@@ -152,10 +174,16 @@
   "source_type": "media",
   "published_at": "2026-11-04T07:47:02+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "손해보험",
+  "tags": [
+   "신한EZ손보",
+   "캠페인"
+  ],
   "score": 2,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "6c1a94497a25628c",
@@ -167,10 +195,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "제도·회계·건전성",
   "tags": [
-   "보험부채"
+   "보험부채",
+   "GA"
   ],
   "score": 4,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "7a7d69490a2843eb",
@@ -180,12 +212,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T07:37:05+00:00",
   "collected_at": "2026-11-04T11:23:55.196125+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "의료비"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "d2e055942704b348",
@@ -197,11 +230,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "보험경영·판매",
   "tags": [
-   "보험설계사",
-   "ai"
+   "설계사",
+   "AI"
   ],
   "score": 3,
-  "feed_name": "사회변화·보험"
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "5e2657e8b1114599",
@@ -211,10 +247,14 @@
   "source_type": "media",
   "published_at": "2026-11-04T07:29:52+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "위험관리·재보험",
+  "tags": [
+   "해킹",
+   "사이버보험"
+  ],
+  "score": 4,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "b18748cfbb86cffe",
@@ -224,12 +264,19 @@
   "source_type": "media",
   "published_at": "2026-11-04T07:05:00+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "손해보험",
   "tags": [
+   "여행공제",
+   "수협보험",
+   "출시",
    "의료비"
   ],
   "score": 3,
-  "feed_name": "사회변화·보험"
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "보험경영·판매",
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "8d7278d17c69fada",
@@ -243,8 +290,9 @@
   "tags": [
    "현대해상"
   ],
-  "score": 3,
-  "feed_name": "보험저널"
+  "score": 2,
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "36a04706cdb00f8a",
@@ -254,12 +302,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T06:37:17+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "위험관리·재보험",
+  "category": "미분류",
   "tags": [
    "재보험"
   ],
-  "score": 4,
-  "feed_name": "보험매일"
+  "score": 2,
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "1e759eb9f81e2f9a",
@@ -269,10 +318,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T06:34:52+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "제도·회계·건전성",
+  "tags": [
+   "산출근거"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "b3b804e3cc5095ee",
@@ -282,10 +334,16 @@
   "source_type": "media",
   "published_at": "2026-11-04T06:34:05+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "제도·회계·건전성",
+  "tags": [
+   "계리가정",
+   "GA"
+  ],
+  "score": 4,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "bdfc8a89eb2db34a",
@@ -295,12 +353,18 @@
   "source_type": "media",
   "published_at": "2026-11-04T06:32:59+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "금융시장·자산운용",
+  "category": "제도·회계·건전성",
   "tags": [
-   "듀레이션"
+   "경영실태평가",
+   "듀레이션",
+   "GA"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "금융시장·자산운용",
+   "보험경영·판매"
+  ]
  },
  {
   "id": "3245ab93649887d7",
@@ -312,11 +376,13 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "제도·회계·건전성",
   "tags": [
+   "계리가정",
    "감독규정",
    "금융위원회"
   ],
-  "score": 4,
-  "feed_name": "금융위원회 검색"
+  "score": 5,
+  "feed_name": "금융위원회 검색",
+  "sub_categories": []
  },
  {
   "id": "1c24c7d251864893",
@@ -329,7 +395,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "9b66b325b50c266e",
@@ -339,12 +406,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T06:21:26+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "의료비"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "fe59f5e3dea4ebcc",
@@ -356,10 +424,12 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "금융시장·자산운용",
   "tags": [
-   "채권"
+   "채권",
+   "장기금리"
   ],
-  "score": 4,
-  "feed_name": "주요 경제지·금융시장"
+  "score": 3,
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "1284676f00241263",
@@ -369,10 +439,17 @@
   "source_type": "media",
   "published_at": "2026-11-04T05:24:35+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험매일"
+  "category": "금융시장·자산운용",
+  "tags": [
+   "디폴트옵션",
+   "퇴직연금",
+   "수익률"
+  ],
+  "score": 3,
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "7f5917442a0ed8f1",
@@ -382,12 +459,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T05:20:50+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "의료비"
   ],
-  "score": 3,
-  "feed_name": "보험매일"
+  "score": 2,
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "8747b774f2e4c312",
@@ -397,12 +475,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T05:12:30+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "의료비"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "1b838aa0246bc1d6",
@@ -415,7 +494,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "4f7aca65f44aaa48",
@@ -425,12 +505,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T03:59:45+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "의료비"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "fd2eba9ded5e80b9",
@@ -443,7 +524,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "2ef2b40769ea19b5",
@@ -455,10 +537,12 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "생보사"
+   "생보사",
+   "건강종신"
   ],
-  "score": 3,
-  "feed_name": "보험저널"
+  "score": 4,
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "b558607a3b0d70f6",
@@ -468,10 +552,14 @@
   "source_type": "media",
   "published_at": "2026-11-04T03:19:25+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "자사주",
+   "주주환원"
+  ],
   "score": 2,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "755aafe280fee5c0",
@@ -481,12 +569,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T02:50:00+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "의료비"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "d5df830d8b97c2f8",
@@ -496,10 +585,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T02:40:39+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "제도·회계·건전성",
+  "tags": [
+   "약관"
+  ],
   "score": 2,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "ef3c0c409b6078d1",
@@ -509,12 +601,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T02:21:39+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "미분류",
   "tags": [
    "보험료"
   ],
-  "score": 3,
-  "feed_name": "보험매일"
+  "score": 2,
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "99d65ec4dc55257d",
@@ -524,12 +617,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T02:13:09+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "의료비"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "7513a776f7efebef",
@@ -539,10 +633,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T01:54:11+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "IPO"
+  ],
   "score": 2,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "c25fb503544cca13",
@@ -552,13 +649,18 @@
   "source_type": "media",
   "published_at": "2026-11-04T01:38:27+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "생명보험",
+  "category": "사회·인구·기술 변화",
   "tags": [
    "삼성생명",
-   "ai"
+   "AI",
+   "시니어",
+   "돌봄"
   ],
   "score": 3,
-  "feed_name": "사회변화·보험"
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "생명보험"
+  ]
  },
  {
   "id": "51b38cda29513214",
@@ -569,9 +671,12 @@
   "published_at": "2026-11-04T01:25:20+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "미분류",
-  "tags": [],
-  "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "tags": [
+   "금리"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "69cd0582168dcd38",
@@ -581,12 +686,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T01:23:34+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "의료비"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "5c1279818d36427d",
@@ -596,10 +702,14 @@
   "source_type": "media",
   "published_at": "2026-11-04T01:19:32+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "금융시장·자산운용",
+  "tags": [
+   "엔화",
+   "장기금리"
+  ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "49d59909106f8d8c",
@@ -612,7 +722,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "3148d12d668c9041",
@@ -622,10 +733,14 @@
   "source_type": "media",
   "published_at": "2026-11-04T00:58:16+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "제도·회계·건전성",
+  "tags": [
+   "금감원",
+   "인허가"
+  ],
   "score": 2,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "ce51b05668024d4d",
@@ -635,10 +750,14 @@
   "source_type": "media",
   "published_at": "2026-11-04T00:57:34+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험저널"
+  "category": "제도·회계·건전성",
+  "tags": [
+   "감독당국",
+   "금감원"
+  ],
+  "score": 3,
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "57f7091dcbbcf242",
@@ -653,8 +772,9 @@
    "종신보험",
    "한화생명"
   ],
-  "score": 4,
-  "feed_name": "주요 경제지·보험"
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "eb20a7aae3af40de",
@@ -664,12 +784,16 @@
   "source_type": "media",
   "published_at": "2026-11-04T00:50:59+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "제도·회계·건전성",
+  "category": "보험경영·판매",
   "tags": [
+   "CEO",
    "건전성"
   ],
-  "score": 3,
-  "feed_name": "보험매일"
+  "score": 2,
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "제도·회계·건전성"
+  ]
  },
  {
   "id": "42b1a03fcb5b5ae4",
@@ -679,12 +803,13 @@
   "source_type": "media",
   "published_at": "2026-11-04T00:44:48+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "위험관리·재보험",
+  "category": "미분류",
   "tags": [
    "재보험"
   ],
-  "score": 4,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "1476b28f8d0f5ab3",
@@ -699,7 +824,8 @@
    "종신보험"
   ],
   "score": 3,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "85eff85676905525",
@@ -709,10 +835,18 @@
   "source_type": "media",
   "published_at": "2026-11-04T00:30:01+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "제도·회계·건전성",
+  "tags": [
+   "감독당국",
+   "금감원",
+   "인허가",
+   "영업"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "d18495fb88c8f345",
@@ -722,10 +856,18 @@
   "source_type": "media",
   "published_at": "2026-11-04T00:30:01+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "제도·회계·건전성",
+  "tags": [
+   "감독당국",
+   "금감원",
+   "인허가",
+   "영업"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "34123361ac8893bc",
@@ -735,10 +877,14 @@
   "source_type": "media",
   "published_at": "2026-11-04T00:30:00+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·금융시장"
+  "category": "제도·회계·건전성",
+  "tags": [
+   "감독당국",
+   "금감원"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "c09a91e5f230c729",
@@ -748,10 +894,14 @@
   "source_type": "media",
   "published_at": "2026-11-04T00:30:00+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "제도·회계·건전성",
+  "tags": [
+   "감독당국",
+   "금감원"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "45fbb2039ee04000",
@@ -766,8 +916,9 @@
    "종신보험",
    "한화생명"
   ],
-  "score": 4,
-  "feed_name": "보험매일"
+  "score": 3,
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "70693c45fef6ebe0",
@@ -777,12 +928,18 @@
   "source_type": "media",
   "published_at": "2026-11-04T00:16:23+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "생명보험",
+  "category": "사회·인구·기술 변화",
   "tags": [
-   "삼성생명"
+   "초고령",
+   "삼성생명",
+   "돌봄",
+   "시니어"
   ],
   "score": 4,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "생명보험"
+  ]
  },
  {
   "id": "193fa2495ae1b58f",
@@ -797,8 +954,9 @@
    "종신보험",
    "한화생명"
   ],
-  "score": 4,
-  "feed_name": "주요 경제지·보험"
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "014e9015157ada92",
@@ -808,10 +966,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T23:56:07+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "손해보험",
+  "tags": [
+   "신한EZ손보",
+   "캠페인"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "89ee856d57dce22f",
@@ -822,9 +986,12 @@
   "published_at": "2026-11-03T23:54:02+00:00",
   "collected_at": "2026-11-04T11:56:37.110629+00:00",
   "category": "미분류",
-  "tags": [],
+  "tags": [
+   "배당"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "4e8c688c3da8c3b3",
@@ -834,13 +1001,18 @@
   "source_type": "media",
   "published_at": "2026-11-03T23:49:13+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "생명보험",
+  "category": "손해보험",
   "tags": [
-   "교보생명",
-   "자산운용"
+   "자산운용",
+   "손보",
+   "교보생명"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": [
+   "금융시장·자산운용",
+   "생명보험"
+  ]
  },
  {
   "id": "e9dac719ec494540",
@@ -850,10 +1022,18 @@
   "source_type": "media",
   "published_at": "2026-11-03T23:19:04+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험저널"
+  "category": "보험경영·판매",
+  "tags": [
+   "GA시책",
+   "생보",
+   "단기납",
+   "종신"
+  ],
+  "score": 4,
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "생명보험"
+  ]
  },
  {
   "id": "6bd30e4c630401eb",
@@ -863,10 +1043,17 @@
   "source_type": "media",
   "published_at": "2026-11-03T22:40:12+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "제도·회계·건전성",
+  "tags": [
+   "자사주",
+   "금산법",
+   "규제"
+  ],
   "score": 2,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "91f246cefd10bcbe",
@@ -876,10 +1063,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T22:28:57+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험저널"
+  "category": "보험경영·판매",
+  "tags": [
+   "GA시책",
+   "손보"
+  ],
+  "score": 4,
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "손해보험"
+  ]
  },
  {
   "id": "0ba18a156d9d8e9e",
@@ -889,10 +1082,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T22:10:50+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "금융시장·자산운용",
+  "tags": [
+   "투자"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "030ced73b6cbf01b",
@@ -902,10 +1098,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T22:00:00+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "위험관리·재보험",
+  "tags": [
+   "보험사기"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "c6fe19ae7afb1ec0",
@@ -918,7 +1117,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "46a1338ebc171707",
@@ -928,10 +1128,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T21:12:42+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험매일"
+  "category": "손해보험",
+  "tags": [
+   "손보",
+   "광고심의"
+  ],
+  "score": 3,
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "제도·회계·건전성"
+  ]
  },
  {
   "id": "8e0322bf3dd406f2",
@@ -941,10 +1147,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T21:12:42+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험매일"
+  "category": "제도·회계·건전성",
+  "tags": [
+   "계리가정",
+   "실적"
+  ],
+  "score": 4,
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "32bf1b1e263bdba2",
@@ -954,13 +1166,17 @@
   "source_type": "media",
   "published_at": "2026-11-03T21:12:42+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "생명보험",
+  "category": "금융시장·자산운용",
   "tags": [
    "생보사",
-   "기준금리"
+   "기준금리",
+   "금리동결"
   ],
   "score": 4,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "생명보험"
+  ]
  },
  {
   "id": "272476cce494403a",
@@ -973,7 +1189,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "72a5d7d4c844342e",
@@ -983,12 +1200,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T21:01:00+00:00",
   "collected_at": "2026-11-04T11:56:37.110629+00:00",
-  "category": "위험관리·재보험",
+  "category": "미분류",
   "tags": [
    "재보험"
   ],
-  "score": 4,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "eaa9a02c0f2760d2",
@@ -998,10 +1216,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T19:10:00+00:00",
   "collected_at": "2026-11-04T12:18:59.814500+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "퇴직연금"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "4b81aa6a229e6540",
@@ -1016,7 +1237,8 @@
    "환율"
   ],
   "score": 3,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "79fe1c6657e014f5",
@@ -1029,7 +1251,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "26409973eb731c6b",
@@ -1039,12 +1262,13 @@
   "source_type": "press",
   "published_at": "2026-11-03T10:28:59+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "제도·회계·건전성",
+  "category": "보험경영·판매",
   "tags": [
-   "금융감독원"
+   "모집질서"
   ],
   "score": 3,
-  "feed_name": "금융감독원 검색"
+  "feed_name": "금융감독원 검색",
+  "sub_categories": []
  },
  {
   "id": "d3a00cea3f32a8ba",
@@ -1054,10 +1278,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T10:03:00+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "플랜"
+  ],
   "score": 2,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "e3e9801905c085fb",
@@ -1067,10 +1294,17 @@
   "source_type": "media",
   "published_at": "2026-11-03T09:56:46+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "한국보험신문"
+  "category": "보험경영·판매",
+  "tags": [
+   "퇴직연금",
+   "캠페인",
+   "투자"
+  ],
+  "score": 3,
+  "feed_name": "한국보험신문",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "228c69921a7d656c",
@@ -1080,10 +1314,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T09:51:25+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "한국보험신문"
+  "category": "보험경영·판매",
+  "tags": [
+   "모집질서"
+  ],
+  "score": 3,
+  "feed_name": "한국보험신문",
+  "sub_categories": []
  },
  {
   "id": "b809f3a84989969b",
@@ -1095,10 +1332,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "한화생명"
+   "한화생명",
+   "금리"
   ],
-  "score": 4,
-  "feed_name": "보험매일"
+  "score": 2,
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "86cace4ebcc19b62",
@@ -1111,10 +1352,14 @@
   "category": "손해보험",
   "tags": [
    "실손",
+   "손보",
    "의료비"
   ],
-  "score": 4,
-  "feed_name": "사회변화·보험"
+  "score": 5,
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "a76220e878558094",
@@ -1124,13 +1369,14 @@
   "source_type": "press",
   "published_at": "2026-11-03T08:57:20+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "제도·회계·건전성",
+  "category": "손해보험",
   "tags": [
-   "금융위원회",
-   "실손"
+   "실손",
+   "손보"
   ],
-  "score": 4,
-  "feed_name": "금융위원회 검색"
+  "score": 5,
+  "feed_name": "금융위원회 검색",
+  "sub_categories": []
  },
  {
   "id": "0cf467ee58c54dbb",
@@ -1144,10 +1390,13 @@
   "tags": [
    "변액보험",
    "교보생명",
-   "ai"
+   "AI"
   ],
-  "score": 4,
-  "feed_name": "사회변화·보험"
+  "score": 3,
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "a1d18079130be8ff",
@@ -1160,7 +1409,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "516892f2cd742a40",
@@ -1170,10 +1420,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T08:46:51+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "category": "금융시장·자산운용",
+  "tags": [
+   "금리"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "27a8a046a0330707",
@@ -1185,11 +1438,12 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "손해보험",
   "tags": [
-   "손보사",
-   "실손"
+   "실손",
+   "손보사"
   ],
   "score": 5,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "bf6e61dcf9475ecf",
@@ -1201,10 +1455,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "생보사"
+   "생보사",
+   "금리"
   ],
-  "score": 4,
-  "feed_name": "주요 경제지·보험"
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "749763e606fa89de",
@@ -1214,10 +1472,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T07:46:54+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "손해보험",
+  "tags": [
+   "서울보증보험",
+   "배당"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "7403f1ef75da9ef4",
@@ -1230,7 +1494,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "0c2c2f20323b3b36",
@@ -1244,8 +1509,9 @@
   "tags": [
    "기후위기"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "8fc732c34a857c26",
@@ -1255,10 +1521,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T07:28:24+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "퇴직연금",
+   "투자"
+  ],
   "score": 2,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "095f8197614b328a",
@@ -1271,7 +1543,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "dd34f7c2b07e95d5",
@@ -1281,10 +1554,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T07:14:08+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "영업"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "5ab65a90a89175a1",
@@ -1294,10 +1570,11 @@
   "source_type": "media",
   "published_at": "2026-11-03T07:08:09+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
+  "category": "사회·인구·기술 변화",
   "tags": [],
   "score": 2,
-  "feed_name": "사회변화·보험"
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "9d0ba50299220e35",
@@ -1307,10 +1584,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T07:05:08+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "퇴직연금",
+   "보험사고"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": [
+   "위험관리·재보험"
+  ]
  },
  {
   "id": "0e7b7ccdbcb9ff50",
@@ -1322,10 +1605,12 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "손해보험",
   "tags": [
-   "실손"
+   "실손",
+   "손보"
   ],
-  "score": 4,
-  "feed_name": "주요 경제지·보험"
+  "score": 5,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "50977128b40d5b6e",
@@ -1335,10 +1620,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T07:00:00+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "퇴직연금",
+   "투자"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "3c6476823928b86d",
@@ -1350,10 +1641,11 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "손해보험",
   "tags": [
-   "손해보험"
+   "한화손해보험"
   ],
-  "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "5eb6cd4e55c1dfec",
@@ -1363,10 +1655,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T06:53:54+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "생명보험",
+  "tags": [
+   "메트라이프",
+   "투자"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "04a1ed608851cbcc",
@@ -1380,8 +1678,9 @@
   "tags": [
    "삼성생명"
   ],
-  "score": 3,
-  "feed_name": "보험저널"
+  "score": 2,
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "96ddb8b5f7757350",
@@ -1391,10 +1690,14 @@
   "source_type": "media",
   "published_at": "2026-11-03T06:52:58+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "category": "금융시장·자산운용",
+  "tags": [
+   "보금자리론",
+   "금리"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "ee5e0934a5848f76",
@@ -1407,7 +1710,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "사회변화·보험"
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "d52ff5bbf41f7ded",
@@ -1419,10 +1723,11 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "32a2123bb4479b4b",
@@ -1432,10 +1737,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T06:09:04+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "보험경영·판매",
+  "tags": [
+   "배타적사용권",
+   "한화손보"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "손해보험"
+  ]
  },
  {
   "id": "0db82d4ec64efd03",
@@ -1447,10 +1758,15 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "종신보험"
+   "종신보험",
+   "동양생명",
+   "출시"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "82fc8986bde66c8b",
@@ -1462,10 +1778,16 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "종신보험"
+   "건강종신",
+   "종신보험",
+   "처브라이프",
+   "출시"
   ],
-  "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "score": 4,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "de3b9bf8522b79bc",
@@ -1478,7 +1800,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "8b8631b49c343a5b",
@@ -1488,10 +1811,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T06:03:17+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "category": "금융시장·자산운용",
+  "tags": [
+   "금리"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "0a68ce9cd6f32d08",
@@ -1503,11 +1829,18 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
+   "건강종신",
    "종신보험",
-   "의료비"
+   "처브라이프",
+   "의료비",
+   "출시"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 4,
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "보험경영·판매",
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "0ab4b92fbcdb96d0",
@@ -1517,10 +1850,14 @@
   "source_type": "media",
   "published_at": "2026-11-03T05:58:00+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "category": "금융시장·자산운용",
+  "tags": [
+   "대출금리",
+   "신용대출"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "dd1a2d1cba52cb3f",
@@ -1530,10 +1867,19 @@
   "source_type": "media",
   "published_at": "2026-11-03T05:44:51+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험매일"
+  "category": "위험관리·재보험",
+  "tags": [
+   "해킹",
+   "CEO",
+   "금감원",
+   "제재"
+  ],
+  "score": 3,
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "제도·회계·건전성",
+   "보험경영·판매"
+  ]
  },
  {
   "id": "99cfb98a6a207965",
@@ -1543,12 +1889,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T05:42:45+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
-   "ai"
+   "AI"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "cf02d53ced5bb2d6",
@@ -1558,10 +1905,17 @@
   "source_type": "media",
   "published_at": "2026-11-03T05:31:23+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "보험경영·판매",
+  "tags": [
+   "GA",
+   "내부통제",
+   "소비자보호"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "제도·회계·건전성"
+  ]
  },
  {
   "id": "28a59cd2c167d924",
@@ -1573,10 +1927,12 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "금융시장·자산운용",
   "tags": [
-   "채권"
+   "채권",
+   "ETF"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "020b8a6eedc61d91",
@@ -1586,12 +1942,17 @@
   "source_type": "media",
   "published_at": "2026-11-03T05:00:13+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "생명보험",
   "tags": [
-   "ai"
+   "달러연금",
+   "AIA생명",
+   "금리"
   ],
-  "score": 4,
-  "feed_name": "보험저널"
+  "score": 3,
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "20d4225888ca22fe",
@@ -1604,7 +1965,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "deb450f02a4f24b3",
@@ -1614,10 +1976,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T04:33:23+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "보험경영·판매",
+  "tags": [
+   "모집질서",
+   "소비자보호"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "제도·회계·건전성"
+  ]
  },
  {
   "id": "dc0d90f2513fafdf",
@@ -1627,12 +1995,17 @@
   "source_type": "media",
   "published_at": "2026-11-03T04:02:15+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "위험관리·재보험",
   "tags": [
-   "보험설계사"
+   "설계사",
+   "자해",
+   "검거"
   ],
   "score": 3,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "124ea4a4d263d5be",
@@ -1644,10 +2017,11 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "9b9becf78d247981",
@@ -1657,12 +2031,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T03:00:06+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "미분류",
   "tags": [
    "요양"
   ],
-  "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "0f14a989b001b6f3",
@@ -1672,10 +2047,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T02:23:57+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "보험경영·판매",
+  "tags": [
+   "배타적사용권",
+   "한화손보"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "손해보험"
+  ]
  },
  {
   "id": "0a421fd0a97f4a18",
@@ -1690,7 +2071,8 @@
    "채권"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "b95f85c655976e0e",
@@ -1700,12 +2082,17 @@
   "source_type": "media",
   "published_at": "2026-11-03T01:56:01+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "위험관리·재보험",
   "tags": [
-   "보험설계사"
+   "설계사",
+   "자해",
+   "검거"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "65d95859f0e9bf0b",
@@ -1715,10 +2102,14 @@
   "source_type": "media",
   "published_at": "2026-11-03T01:39:41+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "위험관리·재보험",
+  "tags": [
+   "자해",
+   "검거"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "54da59c6da9baf10",
@@ -1728,12 +2119,17 @@
   "source_type": "media",
   "published_at": "2026-11-03T01:29:28+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "위험관리·재보험",
   "tags": [
-   "보험설계사"
+   "설계사",
+   "자해",
+   "검거"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "43890951b2aa607b",
@@ -1745,10 +2141,15 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "종신보험"
+   "종신보험",
+   "동양생명",
+   "출시"
   ],
   "score": 3,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "23fc8b59fd866159",
@@ -1758,10 +2159,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T01:21:10+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험저널"
+  "category": "보험경영·판매",
+  "tags": [
+   "배타적사용권",
+   "한화손보"
+  ],
+  "score": 3,
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "손해보험"
+  ]
  },
  {
   "id": "96aba24a0207a631",
@@ -1771,10 +2178,14 @@
   "source_type": "media",
   "published_at": "2026-11-03T01:09:32+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "위험관리·재보험",
+  "tags": [
+   "적발",
+   "보험사고"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "446e2a57e2d4918f",
@@ -1786,10 +2197,12 @@
   "collected_at": "2026-11-04T12:30:40.381838+00:00",
   "category": "금융시장·자산운용",
   "tags": [
-   "채권"
+   "채권",
+   "ETF"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "7c9f4353171812fc",
@@ -1802,10 +2215,15 @@
   "category": "생명보험",
   "tags": [
    "종신보험",
+   "동양생명",
+   "출시",
    "보험료"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "f65ef1ae7c30e82b",
@@ -1815,10 +2233,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T01:05:16+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험매일"
+  "category": "보험경영·판매",
+  "tags": [
+   "배타적사용권",
+   "한화손보"
+  ],
+  "score": 3,
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "손해보험"
+  ]
  },
  {
   "id": "c8f51fc79c1d2db4",
@@ -1828,10 +2252,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T01:02:47+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "생명보험",
+  "tags": [
+   "동양생명"
+  ],
   "score": 2,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "e55b2be4c708eef6",
@@ -1843,10 +2270,12 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "종신보험"
+   "종신보험",
+   "처브라이프"
   ],
   "score": 3,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "e7399ef97f409f60",
@@ -1856,10 +2285,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T00:42:25+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "보험경영·판매",
+  "tags": [
+   "배타적사용권",
+   "한화손보"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "손해보험"
+  ]
  },
  {
   "id": "45cdf52a3b6911cd",
@@ -1869,10 +2304,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T00:37:23+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "한국보험신문"
+  "category": "보험경영·판매",
+  "tags": [
+   "배타적사용권",
+   "한화손보"
+  ],
+  "score": 3,
+  "feed_name": "한국보험신문",
+  "sub_categories": [
+   "손해보험"
+  ]
  },
  {
   "id": "2731992e5834cbc8",
@@ -1882,10 +2323,19 @@
   "source_type": "media",
   "published_at": "2026-11-03T00:20:25+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험저널"
+  "category": "생명보험",
+  "tags": [
+   "생보",
+   "GA",
+   "동양생명",
+   "라이나생명",
+   "종신"
+  ],
+  "score": 4,
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "250ab510b29ad940",
@@ -1895,10 +2345,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T00:13:50+00:00",
   "collected_at": "2026-11-04T11:56:37.110629+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "보험경영·판매",
+  "tags": [
+   "배타적사용권",
+   "한화손보"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "손해보험"
+  ]
  },
  {
   "id": "1aa557eb3e6ec2e5",
@@ -1910,10 +2366,15 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "종신보험"
+   "종신보험",
+   "동양생명",
+   "출시"
   ],
   "score": 3,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "722d3c46eb879b25",
@@ -1923,10 +2384,13 @@
   "source_type": "media",
   "published_at": "2026-11-03T00:09:56+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "손해보험",
+  "tags": [
+   "NH농협손보"
+  ],
   "score": 2,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "6d342640926890d0",
@@ -1936,10 +2400,16 @@
   "source_type": "media",
   "published_at": "2026-11-03T00:07:32+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "손해보험",
+  "tags": [
+   "NH농협손보",
+   "캠페인"
+  ],
   "score": 2,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "d556b954c096439a",
@@ -1952,10 +2422,17 @@
   "category": "생명보험",
   "tags": [
    "종신보험",
-   "의료비"
+   "건강종신",
+   "처브라이프",
+   "의료비",
+   "배당"
   ],
-  "score": 3,
-  "feed_name": "보험저널"
+  "score": 4,
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "보험경영·판매",
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "f35c968d37a3826b",
@@ -1967,10 +2444,15 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "종신보험"
+   "종신보험",
+   "동양생명",
+   "출시"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "bf4ff508d990f11b",
@@ -1980,10 +2462,17 @@
   "source_type": "media",
   "published_at": "2026-11-02T23:51:01+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "금융시장·자산운용",
+  "tags": [
+   "증시",
+   "자사주",
+   "금리"
+  ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "158c1eff211cb332",
@@ -1993,10 +2482,11 @@
   "source_type": "media",
   "published_at": "2026-11-02T23:48:35+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
+  "category": "금융시장·자산운용",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "11f470fd3b5880a9",
@@ -2006,10 +2496,13 @@
   "source_type": "media",
   "published_at": "2026-11-02T23:26:35+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "퇴직연금"
+  ],
   "score": 2,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "ed2a5fd77449249a",
@@ -2019,10 +2512,13 @@
   "source_type": "media",
   "published_at": "2026-11-02T22:47:01+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "CEO"
+  ],
   "score": 2,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "1fda410fc409eff7",
@@ -2032,12 +2528,16 @@
   "source_type": "media",
   "published_at": "2026-11-02T22:42:03+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "제도·회계·건전성",
   "tags": [
-   "csm"
+   "CSM",
+   "실적"
   ],
   "score": 4,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "9f4a09720d2173f5",
@@ -2047,13 +2547,17 @@
   "source_type": "media",
   "published_at": "2026-11-02T22:42:03+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "미분류",
   "tags": [
-   "보험료",
-   "재보험"
+   "설계사",
+   "GA",
+   "재보험",
+   "분급",
+   "보험료"
   ],
-  "score": 4,
-  "feed_name": "보험매일"
+  "score": 2,
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "7416135079f58fb1",
@@ -2063,12 +2567,16 @@
   "source_type": "media",
   "published_at": "2026-11-02T22:42:03+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "손해보험",
   "tags": [
+   "차보험",
    "보험료"
   ],
   "score": 3,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "d2ea2b9d1381af82",
@@ -2078,10 +2586,14 @@
   "source_type": "media",
   "published_at": "2026-11-02T22:24:50+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험저널"
+  "category": "보험경영·판매",
+  "tags": [
+   "GA",
+   "분급"
+  ],
+  "score": 4,
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "54cbd55326d34da0",
@@ -2093,10 +2605,11 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "6a2b7c2159570fbc",
@@ -2109,7 +2622,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "e401c465f861f728",
@@ -2121,11 +2635,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "종신보험",
-   "고령화"
+   "고령화",
+   "종신보험"
   ],
   "score": 4,
-  "feed_name": "사회변화·보험"
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "ed6c583a9d48bb18",
@@ -2138,7 +2655,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "ffb19239d152084a",
@@ -2150,10 +2668,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI",
+   "투자"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "6f6a6a53c563acf2",
@@ -2166,7 +2688,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "ffde4d6256f821ea",
@@ -2178,10 +2701,11 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "의료AI"
   ],
   "score": 3,
-  "feed_name": "사회변화·보험"
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "6a42610c1b83710a",
@@ -2191,10 +2715,16 @@
   "source_type": "media",
   "published_at": "2026-11-02T08:20:45+00:00",
   "collected_at": "2026-11-04T11:56:37.110629+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "손해보험",
+  "tags": [
+   "한화손보",
+   "플랜"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "4b76a72f6d0e4dc5",
@@ -2209,7 +2739,8 @@
    "종신보험"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "4314b55017a47714",
@@ -2221,10 +2752,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI",
+   "투자"
   ],
-  "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "783bf9044ac82741",
@@ -2236,10 +2771,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI",
+   "투자"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "cd0118a77ca8924f",
@@ -2252,7 +2791,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": []
  },
  {
   "id": "b821b80f471e990b",
@@ -2262,13 +2802,17 @@
   "source_type": "media",
   "published_at": "2026-11-02T07:47:37+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "손해보험",
   "tags": [
-   "요양",
-   "치매"
+   "하나손보",
+   "치매",
+   "요양"
   ],
-  "score": 4,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "3d0ea7f1173956b6",
@@ -2278,10 +2822,13 @@
   "source_type": "media",
   "published_at": "2026-11-02T07:46:27+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "금융시장·자산운용",
+  "tags": [
+   "투자"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "fdf3b8a068cd380b",
@@ -2291,10 +2838,15 @@
   "source_type": "media",
   "published_at": "2026-11-02T07:33:15+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "금융시장·자산운용",
+  "tags": [
+   "금리",
+   "국채",
+   "ETF"
+  ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "84391b628f6d63d4",
@@ -2304,10 +2856,17 @@
   "source_type": "media",
   "published_at": "2026-11-02T07:21:53+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험저널"
+  "category": "손해보험",
+  "tags": [
+   "손보",
+   "GA",
+   "흥국화재"
+  ],
+  "score": 3,
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "8b23e736bb0e4bfd",
@@ -2320,7 +2879,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "a725807d009817fd",
@@ -2330,12 +2890,16 @@
   "source_type": "media",
   "published_at": "2026-11-02T07:06:12+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "손해보험",
   "tags": [
+   "車보험",
    "보험료"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "b4ea9afa764706e3",
@@ -2345,10 +2909,14 @@
   "source_type": "media",
   "published_at": "2026-11-02T06:57:07+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "category": "금융시장·자산운용",
+  "tags": [
+   "보금자리론",
+   "금리"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "dc062266154a62cf",
@@ -2358,10 +2926,13 @@
   "source_type": "media",
   "published_at": "2026-11-02T06:56:56+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "퇴직연금"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "e624746d1cdfb1cd",
@@ -2376,7 +2947,8 @@
    "환율"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "407360be50cead20",
@@ -2392,7 +2964,10 @@
    "보험료"
   ],
   "score": 3,
-  "feed_name": "사회변화·보험"
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "b7bd4bfdbc081c4b",
@@ -2402,10 +2977,17 @@
   "source_type": "media",
   "published_at": "2026-11-02T06:04:12+00:00",
   "collected_at": "2026-11-04T11:56:37.110629+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "손해보험",
+  "tags": [
+   "한화손보",
+   "플랜",
+   "출시"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "45e160d70b8a0b23",
@@ -2421,7 +3003,10 @@
    "치매"
   ],
   "score": 3,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "2ef6d46f19a353b8",
@@ -2431,12 +3016,18 @@
   "source_type": "media",
   "published_at": "2026-11-02T05:52:40+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "손해보험",
   "tags": [
-   "보험료"
+   "차보험",
+   "보험료",
+   "금감원"
   ],
   "score": 3,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "제도·회계·건전성",
+   "보험경영·판매"
+  ]
  },
  {
   "id": "817ce565ef184e69",
@@ -2448,10 +3039,11 @@
   "collected_at": "2026-11-04T11:56:37.110629+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI"
   ],
-  "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "2be8927eb3c7bb9f",
@@ -2461,10 +3053,14 @@
   "source_type": "media",
   "published_at": "2026-11-02T05:30:40+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "category": "금융시장·자산운용",
+  "tags": [
+   "보금자리론",
+   "금리"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "6bab2a5d7ee3e091",
@@ -2479,7 +3075,8 @@
    "채권"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "b6f81735a90fce1d",
@@ -2491,10 +3088,15 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "종신보험"
+   "종신보험",
+   "ABL생명",
+   "출시"
   ],
   "score": 3,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "71742700a7dc72a5",
@@ -2504,12 +3106,13 @@
   "source_type": "media",
   "published_at": "2026-11-02T05:18:03+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "생명보험",
+  "category": "미분류",
   "tags": [
    "생명보험"
   ],
-  "score": 3,
-  "feed_name": "한국보험신문"
+  "score": 2,
+  "feed_name": "한국보험신문",
+  "sub_categories": []
  },
  {
   "id": "e60e5f833c971984",
@@ -2521,10 +3124,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "손해보험",
   "tags": [
-   "자동차보험"
+   "자동차보험",
+   "금감원"
   ],
   "score": 3,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": [
+   "제도·회계·건전성"
+  ]
  },
  {
   "id": "964d7940f69ce500",
@@ -2534,12 +3141,16 @@
   "source_type": "media",
   "published_at": "2026-11-02T05:01:35+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "손해보험",
   "tags": [
+   "車보험",
    "보험료"
   ],
   "score": 3,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "3ddb474a6771c0b2",
@@ -2549,14 +3160,19 @@
   "source_type": "media",
   "published_at": "2026-11-02T04:58:16+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "손해보험",
   "tags": [
+   "하나손해보험",
    "요양",
    "치매",
-   "손해보험"
+   "출시"
   ],
-  "score": 4,
-  "feed_name": "한국보험신문"
+  "score": 2,
+  "feed_name": "한국보험신문",
+  "sub_categories": [
+   "사회·인구·기술 변화",
+   "보험경영·판매"
+  ]
  },
  {
   "id": "f85adc5febdc8516",
@@ -2566,12 +3182,16 @@
   "source_type": "media",
   "published_at": "2026-11-02T04:56:57+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "손해보험",
   "tags": [
+   "차보험",
    "보험료"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "a8a908611879b7f0",
@@ -2584,10 +3204,14 @@
   "category": "금융시장·자산운용",
   "tags": [
    "채권",
-   "ai"
+   "AI",
+   "ETF"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "23183656cebeff89",
@@ -2603,7 +3227,10 @@
    "보험료"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "b6ea870d2cc37db6",
@@ -2613,12 +3240,16 @@
   "source_type": "media",
   "published_at": "2026-11-02T04:32:19+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "손해보험",
   "tags": [
+   "車보험",
    "보험료"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "a8460ba28be23ada",
@@ -2628,10 +3259,16 @@
   "source_type": "media",
   "published_at": "2026-11-02T03:17:04+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험저널"
+  "category": "손해보험",
+  "tags": [
+   "손보",
+   "GA"
+  ],
+  "score": 3,
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "c36dcf45eaf3d2d1",
@@ -2641,12 +3278,16 @@
   "source_type": "media",
   "published_at": "2026-11-02T03:00:05+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "손해보험",
   "tags": [
+   "車보험",
    "보험료"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "ac917b8f078f6d6b",
@@ -2661,7 +3302,8 @@
    "자동차보험"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "178c3461cde86053",
@@ -2676,7 +3318,8 @@
    "자동차보험"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "56423b02c49238e9",
@@ -2686,10 +3329,16 @@
   "source_type": "media",
   "published_at": "2026-11-02T03:00:00+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "제도·회계·건전성",
+  "tags": [
+   "경영진",
+   "소비자보호"
+  ],
   "score": 2,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "b34fc72b5967d598",
@@ -2705,7 +3354,10 @@
    "보험료"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "eebaceb83665f725",
@@ -2715,14 +3367,18 @@
   "source_type": "media",
   "published_at": "2026-11-02T02:56:31+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "손해보험",
+  "category": "보험경영·판매",
   "tags": [
-   "삼성화재",
-   "보험설계사",
-   "ai"
+   "설계사",
+   "AI",
+   "삼성화재"
   ],
   "score": 3,
-  "feed_name": "사회변화·보험"
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "손해보험",
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "6780e18f8aeace67",
@@ -2732,14 +3388,18 @@
   "source_type": "media",
   "published_at": "2026-11-02T02:52:08+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "손해보험",
+  "category": "보험경영·판매",
   "tags": [
-   "삼성화재",
-   "보험설계사",
-   "ai"
+   "설계사",
+   "AI",
+   "삼성화재"
   ],
   "score": 3,
-  "feed_name": "사회변화·보험"
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "손해보험",
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "27620f4ffc048411",
@@ -2752,10 +3412,13 @@
   "category": "손해보험",
   "tags": [
    "현대해상",
-   "ai"
+   "AI"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "b7eeea67ecbb9498",
@@ -2767,10 +3430,14 @@
   "collected_at": "2026-11-04T11:56:37.110629+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI",
+   "주가"
   ],
-  "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "6cdeed346e8557b9",
@@ -2780,12 +3447,18 @@
   "source_type": "media",
   "published_at": "2026-11-02T02:10:14+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "손해보험",
   "tags": [
-   "치매"
+   "하나손보",
+   "치매",
+   "출시"
   ],
-  "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매",
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "41abf6833e02631c",
@@ -2795,10 +3468,13 @@
   "source_type": "media",
   "published_at": "2026-11-02T02:08:54+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "퇴직연금"
+  ],
   "score": 2,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": []
  },
  {
   "id": "e2e3a6c396b65978",
@@ -2813,7 +3489,8 @@
    "환율"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "1721c02c596c7988",
@@ -2825,10 +3502,15 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "연금보험"
+   "연금보험",
+   "KDB생명",
+   "돌봄"
   ],
   "score": 3,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "e4a393bc3b7c219f",
@@ -2840,10 +3522,12 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "손해보험",
   "tags": [
+   "여행보험",
    "현대해상"
   ],
   "score": 3,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": []
  },
  {
   "id": "393b62c2da08ad71",
@@ -2855,10 +3539,13 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "보험경영·판매",
   "tags": [
-   "보험판매"
+   "GA",
+   "판매전문회사",
+   "분급"
   ],
-  "score": 3,
-  "feed_name": "보험저널"
+  "score": 4,
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "4baefd4da628be8b",
@@ -2868,10 +3555,16 @@
   "source_type": "media",
   "published_at": "2026-11-02T01:17:41+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "손해보험",
+  "tags": [
+   "한화손보",
+   "출시"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "4668d1c12544e0fe",
@@ -2884,7 +3577,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "455a7b09b81fec23",
@@ -2897,7 +3591,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "b6629814203e4be2",
@@ -2907,10 +3602,13 @@
   "source_type": "media",
   "published_at": "2026-11-02T00:53:07+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "손해보험",
+  "tags": [
+   "DB손보"
+  ],
   "score": 2,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "87836375b720d863",
@@ -2920,13 +3618,16 @@
   "source_type": "media",
   "published_at": "2026-11-02T00:41:51+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "손해보험",
+  "category": "위험관리·재보험",
   "tags": [
-   "현대해상",
-   "재보험"
+   "재보험",
+   "현대해상"
   ],
   "score": 4,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "손해보험"
+  ]
  },
  {
   "id": "0dbb4ee5b41428b4",
@@ -2939,7 +3640,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "08c4537472d6f4ab",
@@ -2951,10 +3653,15 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "손해보험",
   "tags": [
-   "현대해상"
+   "여행보험",
+   "현대해상",
+   "출시"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "88b29b9ceb552bbf",
@@ -2964,10 +3671,13 @@
   "source_type": "media",
   "published_at": "2026-11-02T00:32:39+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "위험관리·재보험",
+  "tags": [
+   "사이버보험"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "94e5b2161588a884",
@@ -2977,10 +3687,13 @@
   "source_type": "media",
   "published_at": "2026-11-02T00:27:06+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "퇴직연금"
+  ],
   "score": 2,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "43b3862c8d067ec9",
@@ -2990,10 +3703,13 @@
   "source_type": "media",
   "published_at": "2026-11-02T00:25:31+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "보험경영·판매",
+  "tags": [
+   "퇴직연금"
+  ],
   "score": 2,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "ac6eaff808233289",
@@ -3003,10 +3719,14 @@
   "source_type": "media",
   "published_at": "2026-11-02T00:23:07+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험저널"
+  "category": "보험경영·판매",
+  "tags": [
+   "모집질서",
+   "영업"
+  ],
+  "score": 3,
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "3a23973a4b0249e7",
@@ -3018,10 +3738,12 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "생명보험",
   "tags": [
-   "종신보험"
+   "종신보험",
+   "ABL생명"
   ],
   "score": 3,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "3adbfe236cb74a3f",
@@ -3033,10 +3755,13 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "금융시장·자산운용",
   "tags": [
-   "채권"
+   "채권",
+   "금리",
+   "투자"
   ],
-  "score": 4,
-  "feed_name": "주요 경제지·금융시장"
+  "score": 3,
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "737d2db5c26e3f7f",
@@ -3046,10 +3771,17 @@
   "source_type": "media",
   "published_at": "2026-11-02T00:18:52+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "손해보험",
+  "tags": [
+   "한화손보",
+   "플랜",
+   "출시"
+  ],
   "score": 2,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "41507224d35d9727",
@@ -3061,10 +3793,15 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "손해보험",
   "tags": [
-   "현대해상"
+   "여행보험",
+   "현대해상",
+   "출시"
   ],
   "score": 3,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "a7731dc46738f691",
@@ -3074,12 +3811,13 @@
   "source_type": "media",
   "published_at": "2026-11-02T00:14:44+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "생명보험",
+  "category": "미분류",
   "tags": [
    "생명보험"
   ],
-  "score": 3,
-  "feed_name": "보험저널"
+  "score": 2,
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "03581b56caace9d0",
@@ -3089,13 +3827,17 @@
   "source_type": "media",
   "published_at": "2026-11-02T00:14:42+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "생명보험",
   "tags": [
-   "요양",
-   "치매"
+   "KDB생명",
+   "치매",
+   "요양"
   ],
-  "score": 4,
-  "feed_name": "보험매일"
+  "score": 2,
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "2c06cc01912d2d43",
@@ -3108,7 +3850,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "273137eea3ea18ef",
@@ -3121,10 +3864,15 @@
   "category": "생명보험",
   "tags": [
    "종신보험",
-   "보험료"
+   "ABL생명",
+   "보험료",
+   "출시"
   ],
   "score": 3,
-  "feed_name": "보험저널"
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "218dfe1c1c48f774",
@@ -3134,14 +3882,20 @@
   "source_type": "media",
   "published_at": "2026-11-02T00:09:23+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "생명보험",
   "tags": [
-   "요양",
+   "연금보험",
+   "KDB생명",
    "치매",
-   "연금보험"
+   "요양",
+   "출시"
   ],
-  "score": 4,
-  "feed_name": "보험저널"
+  "score": 3,
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "사회·인구·기술 변화",
+   "보험경영·판매"
+  ]
  },
  {
   "id": "b1549c40183d17d2",
@@ -3154,7 +3908,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "88c2ae32c3418a84",
@@ -3164,10 +3919,17 @@
   "source_type": "media",
   "published_at": "2026-11-01T23:57:09+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "손해보험",
+  "tags": [
+   "한화손보",
+   "플랜",
+   "출시"
+  ],
   "score": 2,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "ad3e95d41cfba61b",
@@ -3177,10 +3939,13 @@
   "source_type": "media",
   "published_at": "2026-11-01T22:49:21+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험저널"
+  "category": "보험경영·판매",
+  "tags": [
+   "GA"
+  ],
+  "score": 3,
+  "feed_name": "보험저널",
+  "sub_categories": []
  },
  {
   "id": "72ea222c68752aae",
@@ -3192,10 +3957,11 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "b67dd98a2490bc90",
@@ -3205,10 +3971,13 @@
   "source_type": "media",
   "published_at": "2026-11-01T22:36:14+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
+  "category": "금융시장·자산운용",
+  "tags": [
+   "투자"
+  ],
   "score": 2,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "sub_categories": []
  },
  {
   "id": "10906a900b75106d",
@@ -3218,10 +3987,13 @@
   "source_type": "media",
   "published_at": "2026-11-01T22:34:08+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "category": "보험경영·판매",
+  "tags": [
+   "설계사"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "cf91eb528cb06468",
@@ -3233,10 +4005,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI",
+   "투자"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "174f7679114b2165",
@@ -3248,10 +4024,11 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI"
   ],
-  "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "5a96075304841cdd",
@@ -3261,12 +4038,16 @@
   "source_type": "media",
   "published_at": "2026-11-01T21:46:20+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "보험경영·판매",
+  "category": "제도·회계·건전성",
   "tags": [
-   "csm"
+   "CSM",
+   "실적"
   ],
   "score": 4,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "c91631ea9bd35fa2",
@@ -3276,10 +4057,16 @@
   "source_type": "media",
   "published_at": "2026-11-01T21:46:20+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "미분류",
-  "tags": [],
-  "score": 2,
-  "feed_name": "보험매일"
+  "category": "생명보험",
+  "tags": [
+   "생보",
+   "GA"
+  ],
+  "score": 3,
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "184ee71c96db912b",
@@ -3293,8 +4080,9 @@
   "tags": [
    "의료비"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "85eb1debf673c156",
@@ -3304,12 +4092,16 @@
   "source_type": "media",
   "published_at": "2026-11-01T20:00:00+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "사회·인구·기술 변화",
+  "category": "손해보험",
   "tags": [
-   "고령화"
+   "고령화",
+   "펫보험"
   ],
   "score": 4,
-  "feed_name": "사회변화·보험"
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ]
  },
  {
   "id": "ff6152732a57df17",
@@ -3321,10 +4113,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI",
+   "투자"
   ],
-  "score": 3,
-  "feed_name": "보험매일"
+  "score": 2,
+  "feed_name": "보험매일",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "07065f56587abf86",
@@ -3336,10 +4132,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI",
+   "투자"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "88e5239a283d09e6",
@@ -3351,10 +4151,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI",
+   "투자"
   ],
-  "score": 3,
-  "feed_name": "주요 경제지·보험"
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ]
  },
  {
   "id": "21e62b00cbfd1fbb",
@@ -3366,10 +4170,11 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "보험경영·판매",
   "tags": [
-   "보험판매"
+   "판매전문회사"
   ],
   "score": 3,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": []
  },
  {
   "id": "cdafa21deb730f09",
@@ -3382,7 +4187,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": []
  },
  {
   "id": "c3a224799999102b",
@@ -3394,10 +4200,14 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "금융시장·자산운용",
   "tags": [
-   "채권"
+   "채권",
+   "금융위"
   ],
   "score": 3,
-  "feed_name": "한국보험신문"
+  "feed_name": "한국보험신문",
+  "sub_categories": [
+   "제도·회계·건전성"
+  ]
  },
  {
   "id": "d3573b5e74e8129d",
@@ -3409,10 +4219,16 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "제도·회계·건전성",
   "tags": [
-   "ifrs17"
+   "IFRS 17",
+   "IFRS17",
+   "IFRS18",
+   "GA"
   ],
-  "score": 4,
-  "feed_name": "보험저널"
+  "score": 5,
+  "feed_name": "보험저널",
+  "sub_categories": [
+   "보험경영·판매"
+  ]
  },
  {
   "id": "9feb591fac2d12e3",
@@ -3424,10 +4240,11 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
-   "ai"
+   "AI"
   ],
-  "score": 3,
-  "feed_name": "사회변화·보험"
+  "score": 2,
+  "feed_name": "사회변화·보험",
+  "sub_categories": []
  },
  {
   "id": "2cb064fad1e90e0f",
@@ -3440,7 +4257,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "3831cb9f93a372f0",
@@ -3453,7 +4271,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  },
  {
   "id": "d63d779413702af5",
@@ -3466,7 +4285,8 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "보험매일"
+  "feed_name": "보험매일",
+  "sub_categories": []
  },
  {
   "id": "ad178659afa4c12c",
@@ -3479,6 +4299,7 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
-  "feed_name": "주요 경제지·보험"
+  "feed_name": "주요 경제지·보험",
+  "sub_categories": []
  }
 ]
