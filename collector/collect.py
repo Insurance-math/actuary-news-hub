@@ -14,7 +14,7 @@ from urllib.parse import parse_qsl, quote, urlencode, urlsplit, urlunsplit
 import feedparser
 import requests
 from classify import classify
-from normalize import SourceAliases, dedupe_key, is_google, normalize_shards, prefer, strip_org_suffix
+from normalize import SourceAliases, TitleFilter, dedupe_key, is_google, normalize_shards, prefer, strip_org_suffix
 from trends import write_trends
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s %(message)s')
@@ -74,7 +74,7 @@ def parse_date(entry):
     return dt.isoformat()
 
 
-def collect_source(row, now_iso, aliases=None, unmapped=None):
+def collect_source(row, now_iso, aliases=None, unmapped=None, tfilter=None):
     name, url, kind, fixed = row
     r = requests.get(url, timeout=15, headers={'User-Agent': UA, 'Accept': 'application/rss+xml, application/xml, text/xml'})
     r.raise_for_status()
@@ -104,6 +104,11 @@ def collect_source(row, now_iso, aliases=None, unmapped=None):
             if not known and unmapped is not None:
                 unmapped.add(source)
         title = strip_org_suffix(title)
+        if tfilter and tfilter.is_junk(title):
+            skipped['junk_title'] = skipped.get('junk_title', 0) + 1
+            if len(filtered) < FILTER_SAMPLES:
+                filtered.append(f'[노이즈 제목] {title}')
+            continue
         c = classify(title, name)
         if not c['relevant'] or (kind == 'press' and not PRESS_RE.search(title)):
             skipped['irrelevant'] += 1
@@ -125,10 +130,10 @@ def load_shard(path: Path):
         return []
 
 
-def save(rows, data_dir: Path, aliases=None):
+def save(rows, data_dir: Path, aliases=None, tfilter=None):
     """월별 샤드에 병합(기존 id는 유지). 반환: 새로 추가된 건수."""
     data_dir.mkdir(parents=True, exist_ok=True)
-    fixed = normalize_shards(data_dir, aliases)  # 기존 데이터도 현재 정규화 규칙으로 정리
+    fixed = normalize_shards(data_dir, aliases, tfilter)  # 기존 데이터도 현재 정규화 규칙으로 정리
     if fixed:
         logging.info('기존 월 파일 %d개 정규화', fixed)
     by_month: dict[str, list] = {}
@@ -244,10 +249,11 @@ def main():
     now_iso = datetime.now(timezone.utc).isoformat()
     aliases = SourceAliases.load(Path(args.config_dir) / 'source_aliases.json')
     aliases.canonical |= {r[3] for r in SOURCES if r[3]}  # 직접 RSS 피드의 고정 출처명은 이미 표준 이름
+    tfilter = TitleFilter.load(Path(args.config_dir) / 'title_filters.json')
     unmapped: set[str] = set()
     articles, failed, results = {}, [], {}
     with ThreadPoolExecutor(max_workers=5) as pool:
-        futs = {pool.submit(collect_source, s, now_iso, aliases, unmapped): s[0] for s in SOURCES}
+        futs = {pool.submit(collect_source, s, now_iso, aliases, unmapped, tfilter): s[0] for s in SOURCES}
         for f in as_completed(futs):
             name = futs[f]
             try:
@@ -269,7 +275,7 @@ def main():
     elif args.dry_run:
         logging.info('dry-run: %d 건 (저장 안 함)', len(articles))
     else:
-        added = save(list(articles.values()), Path(args.data_dir), aliases)
+        added = save(list(articles.values()), Path(args.data_dir), aliases, tfilter)
         logging.info('후보 %d건, 신규 저장 %d건', len(articles), added)
     if not args.dry_run:
         write_status(Path(args.data_dir), now_iso, results, len(articles), added)

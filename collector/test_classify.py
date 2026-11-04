@@ -33,7 +33,8 @@ assert c('K-ICS 비율 하락…지급여력 제도 개편')['score'] == 5
 assert c('보험업법 개정')['relevant'] and not c('날씨 맑음')['relevant']
 
 # 정답 샘플 회귀 기준 (학습으로 튜닝, 검증은 별도 보고): 전체 80% 미만이면 규칙 회귀로 본다
-allr, val = evaluate('all'), evaluate('valid')
+allr, val, val2 = evaluate('all'), evaluate('valid'), evaluate('valid2')
 assert allr['accuracy'] >= 0.80, allr['accuracy']
 assert val['accuracy'] >= 0.70, val['accuracy']
-print(f"classify tests passed (전체 {allr['accuracy']:.0%}, 검증 {val['accuracy']:.0%}, 예측 미분류 {allr['pred_uncat']:.0%})")
+assert val2['accuracy'] >= 0.65, val2['accuracy']  # 새 검증 샘플(튜닝에 쓰지 않음)
+print(f"classify tests passed (전체 {allr['accuracy']:.0%}, 검증 {val['accuracy']:.0%}/{val2['accuracy']:.0%}, 예측 미분류 {allr['pred_uncat']:.0%})")

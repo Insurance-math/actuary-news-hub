@@ -34,6 +34,26 @@ def prefer(new, old):
     return new if rank(new) > rank(old) else old
 
 
+class TitleFilter:
+    """config/title_filters.json: 메뉴·목록 페이지 이름만 있는 노이즈 제목을 걸러낸다."""
+
+    def __init__(self, min_chars: int = 0, exact: list[str] | None = None):
+        self.min_chars = min_chars
+        self.exact = {re.sub(r'\s+', '', e) for e in (exact or [])}
+
+    @classmethod
+    def load(cls, path: Path) -> 'TitleFilter':
+        try:
+            cfg = json.loads(path.read_text(encoding='utf-8'))
+        except FileNotFoundError:
+            return cls()
+        return cls(cfg.get('min_chars', 0), cfg.get('exact'))
+
+    def is_junk(self, title: str) -> bool:
+        sq = re.sub(r'\s+', '', title)
+        return len(sq) < self.min_chars or sq in self.exact
+
+
 class SourceAliases:
     """config/source_aliases.json: 도메인(우선) → 이름 순으로 언론사명을 정규화."""
 
@@ -67,13 +87,15 @@ def normalize_article(a: dict, aliases: SourceAliases | None = None) -> dict:
     return a
 
 
-def normalize_shards(data_dir: Path, aliases: SourceAliases | None = None) -> int:
+def normalize_shards(data_dir: Path, aliases: SourceAliases | None = None, tfilter: TitleFilter | None = None) -> int:
     """기존 월 파일의 제목/출처를 현재 규칙으로 다시 정리하고, 정리 결과 같아진 기사는 합친다. 바뀐 파일 수 반환."""
     changed = 0
     for path in sorted(data_dir.glob('????-??.json')):
         rows = json.loads(path.read_text(encoding='utf-8'))
         before = json.dumps(rows, ensure_ascii=False)
         rows = [normalize_article(a, aliases) for a in rows]
+        if tfilter:
+            rows = [a for a in rows if not tfilter.is_junk(a['title'])]  # 기존 데이터에서도 노이즈 제목 제거
         merged: dict[str, dict] = {}
         for a in rows:  # 정규화로 제목+출처가 같아진 기사는 합친다(직접 링크 우선, 수집시각은 더 이른 쪽 유지)
             k = dedupe_key(a)

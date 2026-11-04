@@ -23,7 +23,7 @@ def evaluate(split='all'):
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(); ap.add_argument('--errors', action='store_true'); ap.add_argument('--split', default='all')
     a = ap.parse_args()
-    for sp in ('train', 'valid', 'all'):
+    for sp in ('train', 'valid', 'valid2', 'all'):
         r = evaluate(sp)
         print(f"{sp:5} n={r['n']:3} 정확도 {r['accuracy']:.1%}  예측 미분류 {r['pred_uncat']:.1%}  (정답 미분류 {r['true_uncat']:.1%})")
     if a.errors:

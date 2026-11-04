@@ -1,5 +1,5 @@
 """python collector/test_normalize.py"""
-from normalize import SourceAliases, strip_org_suffix
+from normalize import SourceAliases, TitleFilter, strip_org_suffix
 
 assert strip_org_suffix('보험정책 - 금융위원회') == '보험정책'
 assert strip_org_suffix('보험모집질서 위반신고 - 금융감독원 - 금융감독원') == '보험모집질서 위반신고'
@@ -28,3 +28,14 @@ with tempfile.TemporaryDirectory() as d:
     assert len(rows) == 1 and rows[0]['id'] == '2' and rows[0]['title'] == 'T' and rows[0]['collected_at'] == '2026-11-02'
     assert normalize_shards(Path(d), al) == 0  # 멱등
 print('shard normalize tests passed')
+
+# 제목 필터: 메뉴/목록 페이지 이름만 있는 제목 제외, 정상 제목은 유지
+tf = TitleFilter(6, ['보험정책'])
+assert tf.is_junk('보험정책') and tf.is_junk('보 험 정 책') and tf.is_junk('공지') and tf.is_junk('보험정책 ')
+assert not tf.is_junk('보험모집질서 위반신고') and not tf.is_junk('실손24 안내')
+with tempfile.TemporaryDirectory() as d:
+    pth = Path(d) / '2026-11.json'
+    pth.write_text(json.dumps([mk('1', 'https://a.com/1', '금융위원회', '2026-11-02') | {'title': '보험정책 - 금융위원회', 'source_type': 'press'}, mk('2', 'https://a.com/2', '금융위원회', '2026-11-02') | {'title': '실손24 확대 시행'}]), encoding='utf-8')
+    normalize_shards(Path(d), al, tf)
+    assert [r['id'] for r in json.loads(pth.read_text(encoding='utf-8'))] == ['2']
+print('title filter tests passed')
