@@ -31,3 +31,4 @@ export type Status = {
   sources: Record<string, SourceStatus>;
 };
 export const loadStatus = () => getJson<Status>('status.json');
+export const loadTrends = () => getJson<import('./trends').Trends>('trends.json');
