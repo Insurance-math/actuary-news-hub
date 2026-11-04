@@ -8,7 +8,7 @@
     "dev": "npm run sync-data && next dev",
     "build": "npm run sync-data && next build",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types tests/new-news.test.ts",
+    "test": "node --experimental-strip-types tests/new-news.test.ts && node --experimental-strip-types tests/dates.test.ts",
     "collect": ".venv/bin/python collector/collect.py"
   },
   "dependencies": {
