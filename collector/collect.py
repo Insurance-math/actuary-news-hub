@@ -13,6 +13,7 @@ from urllib.parse import parse_qsl, quote, urlencode, urlsplit, urlunsplit
 
 import feedparser
 import requests
+from normalize import normalize_shards, strip_org_suffix
 from trends import write_trends
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s %(message)s')
@@ -136,6 +137,7 @@ def collect_source(row, now_iso):
             title, source = (s.strip() for s in raw.rsplit(' - ', 1))
         else:
             title, source = raw, name
+        title = strip_org_suffix(title)
         cat, tags, score, relevant = classify(title)
         if not relevant or (kind == 'press' and not PRESS_RE.search(title)):
             skipped['irrelevant'] += 1
@@ -160,6 +162,9 @@ def load_shard(path: Path):
 def save(rows, data_dir: Path):
     """월별 샤드에 병합(기존 id는 유지). 반환: 새로 추가된 건수."""
     data_dir.mkdir(parents=True, exist_ok=True)
+    fixed = normalize_shards(data_dir)  # 기존 데이터도 현재 정규화 규칙으로 정리
+    if fixed:
+        logging.info('기존 월 파일 %d개 정규화', fixed)
     by_month: dict[str, list] = {}
     for a in rows:
         by_month.setdefault(a['published_at'][:7], []).append(a)
