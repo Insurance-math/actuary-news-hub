@@ -1,9 +1,9 @@
 {
  "last_run": {
-  "started_at": "2026-11-04T12:18:59.814500+00:00",
-  "finished_at": "2026-11-04T12:19:01.479294+00:00",
-  "candidates": 285,
-  "added": 2,
+  "started_at": "2026-11-04T12:30:40.381838+00:00",
+  "finished_at": "2026-11-04T12:30:41.774613+00:00",
+  "candidates": 284,
+  "added": 1,
   "failed": [
    "금융위원회 RSS"
   ]
@@ -11,8 +11,8 @@
  "sources": {
   "보험매일": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
-   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_run_at": "2026-11-04T12:30:40.381838+00:00",
+   "last_success_at": "2026-11-04T12:30:40.381838+00:00",
    "consecutive_failures": 0,
    "entries": 50,
    "kept": 42,
@@ -21,12 +21,26 @@
     "no_date": 0,
     "irrelevant": 8
    },
+   "filtered": [
+    "삼성생명, AI 기반 지역 통합돌봄 모델 실증",
+    "예보, 금융계약자 보호 범위 넓힌다…디지털 금융 사각지대 선제 대응",
+    "삼성생명, 에스원 주식 13만7천주 매각…금산법 위반 우려에",
+    "대리서명 제재 이어지는데…GA 디지털 모집관리 시험대",
+    "자회사형 GA, 3분기 매출 한금서 ‘1강 체제’ 지속",
+    "[인사] 라이나생명",
+    "수수료 분급 두 달 앞…GA, ‘얼마 받나’보다 ‘언제 받나’",
+    "삼성화재 모빌리티뮤지엄, 클래식카 문화축제 '모뮤 오픈 페스타'"
+   ],
+   "oldest": "2026-10-30T01:36:34+00:00",
+   "newest": "2026-11-04T07:53:34+00:00",
+   "at_limit": true,
+   "gap_risk": false,
    "error": null
   },
   "보험저널": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
-   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_run_at": "2026-11-04T12:30:40.381838+00:00",
+   "last_success_at": "2026-11-04T12:30:40.381838+00:00",
    "consecutive_failures": 0,
    "entries": 50,
    "kept": 32,
@@ -35,12 +49,28 @@
     "no_date": 0,
     "irrelevant": 18
    },
+   "filtered": [
+    "메타리치, 수수료 경쟁 넘어 ‘GA 2.0’ 전환… 통합 업무시스템 ‘MetaArena’ 구축",
+    "[GA 품질경영 시대] 스카이블루에셋, 매월 '준법 DAY' 운영… 현장 밀착 준법경영으로 '질적 성장' 정조준",
+    "FP '1200%룰' · 4~7년 '분급제' 이은 다음 수순… 슬그머니 '상담기록 보존' 등 GA 판매자 책임 확대 '시동'",
+    "\"발달장애 골든타임 사수하라\"… 현대해상, 150억 쏟아붓는 혁신 솔루션 8팀 띄운다",
+    "\"받은 사랑, 경제교육으로 돌려줍니다\"… KB라이프 '링크비' 2기 청년들의 아름다운 홀로서기",
+    "\"아이들의 쾌적한 내일을 조립합니다\"… ABL생명, 아동 돕기 'DIY 가구 만들기' 구슬땀",
+    "“사망률 9배 치솟아도 절반은 안 맸다”… 뒷좌석 안전벨트 여전히 ‘생존 장치’ 아닌 ‘선택 사항’",
+    "[기획칼럼] ①수수료 분급제시대...'위촉계약'을 다시 쓰라",
+    "\"설계사 3500명·월매출 14억 쾌속 질주\"…더베스트GA그룹, 포브스 프리미엄 브랜드 '2년 연속 대상'(영상+)",
+    "'순환계' 매년 최대 1억3000만원·'반복수술' 최대 2배… 메리츠화재, '치료·수술' 보장 확대(영상+)"
+   ],
+   "oldest": "2026-11-01T11:47:24+00:00",
+   "newest": "2026-11-04T06:59:48+00:00",
+   "at_limit": true,
+   "gap_risk": false,
    "error": null
   },
   "한국보험신문": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
-   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_run_at": "2026-11-04T12:30:40.381838+00:00",
+   "last_success_at": "2026-11-04T12:30:40.381838+00:00",
    "consecutive_failures": 0,
    "entries": 50,
    "kept": 20,
@@ -49,12 +79,28 @@
     "no_date": 0,
     "irrelevant": 30
    },
+   "filtered": [
+    "한국금융연구원, ‘사람 살리는 금융 캠페인’ 동참",
+    "한국금융연구원, 디지털 금융소비자 보호·보안 강화 방안 논의",
+    "자립준비청년 12명, 경제교육으로 재능나눔… KB라이프재단 ‘링크비’ 2기 마무리",
+    "ABL생명, 아동복지시설 환경 개선 위한 ‘DIY 가구 만들기’ 봉사활동 펼쳐",
+    "중은삼성인수, 진위밍 신임 사장 선임… 성장세 속 경영진 개편",
+    "현대해상, 아동 발달 조기개입 지원 8개 팀 최종 선정… ‘골든타임’ 확보 모색",
+    "서민금융진흥원, 유선상담 서비스 개편… 전화로 정책서민금융 대출 신청",
+    "신용회복위원회·법률구조공단, 위기채무자 지원 연계… 회생·파산 절차 간소화",
+    "삼성생명, AI 기반 ‘시니어 통합돌봄 모델’ 선보여",
+    "금융기본권, 권리 선언 넘어 제도 설계로… 법제화 세부안 윤곽"
+   ],
+   "oldest": "2026-11-01T15:00:00+00:00",
+   "newest": "2026-11-04T10:31:04+00:00",
+   "at_limit": true,
+   "gap_risk": false,
    "error": null
   },
   "주요 경제지·보험": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
-   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_run_at": "2026-11-04T12:30:40.381838+00:00",
+   "last_success_at": "2026-11-04T12:30:40.381838+00:00",
    "consecutive_failures": 0,
    "entries": 100,
    "kept": 91,
@@ -63,26 +109,57 @@
     "no_date": 0,
     "irrelevant": 9
    },
+   "filtered": [
+    "\"세금은 내는데 건보료는 제외\"…분리과세소득에 건보료 부과 검토",
+    "실시간 트렌드",
+    "AIG, 3분기 GAAP 희석 EPS 1.60달러..전년비 72%↑",
+    "퍼스트 아메리칸, 퍼시픽뮤추얼 대표 버튼 이사 선임",
+    "예보, 금융계약자 보호 위원회 출범…\"사각지대 미리 찾아 보호\"",
+    "DB형·1억 초과 거액·가상자산까지…예보, 예금보호 대상 확대 검토 - 머니투데이",
+    "\"부모 떠난 뒤에도 걱정없게\"…하나은행, 장애인 자녀 금융서비스 제공 - 머니투데이",
+    "삼성화재, 간·폐·신장병에도 치료비 지급",
+    "일산병원, 만성폐쇄성폐질환 적정성 '11회 연속 1등급'"
+   ],
+   "oldest": "2026-11-02T00:59:35+00:00",
+   "newest": "2026-11-04T08:59:27+00:00",
+   "at_limit": true,
+   "gap_risk": false,
    "error": null
   },
   "주요 경제지·금융시장": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
-   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_run_at": "2026-11-04T12:30:40.381838+00:00",
+   "last_success_at": "2026-11-04T12:30:40.381838+00:00",
    "consecutive_failures": 0,
    "entries": 100,
-   "kept": 46,
+   "kept": 44,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 54
+    "irrelevant": 56
    },
+   "filtered": [
+    "\"반도체만 보고 있을 때 아니다\"…내년 투자판 흔들 'ABC'",
+    "삼성운용 \"KODEX 미국10년국채 ETF 순자산 2천억원 돌파\"",
+    "삼성운용 \"KODEX 미국10년국채 ETF 순자산 2천억원 돌파\"",
+    "삼성운용 'KODEX 미국10년국채액티브(H)'ETF 순자산 2000억 돌파",
+    "3분기 서울 상업용 부동산 거래액 20%↑…대형 오피스가 견인",
+    "같은 장기채 ETF인데 수익률 달라…비결은 이것[ETFvsETF] - 머니투데이",
+    "3분기 서울 상업용 부동산 거래액 20%↑…대형 오피스가 견인",
+    "불안한 증시에 안전자산 꽂힌 서학개미…美국채 '폭풍 쇼핑'",
+    "\"지금은 잘 나가지만…\" 삼전닉스 호황 속 커지는 '경고음' [테크로그]",
+    "KB운용, 'KB 코리아 첨단전략산업50 목표전환 제2호 펀드' 출시"
+   ],
+   "oldest": "2026-10-28T18:12:47+00:00",
+   "newest": "2026-11-04T09:20:07+00:00",
+   "at_limit": true,
+   "gap_risk": false,
    "error": null
   },
   "사회변화·보험": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
-   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_run_at": "2026-11-04T12:30:40.381838+00:00",
+   "last_success_at": "2026-11-04T12:30:40.381838+00:00",
    "consecutive_failures": 0,
    "entries": 64,
    "kept": 62,
@@ -91,36 +168,65 @@
     "no_date": 0,
     "irrelevant": 2
    },
+   "filtered": [
+    "건보공단, AI 의료이용 이상징후 탐지 모델로 최우수상",
+    "건보공단, AI 상담·업무비서 고도화 추진…사업자 공모"
+   ],
+   "oldest": "2026-10-28T15:30:00+00:00",
+   "newest": "2026-11-04T08:25:48+00:00",
+   "at_limit": false,
+   "gap_risk": false,
    "error": null
   },
   "금융위원회 RSS": {
    "ok": false,
-   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_run_at": "2026-11-04T12:30:40.381838+00:00",
    "last_success_at": null,
-   "consecutive_failures": 5,
+   "consecutive_failures": 6,
    "entries": 0,
    "kept": 0,
    "skipped": {},
+   "filtered": [],
+   "oldest": null,
+   "newest": null,
+   "at_limit": false,
+   "gap_risk": false,
    "error": "HTTPError: 503 Server Error: Service Unavailable for url: <url>"
   },
   "금융위원회 검색": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
-   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_run_at": "2026-11-04T12:30:40.381838+00:00",
+   "last_success_at": "2026-11-04T12:30:40.381838+00:00",
    "consecutive_failures": 0,
-   "entries": 42,
+   "entries": 100,
    "kept": 9,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 33
+    "irrelevant": 91
    },
+   "filtered": [
+    "알림마당 - 금융위원회",
+    "2027년 금융위원회 예산안에 대해 자세히 설명드립니다. - 금융위원회",
+    "알림마당 - 금융위원회",
+    "예금자보호법 조문별 제·개정이유서 금 융 위 원 회 - 금융위원회",
+    "알림마당 - 금융위원회",
+    "｢예금자보호법｣ 일부개정법률안 입법예고 - 금융위원회",
+    "“금융회사의 부실 확산에 신속·선제적으로 대응하여 금융시장의 안정 및 소비자 보호를 위한 - 금융위원회",
+    "예금자보호법 일부개정법률안 - 금융위원회",
+    "과거회신사례(2014 이전) - 금융규제·법령해석포털",
+    "위원장 일정 - 금융위원회"
+   ],
+   "oldest": "2021-03-12T07:35:41+00:00",
+   "newest": "2026-11-04T11:15:57+00:00",
+   "at_limit": true,
+   "gap_risk": false,
    "error": null
   },
   "금융감독원 검색": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
-   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_run_at": "2026-11-04T12:30:40.381838+00:00",
+   "last_success_at": "2026-11-04T12:30:40.381838+00:00",
    "consecutive_failures": 0,
    "entries": 15,
    "kept": 1,
@@ -129,6 +235,22 @@
     "no_date": 0,
     "irrelevant": 14
    },
+   "filtered": [
+    "DART - 전자공시시스템 - 전자공시시스템",
+    "전체 - 전자공시시스템",
+    "SAMSUNG FIRE & MARINE INSURANCE/Transaction of Beneficiary Certificates with Related Party/2026.10.30 - DART - Repository of Korea's Corporate Filings",
+    "INCHON CITY GAS/Decision on Provision of Collateral for Others/2026.11.02 - DART - Repository of Korea's Corporate Filings",
+    "WATOSCOREA/Semi-Annual Report/2026.10.30 - DART - Repository of Korea's Corporate Filings",
+    "Supplements to the Universal Shelf Registration Statement - DART - Repository of Korea's Corporate Filings",
+    "MIRAE ASSET SECURITIES/Prospectus (Shelf Registration)/2026.11.04 - DART - Repository of Korea's Corporate Filings",
+    "Supplements to the Universal Shelf Registration Statement - DART - Repository of Korea's Corporate Filings",
+    "BNK Securities/Prospectus (Shelf Registration)/2026.11.03 - DART - Repository of Korea's Corporate Filings",
+    "Shinhan Securities/Prospectus (Shelf Registration)/2026.11.03 - DART - Repository of Korea's Corporate Filings"
+   ],
+   "oldest": "2014-10-30T14:07:33+00:00",
+   "newest": "2026-11-04T09:22:48+00:00",
+   "at_limit": false,
+   "gap_risk": false,
    "error": null
   }
  }

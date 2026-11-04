@@ -16,6 +16,8 @@ import requests
 from trends import write_trends
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s %(message)s')
+FEED_CAP = 100       # 피드당 처리 상한
+FILTER_SAMPLES = 10  # status.json에 남기는 걸러진 제목 샘플 수
 UA = 'ActuaryNewsHub/3.0 (personal RSS reader; metadata only)'
 
 
@@ -117,8 +119,8 @@ def collect_source(row, now_iso):
     feed = feedparser.parse(r.content)
     if feed.bozo and not feed.entries:
         raise ValueError(f'invalid feed: {feed.bozo_exception}')
-    entries = feed.entries[:100]
-    out, skipped = [], {'no_link': 0, 'no_date': 0, 'irrelevant': 0}
+    entries = feed.entries[:FEED_CAP]
+    out, skipped, filtered, dates = [], {'no_link': 0, 'no_date': 0, 'irrelevant': 0}, [], []
     for e in entries:
         raw = clean(e.get('title', ''))
         link = (e.get('link') or '').strip()
@@ -127,6 +129,7 @@ def collect_source(row, now_iso):
         published = parse_date(e)
         if not published:
             skipped['no_date'] += 1; continue
+        dates.append(published)
         if fixed:
             source, title = fixed, raw
         elif ' - ' in raw:
@@ -135,12 +138,16 @@ def collect_source(row, now_iso):
             title, source = raw, name
         cat, tags, score, relevant = classify(title)
         if not relevant or (kind == 'press' and not PRESS_RE.search(title)):
-            skipped['irrelevant'] += 1; continue
+            skipped['irrelevant'] += 1
+            if len(filtered) < FILTER_SAMPLES:
+                filtered.append(title)
+            continue
         out.append({'id': article_id(link), 'title': title, 'url': link, 'source': source, 'source_type': kind,
                     'published_at': published, 'collected_at': now_iso, 'category': cat, 'tags': tags,
                     'score': score, 'feed_name': name})
-    skipped['entries'] = len(entries)
-    return out, skipped
+    stats = {'feed_size': len(feed.entries), 'skipped': skipped, 'filtered': filtered,
+             'oldest': min(dates) if dates else None, 'newest': max(dates) if dates else None}
+    return out, stats
 
 
 def load_shard(path: Path):
@@ -188,6 +195,11 @@ def safe_error(e: Exception) -> str:
     return msg[:140]
 
 
+def skipped_stats(stats: dict) -> dict:
+    return {'entries': stats['feed_size'], 'skipped': stats['skipped'], 'filtered': stats['filtered'],
+            'oldest': stats['oldest'], 'newest': stats['newest']}
+
+
 def write_status(data_dir: Path, started: str, results: dict, total: int, added: int):
     """실행 결과 저장. 이번에 실패해도 이전의 last_success_at은 유지한다."""
     path = data_dir / 'status.json'
@@ -205,6 +217,11 @@ def write_status(data_dir: Path, started: str, results: dict, total: int, added:
             'last_success_at': started if ok else old.get('last_success_at'),
             'consecutive_failures': 0 if ok else old.get('consecutive_failures', 0) + 1,
             'entries': r.get('entries', 0), 'kept': r.get('kept', 0), 'skipped': r.get('skipped', {}),
+            'filtered': r.get('filtered', []), 'oldest': r.get('oldest'), 'newest': r.get('newest'),
+            # 피드가 주는 항목 수가 50/100건에 닿으면 더 오래된 기사가 잘렸을 수 있다
+            'at_limit': ok and (r.get('entries') in (50, FEED_CAP) or r.get('entries', 0) > FEED_CAP),
+            # 받은 기사 중 가장 오래된 것이 직전 수집 시각보다 늦으면 그 사이 기사를 놓쳤을 수 있다
+            'gap_risk': bool(ok and r.get('oldest') and old.get('last_run_at') and r['oldest'] > old['last_run_at']),
             'error': None if ok else r.get('error'),
         }
     status = {'last_run': {'started_at': started, 'finished_at': datetime.now(timezone.utc).isoformat(),
@@ -229,8 +246,8 @@ def main():
             name = futs[f]
             try:
                 found, skipped = f.result()
-                logging.info('%s: %d 건 (제외 %s)', name, len(found), skipped)
-                results[name] = {'ok': True, 'entries': skipped.get('entries', 0), 'kept': len(found), 'skipped': {k: v for k, v in skipped.items() if k != 'entries'}}
+                logging.info('%s: %d 건 (제외 %s, 피드 %d건)', name, len(found), skipped['skipped'], skipped['feed_size'])
+                results[name] = {'ok': True, 'kept': len(found), **skipped_stats(skipped)}
                 for a in found:
                     prev = articles.get(dedupe_key(a))
                     articles[dedupe_key(a)] = prefer(a, prev) if prev else a
