@@ -1,9 +1,9 @@
 {
  "last_run": {
-  "started_at": "2026-11-04T12:10:49.779644+00:00",
-  "finished_at": "2026-11-04T12:10:51.729870+00:00",
-  "candidates": 258,
-  "added": 1,
+  "started_at": "2026-11-04T12:18:59.814500+00:00",
+  "finished_at": "2026-11-04T12:19:01.479294+00:00",
+  "candidates": 285,
+  "added": 2,
   "failed": [
    "금융위원회 RSS"
   ]
@@ -11,8 +11,8 @@
  "sources": {
   "보험매일": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:10:49.779644+00:00",
-   "last_success_at": "2026-11-04T12:10:49.779644+00:00",
+   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
    "consecutive_failures": 0,
    "entries": 50,
    "kept": 42,
@@ -25,8 +25,8 @@
   },
   "보험저널": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:10:49.779644+00:00",
-   "last_success_at": "2026-11-04T12:10:49.779644+00:00",
+   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
    "consecutive_failures": 0,
    "entries": 50,
    "kept": 32,
@@ -39,8 +39,8 @@
   },
   "한국보험신문": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:10:49.779644+00:00",
-   "last_success_at": "2026-11-04T12:10:49.779644+00:00",
+   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
    "consecutive_failures": 0,
    "entries": 50,
    "kept": 20,
@@ -53,39 +53,39 @@
   },
   "주요 경제지·보험": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:10:49.779644+00:00",
-   "last_success_at": "2026-11-04T12:10:49.779644+00:00",
+   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
    "consecutive_failures": 0,
    "entries": 100,
-   "kept": 90,
+   "kept": 91,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 10
+    "irrelevant": 9
    },
    "error": null
   },
   "주요 경제지·금융시장": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:10:49.779644+00:00",
-   "last_success_at": "2026-11-04T12:10:49.779644+00:00",
+   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
    "consecutive_failures": 0,
    "entries": 100,
-   "kept": 44,
+   "kept": 46,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 56
+    "irrelevant": 54
    },
    "error": null
   },
   "사회변화·보험": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:10:49.779644+00:00",
-   "last_success_at": "2026-11-04T12:10:49.779644+00:00",
+   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
    "consecutive_failures": 0,
-   "entries": 39,
-   "kept": 37,
+   "entries": 64,
+   "kept": 62,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
@@ -95,9 +95,9 @@
   },
   "금융위원회 RSS": {
    "ok": false,
-   "last_run_at": "2026-11-04T12:10:49.779644+00:00",
+   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
    "last_success_at": null,
-   "consecutive_failures": 4,
+   "consecutive_failures": 5,
    "entries": 0,
    "kept": 0,
    "skipped": {},
@@ -105,29 +105,29 @@
   },
   "금융위원회 검색": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:10:49.779644+00:00",
-   "last_success_at": "2026-11-04T12:10:49.779644+00:00",
+   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
    "consecutive_failures": 0,
-   "entries": 100,
+   "entries": 42,
    "kept": 9,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 91
+    "irrelevant": 33
    },
    "error": null
   },
   "금융감독원 검색": {
    "ok": true,
-   "last_run_at": "2026-11-04T12:10:49.779644+00:00",
-   "last_success_at": "2026-11-04T12:10:49.779644+00:00",
+   "last_run_at": "2026-11-04T12:18:59.814500+00:00",
+   "last_success_at": "2026-11-04T12:18:59.814500+00:00",
    "consecutive_failures": 0,
-   "entries": 13,
+   "entries": 15,
    "kept": 1,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 12
+    "irrelevant": 14
    },
    "error": null
   }
