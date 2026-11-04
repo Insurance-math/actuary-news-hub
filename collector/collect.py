@@ -13,6 +13,7 @@ from urllib.parse import parse_qsl, quote, urlencode, urlsplit, urlunsplit
 
 import feedparser
 import requests
+from trends import write_trends
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s %(message)s')
 UA = 'ActuaryNewsHub/3.0 (personal RSS reader; metadata only)'
@@ -217,6 +218,7 @@ def write_status(data_dir: Path, started: str, results: dict, total: int, added:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--data-dir', default='data')
+    ap.add_argument('--config-dir', default='config')
     ap.add_argument('--dry-run', action='store_true')
     args = ap.parse_args()
     now_iso = datetime.now(timezone.utc).isoformat()
@@ -246,6 +248,10 @@ def main():
         logging.info('후보 %d건, 신규 저장 %d건', len(articles), added)
     if not args.dry_run:
         write_status(Path(args.data_dir), now_iso, results, len(articles), added)
+        try:
+            write_trends(Path(args.data_dir), Path(args.config_dir) / 'keywords.json')
+        except Exception as e:  # 집계 실패가 수집을 막지 않는다
+            logging.warning('trends 집계 실패: %s', e)
     logging.info('실패 피드: %s', ', '.join(failed) or '없음')
     return 0  # 부분 실패는 워크플로를 실패시키지 않음
 
