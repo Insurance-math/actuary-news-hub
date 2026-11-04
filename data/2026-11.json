@@ -26,6 +26,19 @@
   "feed_name": "주요 경제지·금융시장"
  },
  {
+  "id": "98775d72d5f1decc",
+  "title": "연기금·보험사까지 나섰다…스케일업 자금 잇는 기관들",
+  "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5nUVpxVU4zdVRzLVpPT0NjejdjSmR6MUFsUWFsaHNVVG51ZGJ3d1BYQzNxQ2ttVVpKbWhZamFtTVdWSFNxeGtNVmlUaXRCRDdEalpHMENIVms1akE2blkyVDdTbktEM1B6cWVYSmRnbWl3d3c?oc=5",
+  "source": "마켓인",
+  "source_type": "media",
+  "published_at": "2026-11-04T09:20:07+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
+  "category": "미분류",
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장"
+ },
+ {
   "id": "e477338c13eac032",
   "title": "[단독] 26만 간병인 산재보험 품는다 …보험료 최대 80% 정부 지원 검토",
   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zSTlYYlBpZWtoY1VWaGllLXF5aWhyTGtnR25qekZMa01Eb2p4S0VteFhFX2FwME15U3NlaHBRQ3k1Y1Via1hFS056Z29vNDlaWXc?oc=5",
@@ -65,6 +78,21 @@
   "source_type": "media",
   "published_at": "2026-11-04T08:35:38+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
+  "category": "위험관리·재보험",
+  "tags": [
+   "재보험"
+  ],
+  "score": 4,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "17d5ab184a6d4a17",
+  "title": "2028년부터 26만 간병인 … 산재보험 안전망에 편입",
+  "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFB3Yzc1d1hQWDRNTWpPbnhoQ0I2a3NDZ2o5V3pFN0NWaFFLWllVcmtUS25yVndMekhBWG13UEJXTGZOUWt0RXc?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-04T08:35:38+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
   "category": "위험관리·재보험",
   "tags": [
    "재보험"
@@ -131,6 +159,19 @@
   "tags": [],
   "score": 2,
   "feed_name": "사회변화·보험"
+ },
+ {
+  "id": "00cec4e2f2484337",
+  "title": "환자를 위한 편의였다?…진료기록이 보험사기가 되는 순간 - 머니투데이",
+  "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBIZTI5MTRCVTdQYU5PMTRicnNVXzR4Q2s3T21YMzRCcDFfRl9EejVHSjhuZW5oTmVfY0NxbXF2a0pia3dnTXRtckZ5T1kyRklUMlM4ZTJVY1djYUNReXRWUGw2UnZ1cnRaM21QRDdlckNBQdIBckFVX3lxTFBIZTI5MTRCVTdQYU5PMTRicnNVXzR4Q2s3T21YMzRCcDFfRl9EejVHSjhuZW5oTmVfY0NxbXF2a0pia3dnTXRtckZ5T1kyRklUMlM4ZTJVY1djYUNReXRWUGw2UnZ1cnRaM21QRDdlckNBQQ?oc=5",
+  "source": "머니투데이",
+  "source_type": "media",
+  "published_at": "2026-11-04T08:04:00+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
+  "category": "미분류",
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
  },
  {
   "id": "021f01d06fe5806f",
@@ -272,6 +313,19 @@
   "source_type": "media",
   "published_at": "2026-11-04T06:34:52+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
+  "category": "미분류",
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "660ea3bd52b67e85",
+  "title": "보험금 얼마나 줄지 멋대로 계산 못한다…보험사 산출근거 매년 점검",
+  "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZktZSXNqdWJaTnh6V3ItTXFYQ3ZSUExOZnd5cGRqM0FlLW1LanJJazZLOXpOc3BHb0xwVzhaT3VHQWZlMkVrTnZaT3RSeHJpNDJkY2F4bjhGbGtVOGwyNWl0bk1SdFIwYWgyQktJTlZjSUhvc0dXTmI4c0ZhUDZqUQ?oc=5",
+  "source": "이데일리",
+  "source_type": "media",
+  "published_at": "2026-11-04T06:34:52+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
   "category": "미분류",
   "tags": [],
   "score": 2,
@@ -817,6 +871,19 @@
   "feed_name": "주요 경제지·보험"
  },
  {
+  "id": "89ee856d57dce22f",
+  "title": "“사적연금·ISA·배당 소득자 등 건보료 부과 추진”…건보료 체계 ‘확’ 바뀔듯",
+  "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5uaWpzV1Flc0w4dEtSOWVEUnF6cFY1bmdYdFVvQVFPZjd4b0lmMnBKdlpIWnRXbHZnNnNuelBZRjJKMmxxV0E?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-03T23:54:02+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
+  "category": "미분류",
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
   "id": "4e8c688c3da8c3b3",
   "title": "저축은행·자산운용 품은 교보생명, 악사손보 인수 앞두고 '멈칫' - 머니투데이",
   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9jZlpJLWpjd3ZNR1lxTGpDZi1CLVZMVHA2T1pkbTExUWZRMzBlWGxrX2tRdWZFTHZkR0p4N2tEUWczeVA3NzlLaU5ZeUpkcE9rUExxM0JMYlh4cks4cU90dVZROVc5aXR5Q3hv0gFwQVVfeXFMT3VyREtQZGJrRkF0VEg3ZVBYODZDUXdjTzF1QnF1VUZlZ3VCN3JPUHV1Sl9oVmpVSG16VWNDeWJEVTZxNjJybmNWSWtOX2M3ZHdaNlhOcXJNbTZ2MVVHSWZVeUlZbjhocmhsRjZ0ZVNFSg?oc=5",
@@ -963,6 +1030,21 @@
   "category": "미분류",
   "tags": [],
   "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "72a5d7d4c844342e",
+  "title": "작년 산재보험 수급자 42만 '역대 최대'…지급액 8조↑",
+  "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1rLU8xWHB3dV82bkZIRVhWbVFmY050aUtRYnN0TDNRUUtlT09WbWg4WFVZYUtucWdVRHhUQ1pZRldXQWdGUEhhbnByX0dvd1dmNmE3bjZ3TjNjY2duaE5EUdIBeEFVX3lxTE4wa2paNFpfU1hYUjY5bk1qSzViS2hpMFZfSHdDTjcwTHRXbU4wTUNvX2liR3NzY1RRVU1oVUVtcHI4dV9TTU5NLVYzcEpDejBuY1dncmxTWWFEVWVuZ1J4WllnSk9HZC12aDZTUTlIdUpoRVBQMm5PWQ?oc=5",
+  "source": "뉴시스",
+  "source_type": "media",
+  "published_at": "2026-11-03T21:01:00+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
+  "category": "위험관리·재보험",
+  "tags": [
+   "재보험"
+  ],
+  "score": 4,
   "feed_name": "주요 경제지·보험"
  },
  {
@@ -1303,6 +1385,19 @@
   "feed_name": "주요 경제지·금융시장"
  },
  {
+  "id": "f4b2173a7b31c662",
+  "title": "이찬진 “퇴직연금 과한 단기매매·특정 자산군 쏠림…장기·분산투자를”",
+  "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBHa0trUU1iZ3N0NkxXNnRFQl9hNW84QUlfSkc0VVFrTHAzclE3SV9LZ2NuY3h2UW81TEtwaHJJQWxmV2M4Ync?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-03T07:00:00+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
+  "category": "미분류",
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
   "id": "3c6476823928b86d",
   "title": "한화손해보험, 20~42세 임신질환 3년간 보장",
   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9GUlNEVG1DMXE0d3NLTUtUNDRsZEN4REFyOUt3WHl4VlFBX1UxZTF1dFhIVFViU2VCaVpzVzNWVEZlUHJIQnZyczJVWkdMY0tRbF8tWmZzWnNLZw?oc=5",
@@ -1526,6 +1621,19 @@
   "feed_name": "주요 경제지·보험"
  },
  {
+  "id": "1d2fd72f33c489ac",
+  "title": "보험시장 입김 커진 GA, 내부통제 그대로…\"소비자 보호 체계 강화해야\"",
+  "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5PTmNLTXdmQ2s3cjUyQTVHQ2k5dTFZNW5lblNvUk8xM293QVc0Y2NGbkhEU1o1eUJSZjJ0MndHbWI2bXdEVTlzUXpMNkM1Xy1ZRFd0aVl5VUtPWFlxbm12cTBLaHIwMkh0ajRWWlVHTWRhVkU?oc=5",
+  "source": "마켓인",
+  "source_type": "media",
+  "published_at": "2026-11-03T05:31:23+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
+  "category": "미분류",
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
   "id": "28a59cd2c167d924",
   "title": "'ACE 글로벌메모리반도체TOP3채권혼합액티브' ETF 상장 - 머니투데이",
   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBYN2xSMjNYWC1MY1RRUDF0djloZi1oWEEwMkZQbXZ0SWQzejNvOVAwVlFJOEpZMlBLNEZwV1VDeHdjdy16cHl0cXVhdkw2czRtOVJiRDl5UXZXQ3haTjczb252ZThpeWNH0gFuQVVfeXFMUDFIWGpJeURIMmZzTDgzME5tMGVYZldHdWM5dUw3S3plOFpZdklZUm0xT08xOU5kd0hjcjFuX09TQngxdFJxLVE1NTBFUTN4WjNYRVYyYXdlMWZrN3kyVURvSWNIS2c0c25PVS1Ib2c?oc=5",
@@ -1619,6 +1727,21 @@
   "source_type": "media",
   "published_at": "2026-11-03T03:00:06+00:00",
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
+  "category": "사회·인구·기술 변화",
+  "tags": [
+   "요양"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "32437d857d7ad028",
+  "title": "요양시설 간호사 늘리니…건강보험 진료비 7.7% 줄었다",
+  "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53VERGZnZreWVBOGxpeVRIME9KZG51MkZObHBFZlZwVFB4aXpEV0NCOUFEdXF1elgyWG52VjV1eG1lZU5HNDhpNWxTOU0xMWZ5WExVdjN1TEd6cExlZ0s1YllubnF0c1pFVFJfZWdSbWNvUDQ?oc=5",
+  "source": "마켓인",
+  "source_type": "media",
+  "published_at": "2026-11-03T03:00:06+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
   "category": "사회·인구·기술 변화",
   "tags": [
    "요양"
@@ -1848,6 +1971,19 @@
   "feed_name": "보험저널"
  },
  {
+  "id": "250ab510b29ad940",
+  "title": "[게시판] 한화손보 '안심위치공유서비스' 배타적사용권 3개월",
+  "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BN0ZZSXpkR1cxTVpTbk1JSFZXdzhzUDhNQlZBeTBJZUk4TUFTWDdjSmVtTjhuOG96U1FSclRUUTZFUkpxUk5kNG1KNmtyVnJhYWJ2U0E1Nl9iNmfSAWBBVV95cUxQejVwbklfNDJPVExBQkROaGNycF9KWlBZd0ltTFNCNTVfSzRTcUlVNzRVYjBFVzhlZnFyeldkS2xBMnpfZHdUa2tvaGc0dW5ITm90cTJENnZpY1cwVUNxRmE?oc=5",
+  "source": "연합뉴스",
+  "source_type": "media",
+  "published_at": "2026-11-03T00:13:50+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
+  "category": "미분류",
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
   "id": "1aa557eb3e6ec2e5",
   "title": "\"납입 완료하면 암·순환계 치료비 100세 보장\"…동양생명, '(무)우리WON하는건강플러스종신보험' 출시",
   "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33759",
@@ -2046,6 +2182,19 @@
   "feed_name": "사회변화·보험"
  },
  {
+  "id": "6a2b7c2159570fbc",
+  "title": "사회보험 사각지대 확대에…저소득 근로자 혜택 줄었다",
+  "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBVa0VDY1M4MUJpb0xqM0dqQVVCcFRPYnl0VXUxSjQ0bHJwaFk2X0VEMWNhR3JsdTZkU29tZUZNMkwtd3BZUnNqMjdKbi1wVFE2dS1vaDNyY1I2S2o1WU5PN9IBeEFVX3lxTE4wYmtlZXBZaGxETEZzU3JFMWJwdDllYUxhV05OY0RvWTJFb2VzQ3h0NDJpZkVQczdaYU5hS2RpdTZGVkhndklrMERmZnZleGNZNlYwQTZHb0JKQ2twcFdxOGVtcEh6YUF2NXJHRlEzSkZDN1RQTGRlcw?oc=5",
+  "source": "뉴시스",
+  "source_type": "media",
+  "published_at": "2026-11-02T21:01:00+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
+  "category": "미분류",
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
   "id": "e401c465f861f728",
   "title": "죽은 뒤 1억원 주면 무슨 소용있나…고령화에 종신보험 바뀐다 [금융 라운지]",
   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1HamhMSEtDYVNPWWdGMmdSbFc4anlDamd5M2VNT0hqaVZRNmRFTE9lYWtBN1d2UGhXek5NSENjZWFLX2tTUVNUb3hUbFFfem1EMzZUQw?oc=5",
@@ -2116,6 +2265,19 @@
   ],
   "score": 3,
   "feed_name": "사회변화·보험"
+ },
+ {
+  "id": "6a42610c1b83710a",
+  "title": "한화손보 교직원 전용 플랜 … 피해발생금·형사소송비 보장",
+  "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1yMXFuYTlsamNKcTQ5bVV2Vi0wb2xzTnM0WERkWDRXRkRPZE1XeXlSUDNfdE0xeFVGNHZjdkFIYTZxTkdHSHc?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-02T08:20:45+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
+  "category": "미분류",
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
  },
  {
   "id": "4b76a72f6d0e4dc5",
@@ -2329,6 +2491,19 @@
   "feed_name": "사회변화·보험"
  },
  {
+  "id": "b7bd4bfdbc081c4b",
+  "title": "\"교직원 특화 보장\" 한화손보, 교직원 전용 플랜 출시 - 머니투데이",
+  "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1GRUU5VE16RWJMNWliVmhJQnVMS05fWnFTM1RabWx0TTBSQmVVZW9wWjhfalNleTROZkVieUZuMnRZejlDemFnNVFtNDdWTVF5TTg1dzNPdmtrNHhnUU8zQ1k0S29pRV9HazZWM1cxWXjSAXBBVV95cUxNRkVFOVRNekViTDVpYlZoSUJ1TEtOX1pxUzNUWm1sdE0wUkJlVWVvcFo4X2pTZXk0TmZFYnlGbjJ0WXo5Q3phZzVRbTQ3Vk1ReU04NXczT3ZrazR4Z1FPM0NZNEtvaUVfR2s2VjNXMVl4?oc=5",
+  "source": "머니투데이",
+  "source_type": "media",
+  "published_at": "2026-11-02T06:04:12+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
+  "category": "미분류",
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
   "id": "45e160d70b8a0b23",
   "title": "치매·여행·교권보호까지…손보사, 맞춤형 보장 확대",
   "url": "http://www.fins.co.kr/news/articleView.html?idxno=110381",
@@ -2358,6 +2533,21 @@
   ],
   "score": 3,
   "feed_name": "보험저널"
+ },
+ {
+  "id": "817ce565ef184e69",
+  "title": "“AI 믿는다더니”…폭락에 '보험'드는 월가",
+  "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9HLU9zZFJRRE5yM2lLTW03bml3X2FIVWdjODQ1MEJZanpwU2dCSXR2OU1LbG8xZG16c3diTFFDUHplOVBoczZFSUt0OWRJU1MycGRrUkY2UVVVTmRJRFpBMzVPZXhnN0k?oc=5",
+  "source": "한경매거진",
+  "source_type": "media",
+  "published_at": "2026-11-02T05:34:49+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
+  "category": "사회·인구·기술 변화",
+  "tags": [
+   "ai"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험"
  },
  {
   "id": "2be8927eb3c7bb9f",
@@ -2707,6 +2897,21 @@
   ],
   "score": 3,
   "feed_name": "사회변화·보험"
+ },
+ {
+  "id": "b7eeea67ecbb9498",
+  "title": "\"AI 거품 꺼질라\"…월가, 주가 폭락 대비 풋옵션 등 '보험' 찾는다",
+  "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE15WmR1anFOVGRFTS1LbWQ2VGctUGF5N2RBZVU2R3E0REtBMHdHQmNoWnY4RjBDaTRhOVhObWJHajFrdWVIdWpvSEJnQ1BhSGJBZGozdE5kMHhMLVNWajNuT3FQWUhUMmEtUXRHOGZuNURZdkJDTzZJV9IBeEFVX3lxTE15WmR1anFOVGRFTS1LbWQ2VGctUGF5N2RBZVU2R3E0REtBMHdHQmNoWnY4RjBDaTRhOVhObWJHajFrdWVIdWpvSEJnQ1BhSGJBZGozdE5kMHhMLVNWajNuT3FQWUhUMmEtUXRHOGZuNURZdkJDTzZJVw?oc=5",
+  "source": "뉴시스",
+  "source_type": "media",
+  "published_at": "2026-11-02T02:14:34+00:00",
+  "collected_at": "2026-11-04T11:56:37.110629+00:00",
+  "category": "사회·인구·기술 변화",
+  "tags": [
+   "ai"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험"
  },
  {
   "id": "6cdeed346e8557b9",

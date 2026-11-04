@@ -21,3 +21,13 @@ export const loadMonth = (m: string) => getJson<Article[]>(`${m}.json`);
 
 export function isSafeUrl(u: string) { return /^https?:\/\//i.test(u); }
 export function isGoogleDiscovery(a: Article) { return /(^|\.)news\.google\.com\//.test(a.url.replace(/^https?:\/\//, '')); }
+
+export type SourceStatus = {
+  ok: boolean; last_run_at: string; last_success_at: string | null; consecutive_failures: number;
+  entries: number; kept: number; skipped: Record<string, number>; error: string | null;
+};
+export type Status = {
+  last_run: { started_at: string; finished_at: string; candidates: number; added: number; failed: string[] };
+  sources: Record<string, SourceStatus>;
+};
+export const loadStatus = () => getJson<Status>('status.json');

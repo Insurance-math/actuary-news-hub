@@ -1,0 +1,135 @@
+{
+ "last_run": {
+  "started_at": "2026-11-04T11:56:38.596620+00:00",
+  "finished_at": "2026-11-04T11:56:38.975144+00:00",
+  "candidates": 284,
+  "added": 0,
+  "failed": [
+   "금융위원회 RSS"
+  ]
+ },
+ "sources": {
+  "보험매일": {
+   "ok": true,
+   "last_run_at": "2026-11-04T11:56:38.596620+00:00",
+   "last_success_at": "2026-11-04T11:56:38.596620+00:00",
+   "consecutive_failures": 0,
+   "entries": 50,
+   "kept": 42,
+   "skipped": {
+    "no_link": 0,
+    "no_date": 0,
+    "irrelevant": 8
+   },
+   "error": null
+  },
+  "보험저널": {
+   "ok": true,
+   "last_run_at": "2026-11-04T11:56:38.596620+00:00",
+   "last_success_at": "2026-11-04T11:56:38.596620+00:00",
+   "consecutive_failures": 0,
+   "entries": 50,
+   "kept": 32,
+   "skipped": {
+    "no_link": 0,
+    "no_date": 0,
+    "irrelevant": 18
+   },
+   "error": null
+  },
+  "한국보험신문": {
+   "ok": true,
+   "last_run_at": "2026-11-04T11:56:38.596620+00:00",
+   "last_success_at": "2026-11-04T11:56:38.596620+00:00",
+   "consecutive_failures": 0,
+   "entries": 50,
+   "kept": 20,
+   "skipped": {
+    "no_link": 0,
+    "no_date": 0,
+    "irrelevant": 30
+   },
+   "error": null
+  },
+  "주요 경제지·보험": {
+   "ok": true,
+   "last_run_at": "2026-11-04T11:56:38.596620+00:00",
+   "last_success_at": "2026-11-04T11:56:38.596620+00:00",
+   "consecutive_failures": 0,
+   "entries": 100,
+   "kept": 91,
+   "skipped": {
+    "no_link": 0,
+    "no_date": 0,
+    "irrelevant": 9
+   },
+   "error": null
+  },
+  "주요 경제지·금융시장": {
+   "ok": true,
+   "last_run_at": "2026-11-04T11:56:38.596620+00:00",
+   "last_success_at": "2026-11-04T11:56:38.596620+00:00",
+   "consecutive_failures": 0,
+   "entries": 100,
+   "kept": 44,
+   "skipped": {
+    "no_link": 0,
+    "no_date": 0,
+    "irrelevant": 56
+   },
+   "error": null
+  },
+  "사회변화·보험": {
+   "ok": true,
+   "last_run_at": "2026-11-04T11:56:38.596620+00:00",
+   "last_success_at": "2026-11-04T11:56:38.596620+00:00",
+   "consecutive_failures": 0,
+   "entries": 65,
+   "kept": 63,
+   "skipped": {
+    "no_link": 0,
+    "no_date": 0,
+    "irrelevant": 2
+   },
+   "error": null
+  },
+  "금융위원회 RSS": {
+   "ok": false,
+   "last_run_at": "2026-11-04T11:56:38.596620+00:00",
+   "last_success_at": null,
+   "consecutive_failures": 2,
+   "entries": 0,
+   "kept": 0,
+   "skipped": {},
+   "error": "HTTPError: 503 Server Error: Service Unavailable for url: <url>"
+  },
+  "금융위원회 검색": {
+   "ok": true,
+   "last_run_at": "2026-11-04T11:56:38.596620+00:00",
+   "last_success_at": "2026-11-04T11:56:38.596620+00:00",
+   "consecutive_failures": 0,
+   "entries": 100,
+   "kept": 9,
+   "skipped": {
+    "no_link": 0,
+    "no_date": 0,
+    "irrelevant": 91
+   },
+   "error": null
+  },
+  "금융감독원 검색": {
+   "ok": true,
+   "last_run_at": "2026-11-04T11:56:38.596620+00:00",
+   "last_success_at": "2026-11-04T11:56:38.596620+00:00",
+   "consecutive_failures": 0,
+   "entries": 16,
+   "kept": 1,
+   "skipped": {
+    "no_link": 0,
+    "no_date": 0,
+    "irrelevant": 15
+   },
+   "error": null
+  }
+ }
+}

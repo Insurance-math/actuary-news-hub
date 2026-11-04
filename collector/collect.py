@@ -116,8 +116,9 @@ def collect_source(row, now_iso):
     feed = feedparser.parse(r.content)
     if feed.bozo and not feed.entries:
         raise ValueError(f'invalid feed: {feed.bozo_exception}')
+    entries = feed.entries[:100]
     out, skipped = [], {'no_link': 0, 'no_date': 0, 'irrelevant': 0}
-    for e in feed.entries[:100]:
+    for e in entries:
         raw = clean(e.get('title', ''))
         link = (e.get('link') or '').strip()
         if not raw or not link.startswith(('http://', 'https://')):
@@ -137,6 +138,7 @@ def collect_source(row, now_iso):
         out.append({'id': article_id(link), 'title': title, 'url': link, 'source': source, 'source_type': kind,
                     'published_at': published, 'collected_at': now_iso, 'category': cat, 'tags': tags,
                     'score': score, 'feed_name': name})
+    skipped['entries'] = len(entries)
     return out, skipped
 
 
@@ -179,13 +181,46 @@ def save(rows, data_dir: Path):
     return added
 
 
+def safe_error(e: Exception) -> str:
+    """공개 사이트에 노출되므로 URL(쿼리 포함)을 제거하고 길이를 제한한다."""
+    msg = re.sub(r'https?://\S+', '<url>', f'{type(e).__name__}: {e}')
+    return msg[:140]
+
+
+def write_status(data_dir: Path, started: str, results: dict, total: int, added: int):
+    """실행 결과 저장. 이번에 실패해도 이전의 last_success_at은 유지한다."""
+    path = data_dir / 'status.json'
+    try:
+        prev = json.loads(path.read_text(encoding='utf-8')).get('sources', {})
+    except (FileNotFoundError, ValueError):
+        prev = {}
+    sources = {}
+    for name, *_ in SOURCES:
+        r = results.get(name, {})
+        old = prev.get(name, {})
+        ok = r.get('ok', False)
+        sources[name] = {
+            'ok': ok, 'last_run_at': started,
+            'last_success_at': started if ok else old.get('last_success_at'),
+            'consecutive_failures': 0 if ok else old.get('consecutive_failures', 0) + 1,
+            'entries': r.get('entries', 0), 'kept': r.get('kept', 0), 'skipped': r.get('skipped', {}),
+            'error': None if ok else r.get('error'),
+        }
+    status = {'last_run': {'started_at': started, 'finished_at': datetime.now(timezone.utc).isoformat(),
+                           'candidates': total, 'added': added,
+                           'failed': [n for n, v in sources.items() if not v['ok']]},
+              'sources': sources}
+    data_dir.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(status, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--data-dir', default='data')
     ap.add_argument('--dry-run', action='store_true')
     args = ap.parse_args()
     now_iso = datetime.now(timezone.utc).isoformat()
-    articles, failed = {}, []
+    articles, failed, results = {}, [], {}
     with ThreadPoolExecutor(max_workers=5) as pool:
         futs = {pool.submit(collect_source, s, now_iso): s[0] for s in SOURCES}
         for f in as_completed(futs):
@@ -193,12 +228,15 @@ def main():
             try:
                 found, skipped = f.result()
                 logging.info('%s: %d 건 (제외 %s)', name, len(found), skipped)
+                results[name] = {'ok': True, 'entries': skipped.get('entries', 0), 'kept': len(found), 'skipped': {k: v for k, v in skipped.items() if k != 'entries'}}
                 for a in found:
                     prev = articles.get(dedupe_key(a))
                     articles[dedupe_key(a)] = prefer(a, prev) if prev else a
             except Exception as e:
                 failed.append(name)
+                results[name] = {'ok': False, 'error': safe_error(e)}
                 logging.warning('%s 실패: %s', name, str(e)[:180])
+    added = 0
     if not articles:
         logging.warning('수집된 기사 없음 — 기존 데이터 유지')
     elif args.dry_run:
@@ -206,6 +244,8 @@ def main():
     else:
         added = save(list(articles.values()), Path(args.data_dir))
         logging.info('후보 %d건, 신규 저장 %d건', len(articles), added)
+    if not args.dry_run:
+        write_status(Path(args.data_dir), now_iso, results, len(articles), added)
     logging.info('실패 피드: %s', ', '.join(failed) or '없음')
     return 0  # 부분 실패는 워크플로를 실패시키지 않음
 
