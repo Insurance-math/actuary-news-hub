@@ -20,7 +20,7 @@ export default function TrendsPage() {
   const weeks = useMemo(() => trends ? lastWeeks(trends, today, WEEKS) : [], [trends, today]);
   const shown = trends?.keywords.filter(k => !off.includes(k)) ?? [];
   const max = niceMax(Math.max(0, ...weeks.flatMap(w => shown.map(k => w.counts[k] ?? 0))));
-  const x = (i: number) => L + (i * (W - L - R)) / (WEEKS - 1);
+  const x = (i: number) => weeks.length < 2 ? (L + W - R) / 2 : L + (i * (W - L - R)) / (weeks.length - 1);
   const y = (v: number) => T + (H - T - B) * (1 - v / max);
   const md = (d: string) => `${Number(d.slice(5, 7))}/${Number(d.slice(8))}`;
 
