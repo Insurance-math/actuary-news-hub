@@ -8,3 +8,4 @@ __pycache__/
 public/data/
 *.tsbuildinfo
 public/version.json
+scripts/probe/out/
