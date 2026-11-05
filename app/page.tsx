@@ -2,8 +2,6 @@
 import { Fragment, useMemo, useState } from 'react';
 import { Bookmark, Check, Newspaper, Search, ShieldCheck, Clock3, AlertCircle, SlidersHorizontal } from 'lucide-react';
 import ArticleCard from '../components/ArticleCard';
-import Footer from '../components/Footer';
-import SiteHeader from '../components/SiteHeader';
 import DateBar, { DateFilter } from '../components/DateBar';
 import { Article, CATEGORIES } from '../lib/news';
 import { countByDate, dayHeading, kstDate, shiftMonth, todayKst } from '../lib/dates';
@@ -47,8 +45,7 @@ export default function Home() {
   const pageRows = rows.slice((page - 1) * PAGE, page * PAGE);
   const markDone = () => { update(s => ({ ...s, lastConfirmed: new Date().toISOString() })); setPage(1); };
 
-  return <main className="shell">
-    <SiteHeader current="/" />
+  return <>
     <nav className="primary" aria-label="주요 메뉴">{TABS.map(t =>
       <button key={t} className={tab === t ? 'active' : ''} onClick={() => { setTab(t); setCategory('전체'); setPage(1); }}>
         {t === '새 뉴스' ? <Clock3 size={16} /> : t === '감독당국 보도자료' ? <ShieldCheck size={16} /> : t === '북마크' ? <Bookmark size={16} /> : <Newspaper size={16} />} {t}
@@ -71,6 +68,5 @@ export default function Home() {
         return <Fragment key={a.id}>{head && <div className="dayhead">{dayHeading(d)}<small>· {perDay[d]}건</small></div>}
           <ArticleCard a={a} baseline={baseline} bookmarked={!!saved.bookmarks[a.id]} read={saved.readIds.includes(a.id)} onBookmark={toggleBookmark} onRead={markRead} /></Fragment>; })}</section>
     {rows.length > PAGE && <div className="pagination"><button disabled={page <= 1} onClick={() => setPage(p => p - 1)}>이전</button><span>{page} / {Math.ceil(rows.length / PAGE)} 페이지</span><button disabled={page * PAGE >= rows.length} onClick={() => setPage(p => p + 1)}>다음</button></div>}
-    <Footer />
-  </main>;
+  </>;
 }

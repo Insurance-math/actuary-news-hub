@@ -1,8 +1,6 @@
 'use client';
 import { useEffect, useMemo, useState } from 'react';
 import { AlertCircle } from 'lucide-react';
-import Footer from '../../components/Footer';
-import SiteHeader from '../../components/SiteHeader';
 import { todayKst } from '../../lib/dates';
 import { loadTrends } from '../../lib/news';
 import { Trends, lastWeeks, niceMax } from '../../lib/trends';
@@ -24,8 +22,7 @@ export default function TrendsPage() {
   const y = (v: number) => T + (H - T - B) * (1 - v / max);
   const md = (d: string) => `${Number(d.slice(5, 7))}/${Number(d.slice(8))}`;
 
-  return <main className="shell">
-    <SiteHeader current="/trends/" />
+  return <>
     <div className="notice"><div><b>키워드 주별 언급 수 (최근 {WEEKS}주)</b><p>기사 제목에 키워드가 들어간 건수를 발행일(KST) 기준 월~일 주 단위로 셉니다. 키워드는 config/keywords.json에서 바꾸며, 수집을 실행하면 과거분까지 다시 집계됩니다. 이번 주는 진행 중이라 값이 작을 수 있고, 데이터는 수집을 시작한 주부터 있습니다.</p></div></div>
     {!trends && !failure && <div className="articles"><div className="empty">추이 데이터를 불러오는 중입니다…</div></div>}
     {failure && <div className="error"><AlertCircle size={17} /> {failure}</div>}
@@ -44,6 +41,5 @@ export default function TrendsPage() {
       <div className="tableWrap"><table className="statusTable"><thead><tr><th>주 시작(월)</th>{trends.keywords.map(k => <th key={k}>{k}</th>)}<th>전체 기사</th></tr></thead>
         <tbody>{[...weeks].reverse().map(w => <tr key={w.week_start}><td data-label="주 시작(월)">{w.week_start}{w.week_start === weeks[weeks.length - 1].week_start ? ' (진행 중)' : ''}</td>{trends.keywords.map(k => <td key={k} data-label={k}>{w.counts[k] ?? 0}</td>)}<td data-label="전체 기사">{w.total}</td></tr>)}</tbody></table></div>
     </section>}
-    <Footer />
-  </main>;
+  </>;
 }
