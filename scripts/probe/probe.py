@@ -56,7 +56,7 @@ def polite_get(session, url, method='GET', **kw):
         _last[0] = time.time()
 
 
-def find_date(text: str) -> str | None:
+def find_date(text: str, month_only: bool = False) -> str | None:
     for pat in DATE_PATS:
         m = pat.search(text)
         if m:
@@ -65,6 +65,10 @@ def find_date(text: str) -> str | None:
                 return datetime(y, mo, d).date().isoformat()
             except ValueError:
                 pass
+    if month_only:  # 'YYYY-MM' 만 있는 목록(예: KIRI 리포트) — 1일로 보정하고 정밀도는 월 단위임을 문서에 표기
+        m = re.search(r'(20\d{2})-(0[1-9]|1[0-2])(?![\d-])', text)
+        if m:
+            return f'{m.group(1)}-{m.group(2)}-01'
     m = EN_DATE.search(text)
     if m:
         g = m.groups()
@@ -78,7 +82,7 @@ def find_date(text: str) -> str | None:
     return None
 
 
-def extract_html(html: bytes, base: str) -> tuple[list[dict], list[str]]:
+def extract_html(html: bytes, base: str, month_only: bool = False) -> tuple[list[dict], list[str]]:
     """게시판 목록 범용 추출: 앵커가 속한 가장 가까운 '행'(날짜가 하나 들어 있는 조상)에서 날짜를 찾는다."""
     soup = BeautifulSoup(html, 'html.parser')
     for t in soup(['script', 'style', 'nav', 'header', 'footer']):
@@ -107,7 +111,7 @@ def extract_html(html: bytes, base: str) -> tuple[list[dict], list[str]]:
             txt = ' '.join(node.get_text(' ').split())
             if len(txt) > 700:
                 break
-            found = {find_date(p) for p in [txt]} - {None}
+            found = {find_date(p, month_only) for p in [txt]} - {None}
             all_dates = {m.group(0) for pat in DATE_PATS for m in pat.finditer(txt)}
             if found and len(all_dates) <= 2:
                 date = next(iter(found))
@@ -123,7 +127,7 @@ def extract_html(html: bytes, base: str) -> tuple[list[dict], list[str]]:
         if key in seen:
             continue
         seen.add(key)
-        items.append({'title': title, 'date': date, 'url': link, 'js_link': is_js, 'js_raw': (onclick or href)[:120] if is_js else None, 'dept': dept})
+        items.append({'title': title, 'date': date, 'url': link, 'js_link': is_js, 'js_raw': (onclick or href)[:600] if is_js else None, 'dept': dept})
     return items, headers
 
 
@@ -221,7 +225,7 @@ def probe_url(session, target, spec, robots_cache, today):
         if spec['kind'] == 'rss':
             items, headers = extract_rss(r.content), []
         else:
-            items, headers = extract_html(r.content, r.url)
+            items, headers = extract_html(r.content, r.url, spec.get('month_only', False))
             # 페이지 확장: 1페이지가 전부 최근 30일이면 다음 페이지도 읽어 30일 건수를 추정(최대 max_pages, 요청 간 1초 이상)
             cutoff = (today - timedelta(days=30)).date().isoformat()
             for pg in range(2, spec.get('max_pages', 1) + 1):
@@ -230,7 +234,7 @@ def probe_url(session, target, spec, robots_cache, today):
                 r2, err2, _ = fetch_page(session, spec, pg)
                 if r2 is None or not r2.ok:
                     break
-                more, _ = extract_html(r2.content, r2.url)
+                more, _ = extract_html(r2.content, r2.url, spec.get('month_only', False))
                 seen = {(i['title'][:30], i['date']) for i in items}
                 items += [i for i in more if (i['title'][:30], i['date']) not in seen]
                 res['pages_fetched'] = pg

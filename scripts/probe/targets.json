@@ -89,6 +89,12 @@
   "group": "업계",
   "urls": [
    {
+    "label": "KIRI 리포트(주간, 월 단위 날짜)",
+    "kind": "html",
+    "url": "https://www.kiri.or.kr/publication/subIntro.do?parentCatId=13",
+    "month_only": true
+   },
+   {
     "label": "발간 보고서",
     "kind": "html",
     "url": "https://www.kiri.or.kr/report/reportList.do?catId=25"
@@ -157,7 +163,10 @@
    {
     "label": "보도자료",
     "kind": "html",
-    "url": "https://mods.go.kr/menu.es?mid=a10301010000"
+    "url": "https://mods.go.kr/menu.es?mid=a10301010000",
+    "permalink": "https://mods.go.kr{a1}",
+    "page_param": "nPage",
+    "max_pages": 1
    }
   ]
  },
