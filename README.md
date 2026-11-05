@@ -6,7 +6,9 @@
 - 구조: GitHub Actions에서 Python 수집기 → `data/YYYY-MM.json` 커밋 → Next.js 정적 빌드 → GitHub Pages 배포. 서버·DB·비밀키 없음.
 
 ## 운영
-- **수집·갱신(아침 1회)**: GitHub → Actions → "Collect and deploy" → **Run workflow**. 완료되면 사이트가 자동 갱신됩니다.
+- **자동 수집**: 매일 한국시간 05:37(20:37 UTC)에 예약 실행됩니다. GitHub 예약은 수 시간 늦거나 건너뛸 수 있어 일찍 잡았습니다. 급할 때는 GitHub → Actions → "Collect and deploy" → **Run workflow**로 수동 실행하면 됩니다. 완료되면 사이트가 자동 갱신됩니다.
+- **지연 안내**: 마지막 수집이 36시간보다 오래되면 모든 페이지 상단에 "수집이 지연되고 있습니다"가 표시됩니다.
+- **data 커밋 실패 시**: push가 GitHub 쪽 오류 등으로 실패하면 최대 3회 재시도(`scripts/commit-data.sh`)하고, 그래도 실패하면 사이트는 새 데이터로 배포하되 실행을 '실패'로 표시합니다(알림 메일). 저장소에는 그 수집분이 없으므로 다음 실행이 다시 수집하며 중복은 생기지 않습니다.
 - 코드를 `main`에 push하면 수집 없이 빌드·배포만 실행됩니다.
 - 최초 1회: 저장소 Settings → Pages → Source를 **GitHub Actions**로 설정.
 - 일부 피드가 실패하거나 비어 있어도 실행은 계속되고, 기존 데이터·사이트는 유지됩니다. 실패 피드는 Actions 로그의 `WARNING ... 실패`에서 확인합니다.

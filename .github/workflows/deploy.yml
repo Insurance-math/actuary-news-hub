@@ -2,7 +2,7 @@ name: Collect and deploy
 
 on:
   schedule:
-    - cron: '7 22 * * *'   # 매일 22:07 UTC = 한국시간 07:07 (GitHub 사정으로 수 분~수십 분 늦을 수 있음)
+    - cron: '37 20 * * *'  # 매일 20:37 UTC = 한국시간 05:37. GitHub 예약은 수 시간까지 늦을 수 있어 일찍 잡아 둠(급하면 수동 실행)
   workflow_dispatch:   # GitHub 웹에서 "Run workflow" (수동 수집 + 배포)
   push:
     branches: [main]   # 코드 변경 시 빌드·배포만 (수집 없음)
@@ -21,6 +21,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    outputs:
+      commit_failed: ${{ steps.flag.outputs.failed }}
     steps:
       - uses: actions/checkout@v4
 
@@ -39,18 +41,29 @@ jobs:
           for t in collector/test_*.py; do (cd collector && python "$(basename $t)"); done
           python collector/collect.py
 
-      - name: Commit data
+      # push가 GitHub 쪽 일시 오류 등으로 끝내 실패해도 빌드·배포는 계속한다(작업 디렉터리의 최신 data 로 사이트가 갱신됨).
+      # 실패는 아래 flag 단계와 마지막 report 작업이 '실행 실패'로 표시한다.
+      - name: Commit data (재시도 3회)
+        id: commit
         if: github.event_name != 'push'
+        continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
-          # data/ 에 변경이 있으면 커밋(새 기사가 없어도 status.json 의 수집 시각·연속 실패 횟수는 매번 바뀜).
-          if git diff --cached --quiet; then
-            echo "변경 없음 — 커밋 생략"
-          else
-            git commit -m "data: 뉴스 수집 $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+          bash scripts/commit-data.sh origin "${GITHUB_REF_NAME}"
+
+      - name: Record commit result
+        id: flag
+        if: always()
+        run: |
+          echo "failed=${{ steps.commit.outcome == 'failure' }}" >> "$GITHUB_OUTPUT"
+          if [ "${{ steps.commit.outcome }}" = "failure" ]; then
+            echo "::error title=data 커밋 실패::저장소에 data 를 push하지 못했습니다. 이번 수집은 사이트에만 반영됩니다(다음 실행에서 같은 기사가 다시 수집되며 중복은 생기지 않음)."
+            {
+              echo "### ⚠️ data 커밋 실패"
+              echo "- 수집·빌드·배포는 완료되어 **사이트에는 새 데이터가 반영**되었습니다."
+              echo "- 저장소에는 반영되지 않았습니다. 'Commit data' 단계 로그를 확인하세요."
+            } >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - uses: actions/setup-node@v4
@@ -76,3 +89,13 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # data 커밋이 끝내 실패한 경우, 배포까지 끝낸 뒤 실행을 '실패'로 표시해 알림(메일)과 빨간 표시를 남긴다.
+  report:
+    needs: [build, deploy]
+    if: always() && needs.build.outputs.commit_failed == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "::error title=data 커밋 실패::사이트는 갱신되었지만 저장소에 data 가 저장되지 않았습니다."
+          exit 1
