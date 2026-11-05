@@ -3,8 +3,10 @@ import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'rea
 import { Bookmark, Check, Newspaper, Search, ShieldCheck, Clock3, AlertCircle, SlidersHorizontal } from 'lucide-react';
 import ArticleCard from '../components/ArticleCard';
 import DateBar, { DateFilter } from '../components/DateBar';
+import SourceFilter, { SourceChips } from '../components/SourceFilter';
 import { Article, CATEGORIES } from '../lib/news';
-import { countByDate, dayHeading, kstDate, shiftMonth, todayKst } from '../lib/dates';
+import { addDays, countByDate, dayHeading, kstDate, shiftMonth, todayKst } from '../lib/dates';
+import { matchSources, sourceOptions } from '../lib/sources';
 import { fmt } from '../lib/format';
 import { isNewArticle, isUnreadNew, visibleInNewTab } from '../lib/newsFilter';
 import { useNews } from '../lib/useNews';
@@ -21,7 +23,13 @@ export default function Home() {
   const [unreadOnly, setUnreadOnly] = useState(false);
   const [sort, setSort] = useState<'latest' | 'important'>('latest');
   const [page, setPage] = useState(1);
-  const [dateFilter, setDateFilter] = useState<DateFilter>(null);
+  // 날짜 필터는 탭별로 보관한다. 전체 뉴스 탭만 처음에 '오늘'(KST)이 눌린 상태이고, '해제'한 선택은 새로고침 전까지 유지된다.
+  const [dateFilters, setDateFilters] = useState<Partial<Record<Tab, DateFilter>>>({});
+  const today = todayKst();
+  const stored = dateFilters[tab];
+  const dateFilter: DateFilter = stored !== undefined ? stored : tab === '전체 뉴스' ? { from: today, to: today } : null;
+  const setDateFilter = (f: DateFilter) => setDateFilters(s => ({ ...s, [tab]: f }));
+  const [sources, setSources] = useState<string[]>([]);  // 선택한 언론사(비면 전체)
   const [calMonth, setCalMonth] = useState(todayKst().slice(0, 7));
   const [showRead, setShowRead] = useState(false);            // 새 뉴스 탭: 읽은 기사 다시 보기(기본 숨김)
   const [justRead, setJustRead] = useState<Set<string>>(new Set()); // 방금 읽어 곧 사라질 카드(짧은 페이드 후 제거)
@@ -49,8 +57,12 @@ export default function Home() {
     if (q) r = r.filter(a => [a.title, a.source, a.category, ...a.tags].join(' ').toLowerCase().includes(q));
     return [...r].sort((a, b) => sort === 'important' ? b.score - a.score || b.published_at.localeCompare(a.published_at) : b.published_at.localeCompare(a.published_at));
   }, [tab, all, category, search, sort, baseline, saved.bookmarks, unreadOnly, readSet, showRead, justRead]);
-  const dayCounts = useMemo(() => countByDate(base), [base]); // 달력 표시용(날짜 필터 제외)
-  const rows = useMemo(() => dateFilter ? base.filter(a => { const d = kstDate(a.published_at); return d >= dateFilter.from && d <= dateFilter.to; }) : base, [base, dateFilter]);
+  const bySource = useMemo(() => matchSources(base, sources), [base, sources]);
+  const dayCounts = useMemo(() => countByDate(bySource), [bySource]); // 달력 표시용(날짜 필터 제외, 언론사 선택은 반영)
+  const inDate = (a: Article) => !dateFilter || (kstDate(a.published_at) >= dateFilter.from && kstDate(a.published_at) <= dateFilter.to);
+  const rows = useMemo(() => bySource.filter(inDate), [bySource, dateFilter]); // eslint-disable-line react-hooks/exhaustive-deps
+  // 언론사 드롭다운 건수: 현재 탭·날짜·카테고리·검색·안 읽은 것 조건에 맞춘 값(언론사 선택 자체는 제외)
+  const sourceOpts = useMemo(() => sourceOptions(base.filter(inDate), sources), [base, dateFilter, sources]); // eslint-disable-line react-hooks/exhaustive-deps
   const perDay = useMemo(() => countByDate(rows), [rows]);
 
   // 새 뉴스 건수(탭 배지): 마지막 확인 이후 수집 + 안 읽음. 읽은 기사는 빠진다(방금 읽어 사라지는 중인 카드는 이미 제외).
@@ -63,11 +75,15 @@ export default function Home() {
 
   return <>
     <nav className="primary" aria-label="주요 메뉴">{TABS.map(t =>
-      <button key={t} className={tab === t ? 'active' : ''} onClick={() => { setTab(t); setCategory('전체'); setPage(1); }}>
+      <button key={t} className={tab === t ? 'active' : ''} onClick={() => { setTab(t); setCategory('전체'); setSources([]); setPage(1); }}>
         {t === '새 뉴스' ? <Clock3 size={16} /> : t === '감독당국 보도자료' ? <ShieldCheck size={16} /> : t === '북마크' ? <Bookmark size={16} /> : <Newspaper size={16} />} {t}{t === '새 뉴스' && ready && !loading && <span className="count" aria-label={`안 읽은 새 뉴스 ${newCount}건`}>{newCount.toLocaleString()}</span>}
       </button>)}</nav>
-    <div className="catOuter"><nav className="categories" aria-label="뉴스 카테고리">{(['전체', ...CATEGORIES] as const).map(c =>
-      <button key={c} className={category === c ? 'chosen' : ''} onClick={() => { setCategory(c); setPage(1); }}>{c}</button>)}</nav></div>
+    <div className="catRow">
+      <div className="catOuter"><nav className="categories" aria-label="뉴스 카테고리">{(['전체', ...CATEGORIES] as const).map(c =>
+        <button key={c} className={category === c ? 'chosen' : ''} onClick={() => { setCategory(c); setPage(1); }}>{c}</button>)}</nav></div>
+      <SourceFilter options={sourceOpts} selected={sources} onChange={v => { setSources(v); setPage(1); }} />
+    </div>
+    <SourceChips selected={sources} onChange={v => { setSources(v); setPage(1); }} />
     <div className="toolbar">
       <div className="search"><Search size={16} /><input aria-label="뉴스 검색" placeholder="기사 제목·언론사 검색" value={search} onChange={e => { setSearch(e.target.value); setPage(1); }} /></div>
       <label className="sort"><SlidersHorizontal size={15} /><select value={sort} onChange={e => { setSort(e.target.value as 'latest' | 'important'); setPage(1); }}><option value="latest">최신순</option><option value="important">중요도순</option></select></label>
@@ -80,10 +96,12 @@ export default function Home() {
     <div className="listHead"><h3>{tab} <small>{rows.length.toLocaleString()}건</small></h3><span>{loadingMore ? '과거 기사 불러오는 중…' : index?.updated_at ? `마지막 수집 ${fmt(index.updated_at)}` : '수집 이력 없음'}</span></div>
     {failure && <div className="error"><AlertCircle size={17} /> {failure}</div>}
     <section className="articles">{!ready || (loading && tab !== '북마크') ? <div className="empty">뉴스를 불러오는 중입니다…</div> : pageRows.length === 0
-      ? <div className="empty"><Newspaper size={27} /><b>표시할 기사가 없습니다.</b><p>새 뉴스 확인 여부, 검색어, 수집 실행 결과를 확인하세요.</p></div>
+      ? (tab === '전체 뉴스' && dateFilter && dateFilter.from === today && dateFilter.to === today
+        ? <div className="empty"><Newspaper size={27} /><b>오늘 올라온 기사가 아직 없습니다</b><p>{category !== '전체' || search.trim() || sources.length || unreadOnly ? '선택한 카테고리·검색·언론사 조건 기준입니다. ' : '수집은 매일 아침 이뤄집니다. '}어제 기사를 확인해 보세요.</p><button type="button" className="confirm" onClick={() => { const y = addDays(today, -1); setDateFilter({ from: y, to: y }); setCalMonth(y.slice(0, 7)); setPage(1); }}>어제 보기</button></div>
+        : <div className="empty"><Newspaper size={27} /><b>표시할 기사가 없습니다.</b><p>새 뉴스 확인 여부, 검색어, 수집 실행 결과를 확인하세요.</p></div>)
       : pageRows.map((a, i) => { const d = kstDate(a.published_at); const head = sort === 'latest' && (i === 0 || d !== kstDate(pageRows[i - 1].published_at));
         return <Fragment key={a.id}>{head && <div className="dayhead">{dayHeading(d)}<small>· {perDay[d]}건</small></div>}
-          <ArticleCard a={a} baseline={baseline} bookmarked={!!saved.bookmarks[a.id]} read={readSet.has(a.id)} dim={tab === '새 뉴스' || tab === '전체 뉴스'} fading={justRead.has(a.id)} onBookmark={toggleBookmark} onRead={handleRead} onUnread={tab === '새 뉴스' && showRead ? unmarkRead : undefined} /></Fragment>; })}</section>
+          <ArticleCard a={a} baseline={baseline} showDiscovery={tab === '감독당국 보도자료'} bookmarked={!!saved.bookmarks[a.id]} read={readSet.has(a.id)} dim={tab === '새 뉴스' || tab === '전체 뉴스'} fading={justRead.has(a.id)} onBookmark={toggleBookmark} onRead={handleRead} onUnread={tab === '새 뉴스' && showRead ? unmarkRead : undefined} /></Fragment>; })}</section>
     {rows.length > PAGE && <div className="pagination"><button disabled={curPage <= 1} onClick={() => setPage(curPage - 1)}>이전</button><span>{curPage} / {lastPage} 페이지</span><button disabled={curPage >= lastPage} onClick={() => setPage(curPage + 1)}>다음</button></div>}
   </>;
 }
