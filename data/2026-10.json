@@ -47,7 +47,7 @@
    "국고채",
    "금리"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -137,7 +137,7 @@
    "엔화",
    "금리"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -346,7 +346,7 @@
    "금리",
    "투자"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -486,7 +486,7 @@
    "연준",
    "국채"
   ],
-  "score": 4,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -612,7 +612,7 @@
    "의료비",
    "비급여"
   ],
-  "score": 5,
+  "score": 4,
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
@@ -632,7 +632,7 @@
    "AI",
    "수익률"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [
    "사회·인구·기술 변화"
@@ -682,7 +682,7 @@
   "tags": [
    "기준금리"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -715,7 +715,7 @@
   "tags": [
    "국고채"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -732,7 +732,7 @@
    "뉴욕증시",
    "금리동결"
   ],
-  "score": 4,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -749,7 +749,7 @@
    "금리인상",
    "Fed"
   ],
-  "score": 4,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -782,7 +782,7 @@
    "연준",
    "금리동결"
   ],
-  "score": 4,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -801,7 +801,7 @@
    "뉴욕증시",
    "국채"
   ],
-  "score": 4,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -818,7 +818,7 @@
    "Fed",
    "기준금리"
   ],
-  "score": 4,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },

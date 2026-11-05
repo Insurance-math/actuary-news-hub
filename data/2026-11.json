@@ -269,7 +269,7 @@
    "손보",
    "비급여"
   ],
-  "score": 5,
+  "score": 4,
   "feed_name": "보험매일"
  },
  {
@@ -417,7 +417,7 @@
   "tags": [
    "채권"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -556,7 +556,7 @@
   "tags": [
    "환율"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장"
  },
  {
@@ -660,7 +660,7 @@
   "tags": [
    "환율"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장"
  },
  {
@@ -728,7 +728,7 @@
    "듀레이션",
    "GA"
   ],
-  "score": 3,
+  "score": 4,
   "feed_name": "주요 경제지·보험",
   "sub_categories": [
    "금융시장·자산운용",
@@ -796,7 +796,7 @@
    "채권",
    "장기금리"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -1076,7 +1076,7 @@
    "엔화",
    "장기금리"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -1541,7 +1541,7 @@
    "기준금리",
    "금리동결"
   ],
-  "score": 4,
+  "score": 3,
   "feed_name": "보험매일",
   "sub_categories": [
    "생명보험"
@@ -1708,7 +1708,7 @@
    "손보",
    "의료비"
   ],
-  "score": 5,
+  "score": 4,
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
@@ -1727,7 +1727,7 @@
    "실손",
    "손보"
   ],
-  "score": 5,
+  "score": 4,
   "feed_name": "금융위원회 검색",
   "sub_categories": []
  },
@@ -1832,7 +1832,7 @@
    "채권",
    "국채"
   ],
-  "score": 4,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장"
  },
  {
@@ -1979,7 +1979,7 @@
    "실손",
    "손보"
   ],
-  "score": 5,
+  "score": 4,
   "feed_name": "주요 경제지·보험",
   "sub_categories": []
  },
@@ -2154,7 +2154,7 @@
    "처브라이프",
    "출시"
   ],
-  "score": 4,
+  "score": 3,
   "feed_name": "주요 경제지·보험",
   "sub_categories": [
    "보험경영·판매"
@@ -2206,7 +2206,7 @@
    "의료비",
    "출시"
   ],
-  "score": 4,
+  "score": 3,
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "보험경영·판매",
@@ -2301,7 +2301,7 @@
    "채권",
    "ETF"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -2441,7 +2441,7 @@
   "tags": [
    "채권"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -2571,7 +2571,7 @@
    "채권",
    "ETF"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -2839,7 +2839,7 @@
    "채권",
    "ETF"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장"
  },
  {
@@ -2856,7 +2856,7 @@
    "자사주",
    "금리"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [
    "보험경영·판매"
@@ -3230,7 +3230,7 @@
    "국채",
    "ETF"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -3346,7 +3346,7 @@
   "tags": [
    "환율"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -3474,7 +3474,7 @@
   "tags": [
    "채권"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -3607,7 +3607,7 @@
    "AI",
    "ETF"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [
    "사회·인구·기술 변화"
@@ -3886,7 +3886,7 @@
   "tags": [
    "환율"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -4157,7 +4157,7 @@
    "금리",
    "투자"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": []
  },
@@ -4593,7 +4593,7 @@
    "채권",
    "금융위"
   ],
-  "score": 3,
+  "score": 2,
   "feed_name": "한국보험신문",
   "sub_categories": [
    "제도·회계·건전성"
