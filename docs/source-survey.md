@@ -3,7 +3,7 @@
 조사일 2026-11-05 (KST). **조사 전용** — 운영 collector, `data/`, 사이트에는 연결하지 않았다. 반영은 검토 후 별도 지시.
 
 - 조사 도구: [scripts/probe/](../scripts/probe/) (`probe.py`, `targets.json`), Actions용 [probe.yml](../.github/workflows/probe.yml)(workflow_dispatch 전용, data 커밋·배포 없음).
-- 원시 결과: [docs/source-survey-data/](source-survey-data/) — Mac(한국 IP `219.255.207.134`), Actions(GitHub 러너, 해외 클라우드 IP — 실행마다 달라 `134.138.62.67` / `20.168.6.177` / `172.174.110.228`).
+- 원시 결과: 로컬 보관(저장소에는 포함하지 않음). 측정 환경은 한국 IP(Mac)와 해외 클라우드 IP(Actions 러너, 실행마다 달라짐) 두 곳.
 - 방법: 각 게시판 1페이지(필요 시 2~4페이지)만 요청, 요청 간 1.2초 이상, 본문·첨부는 읽지 않음(링크 검증용으로 첫 항목 1건만 열어 상태·제목 포함 여부만 확인). robots.txt 확인. 제목은 현재 `config/categories.json` 규칙으로 분류(규칙 수정 없음).
 - **하지 못한 것**: 각 사이트의 이용약관·저작권정책(공공누리 유형 등) 본문은 읽지 않았다. 아래 "위험"은 robots.txt와 접속 특성만 근거다. 반영 전 약관 확인이 필요하다.
 
