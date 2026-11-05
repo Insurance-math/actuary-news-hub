@@ -1,9 +1,9 @@
 {
  "last_run": {
-  "started_at": "2026-11-05T05:37:54.778483+00:00",
-  "finished_at": "2026-11-05T05:37:56.099942+00:00",
-  "candidates": 233,
-  "added": 4,
+  "started_at": "2026-11-05T15:31:33.894774+00:00",
+  "finished_at": "2026-11-05T15:31:35.644342+00:00",
+  "candidates": 223,
+  "added": 14,
   "failed": [
    "금융위원회 RSS"
   ]
@@ -11,17 +11,19 @@
  "sources": {
   "보험매일": {
    "ok": true,
-   "last_run_at": "2026-11-05T05:37:54.778483+00:00",
-   "last_success_at": "2026-11-05T05:37:54.778483+00:00",
+   "last_run_at": "2026-11-05T15:31:33.894774+00:00",
+   "last_success_at": "2026-11-05T15:31:33.894774+00:00",
    "consecutive_failures": 0,
    "entries": 50,
-   "kept": 41,
+   "kept": 39,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 9
+    "irrelevant": 11
    },
    "filtered": [
+    "고혈압·당뇨병 관리 전 연령 확대…내년 7월 통합센터 운영",
+    "건보공단, 빅데이터 분석센터 4곳 추가…전국 19곳으로 확대",
     "GA 정착지원금 40~50% 감소…설계사 이동도 줄었다",
     "신한라이프, 민원·분쟁 심의에 외부 전문가 참여 확대",
     "건보 국고지원 13조원 부족…내년에도 법정기준 미달",
@@ -29,28 +31,28 @@
     "삼성생명, AI 기반 지역 통합돌봄 모델 실증",
     "예보, 금융계약자 보호 범위 넓힌다…디지털 금융 사각지대 선제 대응",
     "삼성생명, 에스원 주식 13만7천주 매각…금산법 위반 우려에",
-    "대리서명 제재 이어지는데…GA 디지털 모집관리 시험대",
-    "자회사형 GA, 3분기 매출 한금서 ‘1강 체제’ 지속"
+    "대리서명 제재 이어지는데…GA 디지털 모집관리 시험대"
    ],
-   "oldest": "2026-11-02T05:01:35+00:00",
-   "newest": "2026-11-05T05:20:58+00:00",
+   "oldest": "2026-11-02T22:42:03+00:00",
+   "newest": "2026-11-05T09:46:14+00:00",
    "at_limit": true,
    "gap_risk": false,
    "error": null
   },
   "보험저널": {
    "ok": true,
-   "last_run_at": "2026-11-05T05:37:54.778483+00:00",
-   "last_success_at": "2026-11-05T05:37:54.778483+00:00",
+   "last_run_at": "2026-11-05T15:31:33.894774+00:00",
+   "last_success_at": "2026-11-05T15:31:33.894774+00:00",
    "consecutive_failures": 0,
    "entries": 50,
-   "kept": 30,
+   "kept": 29,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 20
+    "irrelevant": 21
    },
    "filtered": [
+    "NH농협생명, 경기 김포 농가에서 가지치기 작업 지원",
     "푸본현대생명, 서울시 발달장애인 플라잉디스크대회서 자원봉사활동",
     "GA 검사 대응, 정도영업이 답이다...④몸집 키운 GA, 이제 '책임' 키울 때… 내부통제가 '기업가치' 가른다",
     "“뚫리면 즉각 셧다운”… AI 해킹 공포 덮친 금융권, 580개사 싹 다 뒤진다",
@@ -59,111 +61,111 @@
     "메타리치, 수수료 경쟁 넘어 ‘GA 2.0’ 전환… 통합 업무시스템 ‘MetaArena’ 구축",
     "[GA 품질경영 시대] 스카이블루에셋, 매월 '준법 DAY' 운영… 현장 밀착 준법경영으로 '질적 성장' 정조준",
     "FP '1200%룰' · 4~7년 '분급제' 이은 다음 수순… 슬그머니 '상담기록 보존' 등 GA 판매자 책임 확대 '시동'",
-    "\"발달장애 골든타임 사수하라\"… 현대해상, 150억 쏟아붓는 혁신 솔루션 8팀 띄운다",
-    "\"받은 사랑, 경제교육으로 돌려줍니다\"… KB라이프 '링크비' 2기 청년들의 아름다운 홀로서기"
+    "\"발달장애 골든타임 사수하라\"… 현대해상, 150억 쏟아붓는 혁신 솔루션 8팀 띄운다"
    ],
-   "oldest": "2026-11-02T00:39:14+00:00",
-   "newest": "2026-11-05T05:27:05+00:00",
+   "oldest": "2026-11-02T02:27:28+00:00",
+   "newest": "2026-11-05T06:58:57+00:00",
    "at_limit": true,
    "gap_risk": false,
    "error": null
   },
   "한국보험신문": {
    "ok": true,
-   "last_run_at": "2026-11-05T05:37:54.778483+00:00",
-   "last_success_at": "2026-11-05T05:37:54.778483+00:00",
+   "last_run_at": "2026-11-05T15:31:33.894774+00:00",
+   "last_success_at": "2026-11-05T15:31:33.894774+00:00",
    "consecutive_failures": 0,
    "entries": 50,
-   "kept": 19,
+   "kept": 20,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 31
+    "irrelevant": 30
    },
    "filtered": [
+    "KB국민은행, 청년 창업기업 자금 조달 지원에 118억원 출연",
+    "푸본현대생명, 서울시 발달장애인 플라잉디스크대회서 봉사활동",
+    "교보생명, 고객 응대부터 민원 처리까지 ‘소비자보호’ 체계 정비",
     "금융위, 전 금융권 580여 곳 보안 전수점검… AI 해킹 대응 강화",
     "한국금융연구원, ‘사람 살리는 금융 캠페인’ 동참",
     "한국금융연구원, 디지털 금융소비자 보호·보안 강화 방안 논의",
     "자립준비청년 12명, 경제교육으로 재능나눔… KB라이프재단 ‘링크비’ 2기 마무리",
     "ABL생명, 아동복지시설 환경 개선 위한 ‘DIY 가구 만들기’ 봉사활동 펼쳐",
     "중은삼성인수, 진위밍 신임 사장 선임… 성장세 속 경영진 개편",
-    "현대해상, 아동 발달 조기개입 지원 8개 팀 최종 선정… ‘골든타임’ 확보 모색",
-    "서민금융진흥원, 유선상담 서비스 개편… 전화로 정책서민금융 대출 신청",
-    "신용회복위원회·법률구조공단, 위기채무자 지원 연계… 회생·파산 절차 간소화",
-    "삼성생명, AI 기반 ‘시니어 통합돌봄 모델’ 선보여"
+    "현대해상, 아동 발달 조기개입 지원 8개 팀 최종 선정… ‘골든타임’ 확보 모색"
    ],
    "oldest": "2026-11-01T15:00:00+00:00",
-   "newest": "2026-11-05T00:00:00+00:00",
+   "newest": "2026-11-05T09:45:00+00:00",
    "at_limit": true,
    "gap_risk": false,
    "error": null
   },
   "주요 경제지·보험": {
    "ok": true,
-   "last_run_at": "2026-11-05T05:37:54.778483+00:00",
-   "last_success_at": "2026-11-05T05:37:54.778483+00:00",
+   "last_run_at": "2026-11-05T15:31:33.894774+00:00",
+   "last_success_at": "2026-11-05T15:31:33.894774+00:00",
    "consecutive_failures": 0,
    "entries": 100,
-   "kept": 91,
+   "kept": 90,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 9
+    "irrelevant": 10
    },
    "filtered": [
     "건보 국고지원 8년간 13조원 미달…내년에도 법정기준 못 채워",
     "매뉴라이프 파이낸셜, 3분기 핵심 EPS 1.24캐나다달러..6% 증가",
-    "인액트 홀딩스, 3분기 GAAP 희석 EPS 1.15달러..전년비 4.5%↑",
-    "AIG, 3분기 GAAP 희석 EPS 1.60달러..전년비 72%↑",
     "\"세금은 내는데 건보료는 제외\"…분리과세소득에 건보료 부과 검토",
+    "AIG, 3분기 GAAP 희석 EPS 1.60달러..전년비 72%↑",
+    "의료 빅데이터 연구 거점 늘린다…건보공단, 4개 센터 개소",
     "유나이티드 파이어 그룹, 3분기 희석 EPS 1.34달러..전년비 10% 감소",
     "일산병원, 만성폐쇄성폐질환 적정성 '11회 연속 1등급'",
-    "예보료율 소폭 낮췄지만 여전한 불만에…개별 금융사 의견 듣는다 - 머니투데이",
-    "인터내셔널 제네럴 인슈어, 3분기 총수익 1억4000만 달러·순익 16% 감소"
+    "인터내셔널 제네럴 인슈어, 3분기 총수익 1억4000만 달러·순익 16% 감소",
+    "글로벌 인뎀니티, 3분기 순이익 890만달러..전년비 29% 감소",
+    "레모네이드, 3분기 매출 3억3600만 달러..전년비 73% 증가"
    ],
-   "oldest": "2026-11-01T03:00:00+00:00",
-   "newest": "2026-11-05T05:20:30+00:00",
+   "oldest": "2026-11-01T02:02:55+00:00",
+   "newest": "2026-11-05T11:08:39+00:00",
    "at_limit": true,
    "gap_risk": false,
    "error": null
   },
   "주요 경제지·금융시장": {
    "ok": true,
-   "last_run_at": "2026-11-05T05:37:54.778483+00:00",
-   "last_success_at": "2026-11-05T05:37:54.778483+00:00",
+   "last_run_at": "2026-11-05T15:31:33.894774+00:00",
+   "last_success_at": "2026-11-05T15:31:33.894774+00:00",
    "consecutive_failures": 0,
    "entries": 100,
-   "kept": 43,
+   "kept": 36,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 57
+    "irrelevant": 64
    },
    "filtered": [
     "\"반도체만 보고 있을 때 아니다\"…내년 투자판 흔들 'ABC'",
     "삼성운용 \"KODEX 미국10년국채 ETF 순자산 2천억원 돌파\"",
-    "삼성운용 \"KODEX 미국10년국채 ETF 순자산 2천억원 돌파\"",
     "삼성운용 'KODEX 미국10년국채액티브(H)'ETF 순자산 2000억 돌파",
-    "3분기 서울 상업용 부동산 거래액 20%↑…대형 오피스가 견인",
     "같은 장기채 ETF인데 수익률 달라…비결은 이것[ETFvsETF] - 머니투데이",
     "3분기 서울 상업용 부동산 거래액 20%↑…대형 오피스가 견인",
     "불안한 증시에 안전자산 꽂힌 서학개미…美국채 '폭풍 쇼핑'",
     "\"지금은 잘 나가지만…\" 삼전닉스 호황 속 커지는 '경고음' [테크로그]",
-    "KB운용, 'KB 코리아 첨단전략산업50 목표전환 제2호 펀드' 출시"
+    "美 과세 지방채 수익률 10년래 최고 수준…“지금이 투자 적기”",
+    "“차이나머니 못이긴다? 미국은 4배 더 투자”…美주식 60% 담으라는데",
+    "안전자산 꽂힌 서학개미 … 美국채 '폭풍 쇼핑'"
    ],
-   "oldest": "2026-10-29T07:40:42+00:00",
-   "newest": "2026-11-05T03:58:14+00:00",
+   "oldest": "2026-10-29T21:10:00+00:00",
+   "newest": "2026-11-05T15:00:00+00:00",
    "at_limit": true,
    "gap_risk": false,
    "error": null
   },
   "사회변화·보험": {
    "ok": true,
-   "last_run_at": "2026-11-05T05:37:54.778483+00:00",
-   "last_success_at": "2026-11-05T05:37:54.778483+00:00",
+   "last_run_at": "2026-11-05T15:31:33.894774+00:00",
+   "last_success_at": "2026-11-05T15:31:33.894774+00:00",
    "consecutive_failures": 0,
-   "entries": 34,
-   "kept": 33,
+   "entries": 32,
+   "kept": 31,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
@@ -172,17 +174,17 @@
    "filtered": [
     "건보공단, AI 상담·업무비서 고도화 추진…사업자 공모"
    ],
-   "oldest": "2026-10-29T07:00:00+00:00",
-   "newest": "2026-11-04T11:18:54+00:00",
+   "oldest": "2026-10-29T17:46:47+00:00",
+   "newest": "2026-11-05T09:36:46+00:00",
    "at_limit": false,
    "gap_risk": false,
    "error": null
   },
   "금융위원회 RSS": {
    "ok": false,
-   "last_run_at": "2026-11-05T05:37:54.778483+00:00",
+   "last_run_at": "2026-11-05T15:31:33.894774+00:00",
    "last_success_at": null,
-   "consecutive_failures": 17,
+   "consecutive_failures": 18,
    "entries": 0,
    "kept": 0,
    "skipped": {},
@@ -195,16 +197,16 @@
   },
   "금융위원회 검색": {
    "ok": true,
-   "last_run_at": "2026-11-05T05:37:54.778483+00:00",
-   "last_success_at": "2026-11-05T05:37:54.778483+00:00",
+   "last_run_at": "2026-11-05T15:31:33.894774+00:00",
+   "last_success_at": "2026-11-05T15:31:33.894774+00:00",
    "consecutive_failures": 0,
-   "entries": 47,
-   "kept": 2,
+   "entries": 42,
+   "kept": 1,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 20,
-    "junk_title": 25
+    "irrelevant": 18,
+    "junk_title": 23
    },
    "filtered": [
     "[노이즈 제목] 알림마당",
@@ -212,45 +214,45 @@
     "[노이즈 제목] 보험정책",
     "[노이즈 제목] 보험정책",
     "[노이즈 제목] 보험정책",
-    "[노이즈 제목] 알림마당",
+    "[노이즈 제목] 보험정책",
+    "[노이즈 제목] 보험정책",
     "과거회신사례(2014 이전) - 금융규제·법령해석포털",
     "예금자보호법 조문별 제·개정이유서 금 융 위 원 회",
-    "[노이즈 제목] 금융정책",
     "｢예금자보호법｣ 일부개정법률안 입법예고"
    ],
    "oldest": "2021-03-11T11:19:14+00:00",
-   "newest": "2026-11-05T04:28:21+00:00",
+   "newest": "2026-11-05T09:26:24+00:00",
    "at_limit": false,
    "gap_risk": false,
    "error": null
   },
   "금융감독원 검색": {
    "ok": true,
-   "last_run_at": "2026-11-05T05:37:54.778483+00:00",
-   "last_success_at": "2026-11-05T05:37:54.778483+00:00",
+   "last_run_at": "2026-11-05T15:31:33.894774+00:00",
+   "last_success_at": "2026-11-05T15:31:33.894774+00:00",
    "consecutive_failures": 0,
-   "entries": 13,
+   "entries": 11,
    "kept": 0,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 12,
+    "irrelevant": 10,
     "junk_title": 1
    },
    "filtered": [
     "[노이즈 제목] 보험모집질서 위반신고",
     "전체 - 전자공시시스템",
-    "INCHON CITY GAS/Decision on Provision of Collateral for Others/2026.11.02 - DART - Repository of Korea's Corporate Filings",
     "WATOSCOREA/Semi-Annual Report/2026.10.30 - DART - Repository of Korea's Corporate Filings",
     "Supplements to the Universal Shelf Registration Statement - DART - Repository of Korea's Corporate Filings",
     "MIRAE ASSET SECURITIES/Prospectus (Shelf Registration)/2026.11.04 - DART - Repository of Korea's Corporate Filings",
     "Supplements to the Universal Shelf Registration Statement - DART - Repository of Korea's Corporate Filings",
     "Registration Statement (Debt securities) - DART - Repository of Korea's Corporate Filings",
     "Supplements to the Universal Shelf Registration Statement - DART - Repository of Korea's Corporate Filings",
-    "Shinhan Securities/Prospectus (Shelf Registration)/2026.11.03 - DART - Repository of Korea's Corporate Filings"
+    "- 전자공시시스템",
+    "전체 - 전자공시시스템"
    ],
    "oldest": "2017-02-23T22:05:00+00:00",
-   "newest": "2026-11-04T21:40:06+00:00",
+   "newest": "2026-11-05T06:55:23+00:00",
    "at_limit": false,
    "gap_risk": false,
    "error": null
