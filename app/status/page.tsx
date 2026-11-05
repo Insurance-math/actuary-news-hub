@@ -3,17 +3,21 @@ import { useEffect, useState } from 'react';
 import { AlertCircle, CheckCircle2, XCircle } from 'lucide-react';
 import Footer from '../../components/Footer';
 import SiteHeader from '../../components/SiteHeader';
-import { Status, loadStatus } from '../../lib/news';
+import { Status, loadStatus, loadVersion } from '../../lib/news';
+import { VersionInfo, formatBuild, triggerLabel } from '../../lib/version';
 import { fmt } from '../../lib/format';
 
 export default function StatusPage() {
   const [status, setStatus] = useState<Status | null>(null);
   const [failure, setFailure] = useState('');
+  const [ver, setVer] = useState<VersionInfo | null>(null);
+  useEffect(() => { loadVersion().then(setVer).catch(() => {}); }, []);
   useEffect(() => { loadStatus().then(setStatus).catch(() => setFailure('수집 상태 파일(status.json)이 아직 없습니다. 수집을 한 번 실행하면 생성됩니다.')); }, []);
   const entries = status ? Object.entries(status.sources) : [];
   const run = status?.last_run;
   return <main className="shell">
     <SiteHeader current="/status/" />
+    {ver && <div className="notice"><div><b>사이트 빌드 {formatBuild(ver.built_at)}</b><p>커밋 {ver.commit}{ver.commit_message ? ` · ${ver.commit_message}` : ''} · {triggerLabel(ver.trigger)}{ver.run_id ? ` · 실행 #${ver.run_id}` : ''}</p></div></div>}
     {run && <div className="notice"><div><b>마지막 수집 {fmt(run.started_at)}</b><p>후보 {run.candidates}건 · 신규 저장 {run.added}건 · 실패 피드 {run.failed.length}개{run.failed.length ? ` (${run.failed.join(', ')})` : ''}</p></div></div>}
     {!status && !failure && <div className="articles"><div className="empty">수집 상태를 불러오는 중입니다…</div></div>}
     {failure && <div className="error"><AlertCircle size={17} /> {failure}</div>}

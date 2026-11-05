@@ -33,3 +33,4 @@ export type Status = {
 };
 export const loadStatus = () => getJson<Status>('status.json');
 export const loadTrends = () => getJson<import('./trends').Trends>('trends.json');
+export const loadVersion = () => fetch(`${BASE}/version.json`, { cache: 'no-store' }).then(r => { if (!r.ok) throw new Error(`version.json HTTP ${r.status}`); return r.json() as Promise<import('./version').VersionInfo>; });
