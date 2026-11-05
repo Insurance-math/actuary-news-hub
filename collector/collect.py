@@ -193,6 +193,30 @@ def reclassify(data_dir: Path) -> None:
         logging.info('  %s: %d건 (%.1f%%)', k, v, v / total * 100 if total else 0)
 
 
+def rescore(data_dir: Path, big: int = 2) -> dict:
+    """저장된 기사의 중요도(★)만 config/score.json 산식으로 다시 계산한다(분류·태그·id·시각은 그대로).
+    반환: 변경 요약(분포 전후, 변경 건수, 별점이 big 이상 바뀐 기사 목록)."""
+    before, after, changes = {}, {}, []
+    for path in sorted(data_dir.glob('????-??.json')):
+        rows = load_shard(path)
+        dirty = False
+        for a in rows:
+            new = classify(a['title'], a.get('feed_name'))['score']
+            old = a['score']
+            before[old] = before.get(old, 0) + 1
+            after[new] = after.get(new, 0) + 1
+            if new != old:
+                changes.append({'id': a['id'], 'title': a['title'], 'source': a['source'], 'category': a['category'], 'before': old, 'after': new})
+                a['score'] = new
+                dirty = True
+        if dirty:
+            path.write_text(json.dumps(rows, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    summary = {'total': sum(before.values()), 'changed': len(changes), 'before': dict(sorted(before.items())), 'after': dict(sorted(after.items())),
+               'big_changes': [c for c in changes if abs(c['after'] - c['before']) >= big]}
+    logging.info('재점수: 전체 %d건 중 %d건 변경, 분포 %s -> %s', summary['total'], summary['changed'], summary['before'], summary['after'])
+    return summary
+
+
 def safe_error(e: Exception) -> str:
     """공개 사이트에 노출되므로 URL(쿼리 포함)을 제거하고 길이를 제한한다."""
     msg = re.sub(r'https?://\S+', '<url>', f'{type(e).__name__}: {e}')
@@ -241,10 +265,15 @@ def main():
     ap.add_argument('--data-dir', default='data')
     ap.add_argument('--config-dir', default='config')
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--rescore', action='store_true', help='네트워크 없이 저장된 기사의 중요도(★)만 config/score.json 산식으로 다시 계산')
     ap.add_argument('--reclassify', action='store_true', help='네트워크 없이 저장된 기사를 현재 분류 규칙으로 재분류')
     args = ap.parse_args()
     if args.reclassify:
         reclassify(Path(args.data_dir))
+        return 0
+    if args.rescore:
+        summary = rescore(Path(args.data_dir))
+        print(json.dumps(summary, ensure_ascii=False, indent=1))
         return 0
     now_iso = datetime.now(timezone.utc).isoformat()
     aliases = SourceAliases.load(Path(args.config_dir) / 'source_aliases.json')
