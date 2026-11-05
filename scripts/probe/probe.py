@@ -35,6 +35,10 @@ DATE_PATS = [
 EN_MONTHS = {m: i + 1 for i, m in enumerate(['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'])}
 EN_DATE = re.compile(r'(\d{1,2})\s+([A-Za-z]{3})[a-z]*\.?\s+(20\d{2})|([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2}),?\s+(20\d{2})')
 ID_PARAM = re.compile(r'(?:^|[?&/])(?:id|no|seq|idx|nttId|ntt_id|bbsNo|bbs_no|artclSeq|brdId|articleNo|bltnNo|seqNo|list_no|b_idx|sn|cdVl|bid|pubNo|article_id)[=/]\d+|/\d{5,}', re.I)
+NOISE_HREF = re.compile(r'(getFile|boardDownload|/download|Download\.do|\.(hwpx?|pdf|xlsx?|zip|docx?|pptx?)(\?|$)|^mailto:|^tel:)', re.I)
+NOISE_TITLE = re.compile(r'^(파일\s*다운로드|첨부파일.*|다운로드|바로가기|더보기|목록|이전|다음|Continue reading|Read more|View all|pdf파일|hwpx?파일|.*\.(hwpx?|pdf|xlsx?)$)', re.I)
+TITLE_CLEAN = [(re.compile(r'^(새글|NEW|N)\s+'), ''), (re.compile(r'\.?\s*금일 등록된 게시글\s*$'), ''), (re.compile(r'\s+'), ' ')]
+DEPT = re.compile(r'(?:담당부서|소관부서|담당\s*부서)\s*[:：]?\s*([가-힣A-Za-z0-9·]{2,15})')
 HEADER_WORDS = ('등록일', '작성일', '게시일', '수정일', '발행일', '날짜', '일자', '작성', 'Date', '등록')
 
 
@@ -89,9 +93,13 @@ def extract_html(html: bytes, base: str) -> tuple[list[dict], list[str]]:
         title = ' '.join(a.get_text(' ').split())
         href = a.get('href') or ''
         onclick = a.get('onclick') or ''
+        for pat, rep in TITLE_CLEAN:
+            title = pat.sub(rep, title).strip()
         if len(title) < 6 or href.startswith('#') and not onclick:
             continue
-        node, date = a, None
+        if NOISE_HREF.search(href) or NOISE_TITLE.match(title):
+            continue
+        node, date, dept = a, None, None
         for _ in range(5):  # 조상으로 올라가며 날짜가 정확히 하나 있는 행을 찾는다
             node = node.parent
             if node is None or node.name in ('body', 'html'):
@@ -103,18 +111,31 @@ def extract_html(html: bytes, base: str) -> tuple[list[dict], list[str]]:
             all_dates = {m.group(0) for pat in DATE_PATS for m in pat.finditer(txt)}
             if found and len(all_dates) <= 2:
                 date = next(iter(found))
+                dm = DEPT.search(txt)
+                dept = dm.group(1) if dm else None
                 break
         if not date:
             continue
         is_js = href.lower().startswith('javascript') or (not href or href == '#')
         link = href if is_js else urljoin(base, href)
         raw = onclick or href if is_js else ''
-        key = (title, link if not is_js else raw)
+        key = (title[:30], date)
         if key in seen:
             continue
         seen.add(key)
-        items.append({'title': title, 'date': date, 'url': link, 'js_link': is_js, 'js_raw': raw[:80] if is_js else None})
+        items.append({'title': title, 'date': date, 'url': link, 'js_link': is_js, 'js_raw': (onclick or href)[:120] if is_js else None, 'dept': dept})
     return items, headers
+
+
+def build_permalink(item: dict, template: str | None) -> str | None:
+    """JS 링크의 따옴표 인자(a1,a2,...)로 영구 URL 후보를 만든다. template 예: 'https://x/view?seq={a1}'"""
+    if not template or not item.get('js_raw'):
+        return None
+    args = re.findall(r"['\"]([^'\"]*)['\"]", item['js_raw'])
+    try:
+        return template.format(**{f'a{i + 1}': a for i, a in enumerate(args)})
+    except (IndexError, KeyError):
+        return None
 
 
 def extract_rss(content: bytes) -> list[dict]:
@@ -123,7 +144,7 @@ def extract_rss(content: bytes) -> list[dict]:
     for e in feed.entries[:50]:
         t = e.get('published_parsed') or e.get('updated_parsed')
         out.append({'title': ' '.join((e.get('title') or '').split()), 'date': datetime(*t[:6]).date().isoformat() if t else None,
-                    'url': e.get('link'), 'js_link': False, 'js_raw': None})
+                    'url': e.get('link'), 'js_link': False, 'js_raw': None, 'dept': None})
     return out
 
 
@@ -172,11 +193,21 @@ def analyze_items(items: list[dict], today: datetime) -> dict:
             'relevance_keyword_ratio': round(relevant / n, 3) if n else None}
 
 
+def fetch_page(session, spec, page):
+    """spec.method/data 지원(POST 검색 폼), page_param 이 있으면 page>1 일 때 쿼리에 붙인다."""
+    url = spec['url']
+    if page > 1 and spec.get('page_param'):
+        url += ('&' if '?' in url else '?') + f"{spec['page_param']}={page}"
+    if spec.get('method') == 'POST':
+        return polite_get(session, url, method='POST', data=spec.get('data'))
+    return polite_get(session, url)
+
+
 def probe_url(session, target, spec, robots_cache, today):
     url = spec['url']
     res = {'target': target['id'], 'name': target['name'], 'group': target['group'], 'label': spec['label'], 'kind': spec['kind'], 'url': url}
     res.update(robots_info(session, url, robots_cache))
-    r, err, secs = polite_get(session, url)
+    r, err, secs = fetch_page(session, spec, 1)
     res['elapsed_s'] = secs
     if r is None:
         res.update(ok=False, error=err)
@@ -191,19 +222,45 @@ def probe_url(session, target, spec, robots_cache, today):
             items, headers = extract_rss(r.content), []
         else:
             items, headers = extract_html(r.content, r.url)
+            # 페이지 확장: 1페이지가 전부 최근 30일이면 다음 페이지도 읽어 30일 건수를 추정(최대 max_pages, 요청 간 1초 이상)
+            cutoff = (today - timedelta(days=30)).date().isoformat()
+            for pg in range(2, spec.get('max_pages', 1) + 1):
+                if not spec.get('page_param') or not items or min((i['date'] for i in items if i['date']), default='') < cutoff:
+                    break
+                r2, err2, _ = fetch_page(session, spec, pg)
+                if r2 is None or not r2.ok:
+                    break
+                more, _ = extract_html(r2.content, r2.url)
+                seen = {(i['title'][:30], i['date']) for i in items}
+                items += [i for i in more if (i['title'][:30], i['date']) not in seen]
+                res['pages_fetched'] = pg
     except Exception as e:  # noqa: BLE001
         res.update(ok=False, error=f'parse {type(e).__name__}: {e}')
         return res
     res['date_headers'] = headers
     res.update(analyze_items(items, today))
-    res['samples'] = [{k: i[k] for k in ('title', 'date', 'url', 'js_link', 'category')} for i in items[:10]]
-    # 링크 영구성: 식별자 파라미터 유무 + 첫 직접 링크 HEAD 확인
+    cutoff = (today - timedelta(days=30)).date().isoformat()
+    res['count_30d_total'] = sum(1 for i in items if i['date'] and i['date'] >= cutoff)  # 읽은 페이지 전체 기준
+    depts = Counter(i['dept'] for i in items if i.get('dept'))
+    if depts:
+        res['dept_counts'] = dict(depts.most_common(12))
+    # 영구 URL 후보 만들기(JS 링크)
+    tmpl = spec.get('permalink')
+    for i in items:
+        i['permalink'] = build_permalink(i, tmpl) if i['js_link'] else None
+    res['samples'] = [{k: i.get(k) for k in ('title', 'date', 'url', 'js_link', 'js_raw', 'permalink', 'dept', 'category')} for i in items[:10]]
     direct = [i for i in items if not i['js_link'] and i['url'].startswith('http')]
     res['js_link_ratio'] = round(sum(i['js_link'] for i in items) / len(items), 2) if items else None
     res['link_has_id_param_ratio'] = round(sum(bool(ID_PARAM.search(i['url'])) for i in direct) / len(direct), 2) if direct else None
-    if direct:
-        hr, herr, _ = polite_get(session, direct[0]['url'], method='HEAD')
-        res['first_link_check'] = {'url': direct[0]['url'], 'status': hr.status_code if hr is not None else None, 'error': herr}
+    # 링크 유효성: 첫 항목의 (직접 또는 permalink) URL 1건만 열어 상태·제목 포함 여부 확인(본문은 저장하지 않고 즉시 버림)
+    first = next(((i['url'], i['title']) for i in direct), None) or next(((i['permalink'], i['title']) for i in items if i.get('permalink')), None)
+    if first:
+        hr, herr, _ = polite_get(session, first[0])
+        chk = {'url': first[0], 'status': hr.status_code if hr is not None else None, 'error': herr}
+        if hr is not None:
+            key = re.sub(r'\s+', '', first[1])[:14]
+            chk.update(bytes=len(hr.content), title_found=key in re.sub(r'\s+', '', hr.text))
+        res['first_link_check'] = chk
     if not items:
         res['note'] = '추출된 항목 없음(JS 렌더링/구조 상이/차단 가능)'
     return res
