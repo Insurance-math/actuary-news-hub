@@ -4,10 +4,10 @@ import { Article, isGoogleDiscovery, isSafeUrl } from '../lib/news';
 import { isNewArticle } from '../lib/newsFilter';
 import { fmt } from '../lib/format';
 
-type Props = { a: Article; baseline: string | null; bookmarked: boolean; read: boolean; rank?: number; onBookmark: (a: Article) => void; onRead: (id: string) => void };
+type Props = { a: Article; baseline: string | null; bookmarked: boolean; read: boolean; rank?: number; dim?: boolean; fading?: boolean; onBookmark: (a: Article) => void; onRead: (id: string) => void; onUnread?: (id: string) => void };
 
-export default function ArticleCard({ a, baseline, bookmarked, read, rank, onBookmark, onRead }: Props) {
-  return <article className="article"><div className="articleMain">
+export default function ArticleCard({ a, baseline, bookmarked, read, rank, dim, fading, onBookmark, onRead, onUnread }: Props) {
+  return <article className={'article' + (dim && read ? ' isRead' : '') + (fading ? ' fading' : '')}><div className="articleMain">
     <div className="meta">
       {rank !== undefined && <span className="rank">{rank}</span>}
       <span className={a.source_type === 'press' ? 'pill official' : 'pill'}>{a.category}</span>
@@ -16,9 +16,9 @@ export default function ArticleCard({ a, baseline, bookmarked, read, rank, onBoo
       {baseline && isNewArticle(a, baseline) && <span className="new">NEW</span>}
     </div>
     {isSafeUrl(a.url)
-      ? <a className="headline" href={a.url} target="_blank" rel="noopener noreferrer" onClick={() => onRead(a.id)}>{a.title}<ExternalLink size={15} /></a>
+      ? <a className="headline" href={a.url} target="_blank" rel="noopener noreferrer" onClick={() => onRead(a.id)} onAuxClick={e => { if (e.button === 1) onRead(a.id); }}>{a.title}<ExternalLink size={15} /></a>
       : <span className="headline">{a.title} <small>(링크 없음)</small></span>}
-    <div className="bottomMeta"><span>학습 중요도 {'★'.repeat(a.score)}{'☆'.repeat(Math.max(0, 5 - a.score))}</span>{a.tags.slice(0, 3).map(t => <span className="tag" key={t}>#{t}</span>)}{isGoogleDiscovery(a) && <span className="tag">구글 뉴스 경유</span>}{read && <span className="read">읽음</span>}</div>
+    <div className="bottomMeta"><span>학습 중요도 {'★'.repeat(a.score)}{'☆'.repeat(Math.max(0, 5 - a.score))}</span>{a.tags.slice(0, 3).map(t => <span className="tag" key={t}>#{t}</span>)}{isGoogleDiscovery(a) && <span className="tag">구글 뉴스 경유</span>}{read && <span className="read">읽음</span>}{read && onUnread && <button type="button" className="unreadBtn" onClick={() => onUnread(a.id)}>안 읽음으로</button>}</div>
   </div>
     <button aria-label={bookmarked ? '북마크 해제' : '북마크 추가'} className="bookmark" onClick={() => onBookmark(a)}>{bookmarked ? <BookmarkCheck size={20} fill="#e7f1ff" /> : <Bookmark size={20} />}</button>
   </article>;

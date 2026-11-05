@@ -43,3 +43,7 @@ footer.siteFooter{margin-top:0;background:#fff;border-top:1px solid #e1e7ef;colo
  .siteFooterInner{padding:24px 16px 20px}
 }
 @media(max-width:900px) and (min-width:641px){.footCols{grid-template-columns:1fr 1fr}.footCols section:nth-child(3){grid-column:1/-1}}
+.article.isRead{opacity:.6}.article.fading{opacity:0;transition:opacity .2s ease}
+.unreadBtn{background:none;border:1px solid #dce3ec;border-radius:6px;color:#486079;font-size:11px;padding:2px 8px}
+.readToggleRow{margin:-6px 0 14px}.readToggle{background:#fff;border:1px solid #dce4ec;border-radius:40px;color:#486079;font-size:12px;padding:7px 14px}.readToggle[aria-pressed="true"]{color:#155099;border-color:#155099;font-weight:700}
+.primary .count{margin-left:2px}

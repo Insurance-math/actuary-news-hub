@@ -12,7 +12,7 @@ const LIMIT = 20;
 
 export default function WeekPage() {
   const [category, setCategory] = useState('전체');
-  const { saved, ready, toggleBookmark, markRead } = useSaved();
+  const { saved, ready, toggleBookmark, markRead, readSet } = useSaved();
   const { all, failure, loading } = useNews(); // 최근 2개월이면 7일 범위를 충분히 포함
   const today = todayKst();
   const rows = useMemo(() => weeklyHighlights(all, today, LIMIT, category), [all, today, category]);
@@ -23,6 +23,6 @@ export default function WeekPage() {
     {failure && <div className="error"><AlertCircle size={17} /> {failure}</div>}
     <section className="articles">{loading || !ready ? <div className="empty">뉴스를 불러오는 중입니다…</div> : rows.length === 0
       ? <div className="empty"><Newspaper size={27} /><b>최근 7일 기사가 없습니다.</b><p>수집을 실행했는지, 카테고리를 확인하세요.</p></div>
-      : rows.map((a, i) => <ArticleCard key={a.id} a={a} rank={i + 1} baseline={saved.lastConfirmed} bookmarked={!!saved.bookmarks[a.id]} read={saved.readIds.includes(a.id)} onBookmark={toggleBookmark} onRead={markRead} />)}</section>
+      : rows.map((a, i) => <ArticleCard key={a.id} a={a} rank={i + 1} baseline={saved.lastConfirmed} bookmarked={!!saved.bookmarks[a.id]} read={readSet.has(a.id)} onBookmark={toggleBookmark} onRead={markRead} />)}</section>
   </>;
 }
