@@ -1,5 +1,328 @@
 [
  {
+  "id": "b41618bc867a60d2",
+  "title": "중국은 ‘로봇’ 품고 대만은 ‘규제’ 조이고… 새판 짜는 아시아 보험시장",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33795",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-05T03:08:04+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "제도·회계·건전성",
+  "sub_categories": [],
+  "tags": [
+   "규제"
+  ],
+  "score": 2,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "91324eda9ab584b2",
+  "title": "\"장기성과 외면하면 보험사 망가진다\"… 글로벌 보험사는 이미 '평가 혁명' 중",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33794",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-05T03:00:46+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "f4241b61b2071c4c",
+  "title": "현대차증권, 퇴직연금 자산부채관리 시스템 도입…기업지원 확대",
+  "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBWUEppa3BYMkNhVHB3SUVCWFJQT252aEtseG9JY05DVk9OY0otZHpodm5aQlJiZkgzdHV3SmFieEdIaUFlZGNJaGt1OS0tWFBoSjVIWjJGbk1WUG_SAWBBVV95cUxQQkNyUk01aWtjX05JMV9rTlBnU2k2VjY3U2dlN2xVT1lFM1pERTl6SmNvMG1WVV9SWGZqVkFxaFJ0R0NfLU83QTVXa0llQUV5SHpnZXJ2akt3X29ILVNfSFI?oc=5",
+  "source": "연합뉴스",
+  "source_type": "media",
+  "published_at": "2026-11-05T02:18:16+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [],
+  "tags": [
+   "퇴직연금"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장"
+ },
+ {
+  "id": "11ac5a0ff8771c1b",
+  "title": "보험사 경영평가에 GA 관리 반영…판매위탁 책임 강화",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110435",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-05T02:00:55+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [],
+  "tags": [
+   "GA"
+  ],
+  "score": 3,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "656940643cd74991",
+  "title": "보험 AI 의사결정 확대…판단 책임·소비자보호 논의",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110437",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-05T02:00:52+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "사회·인구·기술 변화",
+  "sub_categories": [
+   "제도·회계·건전성"
+  ],
+  "tags": [
+   "AI",
+   "소비자보호"
+  ],
+  "score": 2,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "32eb19cf671385f7",
+  "title": "“위자료 다 냈으니 토해내라?”… 대법, 보험·공제사 '쪼개기 구상' 셈법에 쐐기",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33793",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-05T01:41:17+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "8f80dc4d9fcfcf52",
+  "title": "“삼성생명도 GA채널 목표 20~30% 줄인다는데”… 2027년 생보 GA시장 위축 신호인가",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33786",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-05T01:21:58+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "생명보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ],
+  "tags": [
+   "GA",
+   "생보",
+   "삼성생명"
+  ],
+  "score": 3,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "bb58cd29f22201f7",
+  "title": "손보업계, 직업변경 통지 관리 강화…보험금 분쟁 예방",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110434",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-05T01:20:31+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [
+   "손보"
+  ],
+  "score": 3,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "2307c364e208570f",
+  "title": "금융권 해킹 37개사로 확산…보험사 3곳 뚫렸다",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110433",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-05T01:20:00+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "위험관리·재보험",
+  "sub_categories": [],
+  "tags": [
+   "해킹"
+  ],
+  "score": 3,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "335020e6b685f660",
+  "title": "교보생명, 민원·보험금 안내 체계 개선…고객 응대 강화",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110431",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-05T00:32:16+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "생명보험",
+  "sub_categories": [],
+  "tags": [
+   "교보생명"
+  ],
+  "score": 2,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "b43e4b17d19c854b",
+  "title": "하나증권, 토스뱅크 손잡고 최고 6% 금리 적립식 발행어음 출시 - 머니투데이",
+  "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PRzk1Y1MtZ1BUQWdGTGFBZXAtMnB0WnNNbVhHVWtfV2VhOE5ENmg1VERLMUo2Y1hqVXluaXY0WEtrSVA0NXlEbVpaUkR6ODdKZXhUU3U4ZVd0NTJUcWppRkFiQzk4cDky0gFuQVVfeXFMTzZWaXJlUjVxVG1aYXBpVXpET0x0OUZndk5jNnRsdzJvSUI1Skc0RFNNbnBxSXE4R0p6NEpqMEt2eGV4MmE5Q3phWlEtcTY2WENUdzVZMlZWWXM0V3BwcG1QdXVtWGtjZDUzMFo2QXc?oc=5",
+  "source": "머니투데이",
+  "source_type": "media",
+  "published_at": "2026-11-05T00:30:21+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [
+   "보험경영·판매"
+  ],
+  "tags": [
+   "금리",
+   "출시"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장"
+ },
+ {
+  "id": "8df4d0c232898c22",
+  "title": "[칼럼] 기초연금 부부가구, 기준은 두 배 아닌 1.6배…둘 다 받으면 20% 감액",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33788",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-05T00:12:00+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "446bbb001abb7c1c",
+  "title": "\"부채 뻥튀기·GA 불건전영업 막는다\"…금융위, 보험사 경영평가 대수술",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33787",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-05T00:06:54+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [
+   "제도·회계·건전성"
+  ],
+  "tags": [
+   "GA",
+   "영업",
+   "금융위"
+  ],
+  "score": 3,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "84f4ec564fd34655",
+  "title": "은행권 수신 경쟁 가열…저축은행 고금리 예금 확대",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110428",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-04T23:33:21+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [
+   "금리"
+  ],
+  "score": 2,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "864f9151ded1b24b",
+  "title": "“생보 독주 GA시장에 균열”… 2027년 생·손보 헤게모니 뒤집히나",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33785",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-04T23:07:54+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "생명보험",
+  "sub_categories": [
+   "손해보험",
+   "보험경영·판매"
+  ],
+  "tags": [
+   "생보",
+   "GA",
+   "손보"
+  ],
+  "score": 3,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "767d1ccf15bb4789",
+  "title": "실손보험 비급여 관리 강화…진료 전 설명·동의 의무화 추진",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110427",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-04T23:00:35+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "손해보험",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ],
+  "tags": [
+   "실손",
+   "손보",
+   "비급여"
+  ],
+  "score": 5,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "24282cacbe9b54ea",
+  "title": "재보험 넘어 보험사 지분까지…글로벌 보험자본 '위험·투자' 동시 확보",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110425",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-04T22:23:34+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "위험관리·재보험",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ],
+  "tags": [
+   "재보험",
+   "투자"
+  ],
+  "score": 4,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "7c8b80d551d79c6f",
+  "title": "대학 단체보험 입찰에 ‘자산 10조’ 문턱",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110419",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-04T22:02:22+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "293a286310c07387",
+  "title": "그린라이트캐피탈리, 견조한 보험영업과 자사주 매입 지속에 주목",
+  "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1IazJERzNXTGZZMktOS29naVBBaVZBQWhGNkM2UUtJTHJENGdpX3NuSHZJQm1ldUJFRXVYdllqMUc1bWtDNlk2VDhxQ2xUVEJTLXc?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-04T16:54:25+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [],
+  "tags": [
+   "영업",
+   "자사주"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
   "id": "eaab8a496a2a594f",
   "title": "보험사 계리가정 감독 강화… 금감원 정기 보고 의무화",
   "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93686",
@@ -221,6 +544,22 @@
   "sub_categories": []
  },
  {
+  "id": "aad6c46871d6ad50",
+  "title": "1340원대 환율, 연말 어디로…추가 하락·반등 전망 팽팽 - 머니투데이",
+  "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB2Q21aNUctWE54WV9PMEtJUVdRRnFRNmgwZDNIZ2syNjZjMk9PMk1uNlVIenlGRGNMd3c4RzVYSmlQTHFWSXRJZnI2dEQ3NDgyeXdVeEU1amtmenlEYXB3S05nYmJBZVdjeHlr0gFwQVVfeXFMTVpKTUpneW5RRWFWX0pPYVFvelVyVGhQZGRkWXNKdjhJd0pub1M4S0x0NEdrZW44c2FzcFhUeGhpcnozaTNnOFNSdG9kQlM1T2llQW1IZEp3c1JjVEpxUkxNYW1lcWNjOURSOVIyZHkwRg?oc=5",
+  "source": "머니투데이",
+  "source_type": "media",
+  "published_at": "2026-11-04T07:35:01+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [
+   "환율"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·금융시장"
+ },
+ {
   "id": "d2e055942704b348",
   "title": "\"보험설계사가 건강 상담까지\"…조윈, 셀빅과 AI 플랫폼 구축 - 머니투데이",
   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBuTEhXSnI5eGpKbXlSelFheXM4aDZXY0c3V2ZLVE9Tc2lqM2JqRGpJcDJUaTZ5V3dac3dpRGxjMjYxd3E0ZjljSnZzOXpsNWw1bzhfcXV2eEp6NVk4S0lyczZld3dfN0hDY0HSAW9BVV95cUxPNFBRcElEdzdwcGVINGNwclV6aUhaMkJWalU5YTFVV1g2dzRlejZhRWxsNGNWUTZfclRyNWxhZVgxTEp2SjlTYjlkbWR6Zzdwa2JYbkhLSzRYelBzcEFjWlh5T0xCRXJMbi1reDFzY3M?oc=5",
@@ -255,6 +594,20 @@
   "score": 4,
   "feed_name": "주요 경제지·보험",
   "sub_categories": []
+ },
+ {
+  "id": "1fefcf5fcdce150d",
+  "title": "국민건강보험공단, 빈곤으로 치료를 포기하는 국민이 없길",
+  "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1nWE1DNXZFX3hwcGt0QnVaRHJGSEltNkpOdmJyakVmdi1hSVU3aGw1VFo5THltcWdwcnQ1N3R0SnpIZVRKNGMyLUk0Vk5lU0lIaHRPaUd0a0lJWXdPT1hlbjEyaFh4QQ?oc=5",
+  "source": "이로운넷",
+  "source_type": "media",
+  "published_at": "2026-11-04T07:16:58+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "사회변화·보험"
  },
  {
   "id": "b18748cfbb86cffe",
@@ -293,6 +646,22 @@
   "score": 2,
   "feed_name": "보험저널",
   "sub_categories": []
+ },
+ {
+  "id": "d8a2d624bc6f1e34",
+  "title": "[속보]원/달러 환율, 0.5원 오른 1341.5원 - 머니투데이",
+  "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5KeXZTOEtlaHhUR0p6bkhaTmN6MVJMUXBhZFJJMEh3QkJXVTFDN0lmSVdJbVVXcUo5dG5vSXowelpkbTlweTlIdnA4TU5mXzRaUURBV1BzelNIbG1XYkFvYUpteE1IU1JQa0lF0gFwQVVfeXFMUDBSN3BLaW5Ebl9SakJfZV9zbEJGeHlNcDU1VjdDRThjTTFmQWt2VWhDeURrVXF4U3lzcG5OT0ZqdEdGYndmRllrUkpua0xnUHNPXzVPQWQ0V29PVlAwV1JDenZFLVVmb1FWSE5KV0x1Zw?oc=5",
+  "source": "머니투데이",
+  "source_type": "media",
+  "published_at": "2026-11-04T06:37:34+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [
+   "환율"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·금융시장"
  },
  {
   "id": "36a04706cdb00f8a",
@@ -1447,6 +1816,24 @@
   "sub_categories": [
    "금융시장·자산운용"
   ]
+ },
+ {
+  "id": "83ab9f67c6c76adb",
+  "title": "증시 조정에 채권 향한 자금…국채 10년물 한달반새 57bp 하락 - 머니투데이",
+  "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBENUhUYnJpT1Joc2xpSWFOMFVMMFRoTXFEcnVPUFVVajZGMFphejRRYXVqdVZrSnU4NFR5RDRqNmxOOUh0OGxxTHJQVVNYMDZDQTVzcUx6eC0wNjA0UXVjZk80bjk3anJK0gFuQVVfeXFMTzlKT2V0SkVXRFVzaUZVSmFKRk13cTBIRl8tMTZRazViQWNPWkxlSXRkcmU5TC1KR0h3UDZVeDZOd0RCQzk1UWd0NERwOFJqdjVBcWk3eG5LUXN6MzFiWmQ0VFIxRFNoelJpODN0OGc?oc=5",
+  "source": "머니투데이",
+  "source_type": "media",
+  "published_at": "2026-11-03T08:13:14+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [
+   "증시",
+   "채권",
+   "국채"
+  ],
+  "score": 4,
+  "feed_name": "주요 경제지·금융시장"
  },
  {
   "id": "749763e606fa89de",
@@ -2901,6 +3288,20 @@
   ]
  },
  {
+  "id": "4c9291745e5c27e4",
+  "title": "[게시판] 교보증권, 연금저축 이벤트",
+  "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5KaUY3ZXdVSk9oSkZaYVFBaHlnb0o3cGNsLTliYURNdHpSd0lDUHV1ZzhJeUYyeHhBRkdUR2pRcHdYR2NrT2RqQXB4TENVVkV4WGc?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-02T06:58:55+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장"
+ },
+ {
   "id": "b4ea9afa764706e3",
   "title": "보금자리론 10년 만기 금리도 5%대…역대 처음",
   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA4REdJTFpVU1JNX2h3X0hwODE1ZG9KR1UwMWFKc3piVnBKdmxKNVlLWlhxbnQ0TmV6ZUEwZXhFcm5VWnZSREhhOFNpaVB2eERraFE?oc=5",
@@ -4290,5 +4691,19 @@
   "score": 2,
   "feed_name": "주요 경제지·보험",
   "sub_categories": []
+ },
+ {
+  "id": "14c8e9f832c94cc3",
+  "title": "피 토하는 아들 방치, 사망보험 가입한 엄마…징역 3년",
+  "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oRVZpUngyd2NfdTZrNUZUeGNyX1Jzb25kZ3Z0U3lHUGlrWkJmSGZ6eVJDQl9QUF8yRzN4R2k3dG1fSlJZSmNUcW1SRlU0XzJrVzlqSURVMS1GRzJiQnJMV9IBeEFVX3lxTE1uRXM3WWN6aU1sYzhUbW51aHM5UHVLYUowMlFtVnFSRmJ1SDZxbERSM05lUGMtMXpxMWtEWVVHSzdqWWZXMkJyTXhsbXVNOW9HT21XR0J0Y01sa3pzRDI4RjdoVS1XR01ZM1BiXy1iX3l5ZUs0b0Q5Wg?oc=5",
+  "source": "뉴시스",
+  "source_type": "media",
+  "published_at": "2026-11-01T02:02:55+00:00",
+  "collected_at": "2026-11-05T03:45:29.098800+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
  }
 ]
