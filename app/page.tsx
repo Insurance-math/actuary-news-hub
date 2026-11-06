@@ -38,7 +38,9 @@ export default function Home() {
   // 달력 월의 KST 날짜는 UTC 월 샤드 경계에 걸칠 수 있어 앞뒤 월도 함께 불러온다
   const { index, all, failure, loading, loadingMore } = useNews(search.trim() ? 'all' : [shiftMonth(calMonth, -1), calMonth, shiftMonth(calMonth, 1)]);
   const baseline = saved.lastConfirmed;
-  useEffect(() => () => { timers.current.forEach(clearTimeout); }, []);
+  const [undo, setUndo] = useState<{ id: string; n: number } | null>(null); // 읽음 버튼 직후 5초간 '되돌리기'(마지막 한 건만)
+  const undoTimer = useRef<number | undefined>(undefined);
+  useEffect(() => () => { timers.current.forEach(clearTimeout); clearTimeout(undoTimer.current); }, []);
   // 제목 클릭·휠클릭·Enter 로 읽음 처리. 새 뉴스 탭에서는 클릭 이벤트가 끝난 직후(새 탭 열기가 시작된 뒤)에 카드를 제거한다.
   const handleRead = useCallback((id: string) => {
     markRead(id);
@@ -46,6 +48,20 @@ export default function Home() {
     setJustRead(s => new Set(s).add(id));
     timers.current.push(window.setTimeout(() => setJustRead(s => { const n = new Set(s); n.delete(id); return n; }), 250));
   }, [markRead, tab]);
+
+  // 카드의 '읽음' 버튼: 링크를 열었을 때와 같은 읽음 처리(handleRead→markRead)를 재사용하고 되돌리기 안내를 띄운다
+  const handleMarkRead = useCallback((id: string) => {
+    handleRead(id);
+    clearTimeout(undoTimer.current);
+    setUndo(u => ({ id, n: (u?.n ?? 0) + 1 }));
+    undoTimer.current = window.setTimeout(() => setUndo(null), 5000);
+  }, [handleRead]);
+  const handleUndo = useCallback(() => {
+    if (!undo) return;
+    unmarkRead(undo.id);
+    clearTimeout(undoTimer.current);
+    setUndo(null);
+  }, [undo, unmarkRead]);
 
   const base = useMemo(() => {
     let r: Article[] = tab === '북마크' ? Object.values(saved.bookmarks) : all;
@@ -101,7 +117,8 @@ export default function Home() {
         : <div className="empty"><Newspaper size={27} /><b>표시할 기사가 없습니다.</b><p>새 뉴스 확인 여부, 검색어, 수집 실행 결과를 확인하세요.</p></div>)
       : pageRows.map((a, i) => { const d = kstDate(a.published_at); const head = sort === 'latest' && (i === 0 || d !== kstDate(pageRows[i - 1].published_at));
         return <Fragment key={a.id}>{head && <div className="dayhead">{dayHeading(d)}<small>· {perDay[d]}건</small></div>}
-          <ArticleCard a={a} baseline={baseline} showDiscovery={tab === '감독당국 보도자료'} bookmarked={!!saved.bookmarks[a.id]} read={readSet.has(a.id)} dim={tab === '새 뉴스' || tab === '전체 뉴스'} fading={justRead.has(a.id)} onBookmark={toggleBookmark} onRead={handleRead} onUnread={tab === '새 뉴스' && showRead ? unmarkRead : undefined} /></Fragment>; })}</section>
+          <ArticleCard a={a} baseline={baseline} showDiscovery={tab === '감독당국 보도자료'} bookmarked={!!saved.bookmarks[a.id]} read={readSet.has(a.id)} dim={tab === '새 뉴스' || tab === '전체 뉴스'} fading={justRead.has(a.id)} onBookmark={toggleBookmark} onRead={handleRead} onUnread={tab === '새 뉴스' && showRead ? unmarkRead : undefined} onMarkRead={tab === '새 뉴스' ? handleMarkRead : undefined} /></Fragment>; })}</section>
     {rows.length > PAGE && <div className="pagination"><button disabled={curPage <= 1} onClick={() => setPage(curPage - 1)}>이전</button><span>{curPage} / {lastPage} 페이지</span><button disabled={curPage >= lastPage} onClick={() => setPage(curPage + 1)}>다음</button></div>}
+    {undo && <div className="undoToast" role="status" aria-live="polite"><span>읽음 처리했습니다</span><button type="button" onClick={handleUndo}>되돌리기</button></div>}
   </>;
 }

@@ -1,12 +1,12 @@
 'use client';
-import { Bookmark, BookmarkCheck, ExternalLink } from 'lucide-react';
+import { Bookmark, BookmarkCheck, Check, ExternalLink } from 'lucide-react';
 import { Article, isSafeUrl } from '../lib/news';
 import { isNewArticle } from '../lib/newsFilter';
 import { fmt } from '../lib/format';
 
-type Props = { a: Article; baseline: string | null; bookmarked: boolean; read: boolean; rank?: number; dim?: boolean; fading?: boolean; showDiscovery?: boolean; onBookmark: (a: Article) => void; onRead: (id: string) => void; onUnread?: (id: string) => void };
+type Props = { a: Article; baseline: string | null; bookmarked: boolean; read: boolean; rank?: number; dim?: boolean; fading?: boolean; showDiscovery?: boolean; onBookmark: (a: Article) => void; onRead: (id: string) => void; onUnread?: (id: string) => void; onMarkRead?: (id: string) => void };
 
-export default function ArticleCard({ a, baseline, bookmarked, read, rank, dim, fading, showDiscovery, onBookmark, onRead, onUnread }: Props) {
+export default function ArticleCard({ a, baseline, bookmarked, read, rank, dim, fading, showDiscovery, onBookmark, onRead, onUnread, onMarkRead }: Props) {
   return <article className={'article' + (dim && read ? ' isRead' : '') + (fading ? ' fading' : '')}><div className="articleMain">
     <div className="meta">
       {rank !== undefined && <span className="rank">{rank}</span>}
@@ -20,6 +20,9 @@ export default function ArticleCard({ a, baseline, bookmarked, read, rank, dim, 
       : <span className="headline">{a.title} <small>(링크 없음)</small></span>}
     <div className="bottomMeta"><span>학습 중요도 {'★'.repeat(a.score)}{'☆'.repeat(Math.max(0, 5 - a.score))}</span>{a.tags.slice(0, 3).map(t => <span className="tag" key={t}>#{t}</span>)}{read && <span className="read">읽음</span>}{read && onUnread && <button type="button" className="unreadBtn" onClick={() => onUnread(a.id)}>안 읽음으로</button>}</div>
   </div>
-    <button aria-label={bookmarked ? '북마크 해제' : '북마크 추가'} className="bookmark" onClick={() => onBookmark(a)}>{bookmarked ? <BookmarkCheck size={20} fill="#e7f1ff" /> : <Bookmark size={20} />}</button>
+    <div className="cardActions">
+      {onMarkRead && !read && <button type="button" aria-label="읽음 처리" title="읽음 처리" className="readBtn" onClick={() => onMarkRead(a.id)}><Check size={20} /></button>}
+      <button aria-label={bookmarked ? '북마크 해제' : '북마크 추가'} className="bookmark" onClick={() => onBookmark(a)}>{bookmarked ? <BookmarkCheck size={20} fill="#e7f1ff" /> : <Bookmark size={20} />}</button>
+    </div>
   </article>;
 }

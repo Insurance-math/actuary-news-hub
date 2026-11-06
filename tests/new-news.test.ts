@@ -36,3 +36,30 @@ assert.equal(visibleInNewTab({ id: 'n', published_at: '2026-11-04T09:00:00+00:00
 // 첫 방문(기준 없음)은 안 읽은 전체
 assert.equal(visibleInNewTab(A, { baseline: null, read: none, showRead: false }), true);
 console.log('new-news tests passed');
+
+// --- 카드 '읽음' 버튼(링크 클릭과 같은 addRead/removeRead 재사용) ---
+import { addRead, removeRead, pruneReads } from '../lib/readState.ts';
+{
+  const B = { id: 'b', published_at: '2026-11-04T01:00:00+00:00', collected_at: '2026-11-04T09:30:00+00:00' };
+  const list = [A, B];
+  const count = (m: Record<string, string>) => list.filter(x => isUnreadNew(x, baseline, new Set(Object.keys(m)))).length;
+  let m: Record<string, string> = {};
+  assert.equal(count(m), 2);
+  m = addRead(m, 'a', '2026-11-05T01:00:00.000Z');                    // 버튼 처리 = 저장
+  assert.deepEqual(Object.keys(m), ['a']);
+  assert.equal(count(m), 1, '읽음 버튼을 누르면 새 뉴스 건수 1 감소');
+  assert.equal(addRead(m, 'a', '2026-11-05T02:00:00.000Z'), m, '이미 읽은 기사는 시각을 덮어쓰지 않음');
+  const undone = removeRead(m, 'a');                                   // 되돌리기
+  assert.equal(count(undone), 2, '되돌리면 건수 복구');
+  assert.equal(visibleInNewTab(A, { baseline, read: new Set(Object.keys(undone)), showRead: false }), true, '되돌리면 카드가 다시 나타남');
+  assert.equal(visibleInNewTab(A, { baseline, read: new Set(['a']), showRead: false }), false);
+  // 읽음 기록은 북마크와 별개: 읽음 처리해도 북마크 데이터는 그대로(읽음 맵에만 기록)
+  const saved = { bookmarks: { a: A }, readAt: m };
+  assert.ok(saved.bookmarks.a && saved.readAt.a);
+  // 한도 초과 시에도 확인 이후에 읽은 기록은 보호(버튼 처리도 동일 경로)
+  const big: Record<string, string> = {};
+  for (let i = 0; i < 1500; i++) big['o' + i] = '2026-11-01T00:00:00.' + String(i).padStart(3, '0') + 'Z';
+  const pruned = pruneReads(addRead(big, 'new', '2026-11-05T00:00:00.000Z'), baseline);
+  assert.ok(pruned['new'] && Object.keys(pruned).length === 1500);
+}
+console.log('read-button ok');

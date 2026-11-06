@@ -65,3 +65,11 @@ footer.siteFooter{margin-top:0;background:#fff;border-top:1px solid #e1e7ef;colo
 .chip button{display:inline-flex;background:none;border:0;color:#224b79;padding:2px;border-radius:50%}
 .chipClear{background:none;border:0;color:#155099;font-size:12px;text-decoration:underline}
 @media(max-width:640px){.catRow{flex-direction:column;gap:0}.catRow .catOuter{width:100%}.sourceFilter{margin:-6px 0 14px}.sourcePanel{left:0;right:auto}}
+
+.cardActions{display:flex;flex-direction:column;align-items:center;gap:10px;align-self:start;flex-shrink:0}
+.cardActions .bookmark,.cardActions .readBtn{width:44px;height:44px;display:flex;align-items:center;justify-content:center;padding:0;border-radius:10px}
+.readBtn{background:#fff;border:1px solid #dce4ec;color:#486079}.readBtn:hover{background:#eef5fd;color:#155099;border-color:#155099}
+.cardActions button:focus-visible,.undoToast button:focus-visible{outline:3px solid #155099;outline-offset:2px}
+.undoToast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:14px;background:#1d2b3c;color:#fff;border-radius:12px;padding:6px 8px 6px 18px;font-size:13px;box-shadow:0 6px 20px #0003;max-width:calc(100vw - 32px)}
+.undoToast button{background:none;border:0;color:#9fd0ff;font-weight:700;font-size:13px;min-height:44px;padding:0 12px;border-radius:8px}
+.undoToast span,.undoToast button{white-space:nowrap}
