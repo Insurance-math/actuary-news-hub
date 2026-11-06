@@ -1,5 +1,110 @@
 [
  {
+  "id": "89ad4b58dad71ac7",
+  "title": "실손보험 비급여 관리 강화에 의료계 반발…“민간보험 손해율 관리 수단 전락”",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110447",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-06T00:39:55+00:00",
+  "collected_at": "2026-11-06T01:06:34.200230+00:00",
+  "category": "손해보험",
+  "sub_categories": [
+   "위험관리·재보험",
+   "사회·인구·기술 변화"
+  ],
+  "tags": [
+   "실손",
+   "손보",
+   "손해율",
+   "비급여"
+  ],
+  "score": 5,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "8e2315422cfbb6e6",
+  "title": "재보험으로 간 보더니 통째로 '꿀꺽'… 글로벌 보험시장 덮친 '하이브리드' M&A",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33805",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-05T23:48:55+00:00",
+  "collected_at": "2026-11-06T01:06:34.200230+00:00",
+  "category": "위험관리·재보험",
+  "sub_categories": [],
+  "tags": [
+   "재보험"
+  ],
+  "score": 4,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "b5a84d9d9ea3f10a",
+  "title": "[기자수첩] 실손 전환의 데자뷔, 할인 다음은",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110421",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-05T23:40:12+00:00",
+  "collected_at": "2026-11-06T01:06:34.200230+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [
+   "실손"
+  ],
+  "score": 3,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "28490c84281d1bdb",
+  "title": "1200%룰 시행 후 설계사 증가세 둔화…초회보험료는 급증",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110442",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-05T23:26:47+00:00",
+  "collected_at": "2026-11-06T01:06:34.200230+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [],
+  "tags": [
+   "설계사",
+   "보험료"
+  ],
+  "score": 3,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "07146adc4513898e",
+  "title": "日 우체국보험 민영화 제동…韓도 '공정경쟁' 과제",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110446",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-05T23:25:47+00:00",
+  "collected_at": "2026-11-06T01:06:34.200230+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "d10ac7e21bc95a8d",
+  "title": "“700종신 빠져도 GA는 연금 아닌 종신 택했다”… 단기납·건강·인출형종신 판매 급증",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33803",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-05T23:16:45+00:00",
+  "collected_at": "2026-11-06T01:06:34.200230+00:00",
+  "category": "생명보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ],
+  "tags": [
+   "GA",
+   "단기납",
+   "종신"
+  ],
+  "score": 3,
+  "feed_name": "보험저널"
+ },
+ {
   "id": "6b6c459fe21ad20e",
   "title": "영국, 3년만에 금리 인상…BOE 총재 \"추가 인상도 가능\"(종합)",
   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9uRUpBSGVicndDRmlOUzJkZFM3b0Z2VXhMYVhrSWd4ZXpYMENSQXlOU3Z6QkJnQ3Q1MDA4NnBiRUozOGZxbHNCNkhfUHBlYWE1ekE?oc=5",
@@ -89,6 +194,22 @@
   ],
   "score": 3,
   "feed_name": "주요 경제지·금융시장"
+ },
+ {
+  "id": "14edee2b1490e8dd",
+  "title": "AI가 틀린 답 내놔도 보험은 ‘사각지대’…해외는 전용보험 경쟁",
+  "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9uZEdLRlZmaUEzeko2dmM5WjJYQ0Y3cHNkTjFaU3poNnM3Z3l5ZDhsbExkRUVmQWkzeU1GVW1YVkUxcy1YYU1rSDZ1eU9LdDJtMVB4TQ?oc=5",
+  "source": ":: 위즈경제 ::",
+  "source_type": "media",
+  "published_at": "2026-11-05T08:02:38+00:00",
+  "collected_at": "2026-11-06T01:06:34.200230+00:00",
+  "category": "사회·인구·기술 변화",
+  "sub_categories": [],
+  "tags": [
+   "AI"
+  ],
+  "score": 2,
+  "feed_name": "사회변화·보험"
  },
  {
   "id": "525b32554ab1e7ca",
@@ -2726,6 +2847,25 @@
    "요양"
   ],
   "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "4058f01bfe436f3b",
+  "title": "장동혁 국민의힘 대표, [보험 모집질서 건전화와 소비자 보호를 위한 정책토론회] 참석",
+  "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9fUzJQYllJVERnMzZWNjJ0NEtPQ0M0VHl5UEEtMU9SQWI4RkloX0h4WEZneWJReXpkbTJtYjZoVDJmOHY1Mmw1SGZGMlVVTDhVZEdNSEhR?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-03T02:24:02+00:00",
+  "collected_at": "2026-11-06T01:06:34.200230+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [
+   "제도·회계·건전성"
+  ],
+  "tags": [
+   "모집질서",
+   "소비자보호"
+  ],
+  "score": 3,
   "feed_name": "주요 경제지·보험"
  },
  {
