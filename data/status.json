@@ -1,9 +1,9 @@
 {
  "last_run": {
-  "started_at": "2026-11-06T08:37:28.506238+00:00",
-  "finished_at": "2026-11-06T08:37:31.684391+00:00",
-  "candidates": 211,
-  "added": 11,
+  "started_at": "2026-11-07T00:18:23.626222+00:00",
+  "finished_at": "2026-11-07T00:18:25.616565+00:00",
+  "candidates": 204,
+  "added": 10,
   "failed": [
    "금융위원회 RSS"
   ]
@@ -11,8 +11,8 @@
  "sources": {
   "보험매일": {
    "ok": true,
-   "last_run_at": "2026-11-06T08:37:28.506238+00:00",
-   "last_success_at": "2026-11-06T08:37:28.506238+00:00",
+   "last_run_at": "2026-11-07T00:18:23.626222+00:00",
+   "last_success_at": "2026-11-07T00:18:23.626222+00:00",
    "consecutive_failures": 0,
    "entries": 50,
    "kept": 39,
@@ -33,16 +33,16 @@
     "예보, 금융계약자 보호 범위 넓힌다…디지털 금융 사각지대 선제 대응",
     "삼성생명, 에스원 주식 13만7천주 매각…금산법 위반 우려에"
    ],
-   "oldest": "2026-11-02T23:26:35+00:00",
-   "newest": "2026-11-06T00:42:21+00:00",
+   "oldest": "2026-11-03T01:05:16+00:00",
+   "newest": "2026-11-06T23:29:17+00:00",
    "at_limit": true,
    "gap_risk": false,
    "error": null
   },
   "보험저널": {
    "ok": true,
-   "last_run_at": "2026-11-06T08:37:28.506238+00:00",
-   "last_success_at": "2026-11-06T08:37:28.506238+00:00",
+   "last_run_at": "2026-11-07T00:18:23.626222+00:00",
+   "last_success_at": "2026-11-07T00:18:23.626222+00:00",
    "consecutive_failures": 0,
    "entries": 50,
    "kept": 25,
@@ -71,17 +71,18 @@
   },
   "한국보험신문": {
    "ok": true,
-   "last_run_at": "2026-11-06T08:37:28.506238+00:00",
-   "last_success_at": "2026-11-06T08:37:28.506238+00:00",
+   "last_run_at": "2026-11-07T00:18:23.626222+00:00",
+   "last_success_at": "2026-11-07T00:18:23.626222+00:00",
    "consecutive_failures": 0,
    "entries": 50,
-   "kept": 18,
+   "kept": 17,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 32
+    "irrelevant": 33
    },
    "filtered": [
+    "잇따른 개인정보 유출사고에 ‘2차 피해 특별대응’ 연말까지",
     "KB국민은행, 아동수당 수령 고객 우대 ‘KB아동수당통장’ 출시",
     "메트라이프생명, 고객 서비스 활동 성과 공개… ‘MetLife ONE’으로 고객 경험 확장",
     "신협중앙회, ‘신협발전유공 정부포상 수여식’ 개최… 유공자 11명 수상",
@@ -90,56 +91,55 @@
     "하나금융, 창사 첫 개인주주 간담회… 배당·자사주 정책 설명",
     "토스인슈어런스, 대구에 새 거점… 6개 광역시 진출",
     "KB국민은행, 청년 창업기업 자금 조달 지원에 118억원 출연",
-    "푸본현대생명, 서울시 발달장애인 플라잉디스크대회서 봉사활동",
-    "교보생명, 고객 응대부터 민원 처리까지 ‘소비자보호’ 체계 정비"
+    "푸본현대생명, 서울시 발달장애인 플라잉디스크대회서 봉사활동"
    ],
-   "oldest": "2026-11-01T23:57:09+00:00",
-   "newest": "2026-11-06T03:04:19+00:00",
+   "oldest": "2026-11-02T01:45:39+00:00",
+   "newest": "2026-11-06T09:45:20+00:00",
    "at_limit": true,
    "gap_risk": false,
    "error": null
   },
   "주요 경제지·보험": {
    "ok": true,
-   "last_run_at": "2026-11-06T08:37:28.506238+00:00",
-   "last_success_at": "2026-11-06T08:37:28.506238+00:00",
+   "last_run_at": "2026-11-07T00:18:23.626222+00:00",
+   "last_success_at": "2026-11-07T00:18:23.626222+00:00",
    "consecutive_failures": 0,
    "entries": 100,
-   "kept": 88,
+   "kept": 84,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 12
+    "irrelevant": 16
    },
    "filtered": [
+    "에센트 그룹, 3분기 총수익 3억7400만 달러..전년비 20% 증가",
     "스튜어트 인포메이션 서비스, MC뱅크셰어스 COO 브라운 신임 이사 선임",
     "6대 광역시 영업망 완비한 토스인슈어런스…대구 오피스 오픈",
-    "킹스톤 컴퍼니스, 3분기 희석 EPS 1.19달러..전년비 61% 증가",
-    "매뉴라이프 파이낸셜, 3분기 핵심 EPS 1.24캐나다달러..6% 증가",
     "인액트 홀딩스, 3분기 GAAP 희석 EPS 1.15달러..전년비 4.5%↑",
+    "건보 국고지원 8년간 13조원 미달…내년에도 법정기준 못 채워",
     "의료 빅데이터 연구 거점 늘린다…건보공단, 4개 센터 개소",
-    "AIG, 3분기 GAAP 희석 EPS 1.60달러..전년비 72%↑",
-    "\"세금은 내는데 건보료는 제외\"…분리과세소득에 건보료 부과 검토",
+    "11월 지역가입자 건보료 재산정…소득감소 시 조정 신청 가능",
     "스카이워드 스페셜티 인슈, 3분기 총수익 4억5500만 달러..전년비 19% 증가",
-    "일산병원, 만성폐쇄성폐질환 적정성 '11회 연속 1등급'"
+    "AIG, 3분기 GAAP 희석 EPS 1.60달러..전년비 72%↑",
+    "\"세금은 내는데 건보료는 제외\"…분리과세소득에 건보료 부과 검토"
    ],
-   "oldest": "2026-11-01T03:00:00+00:00",
-   "newest": "2026-11-06T05:59:30+00:00",
+   "oldest": "2026-11-01T02:02:55+00:00",
+   "newest": "2026-11-06T21:11:00+00:00",
    "at_limit": true,
    "gap_risk": false,
    "error": null
   },
   "주요 경제지·금융시장": {
    "ok": true,
-   "last_run_at": "2026-11-06T08:37:28.506238+00:00",
-   "last_success_at": "2026-11-06T08:37:28.506238+00:00",
+   "last_run_at": "2026-11-07T00:18:23.626222+00:00",
+   "last_success_at": "2026-11-07T00:18:23.626222+00:00",
    "consecutive_failures": 0,
    "entries": 100,
-   "kept": 32,
+   "kept": 29,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 68
+    "irrelevant": 71
    },
    "filtered": [
     "\"반도체만 보고 있을 때 아니다\"…내년 투자판 흔들 'ABC'",
@@ -149,43 +149,42 @@
     "같은 장기채 ETF인데 수익률 달라…비결은 이것[ETFvsETF] - 머니투데이",
     "3분기 서울 상업용 부동산 거래액 20%↑…대형 오피스가 견인",
     "불안한 증시에 안전자산 꽂힌 서학개미…美국채 '폭풍 쇼핑'",
-    "美 과세 지방채 수익률 10년래 최고 수준…“지금이 투자 적기”",
     "\"지금은 잘 나가지만…\" 삼전닉스 호황 속 커지는 '경고음' [테크로그]",
-    "“잘 나가던 한국금융지주도 급락장엔 속수무책”…목표가↓"
+    "“잘 나가던 한국금융지주도 급락장엔 속수무책”…목표가↓",
+    "[마켓인] 美 과세 지방채 수익률 10년래 최고 수준…“지금이 투자 적기”"
    ],
-   "oldest": "2026-10-30T08:35:31+00:00",
-   "newest": "2026-11-06T06:01:00+00:00",
+   "oldest": "2026-11-01T22:36:14+00:00",
+   "newest": "2026-11-06T21:31:28+00:00",
    "at_limit": true,
    "gap_risk": false,
    "error": null
   },
   "사회변화·보험": {
    "ok": true,
-   "last_run_at": "2026-11-06T08:37:28.506238+00:00",
-   "last_success_at": "2026-11-06T08:37:28.506238+00:00",
+   "last_run_at": "2026-11-07T00:18:23.626222+00:00",
+   "last_success_at": "2026-11-07T00:18:23.626222+00:00",
    "consecutive_failures": 0,
-   "entries": 31,
-   "kept": 29,
+   "entries": 27,
+   "kept": 26,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 2
+    "irrelevant": 1
    },
    "filtered": [
-    "삼성생명, AI 기반 ‘시니어 통합돌봄 모델’ 선보여",
     "건보공단, AI 상담·업무비서 고도화 추진…사업자 공모"
    ],
-   "oldest": "2026-11-01T16:28:03+00:00",
-   "newest": "2026-11-06T05:42:42+00:00",
+   "oldest": "2026-11-01T09:23:30+00:00",
+   "newest": "2026-11-06T08:51:00+00:00",
    "at_limit": false,
    "gap_risk": false,
    "error": null
   },
   "금융위원회 RSS": {
    "ok": false,
-   "last_run_at": "2026-11-06T08:37:28.506238+00:00",
+   "last_run_at": "2026-11-07T00:18:23.626222+00:00",
    "last_success_at": null,
-   "consecutive_failures": 21,
+   "consecutive_failures": 22,
    "entries": 0,
    "kept": 0,
    "skipped": {},
@@ -198,46 +197,46 @@
   },
   "금융위원회 검색": {
    "ok": true,
-   "last_run_at": "2026-11-06T08:37:28.506238+00:00",
-   "last_success_at": "2026-11-06T08:37:28.506238+00:00",
+   "last_run_at": "2026-11-07T00:18:23.626222+00:00",
+   "last_success_at": "2026-11-07T00:18:23.626222+00:00",
    "consecutive_failures": 0,
-   "entries": 48,
-   "kept": 2,
+   "entries": 46,
+   "kept": 1,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
     "irrelevant": 26,
-    "junk_title": 20
+    "junk_title": 19
    },
    "filtered": [
     "[노이즈 제목] 알림마당",
-    "2027년 금융위원회 예산안에 대해 자세히 설명드립니다.",
-    "[노이즈 제목] 보험정책",
-    "[노이즈 제목] 보험정책",
+    "[노이즈 제목] 알림마당",
     "[노이즈 제목] 보험정책",
     "[노이즈 제목] 보험정책",
     "과거회신사례(2014 이전) - 금융규제·법령해석포털",
     "예금자보호법 조문별 제·개정이유서 금 융 위 원 회",
     "｢예금자보호법｣ 일부개정법률안 입법예고",
-    "예금자보호법 일부개정법률안"
+    "예금자보호법 일부개정법률안",
+    "금융위의결정보",
+    "AI시대, 거세지는 침해위협에 맞서 全 금융권이 튼튼한 보안체계로 무장하도록 혁신적인 정책과"
    ],
-   "oldest": "2021-03-11T11:19:14+00:00",
-   "newest": "2026-11-06T06:35:09+00:00",
+   "oldest": "2021-01-02T01:42:19+00:00",
+   "newest": "2026-11-06T19:31:29+00:00",
    "at_limit": false,
    "gap_risk": false,
    "error": null
   },
   "금융감독원 검색": {
    "ok": true,
-   "last_run_at": "2026-11-06T08:37:28.506238+00:00",
-   "last_success_at": "2026-11-06T08:37:28.506238+00:00",
+   "last_run_at": "2026-11-07T00:18:23.626222+00:00",
+   "last_success_at": "2026-11-07T00:18:23.626222+00:00",
    "consecutive_failures": 0,
-   "entries": 8,
+   "entries": 7,
    "kept": 0,
    "skipped": {
     "no_link": 0,
     "no_date": 0,
-    "irrelevant": 7,
+    "irrelevant": 6,
     "junk_title": 1
    },
    "filtered": [
@@ -245,13 +244,12 @@
     "Supplements to the Universal Shelf Registration Statement - DART - Repository of Korea's Corporate Filings",
     "MIRAE ASSET SECURITIES/Prospectus (Shelf Registration)/2026.11.04 - DART - Repository of Korea's Corporate Filings",
     "Supplements to the Universal Shelf Registration Statement - DART - Repository of Korea's Corporate Filings",
-    "Registration Statement (Debt securities) - DART - Repository of Korea's Corporate Filings",
-    "Supplements to the Universal Shelf Registration Statement - DART - Repository of Korea's Corporate Filings",
     "- 전자공시시스템",
+    "최근공시 | 전체 - 전자공시시스템",
     "증권불공정거래 신고센터"
    ],
-   "oldest": "2026-11-03T06:31:40+00:00",
-   "newest": "2026-11-06T04:59:01+00:00",
+   "oldest": "2014-10-30T14:07:53+00:00",
+   "newest": "2026-11-06T20:22:00+00:00",
    "at_limit": false,
    "gap_risk": false,
    "error": null

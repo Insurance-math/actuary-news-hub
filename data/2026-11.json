@@ -1,5 +1,138 @@
 [
  {
+  "id": "62f7de68b971dac4",
+  "title": "보험권 정보보호 '사후 대응'까지 확대…보험사·GA 보안체계 시험대",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110451",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-06T23:29:17+00:00",
+  "collected_at": "2026-11-07T00:18:23.626222+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [],
+  "tags": [
+   "GA"
+  ],
+  "score": 3,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "374840e6393e7397",
+  "title": "“혼자 늙는 것도 서러운데, 다 가져가야만 했냐”…고령 1인가구 보험료 ‘쑥’",
+  "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9qWHVKQXBTTG9HU2VaT01NN2c1OTBuVThKM19GcXRzN09VYlRaeVRxMl9DMkVWRk54b0JTNWFEemdMMng4RFBqZHF2M3lLcEZHTDFobQ?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-06T20:59:47+00:00",
+  "collected_at": "2026-11-07T00:18:23.626222+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [],
+  "tags": [
+   "보험료"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "26406b6f889f7e64",
+  "title": "AI로 만든 '가짜 흠집' 보험금 청구…日손보업계 비상",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110450",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-06T12:39:31+00:00",
+  "collected_at": "2026-11-07T00:18:23.626222+00:00",
+  "category": "손해보험",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ],
+  "tags": [
+   "손보",
+   "AI"
+  ],
+  "score": 3,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "9d096898915b7789",
+  "title": "퇴직연금 대수술…금융권 '수익률·책임경영' 시험대",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110449",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-06T12:28:34+00:00",
+  "collected_at": "2026-11-07T00:18:23.626222+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ],
+  "tags": [
+   "퇴직연금",
+   "수익률"
+  ],
+  "score": 2,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "c7470bdb41dde2c0",
+  "title": "역대급 낙폭에 10년물 국채금리 최저치까지…‘블루쓰나미’에 중화권 비명",
+  "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1vV3RsbldpTV9RSHhUaGlOeHZiSVAzX0RLNDh1LVVUcVhjS09QU1Bja2RVN0FWa1ZpQW13WDh5Y3Jza3E2NkUxc19oQVV5VDU2S0E?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-06T09:47:48+00:00",
+  "collected_at": "2026-11-07T00:18:23.626222+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [
+   "국채",
+   "금리"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장"
+ },
+ {
+  "id": "3c1a702b728aad0a",
+  "title": "법원, 2천억원대 ‘깡통 보증서’ 발행한 유령 보험사에 해산명령",
+  "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93714",
+  "source": "한국보험신문",
+  "source_type": "media",
+  "published_at": "2026-11-06T09:45:20+00:00",
+  "collected_at": "2026-11-07T00:18:23.626222+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "한국보험신문"
+ },
+ {
+  "id": "a70b53ec03a9d871",
+  "title": "AI가 적금 납입금 제안…보험도 맞춤특약 찾아준다 [S머니+]",
+  "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1HbVJPdWhwRXB5UHNtTmp1UEE5TmNsM2ozVWNmSDUtcTFJN1pXR01VODFMZmlfU1BXdzVyUy1UekloSkJWWjlEQ3lEdUhfR1FiTEHSAVNBVV95cUxOVGJfWEEwMXcwZnM0YnN2RWJobHRITGRIVHdpTjJyWkpxSVk2bHJuV0pKcnB0TmlSSGhYaXN6dnRBWFZPR2dJdDBVVzRtWUItVG9JZw?oc=5",
+  "source": "서울경제",
+  "source_type": "media",
+  "published_at": "2026-11-06T08:51:00+00:00",
+  "collected_at": "2026-11-07T00:18:23.626222+00:00",
+  "category": "사회·인구·기술 변화",
+  "sub_categories": [],
+  "tags": [
+   "AI"
+  ],
+  "score": 2,
+  "feed_name": "사회변화·보험"
+ },
+ {
+  "id": "bb38e561217ed4ad",
+  "title": "혼자 사는 어르신, 보험료 부담 4년새 60% 증가",
+  "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5lTzNzMDdKSHhDeFhWMjUzcURSSXdxdG5kYzR4YVVsdFROMjVLaEFRNFBhdnR2YUhSMVlpMG0xVnMyUWxYNTJlZXZWNFBkQ2dBTXZZZg?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-06T08:40:29+00:00",
+  "collected_at": "2026-11-07T00:18:23.626222+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [],
+  "tags": [
+   "보험료"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
   "id": "ceada5fede87f702",
   "title": "[6일 보험주 마감시황] 삼성화재 7.36%↓·현대해상 5.43%↓…인카 1.65%↑",
   "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33817",
@@ -158,6 +291,20 @@
   "source_type": "media",
   "published_at": "2026-11-06T02:44:46+00:00",
   "collected_at": "2026-11-06T03:06:28.554777+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "0ae08a618d03bf32",
+  "title": "2천억대 '무허가 깡통 보험증서' 발행 업체…법원, 법인 해산명령",
+  "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9GVVc5YTZWeXhjaWRTbHZsQkNlMURkZmxveU9iSGlkVmdTUWFJRE1SSEYtR0M2OWNRMzRCM25qQnhnSlFuY0RuazgydElLSlRaT1F0Q2NCYzdMR00zcXIxNHljWUZra1hDcGhJUF9ZOTVLeTgzR0ZKMdIBeEFVX3lxTE9GVVc5YTZWeXhjaWRTbHZsQkNlMURkZmxveU9iSGlkVmdTUWFJRE1SSEYtR0M2OWNRMzRCM25qQnhnSlFuY0RuazgydElLSlRaT1F0Q2NCYzdMR00zcXIxNHljWUZra1hDcGhJUF9ZOTVLeTgzR0ZKMQ?oc=5",
+  "source": "뉴시스",
+  "source_type": "media",
+  "published_at": "2026-11-06T02:14:08+00:00",
+  "collected_at": "2026-11-07T00:18:23.626222+00:00",
   "category": "미분류",
   "sub_categories": [],
   "tags": [],
@@ -389,6 +536,23 @@
   ],
   "score": 2,
   "feed_name": "사회변화·보험"
+ },
+ {
+  "id": "742b4f714d429364",
+  "title": "국고채 금리, 美 블루웨이브 파급 효과에 일제히 하락(종합)",
+  "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1GU0hxSkxtWkZ2YlFSbzJNTzdvZDItM3o1M2l4MURvSnhCMVEwYkJ5NEd1a1hlc294Wkt0b0FzdGlRTnhYbnF1aHJoMjJ5eE80R1E?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-05T07:55:40+00:00",
+  "collected_at": "2026-11-07T00:18:23.626222+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [
+   "국고채",
+   "금리"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장"
  },
  {
   "id": "525b32554ab1e7ca",
