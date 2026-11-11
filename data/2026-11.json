@@ -1,5 +1,304 @@
 [
  {
+  "id": "5d819fcbadb0cadf",
+  "title": "메리츠화재, 3분기 순익 29% 감소…투자손익 부진 영향",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110515",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:43:20+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "손해보험",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ],
+  "tags": [
+   "투자"
+  ],
+  "score": 2,
+  "feed_name": "보험매일",
+  "relevant": true,
+  "companies": [
+   "메리츠화재"
+  ],
+  "orgs": []
+ },
+ {
+  "id": "4dbc7cb7801116f5",
+  "title": "메리츠금융, 3분기 순익 전년比 27% 감소…증시 악화에 화재 투자손익 급감",
+  "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNd05WcjB5b1FnMEN6VktQUmZtcktzODg2YTg4OTZCbzJYclhYQURYRGkwb25LZ3ZUU01rNEVRN21mUWRVaVpYRWpjWWlWSlp5ajlRVUVBaTNuaHhnczd2WHlqUWhKb3Q2d3VHcFNpR253TmxKVFMxRGgweFRUNnBLeDRYaw?oc=5",
+  "source": "인베스트조선",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:42:00+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "증시",
+   "투자"
+  ],
+  "score": 2,
+  "feed_name": "손보사·메리츠·한화",
+  "relevant": false,
+  "companies": [],
+  "orgs": []
+ },
+ {
+  "id": "7d5eeb84c2e26564",
+  "title": "'제15회 MTN 100세시대 금융대상'…DB손해보험 대상 수상",
+  "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE80TXlsTENFYzJuQ1R0U1JZcVpGaExrSkNEVjgxU2V1NzctbXN6LWhUTElmVUtCbS1wcUxwZUJtMzZLdTU5YV8ydFhOMVFHb0c1NkJYaWFuNXZVX2tEVmZV?oc=5",
+  "source": "MTN 머니투데이방송",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:41:14+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "손보사·DB·KB",
+  "relevant": true,
+  "companies": [
+   "DB손해보험"
+  ],
+  "orgs": []
+ },
+ {
+  "id": "6d6a297d8baec3f5",
+  "title": "정몽윤 현대해상 회장, 장남 정경선에 지분 6% 증여…3세 승계 가속",
+  "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4wMFJ6YVplR29rLU1EMDRCU0pFTFFxbXB1OXRXcVZPS0dpN0NGelNMTmxHcG4yWmtja0pIcXppQWJfWTRIWkRaRHlBd0syTFdlcTVBd0c5dk9VbXJiZjdQSGl6ZFQ?oc=5",
+  "source": "PRESS9",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:40:14+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "손보사·현대해상",
+  "relevant": true,
+  "companies": [
+   "현대해상"
+  ],
+  "orgs": []
+ },
+ {
+  "id": "af1f9c73e675e6f7",
+  "title": "6500조원 굴리는 JP모건 국민연금과 전략적 제휴",
+  "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LbXdoQkE3aHhKVFdFN21aakJEVlQwTXdKZHhtWWdjUm9XTmJoTHN2UEJzaTdxdGdNWWNmUjBhVGNUY3hWck9VYlF3dUJ5eXlFbFE?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:37:18+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장",
+  "relevant": true,
+  "companies": [],
+  "orgs": []
+ },
+ {
+  "id": "e0dfd72978296b08",
+  "title": "'본업에 웃고 투자에 울고'…메리츠화재 3분기 순익 '뚝'",
+  "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1JMHBSNUlQTm14S0V2QnlDVHF5cGJSTEZhRWxLMkR4UGlZRUhpd3BxRG81ZHpzQkZyRDlNc3pUeHpWRnBadnJRYnAyYlZvRWxpcTF1WklBVXZiaEpBaVRBVldQWnJObkI3WDJZ?oc=5",
+  "source": "비즈워치",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:37:03+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "손해보험",
+  "sub_categories": [
+   "금융시장·자산운용"
+  ],
+  "tags": [
+   "투자"
+  ],
+  "score": 2,
+  "feed_name": "손보사·메리츠·한화",
+  "relevant": true,
+  "companies": [
+   "메리츠화재"
+  ],
+  "orgs": []
+ },
+ {
+  "id": "6beea9b0cceef8d2",
+  "title": "한화손보, 3분기 순익 961억원…보험손익 개선에 34.1% 증가",
+  "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9RODhVWmUyNjNrYktmd2lzSUtfY1YweE1jNEhIdTRiQ0kwcnUyWTZ4Q3lBTHRaUnVyRTEwRklIeXEyY3dEOVFiUi1NM0dLYVlzV0xNT2VHWGszeGxY?oc=5",
+  "source": "뉴스핌",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:37:00+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "손보사·메리츠·한화",
+  "relevant": true,
+  "companies": [
+   "한화손해보험"
+  ],
+  "orgs": []
+ },
+ {
+  "id": "c4c9d15bd0c79ab4",
+  "title": "한화육삼시티, 계열사 한화생명보험에 50억원 정기예금형 신탁 가입",
+  "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9IZkdNRVlBU0hyYlJwOE01aURPWWNrSHBaSDZBSzcwOUVkXzFPS0ZPa3JUb2poVUp2MHRCREtLWGdmSXprUEFnbTVXVXJuS1d4VGZsTVJxLUstVU1PSkhVNXJVdXVjUXlBX1ZyTkowd05nSk00VDU3VDYzVQ?oc=5",
+  "source": "디지털투데이",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:32:06+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "생명보험",
+  "sub_categories": [],
+  "tags": [
+   "생명보험"
+  ],
+  "score": 2,
+  "feed_name": "생보사·삼성·한화",
+  "relevant": true,
+  "companies": [
+   "한화생명"
+  ],
+  "orgs": []
+ },
+ {
+  "id": "388f8d80f0651eac",
+  "title": "메리츠화재 \"현 제도서 해약준비금 과도해…내년 이익 성장 자신\"",
+  "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5aOHlORlB4Mi1mbWlqdkZYYXV5LXJOOFc3UDRkS1o4MkhkbjNhNGxlQ1QzNUFDMWoyYk9hRGw5Y1diVlVTRmVxZnEyLWV3Qjlld2xMbGdVYjkyNDVpckhZSXlxMjZHeFVrT0V6MHdwTjdDdw?oc=5",
+  "source": "KB Think",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:32:03+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "손보사·메리츠·한화",
+  "relevant": true,
+  "companies": [
+   "메리츠화재"
+  ],
+  "orgs": []
+ },
+ {
+  "id": "9a4d76c1447d50e6",
+  "title": "에이플러스에셋어드바이저, 자회사 에이플러스리얼티와 소규모 주식교환 결정",
+  "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBoN09HeVNKUGNoYUtGRVJSeWxPZmFaSG5lZk5JX01YTThxbFNoOThZRXJwSk9URlVEbmp5US1WTEpwY2dKUkl3bFZ3Q18wcW5yaVV4SE5lN0NnUjhSOFl1SjMtVkRVY1hWZHF6aFplSGtjYUZSbHRTTmxibw?oc=5",
+  "source": "디지털투데이",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:32:01+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "생보업권·외국계",
+  "relevant": false,
+  "companies": [],
+  "orgs": []
+ },
+ {
+  "id": "60af96330f3caca8",
+  "title": "보험손익 7.6% 늘고도 웃지 못한 메리츠화재…'시장불안'에 발목",
+  "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ZZU5jaEZBMFJLZWNycm1lRVZiRllHVTgwY2FmNnE1ZTFiRWxNX01PdFFUcmJDQWFwbGthSk9vWlVpZWV4Y2dUX2dseTA4ZkVoQ3hseUMwMExndFlzdkJ5dDFvWGp2b0VTQUpvTVVMOA?oc=5",
+  "source": "뉴스톱",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:31:08+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "손보사·메리츠·한화",
+  "relevant": true,
+  "companies": [
+   "메리츠화재"
+  ],
+  "orgs": []
+ },
+ {
+  "id": "8f70e2b56b7be3b3",
+  "title": "메리츠화재, 3분기 누적 순익 1조3528억원…보험손익 7.6%↑",
+  "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPd3ExYy1aUlI0YXdSTTV1SkZfWTBlZnRZVmx1X1lwbGpiQU5PUWIxUnZ6S0NfWEFoMHA5aHcwZTJXRjdlNUp3MUJTdjg1TUxySW02Nml1TGZwcS1PSGpTLVRnUUZBcnN4ZmhaRFNPa2dBYXM2WXFzT253U05TbHVIczBZMmNJYnBCMDJ0ZElWb0JPdENkWXpVVHlPQmVrWHREU1V4RjJJUkEtUXVNdElLOWdha1lOYUMyaDdhTXJMRlU4OVBkN293Vi1fTE9nUHVSVllJby1xU3ZsQ0tTeTZSX3lSWGlyclQxYjVQNC11TkVPOUpOalRRMQ?oc=5",
+  "source": "데일리안",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:29:00+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "손보사·메리츠·한화",
+  "relevant": true,
+  "companies": [
+   "메리츠화재"
+  ],
+  "orgs": []
+ },
+ {
+  "id": "5eae921bc7416758",
+  "title": "[오늘의 주목주] '실적 경계' 삼성화재 주가 5%대 내려, 코스피 외국인 순매수에 5370선 상승 마감",
+  "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBhWVhYdWItRTFXQXJ6c3dRdjhtc3IyaXVzTFNOdG1yNXlQTEd4THVTVERCMDV1Tlh6S210eWQxZENwQ1d1U3lWSmw1Mkpxc25RSUFrSUZmbDJwZExfdE14RE5KRmJlbTRaUGVNdExLcEczVUk?oc=5",
+  "source": "비즈니스포스트",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:27:52+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [
+   "손해보험",
+   "보험경영·판매"
+  ],
+  "tags": [
+   "코스피",
+   "실적",
+   "주가"
+  ],
+  "score": 3,
+  "feed_name": "손보사·삼성화재(그 외)",
+  "relevant": true,
+  "companies": [
+   "삼성화재"
+  ],
+  "orgs": []
+ },
+ {
+  "id": "1924688351b42bb3",
+  "title": "현대해상, 병원 내 '마음도서관' 확대…전국 34곳 조성",
+  "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8yQzRYTGdtZVhqQkdMTDJLTlQzcV82YzNQRE5hUEZBb2Z0WXFVeTlTZm1ZN0lWcldRVkJ2eWZ5aDB4eUNQS3lldFJzZlJnRVh5UmtOYWw2bTJ6UzMtOTdvbEtFX0txcGRi?oc=5",
+  "source": "뉴스포스트",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:26:05+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "손보사·현대해상",
+  "relevant": true,
+  "companies": [
+   "현대해상"
+  ],
+  "orgs": []
+ },
+ {
+  "id": "37f594b4cd5272c8",
+  "title": "메리츠화재, 3분기 누적 순익 1조3528억원···전년比 6.8%↓",
+  "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE15WVhNa0wyczgwVlpYSVA4REZXV1c0dGZWWVVQQ3RxQ19jQ1ZJMHRXcjBFQVBOTlJKUUMyY3ZZaVNJek50Zk1pTVhVMFQ4MERVNkxZLUNwbV9zLWYxWGNVbkl6cGJvWTJFSkE?oc=5",
+  "source": "서울파이낸스",
+  "source_type": "media",
+  "published_at": "2026-11-11T08:24:19+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "손보사·메리츠·한화",
+  "relevant": true,
+  "companies": [
+   "메리츠화재"
+  ],
+  "orgs": []
+ },
+ {
   "id": "a12d2a1696182e95",
   "title": "메리츠증권 \"내년 '플랜형 수수료' 제도 도입...최저 수수료 전략 지속\" - 머니투데이",
   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5QTjlaWmlTVkJ5eTVDNm9MaWdUM3ctZlM0QzdsTEtBTVFGbkFBdEt1WWZfeGlKZ2N3dDBCbVRENk1mQlk3S09EZjV6ZWFFMHpsdjhOWmdETjVhYUZCLXBBOGJxcU90d1pt0gFuQVVfeXFMUGhfNXQ3WnZnRXRvTVVueHRGcHFvNm8wTnlMSllNcWs2eUVlaUdMdWNkb0U4ZjFBLWJuMm9ISE1rZ3dEU0tUU2ZXTFMwaEJmY3A3YzVHT2wxZFBmMDl5WGRrcjlJaTJMTTdzU2pta2c?oc=5",
@@ -509,6 +808,28 @@
   "relevant": false,
   "companies": [],
   "orgs": []
+ },
+ {
+  "id": "6be1b1d6486e7478",
+  "title": "[더밸류 브리핑] 오늘의 보험 소식…보험연수원·DB손보·KB손보",
+  "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9kTE94cHdNcEJITUtyQThJWFhfZzdJXzhhanhOUUJIcXZkaE9kY09UdWkyNVl0RWhOTDVWYzY3clplUWFOZHVaWi1adUlZT0w3Ym13?oc=5",
+  "source": "더밸류뉴스",
+  "source_type": "media",
+  "published_at": "2026-11-11T07:55:35+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [],
+  "score": 3,
+  "feed_name": "손보사·DB·KB",
+  "relevant": true,
+  "companies": [
+   "DB손해보험",
+   "KB손해보험"
+  ],
+  "orgs": [
+   "보험연수원"
+  ]
  },
  {
   "id": "1eb7ea252c597ff3",
@@ -1539,6 +1860,25 @@
   "orgs": []
  },
  {
+  "id": "5b89ba3366ed30e0",
+  "title": "삼성화재 \"횡단보도 보행자 6명 중 1명 스마트폰 사용\"…사고 위험 경고 |",
+  "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE41QXVZb3QwMkpGbTFmVWpvaVpUQXRVMV92Q1g5R0huTl9EUWd6ZFdNMGx1a0dTNG1TTEVfbnVhTnRwdk9hVTd2OHNwOFVxWU54eDdhR0VhSTYtcEhSN0pUdENENC1KbnZ2Yk1ZQVUtM01Qdw?oc=5",
+  "source": "팝콘뉴스",
+  "source_type": "media",
+  "published_at": "2026-11-11T07:01:41+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "손보사·삼성화재(그 외)",
+  "relevant": true,
+  "companies": [
+   "삼성화재"
+  ],
+  "orgs": []
+ },
+ {
   "id": "274ecf9a5d218c04",
   "title": "[3Q실적] 메리츠화재, 순이익 3285억원…전년比 29% 감소",
   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1SaEowUXU1WmEyUm5mRTJsalZ0Rk14OWlxZjA3S1k4U1BISkV5bHJOMFhLbW5UdVlocV95MDhzYzFpZVVJdHMwN0s4WXEyZHNjemtRZVJweVl0d0x3X0kzVWVVV1c3dE5ieUMwNW9DbW8tcWhS?oc=5",
@@ -2548,6 +2888,25 @@
   "feed_name": "보험매일",
   "relevant": false,
   "companies": [],
+  "orgs": []
+ },
+ {
+  "id": "f8e2c7e5dad02d82",
+  "title": "KB손해보험, 피프티피프티와 웰니스 웹예능 ‘Z-톡스’ 공개",
+  "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5xUWRaWGIyT2poV01mVWZmVDF1Tm9EYjcwSDUxYkdmcC1GM0lDUmNPZUMwMXp0eDJiX19mRnVuNFpZcllUc05xTUwyZ0s4X3RBLUdsRDdEVFpnaFFQb0plTGRvQVI5OTVTNzNRWk4waw?oc=5",
+  "source": "비즈니스리포트",
+  "source_type": "media",
+  "published_at": "2026-11-11T05:40:00+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "손보사·DB·KB",
+  "relevant": false,
+  "companies": [
+   "KB손해보험"
+  ],
   "orgs": []
  },
  {
@@ -4483,6 +4842,25 @@
   "relevant": true,
   "companies": [
    "한화손해보험"
+  ],
+  "orgs": []
+ },
+ {
+  "id": "07a5c87f7654b0b1",
+  "title": "[단독] 1756억 자산에 순자산은 고작 1억대?…삼성생명 中 합작사 자본완충력 '경고등'",
+  "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE50MUpCYjc1Nm9iNEk0ejV4VW43YzRWenk2NXRUUWJwcUhBSWREUTh3UWM4Wm9NeVd6U1JUb3ZvYzVkSWVJZVRqZDRGcjVqajFNcU00ZTY2Tkh3STVyVGVfaURIdlU?oc=5",
+  "source": "https://www.ppss.kr/",
+  "source_type": "media",
+  "published_at": "2026-11-11T02:00:00+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "생명보험",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "생보사·삼성·한화",
+  "relevant": true,
+  "companies": [
+   "삼성생명"
   ],
   "orgs": []
  },
@@ -7641,6 +8019,25 @@
   "tags": [],
   "score": 2,
   "feed_name": "주요 경제지·보험",
+  "relevant": true,
+  "companies": [],
+  "orgs": []
+ },
+ {
+  "id": "b9a3067c799cf95d",
+  "title": "기본자본 '50% 규제' 임박…중소 보험사 자본여력 확보에 '안간힘'",
+  "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4zQXRxRGN3cEx4cm1Bck45WlpFa25BY0RJalMzMVNwLVdNcUtRMktScjI4Wk9pTVJLdXhJYjJMQkY3VkE4Wm8zdENid3lyTW43YVZoRnMwVDZpQ25IdUp6VUktdXFXNE440gFsQVVfeXFMTm96RGZKV1BJTWxHR3hodmNqMmxSNXJxeFR6dzU5Zmhsc0VWWURYNEFZX1F4Ylh6SXNzZUhKNWVEMjEzVUJxX2x6OUZYSWUzWVJqalN2UDBMQk1Dc2dqc0NUcVBhNXY4Q0RFRVJz?oc=5",
+  "source": "블로터",
+  "source_type": "media",
+  "published_at": "2026-11-10T08:39:02+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "제도·회계·건전성",
+  "sub_categories": [],
+  "tags": [
+   "규제"
+  ],
+  "score": 2,
+  "feed_name": "기관·금융위원회",
   "relevant": true,
   "companies": [],
   "orgs": []
@@ -11226,6 +11623,25 @@
   ]
  },
  {
+  "id": "268427b8a6359720",
+  "title": "교보생명, 보호아동과 베트남 봉사활동…주택 4채 지원",
+  "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1OWXY2TEQyR204bTBoZ29TOV9TQ3A4ZVhxUmxuUHd1X3pKeHZ0U0xfeXRfdUdHNGd6RFpybEZoVW5td1UteEh6QXdfVDZBbHBrb3hibGozWVZBczBOV1VaRkN6RTJYd0FqemU0ZEpyQdIBckFVX3lxTE9KVUVWZHhvV2d5Z0dKRHBpc0x6dHZpdVcyZk1WWlRod3owYXBERjZRdl8weG1rRmc2WmR3aXg4RC1EdlpyWjFHRXozWjZpZFkxVUNHX0JXQ3hLRHJVeG1GR2tHZFIxMFl4SGQxWHo5QTBFZw?oc=5",
+  "source": "팝콘뉴스",
+  "source_type": "media",
+  "published_at": "2026-11-10T01:35:39+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "생명보험",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "생보사·교보·신한·농협",
+  "relevant": true,
+  "companies": [
+   "교보생명"
+  ],
+  "orgs": []
+ },
+ {
   "id": "d13fe4900896df40",
   "title": "[게시판] 교보생명, 베트남에 '사랑의집' 짓기…보호아동도 참여",
   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1XQklOcEQ4OElxZjZPenpBVVlJWGUxNVRZX2pTc3Q5ekFGejNSWEc4QkNRUkRRdkJLR3ZFRVhlUXRTUFFHckd5RjFnR0FrQ1d4UHpzV3IyV1BkZkXSAWBBVV95cUxNR1NUYXE2OW5TR3YwVEFyM3JqaXFLRUxiWFQxcmFBRzBJOG0tazhIQlloeThaa0hqLVFlRzBsY2pvVGJPei13Q2tTdHh6LU5oYVU0endqZl9BZmsyVWNYX1A?oc=5",
@@ -13403,6 +13819,23 @@
   "companies": [
    "한화손해보험"
   ],
+  "orgs": []
+ },
+ {
+  "id": "9665928815cb90a0",
+  "title": "“보험용 유격수로 딱이야” 필라델피아, FA 김하성에 눈독",
+  "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBUVW9VeTFvRHd4RFBrSjZQNWctRElrZlVHUHRwQU1WSnpxeXRPbk5WTDNMX01EdWNmRXBkUHIwWkhrb2JTVWhkMmFiOW84c184cjFr?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-09T22:50:36+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험",
+  "relevant": true,
+  "companies": [],
   "orgs": []
  },
  {
@@ -26190,6 +26623,29 @@
   "feed_name": "기관·금융위원회",
   "relevant": true,
   "companies": [],
+  "orgs": []
+ },
+ {
+  "id": "457d3e436807c6d1",
+  "title": "삼성생명, 화성시와 돌봄 실증… 문 개방과 동시에 ‘보안’은?",
+  "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5tbGtmQ2JBRWlrZUlvZ1MzdU94cERiQVF5am4wbjJod3JuT2phekpOekI1clU5XzcwSFRVaThBRUhKSHh2b2RzOTlQbHp1dGtKMkFJWXdxeFo3cE85aWI0YVNwMjlTU2pqU29GQg?oc=5",
+  "source": "이코노미톡뉴스",
+  "source_type": "media",
+  "published_at": "2026-11-05T00:39:50+00:00",
+  "collected_at": "2026-11-11T08:46:12.178012+00:00",
+  "category": "생명보험",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ],
+  "tags": [
+   "돌봄"
+  ],
+  "score": 2,
+  "feed_name": "생보사·삼성·한화",
+  "relevant": true,
+  "companies": [
+   "삼성생명"
+  ],
   "orgs": []
  },
  {
