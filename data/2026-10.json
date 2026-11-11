@@ -13,7 +13,8 @@
   ],
   "score": 3,
   "feed_name": "보험매일",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "9f3d164abe02da1e",
@@ -32,7 +33,8 @@
   "feed_name": "보험매일",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "09fa51d578d80a27",
@@ -49,7 +51,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "94b7d7ec37ea243d",
@@ -70,7 +73,8 @@
   "sub_categories": [
    "사회·인구·기술 변화",
    "보험경영·판매"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "65a180dd4040f56d",
@@ -87,7 +91,8 @@
   ],
   "score": 5,
   "feed_name": "보험매일",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "8f92fe11a6982798",
@@ -106,7 +111,8 @@
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "9db66fca53d70393",
@@ -122,7 +128,8 @@
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "4357a9e21cf03349",
@@ -139,7 +146,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "202ccb87fa17c2da",
@@ -158,7 +166,8 @@
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "48e465f7bf68073f",
@@ -172,7 +181,8 @@
   "tags": [],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "630bbee49b6b9003",
@@ -191,7 +201,8 @@
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "d4f39e091abce4f1",
@@ -212,7 +223,8 @@
   "sub_categories": [
    "제도·회계·건전성",
    "금융시장·자산운용"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "94f1587f9fa6ca08",
@@ -231,7 +243,8 @@
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "fbf5fc93b87bbe2b",
@@ -251,7 +264,8 @@
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "44f31e8069578f94",
@@ -272,7 +286,8 @@
    "규제"
   ],
   "score": 3,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "relevant": true
  },
  {
   "id": "c9fbcf49c912cbf2",
@@ -291,7 +306,8 @@
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "80be18661d5f29a1",
@@ -311,7 +327,8 @@
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "a5160c2932d238c6",
@@ -330,7 +347,8 @@
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "5d3eef7dad5d0f12",
@@ -351,7 +369,108 @@
   "sub_categories": [
    "사회·인구·기술 변화",
    "보험경영·판매"
-  ]
+  ],
+  "relevant": true
+ },
+ {
+  "id": "95bb124b91797cfe",
+  "title": "2026년 9월 외국인 증권투자 동향",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=248185&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-30T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "투자"
+  ],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "자본시장감독국"
+ },
+ {
+  "id": "a75d1bd66abde7aa",
+  "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자)에 대한 수사의뢰(DAXA, 3건) 및 접속차단(2건) 요청",
+  "url": "https://www.fsc.go.kr/no010101/88039",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-30T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "가상자산검사과"
+ },
+ {
+  "id": "e3e05b9a55f3fc83",
+  "title": "제9회 ‘회계의 날’ 기념식 및 회계업계 간담회 개최",
+  "url": "https://www.fsc.go.kr/no010101/88031",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-30T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "회계제도팀"
+ },
+ {
+  "id": "c80ea939bfc2578f",
+  "title": "한국의 풀뿌리 금융, 미소금융이 다시 한번 도약합니다. - 미소금융 재원 기부 협약식 개최",
+  "url": "https://www.fsc.go.kr/no010101/88029",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-30T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "서민금융과"
+ },
+ {
+  "id": "536fff85a0cf3663",
+  "title": "국민성장펀드가 국내 최대 태양광 발전소 건설과 반도체 밸류체인 경쟁력 강화를 지원합니다.",
+  "url": "https://www.fsc.go.kr/no010101/88028",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-30T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "국민성장펀드총괄과"
+ },
+ {
+  "id": "af77ee50a1e30e56",
+  "title": "퇴직연금 기능강화를 위한 노사정 합의로 노동자의 든든한 노후소득 보장체계 구축",
+  "url": "https://www.fsc.go.kr/no010101/88027",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-30T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "퇴직연금"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "자산운용과"
  },
  {
   "id": "c54f1c32f52ba6cc",
@@ -369,7 +488,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "ebabdb939ae25763",
@@ -385,7 +505,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "fda5b3285f388224",
@@ -401,7 +522,8 @@
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "bffc7b6198cc72bf",
@@ -417,7 +539,8 @@
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "95468076081a5ce3",
@@ -433,7 +556,8 @@
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "f22aded403b08e50",
@@ -452,7 +576,8 @@
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "735f6afde0b44cb0",
@@ -469,7 +594,8 @@
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "b808ab4828682a88",
@@ -491,7 +617,8 @@
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "89cb463993a18a27",
@@ -509,7 +636,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "eaa8d6b5712dbd15",
@@ -525,7 +653,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "532a5e99e886b317",
@@ -546,7 +675,8 @@
    "투자"
   ],
   "score": 4,
-  "feed_name": "주요 경제지·금융시장"
+  "feed_name": "주요 경제지·금융시장",
+  "relevant": true
  },
  {
   "id": "073b6445b06fd702",
@@ -565,7 +695,8 @@
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "14edee2b1490e8dd",
@@ -581,7 +712,8 @@
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "defe87fb1b2848b9",
@@ -597,26 +729,8 @@
   ],
   "score": 3,
   "feed_name": "사회변화·보험",
-  "sub_categories": []
- },
- {
-  "id": "5346cee63fd3f923",
-  "title": "보험사기 연루 보험업종사자에 대한 등록취소·업무정지 등 제재",
-  "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVFZteE1sa1V2RjJaR1pwdHdmZ1MwWlNfMVlORmVlekZ4Z29oNUc4SkNwYVgyTnA3RzFGS0tweGhoZ2xSSWZpRzF5ZkJZRl9YOUI5M1JWRndSckhjRnZIcm1PbVhIYmFaWkI5cUZKNWwwcjg1R0Nud2JmQy1WLUZVM0szbnJ4NzVDT0s5TUFn?oc=5",
-  "source": "금융위원회",
-  "source_type": "press",
-  "published_at": "2026-10-29T04:34:57+00:00",
-  "collected_at": "2026-11-04T11:23:54.199912+00:00",
-  "category": "위험관리·재보험",
-  "tags": [
-   "보험사기",
-   "제재"
-  ],
-  "score": 3,
-  "feed_name": "금융위원회 검색",
-  "sub_categories": [
-   "제도·회계·건전성"
-  ]
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "ad8f27daa1998985",
@@ -637,7 +751,8 @@
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "e16869f4f413feaf",
@@ -657,7 +772,8 @@
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [
    "사회·인구·기술 변화"
-  ]
+  ],
+  "relevant": true
  },
  {
   "id": "00e61415349a514f",
@@ -673,7 +789,8 @@
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "e73fb1b38ba3c933",
@@ -689,7 +806,8 @@
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "b4a479e47ac549c8",
@@ -705,7 +823,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "2e06be484f314176",
@@ -722,7 +841,8 @@
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "be1b2c7d273106ee",
@@ -738,7 +858,192 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
+ },
+ {
+  "id": "d37a1df477d1b43e",
+  "title": "보험사기 연루 보험업종사자에 대한 등록취소·업무정지 등 제재",
+  "url": "https://www.fsc.go.kr/no010101/88021",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-29T00:00:00+00:00",
+  "collected_at": "2026-11-04T11:23:54.199912+00:00",
+  "category": "위험관리·재보험",
+  "sub_categories": [
+   "제도·회계·건전성"
+  ],
+  "tags": [
+   "보험사기",
+   "제재"
+  ],
+  "score": 3,
+  "feed_name": "금융위원회 보험과 게시판",
+  "relevant": true,
+  "department": "보험과"
+ },
+ {
+  "id": "7660f7286fa63d2c",
+  "title": "보험회사 계리담당 부서장 간담회 개최",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=247849&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-29T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": true,
+  "department": "계리리스크감독국"
+ },
+ {
+  "id": "cec9cd8719fb49e1",
+  "title": "\"금융회사의 부실 확산에 신속, 선제적으로 대응하여 금융시장의 안정 및 소비자 보호를 위한 「금융회사 신속정리제도」 도입을 추진합니다.\"",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=247688&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-29T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "소비자보호"
+  ],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "감독혁신국"
+ },
+ {
+  "id": "3a9b1846c84fb3d0",
+  "title": "보험사기 연루 보험업종사자에 대한 등록취소, 업무정지 등 제재",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=247619&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-29T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "위험관리·재보험",
+  "sub_categories": [
+   "제도·회계·건전성"
+  ],
+  "tags": [
+   "보험사기",
+   "제재"
+  ],
+  "score": 3,
+  "feed_name": "금융감독원 게시판",
+  "relevant": true,
+  "department": "보험사기대응단"
+ },
+ {
+  "id": "09e1b46edadd0ce6",
+  "title": "퇴직연금 기능강화를 위한 노사정 합의로 노동자의 든든한 노후소득 보장체계 구축",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=247600&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-29T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "퇴직연금"
+  ],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "연금감독실"
+ },
+ {
+  "id": "daced4f9a54228cd",
+  "title": "26년 3분기 등록 ABS 발행 실적",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=247561&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-29T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "실적"
+  ],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "기업공시국"
+ },
+ {
+  "id": "229105e2c51e206b",
+  "title": "제2차 국민참여성장펀드의 운용사들의 국민투자금 운용전략을 청취하고 향후 관리방안을 논의하였습니다.",
+  "url": "https://www.fsc.go.kr/no010101/88025",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-29T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "투자"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "국민지역참여지원과"
+ },
+ {
+  "id": "37efbec9a42edc4a",
+  "title": "금융위원장, ‘금융분야 재난대응 안전한국훈련’ 주관",
+  "url": "https://www.fsc.go.kr/no010101/88023",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-29T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "금융위"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "감사담당관"
+ },
+ {
+  "id": "ebaec9de8d626698",
+  "title": "“금융회사의 부실 확산에 신속·선제적으로 대응하여 금융시장의 안정 및 소비자 보호를 위한 ｢금융회사 신속정리제도｣ 도입을 추진합니다.”",
+  "url": "https://www.fsc.go.kr/no010101/88020",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-29T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "소비자보호"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "구조개선정책과"
+ },
+ {
+  "id": "8b4ec4afe7151544",
+  "title": "☎1375(일상치료)로, 빚의 고통은 덜고 희망의 빛은 더하겠습니다. - 금융위원회·신용회복위원회, 채무상담 대표번호 ☎1375 개통식 개최 -",
+  "url": "https://www.fsc.go.kr/no010101/88019",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-29T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "금융위원회"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "복합지원팀,서민금융과"
  },
  {
   "id": "25d66c4374cfcf4a",
@@ -755,7 +1060,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "e62b1025f6c19f15",
@@ -772,7 +1078,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "7d1668d23af8a0d8",
@@ -788,7 +1095,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "fbbbd0f1778feda4",
@@ -805,7 +1113,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "1bbdec87807fac1d",
@@ -824,7 +1133,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "58e3aa72bc8c02b7",
@@ -841,7 +1151,8 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
  },
  {
   "id": "70d84545940b14c1",
@@ -857,6 +1168,453 @@
   ],
   "score": 2,
   "feed_name": "사회변화·보험",
-  "sub_categories": []
+  "sub_categories": [],
+  "relevant": true
+ },
+ {
+  "id": "b21a9b80ac9312ac",
+  "title": "사업보고서 등에 대한 조사, 감리결과 조치",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=247035&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "회계감리2국"
+ },
+ {
+  "id": "ebff5bd7fc04382f",
+  "title": "미공개중요정보를 이용한 내부자등에 대한 중대범죄수사청 고발, 통보 등 조치(2건)",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=247026&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "조사2국"
+ },
+ {
+  "id": "451d7a50a60c01a4",
+  "title": "빗썸 등 주요 가상자산사업자들에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다.",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=246843&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "해킹"
+  ],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "디지털금융총괄국/IT검사국/가상자산감독국"
+ },
+ {
+  "id": "bb4d0179b450b3c9",
+  "title": "포용금융이 금융권에 뿌리내리도록 평가체계를 도입하고, 공공부문이 앞장서서 부실채권 관리체계를 개편하겠습니다.",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=246792&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "채권"
+  ],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "은행감독국"
+ },
+ {
+  "id": "7f61a8b7191fa2c8",
+  "title": "금융회사 민원, 분쟁업무 모범관행 설명회 개최",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=246791&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "소비자소통국/소비자권익보호국"
+ },
+ {
+  "id": "dc7a7c194172b66d",
+  "title": "건전한 경쟁질서 확립 및 투자자 피해 예방을 위해 증권업계 이벤트 실시 기준을 대폭 강화합니다",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=246528&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "투자"
+  ],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "자본시장감독국"
+ },
+ {
+  "id": "c653cebd9917f56f",
+  "title": "이찬진 금융감독원장, 은행지주 이사회 의장 간담회 개최",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=246237&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "금융감독원"
+  ],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "은행검사1국/은행검사2국/은행감독국/디지털금융총괄국"
+ },
+ {
+  "id": "476bed52ed342f5b",
+  "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제19차 증권선물위원회(’26.10.28.) 조치 의결",
+  "url": "https://www.fsc.go.kr/no010101/88013",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "회계제도팀"
+ },
+ {
+  "id": "ae72998c1f2e2398",
+  "title": "미공개중요정보를 이용한 내부자등에 대한 중대범죄수사청 고발·통보 등 조치(2건) - 제19차 증권선물위원회(10.28.) 의결",
+  "url": "https://www.fsc.go.kr/no010101/88012",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "자본시장조사총괄과"
+ },
+ {
+  "id": "641493b80f7480da",
+  "title": "빗썸 등 주요 가상자산사업자들에 대한 해킹사고에 대해 긴밀하고 신속하게 대응하고 있습니다. -「가상자산업권 등 침해사고 관련 긴급점검 회의 개최」",
+  "url": "https://www.fsc.go.kr/no010101/88010",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "해킹"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "금융안전과"
+ },
+ {
+  "id": "cb10fa18c7fc0f46",
+  "title": "기후대응위, 민관 협력으로 철강산업 저탄소 전환 해법 모색 -「산업부문 저탄소 전환정책 포럼(제2차)」개최, 철강산업 현장의 전환과제와 이를 뒷받침할 투자·금융 연계방안 논의",
+  "url": "https://www.fsc.go.kr/no010101/88008",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "투자"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "산업금융과"
+ },
+ {
+  "id": "6b757fddbe477094",
+  "title": "포용금융이 금융권에 뿌리내리도록 평가체계를 도입하고, 공공부문이 앞장서서 부실채권 관리체계를 개편하겠습니다. - 이억원 금융위원장, 제7차 포용적 금융 대전환 회의 주재",
+  "url": "https://www.fsc.go.kr/no010101/88006",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "채권",
+   "금융위"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "서민금융과"
+ },
+ {
+  "id": "cfd838fc10a7597c",
+  "title": "제11회 ‘금융의 날’ 기념식 개최",
+  "url": "https://www.fsc.go.kr/no010101/88005",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-28T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "금융시장분석과"
+ },
+ {
+  "id": "dc28579333b81204",
+  "title": "일본계 자본의 JYP 주식 공개매수 보도 관련 투자자 유의사항",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=245702&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-27T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "투자"
+  ],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "기업공시국/조사1국"
+ },
+ {
+  "id": "9bb53eae8eb163ae",
+  "title": "투자한도 100%는 상품의 원리금 보장성 표시가 아닙니다",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=245254&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-27T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "투자"
+  ],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "연금감독실"
+ },
+ {
+  "id": "6d463bb1399b9cfe",
+  "title": "증권업계 신용융자 자율관리 강화를 위한 증권사 CRO 간담회 개최",
+  "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=244991&menuNo=200218",
+  "source": "금융감독원",
+  "source_type": "press",
+  "published_at": "2026-10-27T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융감독원 게시판",
+  "relevant": false,
+  "department": "자본시장감독국"
+ },
+ {
+  "id": "9192f0397aac07e2",
+  "title": "군부대로 ‘찾아가는 재무상담소’, 군복무 청년에게 1:1 맞춤형 재무상담 제공",
+  "url": "https://www.fsc.go.kr/no010101/87998",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-27T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "청년정책과"
+ },
+ {
+  "id": "905f3af615978df4",
+  "title": "2026년 3분기 공적자금 운용현황",
+  "url": "https://www.fsc.go.kr/no010101/87997",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-27T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "구조개선정책과"
+ },
+ {
+  "id": "da00d1e1c0f7934f",
+  "title": "제1차 국민참여성장펀드 자산운용보고서 공시",
+  "url": "https://www.fsc.go.kr/no010101/87994",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-26T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "자산운용"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "국민지역참여지원과"
+ },
+ {
+  "id": "2966e6902bb9bf7e",
+  "title": "민·관 합동으로 「지표금리 개편방안(3.30일)」을 차질 없이 추진하고 있습니다.",
+  "url": "https://www.fsc.go.kr/no010101/87989",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-26T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "금리"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "금융시장분석과"
+ },
+ {
+  "id": "3663b9a0085565a4",
+  "title": "여신전문금융업감독규정 개정안 규정변경예고(‘26.10.23.~12.2.) 실시",
+  "url": "https://www.fsc.go.kr/no010101/87984",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-23T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "감독규정"
+  ],
+  "score": 3,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "중소금융과"
+ },
+ {
+  "id": "fd35d36d3612228f",
+  "title": "우주항공 · 양자 산업을 국민성장펀드의 지원대상산업에 추가하고자 합니다. - 한국산업은행법 시행령 개정령안 입법예고(10.22~12.1일)",
+  "url": "https://www.fsc.go.kr/no010101/87977",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-22T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "국민성장펀드총괄과"
+ },
+ {
+  "id": "3b462ad1c7d1657f",
+  "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제18차 금융위원회(’26.10.21.) 조치 의결",
+  "url": "https://www.fsc.go.kr/no010101/87976",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-21T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "금융위원회"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "회계제도팀"
+ },
+ {
+  "id": "efe70896d061fcea",
+  "title": "“보증금 기반 비대면 신용카드 발급 서비스” 등 혁신금융서비스 4건 신규 지정 의결 - 신규 혁신금융서비스 지정 4건 및 규제개선 요청 수용 1건 의결",
+  "url": "https://www.fsc.go.kr/no010101/87975",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-21T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:41:30.945508+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "규제"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 게시판",
+  "relevant": false,
+  "department": "디지털금융총괄과"
+ },
+ {
+  "id": "d389980db09d6810",
+  "title": "카드뉴스 - 홍보자료 - 알림마당",
+  "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zQlBLLTJpRWRzVHVFeEdXeVRBTmVjQjJES2U3T2Z3OWdyOGJVTGVWbWhrNFE4U2w3c3lCOUdFeWlyNi02Q3Q0bU0xdEFoWmRqTnc?oc=5",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-20T12:26:49+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "금융위원회 검색",
+  "relevant": false
+ },
+ {
+  "id": "de4fa331a9db3192",
+  "title": "보험업권과 복지부 산하 노인지원기관이 손잡고 65만명의 취약어르신에게 낙상사고 치료비, 치매배상책임보험을 무료로 제공하겠습니다.",
+  "url": "https://www.fsc.go.kr/no010101/87952",
+  "source": "금융위원회",
+  "source_type": "press",
+  "published_at": "2026-10-19T00:00:00+00:00",
+  "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "사회·인구·기술 변화",
+  "sub_categories": [],
+  "tags": [
+   "치매"
+  ],
+  "score": 2,
+  "feed_name": "금융위원회 보험과 게시판",
+  "relevant": true,
+  "department": "보험과"
  }
 ]
