@@ -1,5 +1,563 @@
 [
  {
+  "id": "abec0eaefe6f5265",
+  "title": "보험연수원, ‘AI 안경’ 대리응시로 규정… 3년 자격 제한·형사고발 '초강수'",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33862",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-11T00:27:39+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "사회·인구·기술 변화",
+  "sub_categories": [],
+  "tags": [
+   "AI"
+  ],
+  "score": 2,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "455de489196ced8c",
+  "title": "KDB생명, 종신보험 사망보험금 최대 2배 체증",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110498",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-11T00:11:28+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "생명보험",
+  "sub_categories": [],
+  "tags": [
+   "종신보험",
+   "KDB생명"
+  ],
+  "score": 3,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "41cc97817710f22b",
+  "title": "KDB생명, 사망보험금 200% 체증에 노후 연금까지… ‘더!행복플러스종신보험(무)’ 출시",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33860",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-11T00:04:40+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "생명보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ],
+  "tags": [
+   "종신보험",
+   "KDB생명",
+   "출시"
+  ],
+  "score": 3,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "9bc6d53e696957c1",
+  "title": "DB손보, ‘교통·환경챌린지 8기’ 데모데이 성황리 개최… 소셜벤처 5개사 혁신 성과 공유",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33859",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-10T23:56:57+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [
+   "DB손보"
+  ],
+  "score": 2,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "5efabe5605132403",
+  "title": "[칼럼] ‘건보료 7.19% 동결’ 뒤에 가려진 8.19%…'장기요양보험료'는 오른다",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33858",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-10T23:52:13+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "요양",
+   "보험료"
+  ],
+  "score": 2,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "17aae4052f5a40e9",
+  "title": "DB손보, ‘교통∙환경챌린지 8기’ 데모데이 개최",
+  "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uMzdfTE02YUJnYldBUWk0LVNWYzh3S1hQRG1aNWg5MGpJcFFkRDV6YmVkVURqVXdYNDJKU3BjM2N4Wmo0ZjA3VVplMEYxWl92NEo2VlJ6NFpMUQ?oc=5",
+  "source": "한국경제",
+  "source_type": "media",
+  "published_at": "2026-11-10T23:39:49+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [
+   "DB손보"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "138e63c3a22f5212",
+  "title": "美 물가 부담에 금리 인상 가능성 커져…나스닥 0.74%↓ [뉴욕증시 브리핑]",
+  "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Cc3BGLU9RNmIzSUFkZ0FqSF9TN05iWU5oTjZpVm9lNXZWWGJCbFExd2hteUx1bVdJdERGZlNEUDBtNXdZSzk4djhDVWRlelJ5SGN0TjRVQUgyQQ?oc=5",
+  "source": "한국경제",
+  "source_type": "media",
+  "published_at": "2026-11-10T22:54:40+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [
+   "금리인상",
+   "뉴욕증시"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장"
+ },
+ {
+  "id": "f4ef3de22e0a798b",
+  "title": "사고현장 출동한 변호사 든든했는데…변협 “불법알선 보험 멈춰라”",
+  "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE91dThfclRPR2tDcl93SUFfcktXTkd2TUdUXzQ2X282U241RGJWREpCN0NFR3FlZFFFU2tMVnFvalZWRmxPdFVDWjN0MGFjVVF6S1A2Sw?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-10T22:21:06+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "68b309b01e59b268",
+  "title": "[단독] “간병인보험 보장한도 손보나”… 금감원, 보장금액·손해율 정밀 조사 착수",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33856",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-10T22:02:06+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "손해보험",
+  "sub_categories": [
+   "위험관리·재보험",
+   "제도·회계·건전성",
+   "사회·인구·기술 변화"
+  ],
+  "tags": [
+   "손보",
+   "손해율",
+   "간병",
+   "금감원"
+  ],
+  "score": 4,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "5e57fd91d4789bfb",
+  "title": "보험사 해외투자 셈법…당장 수익보다 ‘미래 포석’",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110490",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-10T21:32:05+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [
+   "투자"
+  ],
+  "score": 2,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "646d3211b0326397",
+  "title": "보험권 첫 해킹 사고 일단락…정보보안 과제 여전",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110489",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-10T21:32:05+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "위험관리·재보험",
+  "sub_categories": [],
+  "tags": [
+   "해킹"
+  ],
+  "score": 3,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "1b034a5096de73cf",
+  "title": "카카오페이, 비대면 보험영업에 AI 접목 검토…채팅상담 인력 확충",
+  "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBzNEtoVkMyb0lqSU9KRXhJVnFEWHZHb3Jnd1pYREZQcTdnblpPODVOcTk5TF8tYWNiREgzNDZLYzFrSE1Xczc0TXNhTXdmbE5LYkZCWEhRUnVkQmxyODlmVkZxVVZBTG9kRzNFQnp2QkQ?oc=5",
+  "source": "신아일보",
+  "source_type": "media",
+  "published_at": "2026-11-10T21:00:00+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "사회·인구·기술 변화",
+  "sub_categories": [
+   "보험경영·판매"
+  ],
+  "tags": [
+   "AI",
+   "영업"
+  ],
+  "score": 2,
+  "feed_name": "사회변화·보험"
+ },
+ {
+  "id": "559beeeba7d06ec6",
+  "title": "“자리잡으면 결혼하자” 하더니 ‘노산’ 됐다…이 보험 하나로 다 대비",
+  "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9saUdOdXZOcVZJbUpLZmpTUnNRcmxTS1AycDMzeUtGZVJ5aUtNZFBsaHBkY3pIdlVGYnpRamNwVnMzRFR3a2pCSmR6dERIcldWTGpDUg?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-10T20:59:01+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "eae69480fca1d04c",
+  "title": "GA 보험광고 심의 부담 확대…사전 검수체계 정비 과제",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110495",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-10T17:03:39+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [
+   "제도·회계·건전성"
+  ],
+  "tags": [
+   "GA",
+   "광고심의"
+  ],
+  "score": 3,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "c80383cda2e61a28",
+  "title": "서비스 수출실적, 무역보험과 연계… 기업 증빙 부담 줄인다",
+  "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93774",
+  "source": "한국보험신문",
+  "source_type": "media",
+  "published_at": "2026-11-10T09:41:29+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [],
+  "tags": [
+   "실적"
+  ],
+  "score": 2,
+  "feed_name": "한국보험신문"
+ },
+ {
+  "id": "97e176cef2ebe1b5",
+  "title": "카카오페이, AI·DB로 보험대리업 승부수",
+  "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UQUFLQUFXSGhPMkVjR2V2eHRFdjl1dzAyUFV4Q1ozWXJydV9MbmhMQ1BYbW51WEdXMWZGSG9iN004TlZPZ0xxSUxJVkYyQldtOXh2cndCVkZfQQ?oc=5",
+  "source": "파이낸셜뉴스",
+  "source_type": "media",
+  "published_at": "2026-11-10T09:11:29+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "사회·인구·기술 변화",
+  "sub_categories": [],
+  "tags": [
+   "AI"
+  ],
+  "score": 2,
+  "feed_name": "사회변화·보험"
+ },
+ {
+  "id": "86d2489e4a364536",
+  "title": "중간선거 후 美 국채 랠리…안전자산 '머니무브', 금리결정이 변수 - 머니투데이",
+  "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1icUlEWm9lcldCWUtmWWZuN3JKVnBzUkRBNkNGdDdZN1pRUnJaOXNLMmxYNEEzbkdNenh0Y0duMG5RczdrdXJJVU1FekdUc3R2bGRsam9WaU9ORGp6ajFsVU5FbnlTZ2100gFuQVVfeXFMT2NHbUJ5d0ZlUEFGOTVsekN6bHQ5VGdSUElhb185ejFUTERjOERrLUxYUjA3NlZJczFOd29oR2JhcUt5V2NZSTVlZ3djVTgyS2p5RnVkNzZjOEJlMTRiN1lxOHFiQmpMZ1JzbC0wcUE?oc=5",
+  "source": "머니투데이",
+  "source_type": "media",
+  "published_at": "2026-11-10T08:42:54+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [
+   "국채",
+   "금리"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장"
+ },
+ {
+  "id": "198cc16f2c6822b5",
+  "title": "車사고때 보험사가 변호사 소개…변협 반발",
+  "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBc3NfWVdfZHRnTUZPdDNZSWdyN1pkUkFQRXUwbHNYNURNbS1COXlleXRWVU5NaHVsSUJCV2hNbDRaMmh2VkhqLTAxSzlnN1Q1dF81dQ?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-10T08:39:30+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "088b48416227a295",
+  "title": "김철주 생보협회장, 불법사금융 예방 캠페인 동참",
+  "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5XRzk4NEFwMi1QR2EwMjc1bGdVdlJScTdKdVV2WC1MVUJ2RzNsYlN5ZWk5U0tOZUgxQi1mcUlvRUplbldWbVpuV2VSenE3SDRlTkFINElTUnpXM0RZeVRKYtIBeEFVX3lxTE5saFNVeHRLNDYxTG5VQkQ4T3hUbTM3eHpydUZ2Y1lXUjNNRlpZRjJLeERldmxUeHkzWDdqNkNQMS1hVF92Mi1hZnpYMENkUjc3MUFCOVM0QWFQc2pPbUl1OElRY1M5MWpNaGh6cFNFTlBFSHpTR29tZw?oc=5",
+  "source": "뉴시스",
+  "source_type": "media",
+  "published_at": "2026-11-10T08:21:13+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "생명보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ],
+  "tags": [
+   "생보",
+   "캠페인"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "b1889ea099d3315b",
+  "title": "난임부터 임신·출산까지…女心 홀린 여성보험",
+  "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBURlF0UGdhaEx1QmNON0VidVBMaXRLOHNIS1hhb2RXWXEtZ3ZRMnlTbGV5ZE0yMW13RHVPSHM5MGI3UDJsZlVWZ2NaSWt5WXB2Z2xveg?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-10T08:21:07+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "8a152e3f624780cd",
+  "title": "국고채 금리 급락에 장기채 ETF '방긋'…30년물 한 달 수익률 15% - 머니투데이",
+  "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ZUGoyeGswRG1CUUZ1X1B5QmZNcDdLVFAwYUF0WENZemJVVVFmdlRJQzVqZzRoUnNlQURTbDNkQ1g3cUk2OWpwVmlhcWIxaE8xcFZNRXloYzhucnQwLTNWaWxjVGxHX0NONFhaTm9R0gFuQVVfeXFMTllQajJ4azBEbUJRRnVfUHlCZk1wN0tUUDBhQXRYQ1l6YlVVUWZ2VElDNWpnNGhSc2VBRFNsM2RDWDdxSTY5anBWaWFxYjFoTzFwVk1FeWhjOG5ydDAtM1ZpbGNUbEdfQ040WFpOb1E?oc=5",
+  "source": "머니투데이",
+  "source_type": "media",
+  "published_at": "2026-11-10T07:58:26+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [],
+  "tags": [
+   "국고채",
+   "금리",
+   "ETF",
+   "수익률"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장"
+ },
+ {
+  "id": "050a0a9444a345a1",
+  "title": "병력 숨기고 보험가입 1.4억 타낸 50대, 실형",
+  "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1VLVFwcFVQSWFobFU2dldEcDZSek9MZTFINV8zemRlSmFpZndoM0c2ZmlEc0NUNUVnUjhnUXp3aDVLcVpOVVNKNzFiM0VyV3Rsdzd1X21UTjFuNlFQcHpwadIBeEFVX3lxTE1keE9Qb1N2MkVWbUlhajFtLTN6T1JJaDZJb05ZZEF2enZPYWwzZkY2WnhNaTlVTVJVVFgxWERTVXZ4MEJxY3V2YzRzREZnUjBBVThadkw4MFdNY3NELV9HTE9ZRjk4TklXUkx1VnJLUFpJaWNZNlJlNg?oc=5",
+  "source": "뉴시스",
+  "source_type": "media",
+  "published_at": "2026-11-10T07:48:14+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "0797c1a5ff19fbc1",
+  "title": "꽉 막힌 국내시장, 해외로 눈 돌리는 보험업계",
+  "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5YeXcwenpkaFR2TENDXzVUYkVyYzhjZktieGNLUVBjS254ZE1KZ1lDbnJSMW9KbkpKTWw3Yk04UzRQOWczd1I5clNJRUVkU1o1aDF6OTZTOTUwUVFCck83elJoQnlDUHpielJiZURUc2RnbFU?oc=5",
+  "source": "이데일리",
+  "source_type": "media",
+  "published_at": "2026-11-10T07:04:01+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "5f291c7ba3e488fa",
+  "title": "금감원, PF 보증보험 발급 내부통제 강화 주문",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110491",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-10T07:02:36+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "제도·회계·건전성",
+  "sub_categories": [],
+  "tags": [
+   "금감원",
+   "내부통제"
+  ],
+  "score": 2,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "03dc65fe93109d27",
+  "title": "금융보안원, ‘2026 금융 AI Challenge’ 개최… 대상에 한화손보 ‘모의창구’",
+  "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93759",
+  "source": "한국보험신문",
+  "source_type": "media",
+  "published_at": "2026-11-10T06:58:03+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "손해보험",
+  "sub_categories": [
+   "사회·인구·기술 변화"
+  ],
+  "tags": [
+   "AI",
+   "한화손보"
+  ],
+  "score": 2,
+  "feed_name": "한국보험신문"
+ },
+ {
+  "id": "f037bb44b0ebaf88",
+  "title": "“보험업계, 간병·연금 수요 늘지만 고금리·고물가에 생보 성장 제약”",
+  "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBicGVtcHdQRkFIaWpmLThFNW5GVkEwYkR6bVRYYzI5dHZkZG44QlZycjd6djExLWVCLTdhZzYtRXRWVkNWVjZmcXlTYl9KaHdTcGpkRm9LSEtJUQ?oc=5",
+  "source": "이투데이",
+  "source_type": "media",
+  "published_at": "2026-11-10T06:56:00+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "생명보험",
+  "sub_categories": [
+   "금융시장·자산운용",
+   "사회·인구·기술 변화"
+  ],
+  "tags": [
+   "생보",
+   "간병",
+   "금리"
+  ],
+  "score": 3,
+  "feed_name": "사회변화·보험"
+ },
+ {
+  "id": "65a913de40fec88f",
+  "title": "\"억울한 교권침해, 신고부터 90만원\"… 한화손보, 교직원 '방학 상해·법률비용'까지 챙긴다",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33853",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-10T06:45:53+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [
+   "한화손보"
+  ],
+  "score": 2,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "98982e887d6ff846",
+  "title": "[단독] “아무 기준도 모르는데 수백만원 환수?”…KB손보 설계사 환수금 논란",
+  "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5wbUo5cEFrenl5MFdsOF9mVnlzOWlVMkZieWJPVlRyYzQ2Z080UUN4UWp6bjRlU3FYcjZsYTg2TG9EbFFYLVN0SnVqMWdHaUJTZnhtNQ?oc=5",
+  "source": "매일경제",
+  "source_type": "media",
+  "published_at": "2026-11-10T06:41:48+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [
+   "손해보험"
+  ],
+  "tags": [
+   "설계사",
+   "KB손보"
+  ],
+  "score": 3,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "c6d070dcf184c556",
+  "title": "[10일 보험주 마감시황] 생보 3사 일제히 반등…인카 1만원선 회복·현대해상 3.62%↓",
+  "url": "https://www.insjournal.co.kr/news/articleView.html?idxno=33854",
+  "source": "보험저널",
+  "source_type": "media",
+  "published_at": "2026-11-10T06:40:39+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "생명보험",
+  "sub_categories": [
+   "손해보험"
+  ],
+  "tags": [
+   "생보",
+   "현대해상"
+  ],
+  "score": 3,
+  "feed_name": "보험저널"
+ },
+ {
+  "id": "947055ab56c1ffe8",
+  "title": "700종신 막히자 '중도인출' 부각…생보사 영업전략 변화",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110488",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-10T06:08:38+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "생명보험",
+  "sub_categories": [
+   "보험경영·판매"
+  ],
+  "tags": [
+   "생보사",
+   "종신",
+   "영업"
+  ],
+  "score": 3,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "481b8992e15ab2e9",
+  "title": "경기도, 기후보험 첫해 5만건 지원…취약계층에 79％ 집중",
+  "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5iR2FWa2twWHB5SDRwVXZoVXpEV1BaUXoxblFjbVR5aDN2SEplQV9vMlBnODNtRkNILW5jUlJnQjU0b3ByWTBlRmkzaVI0akNFSUFlcG4wQmdSdw?oc=5",
+  "source": "한국경제",
+  "source_type": "media",
+  "published_at": "2026-11-10T05:30:06+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
+  "id": "43b4278f5ee1b9b7",
+  "title": "보험설계사도 환자 알선 가담…17억원 수수",
+  "url": "http://www.fins.co.kr/news/articleView.html?idxno=110486",
+  "source": "보험매일",
+  "source_type": "media",
+  "published_at": "2026-11-10T05:02:57+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [],
+  "tags": [
+   "설계사"
+  ],
+  "score": 3,
+  "feed_name": "보험매일"
+ },
+ {
+  "id": "b0e5c15873c8cf2b",
+  "title": "‘270억 먹튀 논란’ 김하성 원하는 팀 나타났다! 美보도 “필라델피아, KIM 영입 검토→내야 보험용 제격” - 머니투데이",
+  "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1rSnRLX2hUNDU4MEl6SlMyakxCRFk4T2EwNHhVb3ktVnhwd2FqU2ZnM1RhYU1kc3BzYXV2ZGUtR2NiUXRFUlBKckRpcjlzb3NhM01fRFJqQVkxckd0ODVBN0xORk9DRk9hTkHSAW9BVV95cUxOTXlnajlzdUI3UEs5TWp5OVZ5Q2pQQ0IxMmVyR3RGYlh3eTF3WUJJdzByOWRQWGozTEM1M3BtRGE1dHJPMC1UeEZvOGtIc3hhb3JBQUY2RW1kRmxsTk01NFFKQ3JrNHp0Y25palpLNFU?oc=5",
+  "source": "머니투데이",
+  "source_type": "media",
+  "published_at": "2026-11-10T04:14:00+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
+ },
+ {
   "id": "f7da64d063ddbc8d",
   "title": "김철주 생명보험협회장, 생명존중 가치 바탕 ‘사람 살리는 금융’ 캠페인 동참",
   "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93751",
@@ -367,6 +925,22 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장"
+ },
+ {
+  "id": "cf37e980639590ec",
+  "title": "콘텐츠·SW 수출실적 증명창구 잇는다…무역보험 서류 간소화",
+  "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kWVgxLThMNTllSy1rRzh5R2t4aWFocmh1MWtYQUZZck05cjhST2M4SHBtRUs4U2JHOHVnRlhUeTZUMl9CUFVUNm1vN295bHlmMjV4MkZ3YWYzcllTQkJiT9IBeEFVX3lxTE1HZHRVLU5EVG1kQ0NRemk5aUJUaGVBZVJ2OWRFVUZvbk02VF84dGR2QTRLXzFZVTBTMDdDLVVSWW9qRFdjQk5HU24tU18tVTVNY1FDT3pZNGlfMFlQcEY2NWJtOEpnRVE4Q0h5M21xZmt6dU5iVXdKMw?oc=5",
+  "source": "뉴시스",
+  "source_type": "media",
+  "published_at": "2026-11-09T21:00:00+00:00",
+  "collected_at": "2026-11-11T00:53:13.992802+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [],
+  "tags": [
+   "실적"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·보험"
  },
  {
   "id": "8aa34e48a0612266",
