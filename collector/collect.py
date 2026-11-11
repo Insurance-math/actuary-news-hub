@@ -24,8 +24,8 @@ FILTER_SAMPLES = 10  # status.json에 남기는 걸러진 제목 샘플 수
 UA = 'ActuaryNewsHub/3.0 (personal RSS reader; metadata only)'
 
 
-def google(q: str) -> str:
-    return 'https://news.google.com/rss/search?q=' + quote(q + ' when:7d') + '&hl=ko&gl=KR&ceid=KR:ko'
+def google(q: str, when: str = '7d') -> str:
+    return 'https://news.google.com/rss/search?q=' + quote(q + f' when:{when}') + '&hl=ko&gl=KR&ceid=KR:ko'
 
 
 # 직접 RSS: (feed_name, url, source_type, 고정 출처명 or None). 구글 검색 피드는 config/feeds.json, 게시판은 config/boards.json.
@@ -50,7 +50,7 @@ def load_sources(config_dir: Path) -> tuple[list, set, int | None]:
     rows, queries = list(RSS_SOURCES), set()
     feeds = load_json(config_dir / 'feeds.json', {})
     for q in feeds.get('queries', []):
-        rows.append((q['name'], google(q['q']), q.get('type', 'media'), q.get('source')))
+        rows.append((q['name'], google(q['q'], q.get('when', '7d')), q.get('type', 'media'), q.get('source')))
         queries.add(q['name'])
     return rows, queries, feeds.get('max_age_days')
 
