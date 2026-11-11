@@ -40,11 +40,20 @@ assert r['category'] == '금융시장·자산운용' and r['score'] <= 2
 assert c('K-ICS 비율 하락…지급여력 제도 개편')['score'] == 5
 assert c('보험업법 개정')['relevant'] and not c('날씨 맑음')['relevant']
 
+# 자동차보험 카테고리: 전용 키워드로 분류, '자동차' 단독(산업·세금·관세·전기차 판매)은 점수를 주지 않는다. 운전자보험은 손해보험
+assert c('자동차보험 ‘8주룰’ 본격 시행')['category'] == '자동차보험'
+assert c('교통사고 경상환자 8주룰 도입')['category'] == '자동차보험' and c('교통사고 경상환자 8주룰 도입')['relevant']
+assert c('삼성화재, 車보험료 인하')['category'] == '자동차보험', '보험사 이름(2점)보다 전용 키워드(3점)가 우선'
+assert c('카카오페이손보, 운전자보험 4종으로 세분화')['category'] == '손해보험'
+for t in ['자동차 관세 인하에 완성차 업계 반색', '전기차 판매 급증…자동차 수출 사상 최대', '포터 비영업용 자동차세는 연 28,500원', '중고차 시세 하락']:
+    assert c(t)['category'] != '자동차보험' and (c(t)['category'] == UNCATEGORIZED or not c(t)['relevant']), t
 # 정답 샘플 회귀 기준 (학습으로 튜닝, 검증은 별도 보고): 전체 80% 미만이면 규칙 회귀로 본다
 allr, val, val2 = evaluate('all'), evaluate('valid'), evaluate('valid2')
 assert allr['accuracy'] >= 0.80, allr['accuracy']
 assert val['accuracy'] >= 0.70, val['accuracy']
 assert val2['accuracy'] >= 0.65, val2['accuracy']  # 새 검증 샘플(튜닝에 쓰지 않음)
+pc = allr['per_category']['자동차보험']
+assert pc['support'] >= 30 and pc['precision'] >= 0.8 and pc['recall'] >= 0.7, pc  # 자동차보험 샘플 30건 이상, 정밀도·재현율 기준
 print(f"classify tests passed (전체 {allr['accuracy']:.0%}, 검증 {val['accuracy']:.0%}/{val2['accuracy']:.0%}, 예측 미분류 {allr['pred_uncat']:.0%})")
 
 # 샘플 뽑기: 같은 사건의 비슷한 제목은 한 건만

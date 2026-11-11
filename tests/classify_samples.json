@@ -177,7 +177,7 @@
  {
   "title": "“차보험료 133만원→72만원 ‘확’ 깎아”…이제 ‘청년 운전자’ 할인 쉬워진다",
   "feed_name": "주요 경제지·보험",
-  "label": "손해보험",
+  "label": "자동차보험",
   "ambiguous": false,
   "split": "train"
  },
@@ -422,7 +422,7 @@
  {
   "title": "금감원, 청년 운전자 자동차보험 할인 안내 강화",
   "feed_name": "한국보험신문",
-  "label": "손해보험",
+  "label": "자동차보험",
   "ambiguous": true,
   "split": "train"
  },
@@ -457,7 +457,7 @@
  {
   "title": "\"청년 자동차보험 가입시 부모님 자동차 운전경력 활용하세요\"",
   "feed_name": "주요 경제지·보험",
-  "label": "손해보험",
+  "label": "자동차보험",
   "ambiguous": false,
   "split": "train"
  },
@@ -541,7 +541,7 @@
  {
   "title": "‘몰라서 놓친’ 첫차 보험료 할인… 금감원, 청년 가입화면부터 바꾼다",
   "feed_name": "보험저널",
-  "label": "손해보험",
+  "label": "자동차보험",
   "ambiguous": true,
   "split": "train"
  },
@@ -583,7 +583,7 @@
  {
   "title": "'엄빠차·군토나' 몰던 운전경력도 인정…청년 車보험료 최대 46% 줄어든다",
   "feed_name": "주요 경제지·보험",
-  "label": "손해보험",
+  "label": "자동차보험",
   "ambiguous": false,
   "split": "train"
  },
@@ -611,7 +611,7 @@
  {
   "title": "대형사 차보험료 할인 특약 축소…내년 차보험료 향방은",
   "feed_name": "보험매일",
-  "label": "손해보험",
+  "label": "자동차보험",
   "ambiguous": false,
   "split": "train"
  },
@@ -716,7 +716,7 @@
  {
   "title": "군 운전병·장기렌터카 경력도 인정…청년 車보험료 28.9% 아낀다",
   "feed_name": "주요 경제지·보험",
-  "label": "손해보험",
+  "label": "자동차보험",
   "ambiguous": false,
   "split": "valid"
  },
@@ -870,7 +870,7 @@
  {
   "title": "\"군대서 운전했다면 꼭 확인\"…자동차보험료 38만원 아끼는 법 - 머니투데이",
   "feed_name": "주요 경제지·보험",
-  "label": "손해보험",
+  "label": "자동차보험",
   "ambiguous": false,
   "split": "valid"
  },
@@ -1150,7 +1150,7 @@
  {
   "title": "부모 車운전한 경력도 인정…청년 자동차보험료 아끼는 법은",
   "feed_name": "주요 경제지·보험",
-  "label": "손해보험",
+  "label": "자동차보험",
   "ambiguous": false,
   "split": "valid2"
  },
@@ -1199,7 +1199,7 @@
  {
   "title": "車보험 첫 가입 청년, 운전경력 인정받으면 보험료 최대 46% 절감",
   "feed_name": "보험매일",
-  "label": "손해보험",
+  "label": "자동차보험",
   "ambiguous": false,
   "split": "valid2"
  },
@@ -1398,5 +1398,243 @@
   "label": "금융시장·자산운용",
   "ambiguous": true,
   "split": "valid2"
+ },
+ {
+  "title": "車보험 손해율 소폭 개선에도…\"보험료 인하 여력은 아직\"",
+  "feed_name": "기관·보험개발원",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "KB손보, 車보험 원수보험료 두 분기 연속 두 자릿수↑...성장 견인차로 '우뚝'",
+  "feed_name": "자동차보험",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "valid"
+ },
+ {
+  "title": "삼성화재 전기차보험 가입과 보장 내용…어떤 구조로 나뉘나",
+  "feed_name": "자동차보험",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "축소하던 車보험에 다시 힘주는 롯데손보…신한금융 편입 앞두고 '눈길'",
+  "feed_name": "자동차보험",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "valid"
+ },
+ {
+  "title": "롯데손보, 안전운전자 알짜 차보험 특약 '주목'...커넥티드카 이어 주차일수도 보험료 할인에 반영",
+  "feed_name": "자동차보험",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "파죽지세 KB손보…차보험 점유율 ‘쑥’",
+  "feed_name": "자동차보험",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "valid"
+ },
+ {
+  "title": "연령별 정상 맥박수…자동차보험 연령특약에 적용되는 기준과 확인 방법",
+  "feed_name": "자동차보험",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "롯데손해보험, 차 세워둔 날 많으면 자동차보험료 최대 15% 할인",
+  "feed_name": "자동차보험",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "valid"
+ },
+ {
+  "title": "자동차보험 ‘8주룰’ 본격 시행…과잉진료 줄이고 보험료 낮출까",
+  "feed_name": "자동차보험",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "경상환자 8주 초과 치료 신청 하루 600건...車 보험 ‘8주룰’ 효과 시험대",
+  "feed_name": "자동차보험·제도",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "valid"
+ },
+ {
+  "title": "교통사고 경상환자 ‘8주 초과 치료’ 하루 570건… 보험금 누수 잡나",
+  "feed_name": "자동차보험·제도",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "교통사고 경상환자 8주룰 도입…“추가치료 검토해달라” 하루 570건",
+  "feed_name": "자동차보험·제도",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "valid"
+ },
+ {
+  "title": "[친절한 경제] '나이롱 환자'는 옛말?…'8주룰' 심사 신청 '하루 570건'",
+  "feed_name": "기관·보험개발원",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "4주 진단서로 못 줄인 경상환자 치료비…‘8주룰’은 다를까",
+  "feed_name": "자동차보험·제도",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "valid"
+ },
+ {
+  "title": "자동차손해배상진흥원 '경상환자 8주 추가치료' 검토업무 담당",
+  "feed_name": "자동차보험·제도",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "교통사고 한방치료, ‘8주 기준’ 시행 두 달… 입원 치료부터 치료 기록까지 달라진 점은",
+  "feed_name": "자동차보험·제도",
+  "label": "자동차보험",
+  "ambiguous": true,
+  "split": "valid"
+ },
+ {
+  "title": "자동차보험 상반기 원수보험료 10조6384억원…총손익 2380억원, 전년 대비 37.7% 감소",
+  "feed_name": "자동차보험",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "‘커넥티드카안전운전할인’ 자동차보험 특별약관 출시",
+  "feed_name": "자동차보험",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "자동차보험료 ‘자동 검증’ 기술 특허 취득",
+  "feed_name": "자동차보험",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "valid"
+ },
+ {
+  "title": "대법 \"사고 렌터카 비용, 사용가치 같은 차량의 시장요금 따져야\"",
+  "feed_name": "주요 경제지·보험",
+  "label": "자동차보험",
+  "ambiguous": true,
+  "split": "train"
+ },
+ {
+  "title": "전기차 손해율 105.1%로 치솟아...보험사들 ‘속앓이’",
+  "feed_name": "기관·보험개발원",
+  "label": "자동차보험",
+  "ambiguous": true,
+  "split": "valid"
+ },
+ {
+  "title": "에너지 절약에 동참하는 국민들께 혜택을 제공할 수 있도록 「차량 5부제 할인 특약」을 신설하여 자동차보험료 부담을조금이나마 덜어드리겠습니다.",
+  "feed_name": "금융위원회 보험과 게시판",
+  "label": "자동차보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "카카오페이손보, 운전자보험 4종으로 세분화",
+  "feed_name": "보험매일",
+  "label": "손해보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "자녀 태운 부모 운전자까지…카카오페이손보, '운전자보험' 4개 플랜 개편",
+  "feed_name": "보험저널",
+  "label": "손해보험",
+  "ambiguous": false,
+  "split": "valid"
+ },
+ {
+  "title": "한화손보, '여성 운전자 안심위치공유' 배타적사용권 획득",
+  "feed_name": "주요 경제지·보험",
+  "label": "손해보험",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "렌터카로 차선·신호위반 차량 노려 '쾅'...선후배 모여 3.2억 '보험사기' - 머니투데이",
+  "feed_name": "주요 경제지·보험",
+  "label": "위험관리·재보험",
+  "ambiguous": false,
+  "split": "valid"
+ },
+ {
+  "title": "\"고령 운전자 10％만 면허 반납해도 사고 비용 33억원 절감\"",
+  "feed_name": "보험매일",
+  "label": "미분류",
+  "ambiguous": true,
+  "split": "train"
+ },
+ {
+  "title": "\"차 있으면 못 받는다더니..\" 2026 기초연금, 자동차 기준 바뀐 조건 1위",
+  "feed_name": "기관·보험개발원",
+  "label": "미분류",
+  "ambiguous": false,
+  "split": "valid"
+ },
+ {
+  "title": "포터 비영업용 자동차세는 2004년식도 2026년식도 연 28,500원으로 같다",
+  "feed_name": "기관·보험개발원",
+  "label": "미분류",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "“도대체 원가는 얼마예요? … 中 자동차의 비밀과 70년대 日 데자뷔",
+  "feed_name": "주요 경제지·금융시장",
+  "label": "미분류",
+  "ambiguous": false,
+  "split": "valid"
+ },
+ {
+  "title": "스마트폰 보며 걷다 ‘쾅’…“운전자만 잘못인가요?” 과실 비율 보니 [라이프+]",
+  "feed_name": "자동차보험·제도",
+  "label": "미분류",
+  "ambiguous": true,
+  "split": "train"
+ },
+ {
+  "title": "국민대, 챗GPT로 교통사고 과실비율 확인하는 서비스 공개",
+  "feed_name": "자동차보험·제도",
+  "label": "미분류",
+  "ambiguous": true,
+  "split": "valid"
+ },
+ {
+  "title": "“지금도 비싼데 또 오른다”…LA·OC 렌트비, 2029년까지 오를 듯",
+  "feed_name": "자동차보험·제도",
+  "label": "미분류",
+  "ambiguous": false,
+  "split": "train"
+ },
+ {
+  "title": "발달장애 아동의 분노조절, 아빌리파이와 한방치료 병행의 가능성은?",
+  "feed_name": "자동차보험·제도",
+  "label": "미분류",
+  "ambiguous": false,
+  "split": "valid"
  }
 ]
