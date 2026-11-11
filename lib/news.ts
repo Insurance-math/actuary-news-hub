@@ -1,12 +1,10 @@
-export const CATEGORIES = [
-  '제도·회계·건전성', '생명보험', '손해보험', '금융시장·자산운용', '보험경영·판매', '위험관리·재보험', '사회·인구·기술 변화',
-] as const;
-export type Category = (typeof CATEGORIES)[number];
 export const UNCATEGORIZED = '미분류';
 
 export type Article = {
   id: string; title: string; url: string; source: string; source_type: 'media' | 'press';
   published_at: string; collected_at: string; category: string; sub_categories?: string[]; tags: string[]; score: number; feed_name: string;
+  companies?: string[];    // 제목에 나온 보험사(정식명, config/companies.json)
+  orgs?: string[];         // 제목에 나온/공식 출처인 유관기관(config/orgs.json)
   relevant?: boolean;      // false = 관련도 낮음(수집은 하되 기본 화면에서 숨김). 없으면 true(예전 기사)
   department?: string;     // 게시판 담당부서(내부 메타)
 };

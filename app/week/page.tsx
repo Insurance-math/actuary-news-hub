@@ -4,7 +4,7 @@ import { AlertCircle, Newspaper } from 'lucide-react';
 import ArticleCard from '../../components/ArticleCard';
 import { addDays, dayHeading, todayKst } from '../../lib/dates';
 import { weeklyHighlights } from '../../lib/highlights';
-import { CATEGORIES } from '../../lib/news';
+import { CATEGORIES } from '../../lib/categories';
 import { useNews } from '../../lib/useNews';
 import { useSaved } from '../../lib/useSaved';
 
