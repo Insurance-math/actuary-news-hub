@@ -127,10 +127,10 @@ def judge(title: str, kind: str, name: str | None, dept: str | None = None) -> t
     rel = bool(c['relevant'])
     if kind == 'press' and not PRESS_RE.search(title):
         rel = False
+    if rel and sports_team_title(title):  # 보험사와 이름이 같은 구단·연예 기사는 관련 없음(보험 사업 단서가 있으면 유지)
+        rel = False
     if dept and dept in RELEVANT_DEPTS:
         rel = True
-    if rel and sports_team_title(title):  # 보험사와 이름이 같은 스포츠 구단 기사는 관련 없음
-        rel = False
     if not rel and company_relevant(title):  # 보험사가 제목에 나오면 '보험' 단어가 없어도 관련(스포츠 구단 기사 등 제외)
         rel = True
     if not rel:

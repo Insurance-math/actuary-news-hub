@@ -74,18 +74,42 @@ def _relevance_cfg() -> dict:
     return json.loads(d.read_text(encoding='utf-8')).get('relevance', {}) if d.exists() else {}
 
 
+@lru_cache(maxsize=None)
+def _context_cfg() -> dict:
+    d = CONFIG_DIR / 'context_exclude.json'
+    return json.loads(d.read_text(encoding='utf-8')) if d.exists() else {}
+
+
+@lru_cache(maxsize=None)
+def _context_matchers() -> tuple[list, list]:
+    c = _context_cfg()
+    mk = lambda items: [_Rule(i) if isinstance(i, dict) else Matcher(i) for i in items]
+    return mk(c.get('exclude_words', [])), mk(c.get('business_words', []))
+
+
+def _without_company_names(title: str) -> str:
+    """보험사 이름(별칭 포함)을 뺀 제목. 'KB손해보험' 안의 '보험' 처럼 회사 이름 자체가 보험 사업 단서로 보이는 것을 막는다."""
+    sq = _squash(title)
+    for al in sorted({_squash(a) for it in load()[0].items for a in it['aliases'] + [it['name']]}, key=len, reverse=True):
+        sq = sq.replace(al, ' ')
+    return sq
+
+
 def sports_team_title(title: str) -> bool:
-    """보험사 이름이 나오지만 스포츠 구단 기사(삼성화재 블루팡스, KB손보 배구단 등)로 보이는 제목."""
-    t = title.casefold()
-    return any(w.casefold() in t for w in _relevance_cfg().get('exclude_title_words', [])) and bool(load()[0].match(title))
+    """보험사 이름이 나오지만 스포츠·연예·방송 기사(흥국생명 배구, 삼성화재 블루팡스 등)로 보이는 제목.
+    제목에 보험사 이름과 제외어(config/context_exclude.json)가 함께 있고, 보험사 이름을 뺀 나머지에 보험 사업 단서(보험·순익·실적·상품·출시 등)가 없을 때 참."""
+    if not load()[0].match(title):
+        return False
+    text, sq = title.casefold(), _squash(title)
+    excl, biz = _context_matchers()
+    if not any(m.find(text, sq) >= 0 for m in excl):
+        return False
+    rest = _without_company_names(title)
+    return not any(m.find(rest, rest) >= 0 for m in biz)
 
 
 def company_relevant(title: str) -> bool:
-    """제목에 보험사가 나오면 '보험' 단어가 없어도 관련 기사로 본다(config/companies.json relevance). 스포츠 구단 기사 등 제외 단어가 있으면 아니다."""
-    cfg = _relevance_cfg()
-    if not cfg.get('company_mention_is_relevant'):
+    """제목에 보험사가 나오면 '보험' 단어가 없어도 관련 기사로 본다(config/companies.json relevance). 스포츠·연예 맥락이면 아니다."""
+    if not _relevance_cfg().get('company_mention_is_relevant'):
         return False
-    t = title.casefold()
-    if any(w.casefold() in t for w in cfg.get('exclude_title_words', [])):
-        return False
-    return bool(load()[0].match(title))
+    return bool(load()[0].match(title)) and not sports_team_title(title)
