@@ -13,4 +13,7 @@ const r = weeklyHighlights(arts, '2026-11-04');
 assert.deepEqual(r.map(x => x.id), ['b', 'c', 'a', 'edge']); // 5점, 4점(최신 먼저), 3점
 assert.deepEqual(weeklyHighlights(arts, '2026-11-04', 2).map(x => x.id), ['b', 'c']);
 assert.deepEqual(weeklyHighlights(arts, '2026-11-04', 20, '손해보험').map(x => x.id), ['c']);
+// 관련도 낮은 기사(relevant=false)는 이번 주 핵심에서 항상 제외, relevant 필드가 없는 예전 기사는 포함
+const low = { ...mk('low', '2026-11-04T02:00:00Z', 5), relevant: false };
+assert.deepEqual(weeklyHighlights([...arts, low], '2026-11-04').map(x => x.id), ['b', 'c', 'a', 'edge']);
 console.log('highlights tests passed');

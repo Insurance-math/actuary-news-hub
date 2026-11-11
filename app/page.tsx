@@ -4,7 +4,7 @@ import { Bookmark, Check, Newspaper, Search, ShieldCheck, Clock3, AlertCircle, S
 import ArticleCard from '../components/ArticleCard';
 import DateBar, { DateFilter } from '../components/DateBar';
 import SourceFilter, { SourceChips } from '../components/SourceFilter';
-import { Article, CATEGORIES } from '../lib/news';
+import { Article, CATEGORIES, isRelevant } from '../lib/news';
 import { addDays, countByDate, dayHeading, kstDate, shiftMonth, todayKst } from '../lib/dates';
 import { matchSources, sourceOptions } from '../lib/sources';
 import { fmt } from '../lib/format';
@@ -21,6 +21,7 @@ export default function Home() {
   const [category, setCategory] = useState<string>('전체');
   const [search, setSearch] = useState('');
   const [unreadOnly, setUnreadOnly] = useState(false);
+  const [includeLow, setIncludeLow] = useState(false);       // 관련도 낮은 기사 포함(기본 꺼짐, 탭을 옮겨도 유지)
   const [sort, setSort] = useState<'latest' | 'important'>('latest');
   const [page, setPage] = useState(1);
   // 날짜 필터는 탭별로 보관한다. 전체 뉴스 탭만 처음에 '오늘'(KST)이 눌린 상태이고, '해제'한 선택은 새로고침 전까지 유지된다.
@@ -63,8 +64,9 @@ export default function Home() {
     setUndo(null);
   }, [undo, unmarkRead]);
 
+  const relevantAll = useMemo(() => all.filter(isRelevant), [all]);  // 새 뉴스 건수·이번 주 핵심은 토글과 무관하게 관련 기사만 센다
   const base = useMemo(() => {
-    let r: Article[] = tab === '북마크' ? Object.values(saved.bookmarks) : all;
+    let r: Article[] = tab === '북마크' ? Object.values(saved.bookmarks) : includeLow ? all : relevantAll;
     if (tab === '새 뉴스') r = r.filter(a => visibleInNewTab(a, { baseline, read: readSet, showRead, justRead }));
     if (tab === '감독당국 보도자료') r = r.filter(a => a.source_type === 'press');
     if (category !== '전체') r = r.filter(a => a.category === category); // '미분류'는 7개 탭에 안 나오고 '전체'에서만
@@ -72,7 +74,7 @@ export default function Home() {
     const q = search.trim().toLowerCase();
     if (q) r = r.filter(a => [a.title, a.source, a.category, ...a.tags].join(' ').toLowerCase().includes(q));
     return [...r].sort((a, b) => sort === 'important' ? b.score - a.score || b.published_at.localeCompare(a.published_at) : b.published_at.localeCompare(a.published_at));
-  }, [tab, all, category, search, sort, baseline, saved.bookmarks, unreadOnly, readSet, showRead, justRead]);
+  }, [tab, all, category, search, sort, baseline, saved.bookmarks, unreadOnly, readSet, showRead, justRead, includeLow, relevantAll]);
   const bySource = useMemo(() => matchSources(base, sources), [base, sources]);
   const dayCounts = useMemo(() => countByDate(bySource), [bySource]); // 달력 표시용(날짜 필터 제외, 언론사 선택은 반영)
   const inDate = (a: Article) => !dateFilter || (kstDate(a.published_at) >= dateFilter.from && kstDate(a.published_at) <= dateFilter.to);
@@ -82,8 +84,8 @@ export default function Home() {
   const perDay = useMemo(() => countByDate(rows), [rows]);
 
   // 새 뉴스 건수(탭 배지): 마지막 확인 이후 수집 + 안 읽음. 읽은 기사는 빠진다(방금 읽어 사라지는 중인 카드는 이미 제외).
-  const newCount = useMemo(() => all.filter(a => isUnreadNew(a, baseline, readSet)).length, [all, baseline, readSet]);
-  const hiddenReadCount = useMemo(() => all.filter(a => isNewArticle(a, baseline) && readSet.has(a.id) && !justRead.has(a.id)).length, [all, baseline, readSet, justRead]);
+  const newCount = useMemo(() => relevantAll.filter(a => isUnreadNew(a, baseline, readSet)).length, [relevantAll, baseline, readSet]);
+  const hiddenReadCount = useMemo(() => relevantAll.filter(a => isNewArticle(a, baseline) && readSet.has(a.id) && !justRead.has(a.id)).length, [relevantAll, baseline, readSet, justRead]);
   const lastPage = Math.max(1, Math.ceil(rows.length / PAGE));
   const curPage = Math.min(page, lastPage);  // 읽은 기사가 빠져 페이지 수가 줄어도 범위를 벗어나지 않게
   const pageRows = rows.slice((curPage - 1) * PAGE, curPage * PAGE);
@@ -107,6 +109,7 @@ export default function Home() {
     </div>
     <DateBar filter={dateFilter} onChange={f => { setDateFilter(f); setPage(1); }} counts={dayCounts} month={calMonth} onMonth={setCalMonth} />
     {tab === '새 뉴스' && <div className="notice"><div><b>마지막 확인 완료 이후 수집된 기사</b><p>{baseline ? `마지막 확인 완료: ${fmt(baseline)}` : '처음 접속했습니다. 보관 중인 뉴스를 모두 새 뉴스로 표시합니다.'} · 수집시각 기준(표시 시각은 발행시각)</p></div><button className="confirm" disabled={!ready} onClick={markDone}><Check size={15} /> 새 뉴스 확인 완료</button></div>}
+    {tab !== '북마크' && <div className="lowRow"><label title="제목에 보험 관련 단어가 없는 기사(시장 속보·타 업종 등)입니다. 새 뉴스 건수와 이번 주 핵심에는 포함되지 않습니다."><input type="checkbox" checked={includeLow} onChange={e => { setIncludeLow(e.target.checked); setPage(1); }} /> 관련도 낮은 기사 포함</label>{includeLow && <small>건수·이번 주 핵심에는 포함되지 않습니다</small>}</div>}
     {tab === '새 뉴스' && (hiddenReadCount > 0 || showRead) && <div className="readToggleRow"><button type="button" className="readToggle" aria-pressed={showRead} onClick={() => { setShowRead(v => !v); setPage(1); }}>{showRead ? `읽은 기사 ${hiddenReadCount}건 표시 중 · 숨기기` : `읽은 기사 ${hiddenReadCount}건 숨김 · 다시 보기`}</button></div>}
     {tab === '감독당국 보도자료' && <div className="notice"><div><b>금융위원회 · 금융감독원 관련 자료</b><p>금융위는 공식 RSS와 검색으로 발견한 자료를 함께 보여주며, 금융감독원은 직접 수집이 아니라 검색으로 발견한 자료입니다. 누락될 수 있습니다.</p></div></div>}
     <div className="listHead"><h3>{tab} <small>{rows.length.toLocaleString()}건</small></h3><span>{loadingMore ? '과거 기사 불러오는 중…' : index?.updated_at ? `마지막 수집 ${fmt(index.updated_at)}` : '수집 이력 없음'}</span></div>

@@ -5,7 +5,7 @@
 비밀키 불필요. 일부 피드가 실패해도 계속 진행한다.
 """
 from __future__ import annotations
-import argparse, hashlib, html, json, logging, re, sys
+import argparse, hashlib, html, json, logging, re, sys, threading, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -13,7 +13,8 @@ from urllib.parse import parse_qsl, quote, urlencode, urlsplit, urlunsplit
 
 import feedparser
 import requests
-from classify import classify
+from boards import fetch_board
+from classify import UNCATEGORIZED, classify, load as load_classifier
 from normalize import SourceAliases, TitleFilter, dedupe_key, is_google, normalize_shards, prefer, strip_org_suffix
 from trends import write_trends
 
@@ -27,18 +28,59 @@ def google(q: str) -> str:
     return 'https://news.google.com/rss/search?q=' + quote(q + ' when:7d') + '&hl=ko&gl=KR&ceid=KR:ko'
 
 
-# (feed_name, url, source_type, 고정 출처명 or None)
-SOURCES = [
+# 직접 RSS: (feed_name, url, source_type, 고정 출처명 or None). 구글 검색 피드는 config/feeds.json, 게시판은 config/boards.json.
+RSS_SOURCES = [
     ('보험매일', 'https://www.fins.co.kr/rss/allArticle.xml', 'media', '보험매일'),
     ('보험저널', 'https://www.insjournal.co.kr/rss/allArticle.xml', 'media', '보험저널'),
     ('한국보험신문', 'https://www.insnews.co.kr/rss/allArticle.xml', 'media', '한국보험신문'),
-    ('주요 경제지·보험', google('보험 (site:hankyung.com OR site:mk.co.kr OR site:edaily.co.kr OR site:mt.co.kr OR site:yna.co.kr OR site:newsis.com)'), 'media', None),
-    ('주요 경제지·금융시장', google('(국고채 OR 금리 OR 환율 OR 보험사 자산운용) (site:hankyung.com OR site:mk.co.kr OR site:edaily.co.kr OR site:mt.co.kr OR site:yna.co.kr OR site:newsis.com)'), 'media', None),
-    ('사회변화·보험', google('(고령화 OR 저출산 OR 인공지능 OR 기후위기 OR 의료비) 보험'), 'media', None),
     ('금융위원회 RSS', 'https://www.fsc.go.kr/about/fsc_bbs_rss/?fid=0111', 'press', '금융위원회'),
-    ('금융위원회 검색', google('site:fsc.go.kr (보험 OR K-ICS OR 실손 OR 생명보험 OR 손해보험)'), 'press', '금융위원회'),
-    ('금융감독원 검색', google('site:fss.or.kr (보험 OR 보험사 OR 지급여력 OR 실손 OR K-ICS)'), 'press', '금융감독원'),
 ]
+RSS_SUBSTITUTE = {'금융위원회 RSS': '금융위원회'}  # 점검(503) 중이면 같은 기관의 게시판 수집이 대체한다는 참고 표시용
+
+
+def load_json(path: Path, default):
+    try:
+        return json.loads(path.read_text(encoding='utf-8'))
+    except FileNotFoundError:
+        return default
+
+
+def load_sources(config_dir: Path) -> tuple[list, set]:
+    """(RSS+구글 검색 피드 행 목록, 구글 검색 피드 이름 집합)."""
+    rows, queries = list(RSS_SOURCES), set()
+    for q in load_json(config_dir / 'feeds.json', {}).get('queries', []):
+        rows.append((q['name'], google(q['q']), q.get('type', 'media'), q.get('source')))
+        queries.add(q['name'])
+    return rows, queries
+
+
+class Blocked:
+    """config/blocked_sources.json: 저장하지 않을 출처."""
+
+    def __init__(self, sources: dict | None = None):
+        self.reasons = {k.casefold(): v for k, v in (sources or {}).items()}
+
+    @classmethod
+    def load(cls, path: Path) -> 'Blocked':
+        return cls(load_json(path, {}).get('sources'))
+
+    def is_blocked(self, source: str) -> bool:
+        return source.strip().casefold() in self.reasons
+
+
+_google_lock, _google_last = threading.Lock(), [0.0]
+GOOGLE_DELAY = 0.6  # 구글 뉴스 요청 간 최소 간격(초): 쿼리가 늘어도 한꺼번에 몰리지 않게
+
+
+def throttle_google(url: str) -> None:
+    if 'news.google.com' not in url:
+        return
+    with _google_lock:
+        wait = GOOGLE_DELAY - (time.time() - _google_last[0])
+        if wait > 0:
+            time.sleep(wait)
+        _google_last[0] = time.time()
+
 
 PRESS_RE = re.compile('보험|실손|K-ICS|지급여력|계리|보험금|보험료|CSM', re.I)
 TRACKING = re.compile(r'^(utm_.*|fbclid|gclid|oc|ref|from|cid|ocid|mc_.*)$', re.I)
@@ -74,15 +116,43 @@ def parse_date(entry):
     return dt.isoformat()
 
 
-def collect_source(row, now_iso, aliases=None, unmapped=None, tfilter=None):
+RELEVANT_DEPTS: set[str] = set()  # config/boards.json relevant_departments (main 에서 채움)
+
+
+def judge(title: str, kind: str, name: str | None, dept: str | None = None) -> tuple[bool, dict]:
+    """(관련도, 분류 결과). 관련도 낮은 기사는 버리지 않고 relevant=False·미분류로 저장한다."""
+    c = classify(title, name)
+    rel = bool(c['relevant'])
+    if kind == 'press' and not PRESS_RE.search(title):
+        rel = False
+    if dept and dept in RELEVANT_DEPTS:
+        rel = True
+    if not rel:
+        c = {**c, 'category': UNCATEGORIZED, 'sub_categories': [], 'score': load_classifier().score(title, UNCATEGORIZED)[0]}
+    return rel, c
+
+
+def make_article(title, link, source, kind, published, now_iso, name, dept=None) -> dict:
+    rel, c = judge(title, kind, name, dept)
+    a = {'id': article_id(link), 'title': title, 'url': link, 'source': source, 'source_type': kind,
+         'published_at': published, 'collected_at': now_iso, 'category': c['category'],
+         'sub_categories': c['sub_categories'], 'tags': c['tags'], 'score': c['score'], 'feed_name': name, 'relevant': rel}
+    if dept:
+        a['department'] = dept  # 내부 메타(화면에 직접 노출하지 않음)
+    return a
+
+
+def collect_source(row, now_iso, aliases=None, unmapped=None, tfilter=None, blocked=None):
     name, url, kind, fixed = row
+    throttle_google(url)
     r = requests.get(url, timeout=15, headers={'User-Agent': UA, 'Accept': 'application/rss+xml, application/xml, text/xml'})
     r.raise_for_status()
     feed = feedparser.parse(r.content)
     if feed.bozo and not feed.entries:
         raise ValueError(f'invalid feed: {feed.bozo_exception}')
     entries = feed.entries[:FEED_CAP]
-    out, skipped, filtered, dates = [], {'no_link': 0, 'no_date': 0, 'irrelevant': 0}, [], []
+    out, skipped, filtered, dates = [], {'no_link': 0, 'no_date': 0, 'low_relevance': 0}, [], []
+    blocked_n: dict[str, int] = {}
     for e in entries:
         raw = clean(e.get('title', ''))
         link = (e.get('link') or '').strip()
@@ -109,17 +179,43 @@ def collect_source(row, now_iso, aliases=None, unmapped=None, tfilter=None):
             if len(filtered) < FILTER_SAMPLES:
                 filtered.append(f'[노이즈 제목] {title}')
             continue
-        c = classify(title, name)
-        if not c['relevant'] or (kind == 'press' and not PRESS_RE.search(title)):
-            skipped['irrelevant'] += 1
+        if blocked and blocked.is_blocked(source):
+            blocked_n[source] = blocked_n.get(source, 0) + 1
+            continue
+        art = make_article(title, link, source, kind, published, now_iso, name)
+        if not art['relevant']:
+            skipped['low_relevance'] += 1
             if len(filtered) < FILTER_SAMPLES:
                 filtered.append(title)
-            continue
-        out.append({'id': article_id(link), 'title': title, 'url': link, 'source': source, 'source_type': kind,
-                    'published_at': published, 'collected_at': now_iso, 'category': c['category'],
-                    'sub_categories': c['sub_categories'], 'tags': c['tags'], 'score': c['score'], 'feed_name': name})
+        out.append(art)
     stats = {'feed_size': len(feed.entries), 'skipped': skipped, 'filtered': filtered,
-             'oldest': min(dates) if dates else None, 'newest': max(dates) if dates else None}
+             'oldest': min(dates) if dates else None, 'newest': max(dates) if dates else None, 'blocked': blocked_n}
+    return out, stats
+
+
+def collect_board(spec: dict, cfg: dict, now_iso: str, backfill: bool, tfilter=None, blocked=None):
+    """HTML 게시판 1개 수집. 결과 형식은 collect_source 와 같다."""
+    pages = spec.get('backfill_pages', cfg.get('backfill_pages', 4)) if backfill else spec.get('pages', cfg.get('pages', 2))
+    items, info = fetch_board(spec, pages, max(cfg.get('delay_s', 1.2), 1.2))
+    out, skipped, filtered, dates = [], {'no_link': 0, 'no_date': 0, 'low_relevance': 0}, [], []
+    blocked_n: dict[str, int] = {}
+    for it in items:
+        title = strip_org_suffix(clean(it['title']))
+        dates.append(it['published'])
+        if tfilter and tfilter.is_junk(title):
+            skipped['junk_title'] = skipped.get('junk_title', 0) + 1
+            continue
+        if blocked and blocked.is_blocked(spec['source']):
+            blocked_n[spec['source']] = blocked_n.get(spec['source'], 0) + 1
+            continue
+        art = make_article(title, it['url'], spec['source'], 'press', it['published'], now_iso, spec['name'], it.get('department'))
+        if not art['relevant']:
+            skipped['low_relevance'] += 1
+            if len(filtered) < FILTER_SAMPLES:
+                filtered.append(title)
+        out.append(art)
+    stats = {'feed_size': len(items), 'skipped': skipped, 'filtered': filtered, 'pages': info['pages'],
+             'oldest': min(dates) if dates else None, 'newest': max(dates) if dates else None, 'blocked': blocked_n}
     return out, stats
 
 
@@ -173,8 +269,11 @@ def reclassify(data_dir: Path) -> None:
         rows = load_shard(path)
         dirty = False
         for a in rows:
-            c = classify(a['title'], a.get('feed_name'))
-            new = {'category': c['category'], 'sub_categories': c['sub_categories'], 'tags': c['tags'], 'score': c['score']}
+            if 'relevant' in a:  # 관련도는 수집 때의 판정을 현재 규칙으로 다시 계산
+                rel, c = judge(a['title'], a['source_type'], a.get('feed_name'), a.get('department'))
+            else:  # 예전 기사(수집 단계에서 이미 관련 있음으로 걸러진 것)는 relevant=true 로 이전
+                rel, c = True, classify(a['title'], a.get('feed_name'))
+            new = {'category': c['category'], 'sub_categories': c['sub_categories'], 'tags': c['tags'], 'score': c['score'], 'relevant': rel}
             if any(a.get(k) != v for k, v in new.items()):
                 a.update(new); dirty = True; changed += 1
             total += 1
@@ -201,7 +300,7 @@ def rescore(data_dir: Path, big: int = 2) -> dict:
         rows = load_shard(path)
         dirty = False
         for a in rows:
-            new = classify(a['title'], a.get('feed_name'))['score']
+            new = classify(a['title'], a.get('feed_name'))['score'] if a.get('relevant', True) else load_classifier().score(a['title'], UNCATEGORIZED)[0]
             old = a['score']
             before[old] = before.get(old, 0) + 1
             after[new] = after.get(new, 0) + 1
@@ -228,18 +327,19 @@ def skipped_stats(stats: dict) -> dict:
             'oldest': stats['oldest'], 'newest': stats['newest']}
 
 
-def write_status(data_dir: Path, started: str, results: dict, total: int, added: int):
+def write_status(data_dir: Path, started: str, results: dict, total: int, added: int, names: list[str], queries: set[str], boards: set[str]):
     """실행 결과 저장. 이번에 실패해도 이전의 last_success_at은 유지한다."""
     path = data_dir / 'status.json'
     try:
         prev = json.loads(path.read_text(encoding='utf-8')).get('sources', {})
     except (FileNotFoundError, ValueError):
         prev = {}
-    sources = {}
-    for name, *_ in SOURCES:
+    sources, blocked_total = {}, {}
+    for name in names:
         r = results.get(name, {})
         old = prev.get(name, {})
         ok = r.get('ok', False)
+        at_limit = ok and (r.get('entries') in (50, FEED_CAP) or r.get('entries', 0) > FEED_CAP)
         sources[name] = {
             'ok': ok, 'last_run_at': started,
             'last_success_at': started if ok else old.get('last_success_at'),
@@ -247,17 +347,35 @@ def write_status(data_dir: Path, started: str, results: dict, total: int, added:
             'entries': r.get('entries', 0), 'kept': r.get('kept', 0), 'skipped': r.get('skipped', {}),
             'filtered': r.get('filtered', []), 'oldest': r.get('oldest'), 'newest': r.get('newest'),
             # 피드가 주는 항목 수가 50/100건에 닿으면 더 오래된 기사가 잘렸을 수 있다
-            'at_limit': ok and (r.get('entries') in (50, FEED_CAP) or r.get('entries', 0) > FEED_CAP),
+            'at_limit': at_limit,
+            # 구글 검색 쿼리가 상한(100건)에 닿으면 쿼리를 더 쪼개야 한다
+            'needs_split': bool(at_limit and name in queries),
             # 받은 기사 중 가장 오래된 것이 직전 수집 시각보다 늦으면 그 사이 기사를 놓쳤을 수 있다
             'gap_risk': bool(ok and r.get('oldest') and old.get('last_run_at') and r['oldest'] > old['last_run_at']),
             'error': None if ok else r.get('error'),
+            'kind': 'board' if name in boards else 'search' if name in queries else 'rss',
         }
+        for src, n in r.get('blocked', {}).items():
+            blocked_total[src] = blocked_total.get(src, 0) + n
+    for name, org in RSS_SUBSTITUTE.items():  # RSS 점검 중이면 같은 기관의 게시판 수집이 성공했는지 보고 '참고' 로 표시
+        s_ = sources.get(name)
+        if s_ and not s_['ok'] and any(sources[b]['ok'] for b in boards if b in sources and results.get(b, {}).get('source') == org):
+            s_['note'] = '점검 중(게시판으로 대체 수집)'
     status = {'last_run': {'started_at': started, 'finished_at': datetime.now(timezone.utc).isoformat(),
                            'candidates': total, 'added': added,
-                           'failed': [n for n, v in sources.items() if not v['ok']]},
+                           'failed': [n for n, v in sources.items() if not v['ok'] and not v.get('note')],
+                           'noted': [n for n, v in sources.items() if not v['ok'] and v.get('note')],
+                           'blocked': blocked_total},
               'sources': sources}
     data_dir.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(status, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+
+
+def merge_found(articles: dict, found: list) -> None:
+    for a in found:
+        k = dedupe_key(a)
+        prev = articles.get(k)
+        articles[k] = prefer(a, prev) if prev else a
 
 
 def main():
@@ -265,9 +383,13 @@ def main():
     ap.add_argument('--data-dir', default='data')
     ap.add_argument('--config-dir', default='config')
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--backfill', action='store_true', help='게시판을 더 깊이(config/boards.json backfill_pages) 한 번 읽어 과거 글을 채움')
     ap.add_argument('--rescore', action='store_true', help='네트워크 없이 저장된 기사의 중요도(★)만 config/score.json 산식으로 다시 계산')
-    ap.add_argument('--reclassify', action='store_true', help='네트워크 없이 저장된 기사를 현재 분류 규칙으로 재분류')
+    ap.add_argument('--reclassify', action='store_true', help='네트워크 없이 저장된 기사를 현재 분류 규칙으로 재분류(관련도 relevant 포함)')
     args = ap.parse_args()
+    cdir = Path(args.config_dir)
+    boards_cfg = load_json(cdir / 'boards.json', {'boards': []})
+    RELEVANT_DEPTS.update(boards_cfg.get('relevant_departments', []))
     if args.reclassify:
         reclassify(Path(args.data_dir))
         return 0
@@ -276,26 +398,39 @@ def main():
         print(json.dumps(summary, ensure_ascii=False, indent=1))
         return 0
     now_iso = datetime.now(timezone.utc).isoformat()
-    aliases = SourceAliases.load(Path(args.config_dir) / 'source_aliases.json')
-    aliases.canonical |= {r[3] for r in SOURCES if r[3]}  # 직접 RSS 피드의 고정 출처명은 이미 표준 이름
-    tfilter = TitleFilter.load(Path(args.config_dir) / 'title_filters.json')
+    sources, queries = load_sources(cdir)
+    aliases = SourceAliases.load(cdir / 'source_aliases.json')
+    aliases.canonical |= {r[3] for r in sources if r[3]} | {b['source'] for b in boards_cfg['boards']}  # 고정 출처명은 이미 표준 이름
+    tfilter = TitleFilter.load(cdir / 'title_filters.json')
+    blocked = Blocked.load(cdir / 'blocked_sources.json')
     unmapped: set[str] = set()
     articles, failed, results = {}, [], {}
     with ThreadPoolExecutor(max_workers=5) as pool:
-        futs = {pool.submit(collect_source, s, now_iso, aliases, unmapped, tfilter): s[0] for s in SOURCES}
+        futs = {pool.submit(collect_source, s, now_iso, aliases, unmapped, tfilter, blocked): s[0] for s in sources}
         for f in as_completed(futs):
             name = futs[f]
             try:
                 found, skipped = f.result()
-                logging.info('%s: %d 건 (제외 %s, 피드 %d건)', name, len(found), skipped['skipped'], skipped['feed_size'])
-                results[name] = {'ok': True, 'kept': len(found), **skipped_stats(skipped)}
-                for a in found:
-                    prev = articles.get(dedupe_key(a))
-                    articles[dedupe_key(a)] = prefer(a, prev) if prev else a
+                logging.info('%s: %d 건 (관련도 낮음 %d, 제외 %s, 피드 %d건)', name, len(found), skipped['skipped'].get('low_relevance', 0), skipped['skipped'], skipped['feed_size'])
+                results[name] = {'ok': True, 'kept': len(found), 'blocked': skipped['blocked'], **skipped_stats(skipped)}
+                merge_found(articles, found)
             except Exception as e:
                 failed.append(name)
                 results[name] = {'ok': False, 'error': safe_error(e)}
                 logging.warning('%s 실패: %s', name, str(e)[:180])
+    for i, spec in enumerate(boards_cfg['boards']):  # 게시판은 같은 사이트에 순서대로(요청 간격 유지)
+        name = spec['name']
+        if i:
+            time.sleep(max(boards_cfg.get('delay_s', 1.2), 1.2))
+        try:
+            found, skipped = collect_board(spec, boards_cfg, now_iso, args.backfill, tfilter, blocked)
+            logging.info('%s: %d 건 (관련도 낮음 %d, %d페이지, 게시글 %d건)', name, len(found), skipped['skipped'].get('low_relevance', 0), skipped['pages'], skipped['feed_size'])
+            results[name] = {'ok': True, 'kept': len(found), 'source': spec['source'], 'blocked': skipped['blocked'], **skipped_stats(skipped)}
+            merge_found(articles, found)
+        except Exception as e:
+            failed.append(name)
+            results[name] = {'ok': False, 'error': safe_error(e), 'source': spec['source']}
+            logging.warning('%s 실패: %s', name, str(e)[:180])
     if unmapped:
         logging.info('미매핑 출처 %d개(원래 이름 유지): %s', len(unmapped), ', '.join(sorted(unmapped)))
     added = 0
@@ -303,13 +438,16 @@ def main():
         logging.warning('수집된 기사 없음 — 기존 데이터 유지')
     elif args.dry_run:
         logging.info('dry-run: %d 건 (저장 안 함)', len(articles))
+        rel = sum(1 for a in articles.values() if a['relevant'])
+        logging.info('dry-run: 관련 %d건 / 관련도 낮음 %d건', rel, len(articles) - rel)
     else:
         added = save(list(articles.values()), Path(args.data_dir), aliases, tfilter)
         logging.info('후보 %d건, 신규 저장 %d건', len(articles), added)
     if not args.dry_run:
-        write_status(Path(args.data_dir), now_iso, results, len(articles), added)
+        names = [r[0] for r in sources] + [b['name'] for b in boards_cfg['boards']]
+        write_status(Path(args.data_dir), now_iso, results, len(articles), added, names, queries, {b['name'] for b in boards_cfg['boards']})
         try:
-            write_trends(Path(args.data_dir), Path(args.config_dir) / 'keywords.json')
+            write_trends(Path(args.data_dir), cdir / 'keywords.json')
         except Exception as e:  # 집계 실패가 수집을 막지 않는다
             logging.warning('trends 집계 실패: %s', e)
     logging.info('실패 피드: %s', ', '.join(failed) or '없음')

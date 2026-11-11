@@ -73,3 +73,6 @@ footer.siteFooter{margin-top:0;background:#fff;border-top:1px solid #e1e7ef;colo
 .undoToast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:14px;background:#1d2b3c;color:#fff;border-radius:12px;padding:6px 8px 6px 18px;font-size:13px;box-shadow:0 6px 20px #0003;max-width:calc(100vw - 32px)}
 .undoToast button{background:none;border:0;color:#9fd0ff;font-weight:700;font-size:13px;min-height:44px;padding:0 12px;border-radius:8px}
 .undoToast span,.undoToast button{white-space:nowrap}
+
+.statusTable .noteState{display:inline-flex;align-items:center;gap:5px;font-weight:700;color:#5d7390}
+.lowRow{margin:-6px 0 12px;font-size:12px;color:#486079;display:flex;align-items:center;gap:10px;flex-wrap:wrap}.lowRow label{display:inline-flex;align-items:center;gap:6px;min-height:32px;cursor:pointer}.lowRow small{color:#8a9aac}

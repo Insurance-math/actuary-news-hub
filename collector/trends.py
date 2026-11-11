@@ -22,6 +22,8 @@ def load_keywords(config_path: Path) -> list[dict]:
 def compute(articles: list[dict], keywords: list[dict]) -> list[dict]:
     weeks: dict[str, dict] = {}
     for a in articles:
+        if a.get('relevant', True) is False:  # 관련도 낮은 기사는 키워드 추이에서 제외
+            continue
         w = weeks.setdefault(week_start(a['published_at']), {'week_start': None, 'counts': {k['name']: 0 for k in keywords}, 'total': 0})
         w['total'] += 1
         title = a['title'].casefold()

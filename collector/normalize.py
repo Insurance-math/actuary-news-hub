@@ -29,8 +29,8 @@ def is_google(a) -> bool:
 
 
 def prefer(new, old):
-    """같은 기사 중복 시 남길 쪽: 직접 링크 > 구글 중간 링크, 공식(press) > media."""
-    rank = lambda a: (not is_google(a), a['source_type'] == 'press')
+    """같은 기사 중복 시 남길 쪽: 직접 링크 > 구글 중간 링크, 공식(press) > media, 관련 있음 > 관련도 낮음."""
+    rank = lambda a: (not is_google(a), a['source_type'] == 'press', a.get('relevant', True))
     return new if rank(new) > rank(old) else old
 
 
