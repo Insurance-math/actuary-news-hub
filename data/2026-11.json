@@ -1,5 +1,20 @@
 [
  {
+  "id": "107da6b1f9bc4fa5",
+  "title": "메리츠증권, 3분기 누적 순익 7205억…전년비 12% 증가",
+  "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZWZHQzhSUzY4SC1tRnNMa0JuYWN6SG0zcDJLZWlibUZicUl5c0dWZ2RVQnBaeVJUZjYtNk1ZNl9tc2lhYVA3cnF3Y014T3M2NWI4MzR2Xy1CT0luZmJEWHNwaVh5M2hLN2FOQWc0SWxkdnpkM2s1X3RqUW9ObEhueQ?oc=5",
+  "source": "이데일리",
+  "source_type": "media",
+  "published_at": "2026-11-11T07:38:32+00:00",
+  "collected_at": "2026-11-11T07:44:12.454190+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장",
+  "relevant": false
+ },
+ {
   "id": "befd297f0d174496",
   "title": "금리 인상에도 서울 오피스에 6.4조원…큰손들이 찍은 핵심 자산은",
   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSE5iUkp5N0NTcVBxZUx6S1BlQ1JxVHBZTHZBZnFyOV9raFhKcWtOa0ZTTEYzcVlhWXFvSDgxT3VQRFZ0SF9JcEM5MFJzSmFxbXZOV0hORTdBM3NiTkxaTnNiNkpQWGxXS1dsdGdXUmJGVDdSOW94MHRsRE9YSlMyTw?oc=5",
@@ -14,6 +29,28 @@
   ],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
+  "relevant": true
+ },
+ {
+  "id": "db6857f851cc23b5",
+  "title": "車보험 손해율 소폭 개선에도…\"보험료 인하 여력은 아직\"",
+  "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBSSDhtNHZab0c1c2VuRzhzYVM5TEt0OTF1d3dNUkZuOWhrY2syZ0pWVXg4cENXbGlBMktqbUlRYWxZdjRMRGtvZlJSWWZXdTl1V19TcV81MFVjdw?oc=5",
+  "source": "브릿지경제",
+  "source_type": "media",
+  "published_at": "2026-11-11T07:37:00+00:00",
+  "collected_at": "2026-11-11T07:44:12.454190+00:00",
+  "category": "손해보험",
+  "sub_categories": [
+   "위험관리·재보험",
+   "보험경영·판매"
+  ],
+  "tags": [
+   "車보험",
+   "손해율",
+   "보험료"
+  ],
+  "score": 4,
+  "feed_name": "기관·보험개발원",
   "relevant": true
  },
  {
@@ -894,6 +931,23 @@
   "relevant": true
  },
  {
+  "id": "1ec7b77f6983b7ec",
+  "title": "정년 연장하면 퇴직연금 운용 방식도 바뀔까",
+  "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5fTWk2bHpYSWxld3NzZE9WVVMyNUw0a3RucjdUeXdYdExIYkk2WFdUbWp0MXpWYTcyUWJXUzRfeGFqSnFicmxUQ0xwXzJObGVaeU5ITGkwVXdTQQ?oc=5",
+  "source": "이투데이",
+  "source_type": "media",
+  "published_at": "2026-11-11T04:20:00+00:00",
+  "collected_at": "2026-11-11T07:44:12.454190+00:00",
+  "category": "보험경영·판매",
+  "sub_categories": [],
+  "tags": [
+   "퇴직연금"
+  ],
+  "score": 2,
+  "feed_name": "기관·보험연구원",
+  "relevant": true
+ },
+ {
   "id": "82c97398086fbf5f",
   "title": "법인보험 리베이트 732억…GA 모집수당 '줄줄'",
   "url": "http://www.fins.co.kr/news/articleView.html?idxno=110500",
@@ -1020,6 +1074,26 @@
   "score": 2,
   "feed_name": "보험저널",
   "relevant": false
+ },
+ {
+  "id": "a7c477cddf11f03e",
+  "title": "'국고채 담합' 증권가 1.4조 과징금…\"신뢰·실적 흔들\" - 머니투데이",
+  "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1oN0lYYnBSQU1EbHVBTWp2b0YxMWRzLXFQeXZfampDUEhLbUdieFJsNTI2bnFwdlFKY3RCNTByQzlMQTQ2UzFaTHpxd2xHLU9KSEVjVUJXaXpiN0UwR0tveVZibUk4UzJN0gFuQVVfeXFMTkpuc3pROUF0MWpxd1pUZ1MydWw1aDBiZWlBdTJaZ0FscXlwUXZlcWc0aHkwVGM4QkZWZTdDSHMwbHpLWS1BQThROTAtZy1IQ29FWHp6V2RjVUFmMmpyZUx2N3BFXy1OdVJNZk8waGc?oc=5",
+  "source": "머니투데이",
+  "source_type": "media",
+  "published_at": "2026-11-11T03:05:46+00:00",
+  "collected_at": "2026-11-11T07:44:12.454190+00:00",
+  "category": "금융시장·자산운용",
+  "sub_categories": [
+   "보험경영·판매"
+  ],
+  "tags": [
+   "국고채",
+   "실적"
+  ],
+  "score": 2,
+  "feed_name": "주요 경제지·금융시장",
+  "relevant": true
  },
  {
   "id": "e284a3f2bb7cedf0",
@@ -6907,6 +6981,23 @@
   "relevant": true
  },
  {
+  "id": "57baaf058fc6578d",
+  "title": "[경기도] 전국 최초 자동차보험 자료로 체납자 리스보증금 압류… 1억 9천만 원 징수",
+  "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1rZ2xfOWZJX3dhMm1oa21LRHRXcVRXWUtxM3Vnd2c1WlhiYkhJTWNEbE1Vd1prc2dxcTNheG9vY1R4OXRlcUNMMU0tV0FWVWkzUEZLQ085QnBiRzJnUGc?oc=5",
+  "source": "커넥트이천",
+  "source_type": "media",
+  "published_at": "2026-11-09T10:05:06+00:00",
+  "collected_at": "2026-11-11T07:44:12.454190+00:00",
+  "category": "손해보험",
+  "sub_categories": [],
+  "tags": [
+   "자동차보험"
+  ],
+  "score": 3,
+  "feed_name": "자동차보험",
+  "relevant": true
+ },
+ {
   "id": "2d5a256ce7dc6d27",
   "title": "\"사표 내도 월 최대 100만원\"…청년 실업급여 우려 따져보니",
   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB1T1YzN0JzcjlVSzhVS1JvVGlDeDNEUU1FNlk0WWF2SjNlVlAwU05BTVFpTEJXTTlGS2tVNFNRMTFLd3V5djJyRGxQdkNrSUVYTEJac0J2azloNE9fZ1VObTlsT1I3bXNyMVppNWluYlRJUW5TOGs2WW1QWQ?oc=5",
@@ -10535,6 +10626,21 @@
   "relevant": true
  },
  {
+  "id": "b1a72d600b2e870a",
+  "title": "내 보험사 자본 늘었다는데…손실 막을 ‘알짜 자본’은 제자리",
+  "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zZWpBMV8xMDJFSWhIemRQb3EzZmpwd2YwVi00ZTlUcHYzVTc1NHYxbWNGZS1iemVvUUF4b2Z2eGhqbGZLVFhpSk5QSkFCenpldzVIZEowNDhSQmlfS3FoRXRNSQ?oc=5",
+  "source": "쿠키뉴스",
+  "source_type": "media",
+  "published_at": "2026-11-08T06:50:03+00:00",
+  "collected_at": "2026-11-11T07:44:12.454190+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [],
+  "score": 2,
+  "feed_name": "기관·보험연구원",
+  "relevant": true
+ },
+ {
   "id": "6ebd4790b53cc345",
   "title": "교통사고 조작에 허위 진료기록까지⋯보험사기 수법 '천태만상'",
   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4tWDg1RnRKYUs3QTlkb05wT0kyT3FDNGsyQnlZQmhRTWlMOFZkTEhJTVJZV3gzSGtFdkU1RjJKdjdmZDFBTnItbk01UkdIYThqa3M4cw?oc=5",
@@ -11088,6 +11194,23 @@
   "source_type": "media",
   "published_at": "2026-11-07T09:03:03+00:00",
   "collected_at": "2026-11-11T07:40:09.268061+00:00",
+  "category": "미분류",
+  "sub_categories": [],
+  "tags": [
+   "삼성생명"
+  ],
+  "score": 2,
+  "feed_name": "보험사·생보사",
+  "relevant": false
+ },
+ {
+  "id": "b23787d349542428",
+  "title": "[여자농구 아산전적] 우리은행 65-54 삼성생명",
+  "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1RNzA1cUJVRjg3Y0I0bG1iU1dWUS1qZER3N0Vmek51c3ZGWlpkUk9ZYzJPYk54dGRFTEdqdVVQVUNiZWZhTDBMbHFueUZ6cVYzX2VLY19pSlA2TjjSAWBBVV95cUxNMC1JVkxsUElzZi1OS1JFYWxUU1hNNTJGR3gxekNsT19KTVNHRXhNSjFodzIydTdiamVDbzJsSU1NcnEtVlUzUzJWck9GcThySVUtd2xHRnFNdXRnSTVSVTM?oc=5",
+  "source": "연합뉴스",
+  "source_type": "media",
+  "published_at": "2026-11-07T08:51:54+00:00",
+  "collected_at": "2026-11-11T07:44:12.454190+00:00",
   "category": "미분류",
   "sub_categories": [],
   "tags": [
