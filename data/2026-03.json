@@ -18,6 +18,10 @@
   "score": 3,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  }
 ]

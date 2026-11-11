@@ -14,7 +14,9 @@
   "score": 3,
   "feed_name": "보험매일",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "9f3d164abe02da1e",
@@ -34,7 +36,9 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "09fa51d578d80a27",
@@ -52,7 +56,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "94b7d7ec37ea243d",
@@ -65,7 +71,6 @@
   "category": "손해보험",
   "tags": [
    "AI",
-   "현대해상",
    "영업"
   ],
   "score": 2,
@@ -74,7 +79,11 @@
    "사회·인구·기술 변화",
    "보험경영·판매"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [
+   "현대해상"
+  ],
+  "orgs": []
  },
  {
   "id": "65a180dd4040f56d",
@@ -92,7 +101,9 @@
   "score": 5,
   "feed_name": "보험매일",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "8f92fe11a6982798",
@@ -112,7 +123,9 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "9db66fca53d70393",
@@ -129,7 +142,9 @@
   "score": 2,
   "feed_name": "사회변화·보험",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "4357a9e21cf03349",
@@ -147,7 +162,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "202ccb87fa17c2da",
@@ -159,7 +176,6 @@
   "collected_at": "2026-11-04T11:23:55.196125+00:00",
   "category": "손해보험",
   "tags": [
-   "현대해상",
    "AI"
   ],
   "score": 2,
@@ -167,7 +183,11 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [
+   "현대해상"
+  ],
+  "orgs": []
  },
  {
   "id": "48e465f7bf68073f",
@@ -182,7 +202,9 @@
   "score": 2,
   "feed_name": "사회변화·보험",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "630bbee49b6b9003",
@@ -194,7 +216,6 @@
   "collected_at": "2026-11-04T11:23:55.196125+00:00",
   "category": "손해보험",
   "tags": [
-   "현대해상",
    "AI"
   ],
   "score": 2,
@@ -202,7 +223,11 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [
+   "현대해상"
+  ],
+  "orgs": []
  },
  {
   "id": "d4f39e091abce4f1",
@@ -224,7 +249,9 @@
    "제도·회계·건전성",
    "금융시장·자산운용"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "94f1587f9fa6ca08",
@@ -236,7 +263,6 @@
   "collected_at": "2026-11-04T11:23:54.199912+00:00",
   "category": "손해보험",
   "tags": [
-   "현대해상",
    "AI"
   ],
   "score": 2,
@@ -244,7 +270,11 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [
+   "현대해상"
+  ],
+  "orgs": []
  },
  {
   "id": "fbf5fc93b87bbe2b",
@@ -257,15 +287,18 @@
   "category": "생명보험",
   "tags": [
    "변액보험",
-   "AI",
-   "교보생명"
+   "AI"
   ],
   "score": 3,
   "feed_name": "사회변화·보험",
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [
+   "교보생명"
+  ],
+  "orgs": []
  },
  {
   "id": "44f31e8069578f94",
@@ -287,7 +320,9 @@
   ],
   "score": 3,
   "feed_name": "주요 경제지·금융시장",
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "c9fbcf49c912cbf2",
@@ -299,7 +334,6 @@
   "collected_at": "2026-11-04T11:23:55.196125+00:00",
   "category": "손해보험",
   "tags": [
-   "현대해상",
    "AI"
   ],
   "score": 2,
@@ -307,7 +341,11 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [
+   "현대해상"
+  ],
+  "orgs": []
  },
  {
   "id": "80be18661d5f29a1",
@@ -320,7 +358,6 @@
   "category": "생명보험",
   "tags": [
    "변액보험",
-   "교보생명",
    "AI"
   ],
   "score": 3,
@@ -328,7 +365,11 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [
+   "교보생명"
+  ],
+  "orgs": []
  },
  {
   "id": "a5160c2932d238c6",
@@ -340,7 +381,6 @@
   "collected_at": "2026-11-04T11:23:55.196125+00:00",
   "category": "손해보험",
   "tags": [
-   "현대해상",
    "AI"
   ],
   "score": 2,
@@ -348,7 +388,11 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [
+   "현대해상"
+  ],
+  "orgs": []
  },
  {
   "id": "5d3eef7dad5d0f12",
@@ -360,7 +404,6 @@
   "collected_at": "2026-11-04T11:23:55.196125+00:00",
   "category": "손해보험",
   "tags": [
-   "현대해상",
    "AI",
    "영업"
   ],
@@ -370,7 +413,11 @@
    "사회·인구·기술 변화",
    "보험경영·판매"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [
+   "현대해상"
+  ],
+  "orgs": []
  },
  {
   "id": "95bb124b91797cfe",
@@ -388,7 +435,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "자본시장감독국"
+  "department": "자본시장감독국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "a75d1bd66abde7aa",
@@ -404,7 +455,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "가상자산검사과"
+  "department": "가상자산검사과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "e3e05b9a55f3fc83",
@@ -420,7 +475,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "회계제도팀"
+  "department": "회계제도팀",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "c80ea939bfc2578f",
@@ -436,7 +495,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "서민금융과"
+  "department": "서민금융과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "536fff85a0cf3663",
@@ -452,7 +515,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "국민성장펀드총괄과"
+  "department": "국민성장펀드총괄과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "af77ee50a1e30e56",
@@ -470,7 +537,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "자산운용과"
+  "department": "자산운용과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "c54f1c32f52ba6cc",
@@ -489,7 +560,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "ebabdb939ae25763",
@@ -506,7 +579,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "fda5b3285f388224",
@@ -523,7 +598,9 @@
   "score": 2,
   "feed_name": "사회변화·보험",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "bffc7b6198cc72bf",
@@ -540,7 +617,9 @@
   "score": 2,
   "feed_name": "사회변화·보험",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "95468076081a5ce3",
@@ -557,7 +636,11 @@
   "score": 2,
   "feed_name": "사회변화·보험",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": [
+   "국민건강보험공단"
+  ]
  },
  {
   "id": "f22aded403b08e50",
@@ -577,7 +660,9 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "735f6afde0b44cb0",
@@ -595,7 +680,11 @@
   "score": 2,
   "feed_name": "사회변화·보험",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": [
+   "국민건강보험공단"
+  ]
  },
  {
   "id": "b808ab4828682a88",
@@ -618,7 +707,9 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "89cb463993a18a27",
@@ -637,7 +728,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "eaa8d6b5712dbd15",
@@ -648,13 +741,15 @@
   "published_at": "2026-10-29T07:10:14+00:00",
   "collected_at": "2026-11-04T11:56:37.110629+00:00",
   "category": "손해보험",
-  "tags": [
-   "KB손해보험"
-  ],
+  "tags": [],
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [
+   "KB손해보험"
+  ],
+  "orgs": []
  },
  {
   "id": "532a5e99e886b317",
@@ -671,12 +766,15 @@
   ],
   "tags": [
    "CSM",
-   "KB손보",
    "투자"
   ],
   "score": 4,
   "feed_name": "주요 경제지·금융시장",
-  "relevant": true
+  "relevant": true,
+  "companies": [
+   "KB손해보험"
+  ],
+  "orgs": []
  },
  {
   "id": "073b6445b06fd702",
@@ -696,7 +794,9 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "14edee2b1490e8dd",
@@ -713,7 +813,9 @@
   "score": 2,
   "feed_name": "사회변화·보험",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "defe87fb1b2848b9",
@@ -730,7 +832,9 @@
   "score": 3,
   "feed_name": "사회변화·보험",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "ad8f27daa1998985",
@@ -752,7 +856,9 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "e16869f4f413feaf",
@@ -773,7 +879,9 @@
   "sub_categories": [
    "사회·인구·기술 변화"
   ],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "00e61415349a514f",
@@ -790,7 +898,11 @@
   "score": 2,
   "feed_name": "사회변화·보험",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": [
+   "국민건강보험공단"
+  ]
  },
  {
   "id": "e73fb1b38ba3c933",
@@ -807,7 +919,9 @@
   "score": 2,
   "feed_name": "사회변화·보험",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "b4a479e47ac549c8",
@@ -824,7 +938,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "2e06be484f314176",
@@ -842,7 +958,9 @@
   "score": 2,
   "feed_name": "사회변화·보험",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "be1b2c7d273106ee",
@@ -859,7 +977,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "d37a1df477d1b43e",
@@ -880,7 +1000,11 @@
   "score": 3,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "7660f7286fa63d2c",
@@ -896,7 +1020,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": true,
-  "department": "계리리스크감독국"
+  "department": "계리리스크감독국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "cec9cd8719fb49e1",
@@ -914,7 +1042,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "감독혁신국"
+  "department": "감독혁신국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "3a9b1846c84fb3d0",
@@ -935,7 +1067,11 @@
   "score": 3,
   "feed_name": "금융감독원 게시판",
   "relevant": true,
-  "department": "보험사기대응단"
+  "department": "보험사기대응단",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "09e1b46edadd0ce6",
@@ -953,7 +1089,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "연금감독실"
+  "department": "연금감독실",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "daced4f9a54228cd",
@@ -971,7 +1111,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "기업공시국"
+  "department": "기업공시국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "229105e2c51e206b",
@@ -989,7 +1133,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "국민지역참여지원과"
+  "department": "국민지역참여지원과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "37efbec9a42edc4a",
@@ -1001,13 +1149,15 @@
   "collected_at": "2026-11-11T07:41:30.945508+00:00",
   "category": "미분류",
   "sub_categories": [],
-  "tags": [
-   "금융위"
-  ],
+  "tags": [],
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "감사담당관"
+  "department": "감사담당관",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "ebaec9de8d626698",
@@ -1025,7 +1175,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "구조개선정책과"
+  "department": "구조개선정책과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "8b4ec4afe7151544",
@@ -1037,13 +1191,15 @@
   "collected_at": "2026-11-11T07:41:30.945508+00:00",
   "category": "미분류",
   "sub_categories": [],
-  "tags": [
-   "금융위원회"
-  ],
+  "tags": [],
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "복합지원팀,서민금융과"
+  "department": "복합지원팀,서민금융과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "25d66c4374cfcf4a",
@@ -1061,7 +1217,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "e62b1025f6c19f15",
@@ -1079,7 +1237,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "7d1668d23af8a0d8",
@@ -1096,7 +1256,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "fbbbd0f1778feda4",
@@ -1114,7 +1276,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "1bbdec87807fac1d",
@@ -1134,7 +1298,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "58e3aa72bc8c02b7",
@@ -1152,7 +1318,9 @@
   "score": 2,
   "feed_name": "주요 경제지·금융시장",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "70d84545940b14c1",
@@ -1169,7 +1337,9 @@
   "score": 2,
   "feed_name": "사회변화·보험",
   "sub_categories": [],
-  "relevant": true
+  "relevant": true,
+  "companies": [],
+  "orgs": []
  },
  {
   "id": "b21a9b80ac9312ac",
@@ -1185,7 +1355,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "회계감리2국"
+  "department": "회계감리2국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "ebff5bd7fc04382f",
@@ -1201,7 +1375,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "조사2국"
+  "department": "조사2국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "451d7a50a60c01a4",
@@ -1219,7 +1397,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "디지털금융총괄국/IT검사국/가상자산감독국"
+  "department": "디지털금융총괄국/IT검사국/가상자산감독국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "bb4d0179b450b3c9",
@@ -1237,7 +1419,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "은행감독국"
+  "department": "은행감독국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "7f61a8b7191fa2c8",
@@ -1253,7 +1439,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "소비자소통국/소비자권익보호국"
+  "department": "소비자소통국/소비자권익보호국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "dc7a7c194172b66d",
@@ -1271,7 +1461,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "자본시장감독국"
+  "department": "자본시장감독국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "c653cebd9917f56f",
@@ -1283,13 +1477,15 @@
   "collected_at": "2026-11-11T07:40:09.268061+00:00",
   "category": "미분류",
   "sub_categories": [],
-  "tags": [
-   "금융감독원"
-  ],
+  "tags": [],
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "은행검사1국/은행검사2국/은행감독국/디지털금융총괄국"
+  "department": "은행검사1국/은행검사2국/은행감독국/디지털금융총괄국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "476bed52ed342f5b",
@@ -1305,7 +1501,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "회계제도팀"
+  "department": "회계제도팀",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "ae72998c1f2e2398",
@@ -1321,7 +1521,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "자본시장조사총괄과"
+  "department": "자본시장조사총괄과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "641493b80f7480da",
@@ -1339,7 +1543,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "금융안전과"
+  "department": "금융안전과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "cb10fa18c7fc0f46",
@@ -1357,7 +1565,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "산업금융과"
+  "department": "산업금융과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "6b757fddbe477094",
@@ -1370,13 +1582,16 @@
   "category": "미분류",
   "sub_categories": [],
   "tags": [
-   "채권",
-   "금융위"
+   "채권"
   ],
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "서민금융과"
+  "department": "서민금융과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "cfd838fc10a7597c",
@@ -1392,7 +1607,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "금융시장분석과"
+  "department": "금융시장분석과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "dc28579333b81204",
@@ -1410,7 +1629,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "기업공시국/조사1국"
+  "department": "기업공시국/조사1국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "9bb53eae8eb163ae",
@@ -1428,7 +1651,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "연금감독실"
+  "department": "연금감독실",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "6d463bb1399b9cfe",
@@ -1444,7 +1671,11 @@
   "score": 2,
   "feed_name": "금융감독원 게시판",
   "relevant": false,
-  "department": "자본시장감독국"
+  "department": "자본시장감독국",
+  "companies": [],
+  "orgs": [
+   "금융감독원"
+  ]
  },
  {
   "id": "9192f0397aac07e2",
@@ -1460,7 +1691,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "청년정책과"
+  "department": "청년정책과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "905f3af615978df4",
@@ -1476,7 +1711,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "구조개선정책과"
+  "department": "구조개선정책과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "da00d1e1c0f7934f",
@@ -1494,7 +1733,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "국민지역참여지원과"
+  "department": "국민지역참여지원과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "2966e6902bb9bf7e",
@@ -1512,7 +1755,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "금융시장분석과"
+  "department": "금융시장분석과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "3663b9a0085565a4",
@@ -1530,7 +1777,11 @@
   "score": 3,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "중소금융과"
+  "department": "중소금융과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "fd35d36d3612228f",
@@ -1546,7 +1797,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "국민성장펀드총괄과"
+  "department": "국민성장펀드총괄과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "3b462ad1c7d1657f",
@@ -1558,13 +1813,15 @@
   "collected_at": "2026-11-11T07:41:30.945508+00:00",
   "category": "미분류",
   "sub_categories": [],
-  "tags": [
-   "금융위원회"
-  ],
+  "tags": [],
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "회계제도팀"
+  "department": "회계제도팀",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "efe70896d061fcea",
@@ -1582,7 +1839,11 @@
   "score": 2,
   "feed_name": "금융위원회 게시판",
   "relevant": false,
-  "department": "디지털금융총괄과"
+  "department": "디지털금융총괄과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "d389980db09d6810",
@@ -1597,7 +1858,11 @@
   "tags": [],
   "score": 2,
   "feed_name": "금융위원회 검색",
-  "relevant": false
+  "relevant": false,
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "de4fa331a9db3192",
@@ -1615,6 +1880,11 @@
   "score": 2,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "보건복지부",
+   "금융위원회"
+  ]
  }
 ]

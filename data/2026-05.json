@@ -11,14 +11,17 @@
   "sub_categories": [
    "제도·회계·건전성"
   ],
-  "tags": [
-   "롯데손해보험",
-   "금융위"
-  ],
+  "tags": [],
   "score": 2,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [
+   "롯데손해보험"
+  ],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "ea84bb9cc18c9610",
@@ -34,7 +37,11 @@
   "score": 2,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "447e5243a7c6a9cf",
@@ -53,7 +60,11 @@
   "score": 4,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "f911799ea3302342",
@@ -73,6 +84,10 @@
   "score": 2,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  }
 ]

@@ -7,7 +7,7 @@
   "source_type": "press",
   "published_at": "2026-04-27T00:00:00+00:00",
   "collected_at": "2026-11-11T07:44:12.454190+00:00",
-  "category": "손해보험",
+  "category": "자동차보험",
   "sub_categories": [
    "보험경영·판매"
   ],
@@ -18,7 +18,11 @@
   "score": 3,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "260bc00f2a0639a6",
@@ -39,7 +43,11 @@
   "score": 3,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "f6c1d18586939ee8",
@@ -58,7 +66,11 @@
   "score": 4,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "aa43ac9b9d59db83",
@@ -73,12 +85,15 @@
    "보험경영·판매"
   ],
   "tags": [
-   "금융위",
    "보험료"
   ],
   "score": 2,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  }
 ]

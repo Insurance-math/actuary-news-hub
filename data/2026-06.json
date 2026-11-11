@@ -15,7 +15,11 @@
   "score": 3,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "128614ace92e0264",
@@ -39,7 +43,11 @@
   "score": 5,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  },
  {
   "id": "42a86092ff7e6be7",
@@ -60,6 +68,10 @@
   "score": 3,
   "feed_name": "금융위원회 보험과 게시판",
   "relevant": true,
-  "department": "보험과"
+  "department": "보험과",
+  "companies": [],
+  "orgs": [
+   "금융위원회"
+  ]
  }
 ]
