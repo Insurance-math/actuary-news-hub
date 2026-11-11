@@ -15,6 +15,7 @@ import feedparser
 import requests
 from boards import fetch_board
 from classify import UNCATEGORIZED, classify, load as load_classifier
+from entities import company_relevant, sports_team_title, tag_entities
 from normalize import SourceAliases, TitleFilter, dedupe_key, is_google, normalize_shards, prefer, strip_org_suffix
 from trends import write_trends
 
@@ -128,6 +129,10 @@ def judge(title: str, kind: str, name: str | None, dept: str | None = None) -> t
         rel = False
     if dept and dept in RELEVANT_DEPTS:
         rel = True
+    if rel and sports_team_title(title):  # 보험사와 이름이 같은 스포츠 구단 기사는 관련 없음
+        rel = False
+    if not rel and company_relevant(title):  # 보험사가 제목에 나오면 '보험' 단어가 없어도 관련(스포츠 구단 기사 등 제외)
+        rel = True
     if not rel:
         c = {**c, 'category': UNCATEGORIZED, 'sub_categories': [], 'score': load_classifier().score(title, UNCATEGORIZED)[0]}
     return rel, c
@@ -135,9 +140,12 @@ def judge(title: str, kind: str, name: str | None, dept: str | None = None) -> t
 
 def make_article(title, link, source, kind, published, now_iso, name, dept=None) -> dict:
     rel, c = judge(title, kind, name, dept)
+    ent = tag_entities(title, source, c['tags'])  # 보험사·유관기관(필터용), 같은 이름의 분류 태그는 정리
+    c = {**c, 'tags': ent['tags']}
     a = {'id': article_id(link), 'title': title, 'url': link, 'source': source, 'source_type': kind,
          'published_at': published, 'collected_at': now_iso, 'category': c['category'],
-         'sub_categories': c['sub_categories'], 'tags': c['tags'], 'score': c['score'], 'feed_name': name, 'relevant': rel}
+         'sub_categories': c['sub_categories'], 'tags': c['tags'], 'score': c['score'], 'feed_name': name, 'relevant': rel,
+         'companies': ent['companies'], 'orgs': ent['orgs']}
     if dept:
         a['department'] = dept  # 내부 메타(화면에 직접 노출하지 않음)
     return a
@@ -279,7 +287,9 @@ def reclassify(data_dir: Path) -> None:
                 rel, c = judge(a['title'], a['source_type'], a.get('feed_name'), a.get('department'))
             else:  # 예전 기사(수집 단계에서 이미 관련 있음으로 걸러진 것)는 relevant=true 로 이전
                 rel, c = True, classify(a['title'], a.get('feed_name'))
-            new = {'category': c['category'], 'sub_categories': c['sub_categories'], 'tags': c['tags'], 'score': c['score'], 'relevant': rel}
+            ent = tag_entities(a['title'], a.get('source'), c['tags'])
+            new = {'category': c['category'], 'sub_categories': c['sub_categories'], 'tags': ent['tags'], 'score': c['score'], 'relevant': rel,
+                   'companies': ent['companies'], 'orgs': ent['orgs']}
             if any(a.get(k) != v for k, v in new.items()):
                 a.update(new); dirty = True; changed += 1
             total += 1
