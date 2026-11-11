@@ -1,21 +1,88 @@
 {
-  "_comment": "구글 뉴스 검색 피드(쿼리당 최대 100건). 쿼리는 25개 이하로 유지한다. 상한(100건)에 닿은 쿼리는 status 에 '쿼리 분할 필요'로 표시되니 더 쪼갠다. source: 고정 출처명(없으면 기사 제목 끝의 '- 언론사'에서 추출).",
+  "_comment": "구글 뉴스 검색 피드(쿼리당 최대 100건). 쿼리는 25개 이하로 유지한다. 상한(100건)에 닿은 쿼리는 status 에 '쿼리 분할 필요'로 표시되니 더 쪼갠다. source: 고정 출처명(없으면 기사 제목 끝의 '- 언론사'에서 추출). max_age_days: 검색(구글 뉴스) 피드 기사는 발행 후 이 일수를 넘으면 저장하지 않는다(게시판 공식 글과 직접 RSS에는 적용하지 않음).",
+  "max_age_days": 180,
   "queries": [
-    {"name": "주요 경제지·보험", "q": "보험 (site:hankyung.com OR site:mk.co.kr OR site:edaily.co.kr OR site:mt.co.kr OR site:yna.co.kr OR site:newsis.com)", "type": "media"},
-    {"name": "주요 경제지·금융시장", "q": "(국고채 OR 금리 OR 환율 OR 보험사 자산운용) (site:hankyung.com OR site:mk.co.kr OR site:edaily.co.kr OR site:mt.co.kr OR site:yna.co.kr OR site:newsis.com)", "type": "media"},
-    {"name": "사회변화·보험", "q": "(고령화 OR 저출산 OR 인공지능 OR 기후위기 OR 의료비) 보험", "type": "media"},
-    {"name": "금융위원회 검색", "q": "site:fsc.go.kr (보험 OR K-ICS OR 실손 OR 생명보험 OR 손해보험)", "type": "press", "source": "금융위원회"},
-    {"name": "금융감독원 검색", "q": "site:fss.or.kr (보험 OR 보험사 OR 지급여력 OR 실손 OR K-ICS)", "type": "press", "source": "금융감독원"},
-    {"name": "자동차보험", "q": "(자동차보험 OR 자보 OR 대인배상 OR 대물배상 OR 자차보험)", "type": "media"},
-    {"name": "자동차보험·제도", "q": "(정비수가 OR 과실비율 OR 경상환자 OR 한방치료 OR 렌트비 OR 자동차보험료)", "type": "media"},
-    {"name": "기관·금융감독원", "q": "금융감독원 (보험 OR 보험사 OR 보험업)", "type": "media"},
-    {"name": "기관·금융위원회", "q": "금융위원회 (보험 OR 보험사 OR 보험업)", "type": "media"},
-    {"name": "기관·보험개발원", "q": "보험개발원", "type": "media"},
-    {"name": "기관·손해보험협회", "q": "손해보험협회", "type": "media"},
-    {"name": "기관·생명보험협회", "q": "생명보험협회", "type": "media"},
-    {"name": "기관·보험연구원", "q": "보험연구원", "type": "media"},
-    {"name": "보험사·생보사", "q": "(생보사 OR 생명보험사 OR 삼성생명 OR 한화생명 OR 교보생명)", "type": "media"},
-    {"name": "보험사·손보사", "q": "(손보사 OR 손해보험사 OR 삼성화재 OR 현대해상 OR 메리츠화재 OR DB손보 OR KB손보)", "type": "media"},
-    {"name": "재보험", "q": "(재보험 OR 코리안리)", "type": "media"}
+    {
+      "name": "주요 경제지·보험",
+      "q": "보험 (site:hankyung.com OR site:mk.co.kr OR site:edaily.co.kr OR site:mt.co.kr OR site:yna.co.kr OR site:newsis.com)",
+      "type": "media"
+    },
+    {
+      "name": "주요 경제지·금융시장",
+      "q": "(국고채 OR 금리 OR 환율 OR 보험사 자산운용) (site:hankyung.com OR site:mk.co.kr OR site:edaily.co.kr OR site:mt.co.kr OR site:yna.co.kr OR site:newsis.com)",
+      "type": "media"
+    },
+    {
+      "name": "사회변화·보험",
+      "q": "(고령화 OR 저출산 OR 인공지능 OR 기후위기 OR 의료비) 보험",
+      "type": "media"
+    },
+    {
+      "name": "금융위원회 검색",
+      "q": "site:fsc.go.kr (보험 OR K-ICS OR 실손 OR 생명보험 OR 손해보험)",
+      "type": "press",
+      "source": "금융위원회"
+    },
+    {
+      "name": "금융감독원 검색",
+      "q": "site:fss.or.kr (보험 OR 보험사 OR 지급여력 OR 실손 OR K-ICS)",
+      "type": "press",
+      "source": "금융감독원"
+    },
+    {
+      "name": "자동차보험",
+      "q": "(자동차보험 OR 자보 OR 대인배상 OR 대물배상 OR 자차보험)",
+      "type": "media"
+    },
+    {
+      "name": "자동차보험·제도",
+      "q": "(정비수가 OR 과실비율 OR 경상환자 OR 한방치료 OR 렌트비 OR 자동차보험료)",
+      "type": "media"
+    },
+    {
+      "name": "기관·금융감독원",
+      "q": "금융감독원 (보험 OR 보험사 OR 보험업)",
+      "type": "media"
+    },
+    {
+      "name": "기관·금융위원회",
+      "q": "금융위원회 (보험 OR 보험사 OR 보험업)",
+      "type": "media"
+    },
+    {
+      "name": "기관·보험개발원",
+      "q": "보험개발원",
+      "type": "media"
+    },
+    {
+      "name": "기관·손해보험협회",
+      "q": "손해보험협회",
+      "type": "media"
+    },
+    {
+      "name": "기관·생명보험협회",
+      "q": "생명보험협회",
+      "type": "media"
+    },
+    {
+      "name": "기관·보험연구원",
+      "q": "보험연구원",
+      "type": "media"
+    },
+    {
+      "name": "보험사·생보사",
+      "q": "(생보사 OR 생명보험사 OR 삼성생명 OR 한화생명 OR 교보생명)",
+      "type": "media"
+    },
+    {
+      "name": "보험사·손보사",
+      "q": "(손보사 OR 손해보험사 OR 삼성화재 OR 현대해상 OR 메리츠화재 OR DB손보 OR KB손보)",
+      "type": "media"
+    },
+    {
+      "name": "재보험",
+      "q": "(재보험 OR 코리안리)",
+      "type": "media"
+    }
   ]
 }

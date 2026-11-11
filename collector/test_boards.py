@@ -69,4 +69,17 @@ with tempfile.TemporaryDirectory() as d:
         collect.reclassify(Path(d))
         rows = json.loads((Path(d) / '2026-11.json').read_text(encoding='utf-8'))
         assert rows[0]['relevant'] is True and rows[1]['relevant'] is False and rows[1]['category'] == '미분류'
+# 검색 피드 기사 나이 상한(max_age_days): 오래된 글은 저장하지 않고, 상한이 없으면 모두 저장
+RSS = '''<?xml version="1.0"?><rss version="2.0"><channel>
+<item><title>실손보험 청구 간소화 - 한국경제</title><link>https://example.com/new</link><pubDate>Mon, 09 Nov 2026 01:00:00 GMT</pubDate></item>
+<item><title>실손보험 옛 기사 - 한국경제</title><link>https://example.com/old</link><pubDate>Wed, 01 Mar 2017 01:00:00 GMT</pubDate></item></channel></rss>'''
+class FakeResp:
+    content = RSS.encode()
+    def raise_for_status(self): pass
+collect.requests.get = lambda *a, **k: FakeResp()
+row = ('테스트 검색', 'https://example.com/rss', 'media', None)
+out, st = collect.collect_source(row, '2026-11-11T00:00:00+00:00', max_age_days=180)
+assert [a['url'] for a in out] == ['https://example.com/new'] and st['skipped']['too_old'] == 1
+out, st = collect.collect_source(row, '2026-11-11T00:00:00+00:00')
+assert len(out) == 2 and 'too_old' not in st['skipped']
 print('boards tests passed')

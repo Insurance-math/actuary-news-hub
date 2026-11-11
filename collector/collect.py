@@ -45,13 +45,14 @@ def load_json(path: Path, default):
         return default
 
 
-def load_sources(config_dir: Path) -> tuple[list, set]:
-    """(RSS+구글 검색 피드 행 목록, 구글 검색 피드 이름 집합)."""
+def load_sources(config_dir: Path) -> tuple[list, set, int | None]:
+    """(RSS+구글 검색 피드 행 목록, 구글 검색 피드 이름 집합, 검색 피드 기사 최대 나이(일))."""
     rows, queries = list(RSS_SOURCES), set()
-    for q in load_json(config_dir / 'feeds.json', {}).get('queries', []):
+    feeds = load_json(config_dir / 'feeds.json', {})
+    for q in feeds.get('queries', []):
         rows.append((q['name'], google(q['q']), q.get('type', 'media'), q.get('source')))
         queries.add(q['name'])
-    return rows, queries
+    return rows, queries, feeds.get('max_age_days')
 
 
 class Blocked:
@@ -142,7 +143,8 @@ def make_article(title, link, source, kind, published, now_iso, name, dept=None)
     return a
 
 
-def collect_source(row, now_iso, aliases=None, unmapped=None, tfilter=None, blocked=None):
+def collect_source(row, now_iso, aliases=None, unmapped=None, tfilter=None, blocked=None, max_age_days=None):
+    """max_age_days: 지정하면 발행 후 그 일수를 넘은 기사는 저장하지 않는다(검색 피드용)."""
     name, url, kind, fixed = row
     throttle_google(url)
     r = requests.get(url, timeout=15, headers={'User-Agent': UA, 'Accept': 'application/rss+xml, application/xml, text/xml'})
@@ -153,6 +155,7 @@ def collect_source(row, now_iso, aliases=None, unmapped=None, tfilter=None, bloc
     entries = feed.entries[:FEED_CAP]
     out, skipped, filtered, dates = [], {'no_link': 0, 'no_date': 0, 'low_relevance': 0}, [], []
     blocked_n: dict[str, int] = {}
+    cutoff = (datetime.fromisoformat(now_iso) - timedelta(days=max_age_days)).isoformat() if max_age_days else None
     for e in entries:
         raw = clean(e.get('title', ''))
         link = (e.get('link') or '').strip()
@@ -162,6 +165,9 @@ def collect_source(row, now_iso, aliases=None, unmapped=None, tfilter=None, bloc
         if not published:
             skipped['no_date'] += 1; continue
         dates.append(published)
+        if cutoff and published < cutoff:
+            skipped['too_old'] = skipped.get('too_old', 0) + 1
+            continue
         if fixed:
             source, title = fixed, raw
         elif ' - ' in raw:
@@ -292,6 +298,17 @@ def reclassify(data_dir: Path) -> None:
         logging.info('  %s: %d건 (%.1f%%)', k, v, v / total * 100 if total else 0)
 
 
+def reindex(data_dir: Path, config_dir: Path) -> None:
+    """월 파일 목록이 바뀐 뒤(파일을 옮기거나 지운 경우) index.json 의 월 목록·크기와 trends.json 을 다시 만든다. 기사 데이터는 건드리지 않는다."""
+    idx_path = data_dir / 'index.json'
+    updated = json.loads(idx_path.read_text(encoding='utf-8')).get('updated_at') if idx_path.exists() else datetime.now(timezone.utc).isoformat()
+    months = sorted((p.stem for p in data_dir.glob('????-??.json')), reverse=True)
+    info = [{'month': m, 'count': len(load_shard(data_dir / f'{m}.json')), 'bytes': (data_dir / f'{m}.json').stat().st_size} for m in months]
+    idx_path.write_text(json.dumps({'updated_at': updated, 'months': info}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    write_trends(data_dir, config_dir / 'keywords.json')
+    logging.info('index·trends 재생성: 월 파일 %d개', len(months))
+
+
 def rescore(data_dir: Path, big: int = 2) -> dict:
     """저장된 기사의 중요도(★)만 config/score.json 산식으로 다시 계산한다(분류·태그·id·시각은 그대로).
     반환: 변경 요약(분포 전후, 변경 건수, 별점이 big 이상 바뀐 기사 목록)."""
@@ -384,12 +401,16 @@ def main():
     ap.add_argument('--config-dir', default='config')
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--backfill', action='store_true', help='게시판을 더 깊이(config/boards.json backfill_pages) 한 번 읽어 과거 글을 채움')
+    ap.add_argument('--reindex', action='store_true', help='네트워크 없이 index.json(월 목록)과 trends.json 만 다시 만듦(월 파일을 옮기거나 지운 뒤)')
     ap.add_argument('--rescore', action='store_true', help='네트워크 없이 저장된 기사의 중요도(★)만 config/score.json 산식으로 다시 계산')
     ap.add_argument('--reclassify', action='store_true', help='네트워크 없이 저장된 기사를 현재 분류 규칙으로 재분류(관련도 relevant 포함)')
     args = ap.parse_args()
     cdir = Path(args.config_dir)
     boards_cfg = load_json(cdir / 'boards.json', {'boards': []})
     RELEVANT_DEPTS.update(boards_cfg.get('relevant_departments', []))
+    if args.reindex:
+        reindex(Path(args.data_dir), cdir)
+        return 0
     if args.reclassify:
         reclassify(Path(args.data_dir))
         return 0
@@ -398,7 +419,7 @@ def main():
         print(json.dumps(summary, ensure_ascii=False, indent=1))
         return 0
     now_iso = datetime.now(timezone.utc).isoformat()
-    sources, queries = load_sources(cdir)
+    sources, queries, max_age = load_sources(cdir)
     aliases = SourceAliases.load(cdir / 'source_aliases.json')
     aliases.canonical |= {r[3] for r in sources if r[3]} | {b['source'] for b in boards_cfg['boards']}  # 고정 출처명은 이미 표준 이름
     tfilter = TitleFilter.load(cdir / 'title_filters.json')
@@ -406,7 +427,7 @@ def main():
     unmapped: set[str] = set()
     articles, failed, results = {}, [], {}
     with ThreadPoolExecutor(max_workers=5) as pool:
-        futs = {pool.submit(collect_source, s, now_iso, aliases, unmapped, tfilter, blocked): s[0] for s in sources}
+        futs = {pool.submit(collect_source, s, now_iso, aliases, unmapped, tfilter, blocked, max_age if s[0] in queries else None): s[0] for s in sources}
         for f in as_completed(futs):
             name = futs[f]
             try:
